@@ -18,8 +18,9 @@
 
 [] spawn {
 	while {true} do {
-		sleep 900;
+		sleep 600;
 		[8] call SOCK_fnc_updatePartial;
+		systemChat "Dein Spielstand wurde automatisch gespeichert.";
 	};
 };
 
