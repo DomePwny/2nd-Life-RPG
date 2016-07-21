@@ -95,6 +95,7 @@ class Life_Client_Core
 		class dropbody {};
 		class dragbody {};
 		class spawnmobile1 {};
+		class Maintenance {};
 		class createGarbage {};
 		class createEvidence {};
 		class Nos {};
