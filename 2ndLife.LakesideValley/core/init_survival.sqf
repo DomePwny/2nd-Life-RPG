@@ -2473,7 +2473,7 @@ fnc_fedex = {
 		_skip = false;
 		_somecounter = 1;
 		while{true} do {
-			if(typeOf(vehicle player) != "CG_Taxi") exitwith { _skip = true; ["You missed a call!"] spawn domsg;  };
+			if(typeOf(vehicle player) != "cl3_suv_taxi") exitwith { _skip = true; ["You missed a call!"] spawn domsg;  };
 			if (player distance _unit < 10) exitwith { ["You are next to your pickup, wait for them to get in!"] spawn domsg; };
 
 			if (vehicle _unit != _unit) exitwith { 
