@@ -263,6 +263,8 @@ player addEventHandler ["AnimStateChanged", {
 	};
 }];
 
+[] execVM "core\fn_addKey.sqf";
+
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
 if!(getRemoteSensorsDisabled)then
