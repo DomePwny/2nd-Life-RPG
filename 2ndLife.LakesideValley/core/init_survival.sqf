@@ -519,6 +519,7 @@
 		if(life_taxi) exitwith { has_job = false; life_taxi = false; ["Job gekündigt! Du bist nun Arbeitslos!", false] spawn domsg;};
 		if(life_bankteller) exitwith { has_job = false; life_bankteller = false; ["Job gekündigt! Du bist nun Arbeitslos!", false] spawn domsg; };
 		if(life_carSalesman) exitwith { has_job = false; life_carSalesman = false; ["Job gekündigt! Du bist nun Arbeitslos!", false] spawn domsg; };
+		if(maintenance_on) exitwith { has_job = false; maintenance_on = false; ["Job gekündigt! Du bist nun Arbeitslos!", false] spawn domsg; };
 		life_quitRecently = false;
 	};
 
