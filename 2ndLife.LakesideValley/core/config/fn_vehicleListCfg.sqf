@@ -136,18 +136,46 @@ switch (_shop) do
 	};	
 	case "med_shop":
 	{
-		_return = 
-		[
-			["ivory_wrx",64000],
-			["sndlife_taur_ems",45000],
-			["A3L_CVPILBFD",55000],
-			["sndlife_evo_ems1",65000],
-			["sndlife_evo_ems2",65000],
-			["sndlife_evo_ems3",65000],
-			["DAR_TahoeEMS",22500],
-			["AM_Holden_EMS",25000],
-			["Jonzie_Ambulance",25500]
-		];
+		if(__GETC__(life_mediclevel) == 1) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25500];
+		};
+		if(__GETC__(life_mediclevel) == 2) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["A3L_CVPILBFD",55000];
+		};
+		if(__GETC__(life_mediclevel) == 3) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["A3L_CVPILBFD",55000];
+			_return pushBack ["sndlife_taur_ems",45000];
+			_return pushBack ["sndlife_evo_ems1",65000];
+			_return pushBack ["sndlife_evo_ems2",65000];
+			_return pushBack ["sndlife_evo_ems3",65000];
+		};
+		if(__GETC__(life_mediclevel) == 4) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["A3L_CVPILBFD",55000];
+			_return pushBack ["sndlife_taur_ems",45000];
+			_return pushBack ["sndlife_evo_ems1",65000];
+			_return pushBack ["sndlife_evo_ems2",65000];
+			_return pushBack ["sndlife_evo_ems3",65000];
+			_return pushBack ["ivory_wrx",64000];
+		};
+		if(__GETC__(life_mediclevel) == 5) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["A3L_CVPILBFD",55000];
+			_return pushBack ["sndlife_taur_ems",45000];
+			_return pushBack ["sndlife_evo_ems1",65000];
+			_return pushBack ["sndlife_evo_ems2",65000];
+			_return pushBack ["sndlife_evo_ems3",65000];
+			_return pushBack ["ivory_wrx",64000];
+			_return pushBack ["DAR_TahoeEMS",22500];
+			_return pushBack ["AM_Holden_EMS",25000];
+		};
 	};
 	case "med_air_hs": {
 		_return = 

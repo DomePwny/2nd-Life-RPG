@@ -10,26 +10,54 @@ _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"EMS Clothing Shop"];
+ctrlSetText[3103,"EMS Kleidungsladen"];
 
 switch (_filter) do
 {
 	//Uniforms
 	case 0:
 	{
-		[
-			["2ndLife_EMS1", nil, 2],
-			["2ndLife_EMS3", nil, 2],
-			["2ndLife_EMS4", nil, 2],
-			["2ndLife_EMS5", nil, 2],
-			["2ndLife_EMS6", nil, 2],
-			["2ndLife_EMS7", nil, 2],
-			["2ndLife_EMS8", nil, 2],
-			["2ndLife_EMS9", nil, 2],
-			["2ndLife_EMS10", nil, 2],
-			["2ndLife_EMS_1", nil, 2],
-			["2ndLife_EMSWING_4", nil, 2]
-		];
+		if(__GETC__(life_mediclevel) == 1) then {
+			_ret pushBack ["2ndLife_EMS1",nil,2];
+		};
+		if(__GETC__(life_mediclevel) == 2) then {
+			_ret pushBack ["2ndLife_EMS1",nil,2];
+			_ret pushBack ["2ndLife_EMS2",nil,2];
+			_ret pushBack ["2ndLife_EMS3",nil,2];
+			_ret pushBack ["2ndLife_EMS4",nil,2];
+		};
+		if(__GETC__(life_mediclevel) == 3) then {
+			_ret pushBack ["2ndLife_EMS1",nil,2];
+			_ret pushBack ["2ndLife_EMS2",nil,2];
+			_ret pushBack ["2ndLife_EMS3",nil,2];
+			_ret pushBack ["2ndLife_EMS4",nil,2];
+			_ret pushBack ["2ndLife_EMS5",nil,2];
+			_ret pushBack ["2ndLife_EMS6",nil,2];
+		};
+		if(__GETC__(life_mediclevel) == 4) then {
+			_ret pushBack ["2ndLife_EMS1",nil,2];
+			_ret pushBack ["2ndLife_EMS2",nil,2];
+			_ret pushBack ["2ndLife_EMS3",nil,2];
+			_ret pushBack ["2ndLife_EMS4",nil,2];
+			_ret pushBack ["2ndLife_EMS5",nil,2];
+			_ret pushBack ["2ndLife_EMS6",nil,2];
+			_ret pushBack ["2ndLife_EMS7",nil,2];
+			_ret pushBack ["2ndLife_EMS8",nil,2];
+		};
+		if(__GETC__(life_mediclevel) == 5) then {
+			_ret pushBack ["2ndLife_EMS1",nil,2];
+			_ret pushBack ["2ndLife_EMS2",nil,2];
+			_ret pushBack ["2ndLife_EMS3",nil,2];
+			_ret pushBack ["2ndLife_EMS4",nil,2];
+			_ret pushBack ["2ndLife_EMS5",nil,2];
+			_ret pushBack ["2ndLife_EMS6",nil,2];
+			_ret pushBack ["2ndLife_EMS7",nil,2];
+			_ret pushBack ["2ndLife_EMS8",nil,2];
+			_ret pushBack ["2ndLife_EMS9",nil,2];
+			_ret pushBack ["2ndLife_EMS10",nil,2];
+			_ret pushBack ["2ndLife_EMS_1",nil,2];
+			_ret pushBack ["2ndLife_EMSWING_4",nil,2];
+		};
 	};
 	
 	//Hats
@@ -37,7 +65,6 @@ switch (_filter) do
 	{
 		[
 			["firehat", nil, 2],
-			["A3L_medic_helmet", nil, 2],
 			["ACE_helmet", nil, 2],
 			["H_CrewHelmetHeli_B", nil, 2]
 		];
