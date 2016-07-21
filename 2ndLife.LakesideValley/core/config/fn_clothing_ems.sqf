@@ -64,6 +64,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["TRYK_H_woolhat", nil, 2],
+			["TRYK_H_woolhat_WH", nil, 2],
+			["H_Beret_blk", nil, 2],
 			["firehat", nil, 2],
 			["ACE_helmet", nil, 2],
 			["H_CrewHelmetHeli_B", nil, 2]
@@ -75,6 +78,7 @@ switch (_filter) do
 	{
 		[
 			["G_Diving",nil,50],
+			["G_Bandanna_blk",nil,2],
 			//beards
 			["SFG_Tac_smallBeardB",nil,2],
 			["SFG_Tac_smallBeardD",nil,2],
@@ -99,7 +103,6 @@ switch (_filter) do
 			//bears end
 
 			["A3L_FatHead",nil,2],
-			["G_Lady_Blue","Damenbrille",10],
 			["Payday_Cagoule",nil,2],
 			["Masque_Chirurgical",nil,2],
 			["Masque_Solitaire",nil,2],
