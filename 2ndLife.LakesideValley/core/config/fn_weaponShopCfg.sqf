@@ -413,8 +413,7 @@ switch(_shop) do
 					["ItemCompass",nil,50],
 					["ItemWatch",nil,10],
 					["A3L_Sign2","Weed Sign(Secondary Slot)",1000],
-					["A3L_Sign","Police Sign(Secondary Slot)",1000],
-					["Tv_Camera","TV Camera(Secondary Slot)",2520]
+					["A3L_Sign","Police Sign(Secondary Slot)",1000]
 				]
 			];
         };
