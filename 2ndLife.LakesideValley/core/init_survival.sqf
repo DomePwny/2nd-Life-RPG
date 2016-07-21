@@ -19,7 +19,6 @@
 [] spawn {
 	while {true} do {
 		sleep 900;
-		[] call SOCK_fnc_updateRequest;
 		[8] call SOCK_fnc_updatePartial;
 	};
 };
