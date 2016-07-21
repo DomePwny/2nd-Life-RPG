@@ -12,6 +12,7 @@ player createDiarySubject ["serverrules","General Rules"];
 			"", //Subsection
 				"
 				TEXT HERE<br/><br/>
+				More TEXT <<<--- Change
 				"
 		]
 	];
