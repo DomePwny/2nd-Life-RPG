@@ -8,8 +8,8 @@ private["_vehicle", "_controll", "_liter", "_completeliter", "_costs", "_vehicle
 
 _vehicleArray = nearestObjects[getPos player, ["Landvehicle"],5];
 
-if(count _vehicleArray == 0) exitwith { hint "Kein Fahrzeug gefunden"};
-if(count _vehicleArray > 1 ) exitwith { hint "Es wurde mehr als ein Fahrzeug im Umkreis von 5 Metern gefunden! Bitte entferne alle weiteren Fahrzeuge...";};
+if(count _vehicleArray == 0) exitwith {["Kein Fahrzeug gefunden", false] spawn domsg;};
+if(count _vehicleArray > 1 ) exitwith {["Es wurde mehr als ein Fahrzeug im Umkreis von 5 Metern gefunden! Bitte entferne alle weiteren Fahrzeuge...", false] spawn domsg;};
 
 _vehicle = (_vehicleArray select 0);
 
@@ -48,7 +48,7 @@ switch(true)do
 	case (_vehicle iskindof "O_MRAP_02_F"): {_liter = 0.00900; _completeliter = 125;};
 	case (_vehicle iskindof "O_MRAP_02_hmg_F"): {_liter = 0.00900; _completeliter = 125;};
 	case (_vehicle iskindof "B_Quadbike_01_F"): {_liter = 0.00900; _completeliter = 25;};
-	default {hint "Dein Fahrzeug kann nicht gefunden werden, melde das dringend einem Admin. Tanke nun Super mit einem Tank von 50 Litern.";_liter = 0.02; _completeliter = 50;}
+	default {["Tanke nun Super mit einem Tank von 100 Litern.", false] spawn domsg; _liter = 0.01; _completeliter = 100;};
 };
 
 //GET VEHICLE Fuel Percent
@@ -67,8 +67,8 @@ _action = [
 
 if(_action) then {
 	
-	if(fuel _vehicle > 0.99) exitWith {hint "Dein Fahrzeug ist bereits voll betankt"; 5 cutText ["","PLAIN"];};
-	if(cash_in_bank < _cost) exitWith {hint format["Du hast nicht genügend Geld auf der Bank! Du benötigst %1",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"];};
+	if(fuel _vehicle > 0.99) exitWith {["Dein Fahrzeug ist bereits voll betankt", false] spawn domsg;};
+	if(cash_in_bank < _cost) exitWith {["Du hast nicht genügend Geld auf der Bank!", false] spawn domsg;};
 	cash_in_bank = cash_in_bank - _cost;
 	
 	//Setup our progress bar.
@@ -97,16 +97,11 @@ if(_action) then {
 	if (round (fuel _vehicle) > 0.99) then {
 		_vehicle setFuel 1;
 		5 cutText ["","PLAIN"];
-		hint format ["Dein Fahrzeug %1 wurde für %2€ vollgetankt. Wir wünschen eine gute Weiterfahrt" , _vehicleName,[_cost] call life_fnc_numberText];
+		["Dein Fahrzeug wurde vollgetankt. Wir wünschen eine gute Weiterfahrt", false] spawn domsg;
 
 	};
 	
 	
 } else {
-	hint "Betankung abgebrochen";
+	["Betankung abgebrochen", false] spawn domsg;;
 };
-
-
-
-
-
