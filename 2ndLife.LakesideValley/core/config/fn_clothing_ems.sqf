@@ -20,16 +20,19 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		if(__GETC__(life_mediclevel) == 1) then {
+		if(__GETC__(life_mediclevel) == 1) then 
+		{
 			_ret pushBack ["2ndLife_EMS1",nil,2];
 		};
-		if(__GETC__(life_mediclevel) == 2) then {
+		if(__GETC__(life_mediclevel) == 2) then 
+		{
 			_ret pushBack ["2ndLife_EMS1",nil,2];
 			_ret pushBack ["2ndLife_EMS2",nil,2];
 			_ret pushBack ["2ndLife_EMS3",nil,2];
 			_ret pushBack ["2ndLife_EMS4",nil,2];
 		};
-		if(__GETC__(life_mediclevel) == 3) then {
+		if(__GETC__(life_mediclevel) == 3) then 
+		{
 			_ret pushBack ["2ndLife_EMS1",nil,2];
 			_ret pushBack ["2ndLife_EMS2",nil,2];
 			_ret pushBack ["2ndLife_EMS3",nil,2];
@@ -37,7 +40,8 @@ switch (_filter) do
 			_ret pushBack ["2ndLife_EMS5",nil,2];
 			_ret pushBack ["2ndLife_EMS6",nil,2];
 		};
-		if(__GETC__(life_mediclevel) == 4) then {
+		if(__GETC__(life_mediclevel) == 4) then 
+		{
 			_ret pushBack ["2ndLife_EMS1",nil,2];
 			_ret pushBack ["2ndLife_EMS2",nil,2];
 			_ret pushBack ["2ndLife_EMS3",nil,2];
@@ -47,7 +51,8 @@ switch (_filter) do
 			_ret pushBack ["2ndLife_EMS7",nil,2];
 			_ret pushBack ["2ndLife_EMS8",nil,2];
 		};
-		if(__GETC__(life_mediclevel) == 5) then {
+		if(__GETC__(life_mediclevel) == 5) then 
+		{
 			_ret pushBack ["2ndLife_EMS1",nil,2];
 			_ret pushBack ["2ndLife_EMS2",nil,2];
 			_ret pushBack ["2ndLife_EMS3",nil,2];
