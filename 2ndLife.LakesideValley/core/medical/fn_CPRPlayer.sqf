@@ -85,7 +85,7 @@ _chance = round (random 1000);
 if(_chance < 150) then {
 	[profileName,"CPR"] remoteExec ["life_fnc_revived",_target];
 	sleep 2;
-	if(_target getVariable["Revive",FALSE]) then { ["Du hast die Person wiederbelebt.", false] spawn domsg; } else { ["Du hast die Person stabilisiert.", false] spawn domsg; };
+	if(_target getVariable["CPR",FALSE]) then { ["Du hast die Person stabilisiert.", false] spawn domsg; };
 	_pid = _target getVariable["steam64ID",""];
 	if(_targetName == "Unknown" || _targetName == "" || _pid == "") then {
 		hideBody _target;
