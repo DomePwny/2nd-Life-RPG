@@ -58,8 +58,7 @@ while {true} do
 	if(life_interrupted) exitWith {};
 	if((player getVariable["restrained",false])) exitWith {};
 	if(player distance _target > 5) exitWith {};
-	if(_target getVariable["Revive",FALSE]) exitWith {};
-	if(_target getVariable["CPR",ObjNull] != player) exitWith {};
+	if(_target getVariable["CPR",ObjNull] != player) exitWith {["Jemand versucht die Person schon zu stabilisieren.", false] spawn domsg; 5 cutText ["","PLAIN"];};
 };
 
 if(player distance _target > 4) exitWith { [localize "STR_Medic_TooFar", false] spawn domsg; life_action_inUse = false; };
@@ -69,13 +68,9 @@ if(player distance _target > 4) exitWith { [localize "STR_Medic_TooFar", false] 
 
 player playActionNow "stop";
 
-if(_target getVariable ["CPR",ObjNull] != player) exitWith { ["Jemand versucht die Person schon zu stabilisieren.", false] spawn domsg; };
-
 _target setVariable["CPR",NIL,TRUE];
 
 if(deadPlayer OR life_istazed) exitWith {life_action_inUse = false;};
-
-if(_target getVariable["Revive",FALSE]) exitWith {hint localize "STR_Medic_RevivedRespawned"};
 
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 
@@ -85,7 +80,7 @@ _chance = round (random 1000);
 if(_chance < 150) then {
 	[profileName,"CPR"] remoteExec ["life_fnc_revived",_target];
 	sleep 2;
-	if(_target getVariable["CPR",FALSE]) then { ["Du hast die Person stabilisiert.", false] spawn domsg; };
+	["Du hast die Person stabilisiert.", false] spawn domsg;
 	_pid = _target getVariable["steam64ID",""];
 	if(_targetName == "Unknown" || _targetName == "" || _pid == "") then {
 		hideBody _target;
