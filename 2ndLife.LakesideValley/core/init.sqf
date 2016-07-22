@@ -197,6 +197,10 @@ switch (playerSide) do
 [] execFSM "core\fsm\client.fsm";
 waitUntil {!(isNull (findDisplay 46))};
 
+//[] spawn life_fnc_fuelCheck;
+[] spawn life_fnc_fuelConfig;
+[] spawn life_fnc_initFuelAction; 
+
 player addRating 99999999;
 
 life_sidechat = true;
