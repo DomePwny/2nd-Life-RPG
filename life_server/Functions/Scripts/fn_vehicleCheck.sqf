@@ -53,6 +53,6 @@ switch(true)do
 	case ((_vehicle select 0) iskindof "Jonzie_Tanker_Truck"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "Nhz_audia8limo"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "wirk_h3_limo"): {call life_fnc_diesel};
-	default {hint "Dein Fahrzeug kann nicht gefunden werden, melde das dringend einem Admin. Tanke nun Super mit einem Tank von 50 Litern."; call life_fnc_super; diag_log format["FUEL SCRIPT: MISSING VEHICLE %1",(_vehicle select 0)];}
+	default {call life_fnc_super};
 	};
 

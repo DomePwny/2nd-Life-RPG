@@ -94,14 +94,12 @@ if(_action) then {
 		
 	};
 		
-	if (round (fuel _vehicle) > 0.99) then {
-		_vehicle setFuel 1;
+	if (fuel _vehicle > 0.99) then {
 		5 cutText ["","PLAIN"];
-		["Dein Fahrzeug wurde vollgetankt. Wir wünschen eine gute Weiterfahrt", false] spawn domsg;
-
+		hint format ["Dein Fahrzeug %1 wurde für %2€ vollgetankt. Wir wuenschen eine gute Weiterfahrt" , _vehicleName,[_cost] call life_fnc_numberText];
 	};
 	
 	
 } else {
-	["Betankung abgebrochen", false] spawn domsg;;
+	["Betankung abgebrochen", false] spawn domsg;
 };

@@ -5,7 +5,7 @@
 	Description: LKW's tanken Diesel?
 */
 
-private["_vehicle", "_controll", "_liter", "_completeliter", "_costs", "_vehicleFuelold", "_ui", "_progress", "_pgText", "_cP", "_vehicleName"];
+private["_vehicle", "_controll", "_liter", "_completeliter", "_costs", "_vehicleFuelold", "_vehicleArray", "_ui", "_progress", "_pgText", "_cP", "_vehicleName"];
 
 _vehicleArray = nearestObjects[getPos player, ["Landvehicle"],5];
 
@@ -103,10 +103,9 @@ if(_action) then {
 	if (fuel _vehicle > 0.99) then {
 		5 cutText ["","PLAIN"];
 		hint format ["Dein Fahrzeug %1 wurde für %2€ vollgetankt. Wir wuenschen eine gute Weiterfahrt" , _vehicleName,[_cost] call life_fnc_numberText];
-		cash_in_hand - _cost;
 	};
 	
 	
 } else {
-	hint "Betankung abgebrochen";
+	["Betankung abgebrochen", false] spawn domsg;
 };
