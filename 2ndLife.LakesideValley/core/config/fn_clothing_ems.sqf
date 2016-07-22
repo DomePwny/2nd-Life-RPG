@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_bruce.sqf
 	
@@ -5,13 +6,15 @@
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
-private["_filter"];
-_filter = param [0,0,[0]];
+private["_filter","_ret"];
+_filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
 ctrlSetText[3103,"EMS Kleidungsladen"];
 
+
+_ret = [];
 switch (_filter) do
 {
 	//Uniforms
