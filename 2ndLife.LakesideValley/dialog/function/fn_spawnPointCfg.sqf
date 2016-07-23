@@ -28,7 +28,7 @@ switch (_side) do
 	case civilian:
 	{
 
-		if(!license_civ_rebel) then {
+		if((call life_mafialevel) < 1) then {
 			_return = [
 				["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -49,17 +49,11 @@ switch (_side) do
 			};	
 		};
 
-		if(license_civ_rebel && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
+		if((call life_mafialevel) > 0) && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
 
 			_return = [
-				["reb_spawn_1","Rebellen Stadt","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_2","Rebellen Posten","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","San Crist","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_1","Mafia Stadt","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_2","Mafia Posten","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 
 
@@ -74,7 +68,7 @@ switch (_side) do
 				} foreach life_houses;
 			};	
 		};
-		if(license_civ_rebel && (rebelshipment getVariable["progress",FALSE]) || license_civ_rebel && (rebelshipment getVariable["notCaptured",FALSE])) then {
+		if((call life_mafialevel) < 1) && (rebelshipment getVariable["progress",FALSE]) || (call life_mafialevel) > 0) && (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
 				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
