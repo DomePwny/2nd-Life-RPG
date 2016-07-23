@@ -102,15 +102,15 @@ switch (_side) do {
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 	};
 	case east: {
-		_tmp = _queryResult select 9;
-		_queryResult set[9,[_tmp] call DB_fnc_numberSafe];
+		_tmp = _queryResult select 10;
+		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 
-		_new = _queryResult select 10;
+		_new = _queryResult select 11;
 		_new = format["%1", _new];
-		_queryResult set[10,_new];
+		_queryResult set[11,_new];
 
-		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
-		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];	
+		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
+		_queryResult set[12,([_queryResult select 12,1] call DB_fnc_bool)];	
 		_houseData = _uid call TON_fnc_fetchPlayerHouses;
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
 		_gangData = _uid call TON_fnc_queryPlayerGang;
