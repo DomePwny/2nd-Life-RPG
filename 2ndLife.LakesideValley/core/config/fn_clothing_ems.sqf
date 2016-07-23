@@ -30,6 +30,7 @@ switch (_filter) do
 			_ret pushBack ["2ndLife_EMS2",nil,2];
 			_ret pushBack ["2ndLife_EMS3",nil,2];
 			_ret pushBack ["2ndLife_EMS4",nil,2];
+			_ret pushBack ["2ndLife_EMSWING_4",nil,2];
 		};
 		if(__GETC__(life_mediclevel) == 3) then 
 		{
@@ -39,6 +40,7 @@ switch (_filter) do
 			_ret pushBack ["2ndLife_EMS4",nil,2];
 			_ret pushBack ["2ndLife_EMS5",nil,2];
 			_ret pushBack ["2ndLife_EMS6",nil,2];
+			_ret pushBack ["2ndLife_EMSWING_4",nil,2];
 		};
 		if(__GETC__(life_mediclevel) == 4) then 
 		{
@@ -50,6 +52,7 @@ switch (_filter) do
 			_ret pushBack ["2ndLife_EMS6",nil,2];
 			_ret pushBack ["2ndLife_EMS7",nil,2];
 			_ret pushBack ["2ndLife_EMS8",nil,2];
+			_ret pushBack ["2ndLife_EMSWING_4",nil,2];
 		};
 		if(__GETC__(life_mediclevel) == 5) then 
 		{
