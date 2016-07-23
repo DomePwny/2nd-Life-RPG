@@ -14,33 +14,6 @@ if ((_vehicle select 0) iskindof "Air") exitwith { hint "Ein Hubschrauber kann n
 switch(true)do
 {
 	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
-	case ((_vehicle select 0) iskindof "C_Offroad_01_F"): {call life_fnc_super};
 	case ((_vehicle select 0) iskindof "A3L_F350Black"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "A3L_F350Blue"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "A3L_F350Red"): {call life_fnc_diesel};

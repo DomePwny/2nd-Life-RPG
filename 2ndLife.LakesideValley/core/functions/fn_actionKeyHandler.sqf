@@ -137,7 +137,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 			if(_chance > 60 && !license_civ_rifle) then {
 				["dnopermit", false] remoteExec ["fnc_dispatch",west];	
 			};
-			[_curTarget] spawn fnc_gut_animal;	
+			[_curTarget] spawn fnc_gutanimal;	
 		} else {
 			//OK, it wasn't a vehicle so let's see what else it could be?
 			if((typeOf _curTarget) in _miscItems) then {
