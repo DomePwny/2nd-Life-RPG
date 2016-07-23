@@ -49,7 +49,7 @@ switch (_side) do
 			};	
 		};
 
-		if((call life_mafialevel) > 0) && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
+		if( ((call life_mafialevel) > 0) && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
 
 			_return = [
 				["reb_spawn_1","Mafia Stadt","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -68,7 +68,7 @@ switch (_side) do
 				} foreach life_houses;
 			};	
 		};
-		if((call life_mafialevel) < 1) && (rebelshipment getVariable["progress",FALSE]) || (call life_mafialevel) > 0) && (rebelshipment getVariable["notCaptured",FALSE])) then {
+		if( ((call life_mafialevel) < 1) && (rebelshipment getVariable["progress",FALSE]) || (call life_mafialevel) > 0) && (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
 				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
