@@ -1174,27 +1174,6 @@ life_garage_sell =
 			["A3L_Jetski",25000],
 			["A3L_Jetski_yellow",25000],
 			
-			//Civ Air
-			["Sab_af_An2",150000],
-			["Sab_tk_An2",150000],
-			["Sab_ca_An2",150000],
-			["Sab_ana_An2",150000],
-			["Sab_yel_An2",150000],
-			["Sab_fd_An2",150000],
-			["Sab_Sea2_An2",150000],
-			["Sab_Sea4_An2",150000],
-			["Sab_Amphi_An2",150000],
-			["sab_camel",150000],
-			["IVORY_T6A_1",150000],
-			["ivory_b206",175000],
-			["ivory_b206_news",200000],
-			["CUP_C_DC3_CIV",400000],
-			["CUP_C_C47_CIV",500000],			
-			["GNT_C185",500000],
-			["IVORY_CRJ200_1",500000],
-			["IVORY_ERJ135_1",500000],
-			["IVORY_YAK42D_1",500000],
-			
 			//Civ Truck
 			["A3L_F350Black",3500],
 			["A3L_F350Blue",3500],
