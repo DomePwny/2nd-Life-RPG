@@ -408,6 +408,7 @@ switch(_shop) do
 					["CG_ATF_Pizza_Box_i","Pizza",1400],
 					["CG_ATF_Donut_Box_i","Donuts",1600],				
 					["ItemMap",nil,6],
+					["ItemGPS",nil,110],
 					["Binocular",nil,110],
 					["ToolKit",nil,2500],
 					["ItemCompass",nil,50],
