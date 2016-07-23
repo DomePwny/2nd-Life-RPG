@@ -18,7 +18,7 @@ if(isNull _sender) exitWith {};
 
 _query = switch(_side) do {
 	case west: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
-	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, maf_licenses, mafialevel, arrested, maf_gear, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
+	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, maf_licenses, mafialevel, maf_gear, arrested, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
 	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
 	case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
 };
