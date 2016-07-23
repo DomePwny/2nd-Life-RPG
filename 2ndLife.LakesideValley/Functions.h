@@ -450,6 +450,7 @@ class Life_Client_Core
 	{
 		file = "core\gangs";
 		class initGang {};
+		class gangDialog {};
 		class createGang {};
 		class gangCreated {};
 		class gangMenu {};

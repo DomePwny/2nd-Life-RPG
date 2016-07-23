@@ -7,7 +7,7 @@
 */
 private["_gangName","_length","_badChar","_chrByte","_allowed"];
 disableSerialization;
-
+if (!(playerside == east)) exitWith {hint "Du gehörst nicht der Mafia an!"};
 _gangName = ctrlText (getControl(2520,2522));
 _length = count (toArray(_gangName));
 _chrByte = toArray (_gangName);
