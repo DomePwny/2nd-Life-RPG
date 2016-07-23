@@ -58,7 +58,7 @@ switch(playerSide) do {
 		
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
-		__CONST__(life_mafialevel, parseNumber(_this select 7)));
+		__CONST__(life_mafialevel, parseNumber(_this select 7));
 		life_houses = _this select 12;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);

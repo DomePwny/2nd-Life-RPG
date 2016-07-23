@@ -27,12 +27,6 @@ if(life_is_arrested) then
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
 
-if((__GETC__(life_mafialevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
-	["NotWhitelisted",false,true] call BIS_fnc_endMission;
-	uiSleep 35;
-};
-
-
 if(side player == east) then {
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
@@ -40,3 +34,8 @@ if(side player == east) then {
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
+
+if((__GETC__(life_mafialevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
+	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+	uiSleep 35;
+};
