@@ -53,14 +53,14 @@ switch (_side) do
 	
 	case east:
 	{
-		if((call (life_mafialevel) == 1) && !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) ) then {
+		if(!(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
 				["reb_spawn_1","Mafia Stadt","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_2","Mafia Posten","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
-		if((call (life_mafialevel) == 1) && (rebelshipment getVariable["progress",FALSE]) || (call (life_mafialevel) == 1) && (rebelshipment getVariable["notCaptured",FALSE])) then {
+		if((rebelshipment getVariable["progress",FALSE]) || (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
 				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -71,6 +71,7 @@ switch (_side) do
 			];
 		};
 	};
+	
 	case independent: {
 		_return = [
 			["medic_spawn_2","Lakeside","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
