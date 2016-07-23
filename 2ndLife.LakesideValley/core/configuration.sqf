@@ -222,6 +222,10 @@ switch (playerSide) do
 		cash_in_bank = 50000;
 		life_paycheck = 500;
 	};
+	case east: {
+		cash_in_bank = 15000;
+		life_paycheck = 400;
+	};
 };
 
 /*

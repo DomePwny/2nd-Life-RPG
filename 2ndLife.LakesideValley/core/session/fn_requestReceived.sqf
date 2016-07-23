@@ -46,6 +46,7 @@ switch(playerSide) do {
 	case west: {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
 		__CONST__(life_medicLevel,0);
+		__CONST__(life_mafialevel,0);
 		life_blacklisted = _this select 9;
 	};
 
@@ -57,6 +58,7 @@ switch(playerSide) do {
 		
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
+		__CONST__(life_mafialevel, parseNumber(_this select 7)));
 		life_houses = _this select 12;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
@@ -79,6 +81,7 @@ switch(playerSide) do {
 		
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
+		__CONST__(life_mafialevel,0);
 		life_houses = _this select 12;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
@@ -95,6 +98,7 @@ switch(playerSide) do {
 	case independent: {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_copLevel,0);
+		__CONST__(life_mafialevel,0);
 	};
 };
 

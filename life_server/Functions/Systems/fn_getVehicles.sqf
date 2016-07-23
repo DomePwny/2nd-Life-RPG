@@ -20,7 +20,7 @@ if(_pid isEqualTo "" OR _side isEqualTo sideUnknown OR _type isEqualTo "" OR isN
 _side = switch(_side) do
 {
 	case west:{"cop"};
-	case east: {"civ"};
+	case east: {"maf"};
 	case civilian: {"civ"};
 	case independent: {"med"};
 	default {"Error"};

@@ -30,7 +30,7 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 			switch (side _x) do
 			{
 				case west: {_type = "Cop"};
-				case east: {_type = "Civ"};
+				case east: {_type = "Maf"};
 				case civilian: {_type = "Civ"};
 				case independent: {_type = "Med"};
 			};
@@ -61,6 +61,3 @@ if(player getVariable["restrained",false] || player getVariable["tied",false]) e
 	[] spawn sms_getinbox;
 	lbSetCurSel [1500, 0];
 	lbSetCurSel [1501,0];
-
-
-

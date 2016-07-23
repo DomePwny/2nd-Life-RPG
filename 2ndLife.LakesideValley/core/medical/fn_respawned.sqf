@@ -43,7 +43,7 @@ switch(playerSide) do
 		_handle = [] spawn life_fnc_copLoadout;
 	};
 	case east: {
-		_handle = [] spawn life_fnc_civLoadout;
+		_handle = [] spawn life_fnc_mafiaLoadout;
 	};	
 	case civilian: {
 		_handle = [] spawn life_fnc_civLoadout;

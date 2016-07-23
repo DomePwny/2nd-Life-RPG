@@ -33,7 +33,7 @@ _text ctrlSetStructuredText parseText format["<img size='1.7' image='\cg_sndimg\
 		switch (side _x) do
 		{
 			case west: {_type = "Cop"};
-			case east: {_type = "Civ"};
+			case east: {_type = "Maf"};
 			case civilian: {_type = "Civ"};
 			case independent: {_type = "EMS"};
 		};

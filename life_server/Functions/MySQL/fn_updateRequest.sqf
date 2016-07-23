@@ -31,7 +31,7 @@ _licenses = [_licenses] call DB_fnc_mresArray;
 
 switch (_side) do {
 case west: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', cop_licenses='%4' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid];};
-case east: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', arrested='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,[_this select 7] call DB_fnc_bool];};
+case east: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', maf_licenses='%4', arrested='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,[_this select 7] call DB_fnc_bool];};
 case civilian: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', civ_licenses='%4', arrested='%6' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,[_this select 7] call DB_fnc_bool];};
 case independent: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_licenses='%4' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid];};
 };

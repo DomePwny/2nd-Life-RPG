@@ -33,7 +33,7 @@ switch(_mode) do {
 		switch(_side) do {
 			case west: {_query = format["UPDATE players SET cop_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 			case civilian: {_query = format["UPDATE players SET civ_licenses='%1' WHERE playerid='%2'",_value,_uid];};
-			case east: {_query = format["UPDATE players SET civ_licenses='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET maf_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 			case independent: {_query = format["UPDATE players SET med_licenses='%1' WHERE playerid='%2'",_value,_uid];};
 		};
 	};
@@ -43,7 +43,7 @@ switch(_mode) do {
 		switch(_side) do {
 			case west: {_query = format["UPDATE players SET cop_gear='%1' WHERE playerid='%2'",_value,_uid];};
 			case civilian: {_query = format["UPDATE players SET civ_gear='%1' WHERE playerid='%2'",_value,_uid];};
-			case east: {_query = format["UPDATE players SET civ_gear='%1' WHERE playerid='%2'",_value,_uid];};
+			case east: {_query = format["UPDATE players SET maf_gear='%1' WHERE playerid='%2'",_value,_uid];};
 			case independent: {_query = format["UPDATE players SET med_gear='%1' WHERE playerid='%2'",_value,_uid];};
 		};
 	};
@@ -81,7 +81,7 @@ switch(_mode) do {
 		switch(_side) do {
 			case west: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', cop_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
 			case civilian: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', civ_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
-			case east: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', civ_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
+			case east: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', maf_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
 			case independent: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', med_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
 		};
 	};

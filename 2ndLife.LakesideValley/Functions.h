@@ -35,6 +35,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class initMafia {};
 	};
 		
 	class Medical_System
@@ -73,6 +74,12 @@ class Life_Client_Core
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
+	};
+	
+	class Mafia	
+	{		
+		file = "core\mafia";		
+		class mafiaLoadout {};	
 	};
 	
 	class Actions

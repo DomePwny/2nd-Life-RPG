@@ -53,7 +53,7 @@ if(isNull _curTarget) exitWith {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian) then {
+		if(playerSide == civilian || playerSide == east) then {
 			if ( life_inv_pickaxe > 0 ) then {
 				[] spawn life_fnc_pickaxeUse;
 			};
@@ -61,7 +61,7 @@ if(isNull _curTarget) exitWith {
 			if ( life_inv_pickaxe > 0) then {
 			[] spawn life_fnc_gather;
 			};
-			if(playerSide == civilian) then {
+			if(playerSide == civilian || playerSide == east) then {
 			[] spawn life_fnc_friedhof;
 			};
 		};
@@ -264,4 +264,3 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		};
 	};
 };
-

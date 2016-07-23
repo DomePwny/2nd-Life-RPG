@@ -192,6 +192,13 @@ switch (playerSide) do
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
+	
+	case east:
+	{
+		//Initialize Mafia
+		_handle = [] spawn life_fnc_initMafia;
+		waitUntil {scriptDone _handle};
+	};
 };
 
 [] execFSM "core\fsm\client.fsm";

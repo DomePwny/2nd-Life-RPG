@@ -13,7 +13,7 @@ if( player distance (getMarkerPos "respawn_civilian") < 33 || player distance (g
 params [["_mode", 0, [0]], "_packet", "_array", "_flag"];
 _packet = [steamid,playerSide,nil,_mode];
 _array = [];
-_flag = switch(playerSide) do {case west: {"cop"}; case east:{"civ"}; case civilian: {"civ"}; case independent: {"med"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case east:{"maf"}; case civilian: {"civ"}; case independent: {"med"};};
 
 switch(_mode) do {
 	case 0: {
