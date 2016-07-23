@@ -51,7 +51,7 @@ switch(playerSide) do {
 	};
 
 	case east: {
-		life_is_arrested = _this select 8;
+		life_is_arrested = _this select 9;
 		life_arrestMinutes = _this select 10;
 		life_arrestReason = _this select 11;
 		streamSaftey = _this select 12;
