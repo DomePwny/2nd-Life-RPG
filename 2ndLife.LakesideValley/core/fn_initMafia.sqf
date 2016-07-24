@@ -24,8 +24,6 @@ if((__GETC__(life_coplevel) > 0) && (__GETC__(life_adminlevel) == 0)) then {
 	};
 };
 
-&& (__GETC__(life_coplevel) > 0) 
-
 if(life_is_arrested) then
 {
 	jail_money_init = false;
