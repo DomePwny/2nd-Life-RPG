@@ -7,7 +7,7 @@
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curTarget","_isWater", "_veh"];
+private["_curTarget","_isWater", "_veh","_spikeStrips"];
 if(vehicle player != player) exitWith {
 	_units = [];
 	{if(vehicle _x != _x && player distance _x < 20 && !(_x in crew (vehicle player)) && _x == (driver (vehicle _x))) then {_units pushBack _x};} forEach playableUnits;
@@ -35,7 +35,7 @@ if(_isWater) then {
 };
 
 _spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
-if !(_spikeStrips isEqualTo []) then {
+if !(_spikeStrips isEqualTo [""]) then {
 	deletevehicle _spikeStrips;
 	["You picked up some spike strips!", false] spawn domsg; 
 	player additem "CG_Spikes_Collapsed";

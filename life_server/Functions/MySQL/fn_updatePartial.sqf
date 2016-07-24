@@ -79,10 +79,10 @@ switch(_mode) do {
 		_gear = param [6,[],[[]]];
 		_gear = [_gear] call DB_fnc_mresArray;
 		switch(_side) do {
-			case west: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', cop_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
-			case civilian: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', civ_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
-			case east: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', maf_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
-			case independent: {_query = format["UPDATE players SET cash='%1', bankacc='%2', donatorlvl='%3', med_gear='%4' WHERE playerid='%5'",_cash,_bank,_gear,_uid]};
+			case west: {_query = format["UPDATE players SET cash='%1', bankacc='%2', cop_gear='%3' WHERE playerid='%4'",_cash,_bank,_gear,_uid]};
+			case civilian: {_query = format["UPDATE players SET cash='%1', bankacc='%2', civ_gear='%3' WHERE playerid='%4'",_cash,_bank,_gear,_uid]};
+			case east: {_query = format["UPDATE players SET cash='%1', bankacc='%2', maf_gear='%3' WHERE playerid='%4'",_cash,_bank,_gear,_uid]};
+			case independent: {_query = format["UPDATE players SET cash='%1', bankacc='%2', med_gear='%3' WHERE playerid='%4'",_cash,_bank,_gear,_uid]};
 		};
 	};
 };

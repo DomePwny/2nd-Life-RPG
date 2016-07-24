@@ -19,9 +19,7 @@
 [] spawn {
 	while {true} do {
 		sleep 600;
-		[7] call SOCK_fnc_updatePartial;
-		[3] call SOCK_fnc_updatePartial;
-		[6] call SOCK_fnc_updatePartial;
+		[8] call SOCK_fnc_updatePartial;
 		systemChat "Dein Spielstand wurde automatisch gespeichert.";
 	};
 };
@@ -527,9 +525,7 @@
 
 	fnc_totalatm =
 	{
-		if(paid_recently) exitwith {
-	
-		};
+		if(paid_recently) exitwith {};
 		myatmbonus = _this;
 		paid_recently = true;
 
@@ -604,15 +600,6 @@
 			_fuck ctrlshow false;
 		};
 	};
-
-
-
-
-
-
-
-
-
 
 	fnc_kearth = {
 		closedialog 0;

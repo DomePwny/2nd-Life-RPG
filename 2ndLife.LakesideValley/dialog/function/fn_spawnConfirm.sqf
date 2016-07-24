@@ -95,5 +95,4 @@ else
 	if(life_respawned) then {
 		life_respawned = false;
 	};
-	["Press F10 to bring up the Location Finder!", false] spawn domsg;
 };
