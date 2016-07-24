@@ -379,6 +379,7 @@ life_inv_items =
 life_licenses =
 [
 	["license_civ_MDMA","civ"],
+	["license_civ_MDMA","maf"],
 	["license_civ_meth","civ"],
 	["license_civ_coke","civ"],
 	["license_cop_air","cop"],
