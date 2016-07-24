@@ -15,7 +15,7 @@ _list = _display displayCtrl 1338;
 lbClear _list;
 
 {
-	_side = switch(side _x) do {case west: {"Cop"}; case east : {"Civ"}; case civilian : {"Civ"}; case independent : {"Medic"}; default {"Unknown"};};
+	_side = switch(side _x) do {case west: {"Cop"}; case east : {"Maf"}; case civilian : {"Civ"}; case independent : {"Medic"}; default {"Unknown"};};
 	if(_side in ["Civ","Medic"]) then {
 		_list lbAdd format["%1 - %2", name _x,_side];
 		_list lbSetdata [(lbSize _list)-1,str(_x)];

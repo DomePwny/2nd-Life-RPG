@@ -14,10 +14,17 @@ TF_terrain_interception_coefficient = 1;
 
 private["_spawnPos"];
 
-if((__GETC__(life_mafialevel) == 0) && (__GETC__(life_coplevel) > 0) && (__GETC__(life_adminlevel) == 0)) then {
-	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+if((__GETC__(life_coplevel) > 0) && (__GETC__(life_adminlevel) == 0)) then {
+	["NotCopMafia",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
+} else {
+	if((__GETC__(life_mafialevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
+		["NotMafia",false,true] call BIS_fnc_endMission;
+		uiSleep 35;
+	};
 };
+
+&& (__GETC__(life_coplevel) > 0) 
 
 if(life_is_arrested) then
 {

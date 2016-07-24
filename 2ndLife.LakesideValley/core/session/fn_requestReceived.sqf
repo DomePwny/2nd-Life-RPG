@@ -46,7 +46,7 @@ switch(playerSide) do {
 	case west: {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
 		__CONST__(life_medicLevel,0);
-		__CONST__(life_mafialevel,0);
+		__CONST__(life_mafialevel, parseNumber(_this select 10));
 		life_blacklisted = _this select 9;
 	};
 
@@ -56,16 +56,16 @@ switch(playerSide) do {
 		life_arrestReason = _this select 11;
 		streamSaftey = _this select 12;
 		
-		__CONST__(life_coplevel, 0);
+		__CONST__(life_coplevel, parseNumber(_this select 13));
 		__CONST__(life_medicLevel, 0);
 		__CONST__(life_mafialevel, parseNumber(_this select 7));
-		life_houses = _this select 13;
+		life_houses = _this select 14;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = _this select 14;
+		life_gangData = _this select 15;
 		if(count life_gangData != 0) then {
 			[] call life_fnc_initGang;
 		};

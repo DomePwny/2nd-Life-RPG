@@ -16,7 +16,7 @@ TF_terrain_interception_coefficient = 1;
 private["_spawnPos"];
 
 if((__GETC__(life_mafialevel) == 1) && (__GETC__(life_adminlevel) == 0)) then {
-	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+	["NotCiv",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
 };
 

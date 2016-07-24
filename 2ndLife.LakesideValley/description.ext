@@ -555,6 +555,46 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
+	
+	class NotMafia
+	{
+		title = "Mafia Slot";
+		subtitle = "Du bist kein Mitglied der Mafia!";
+		description = "Es steht dir frei, dich als Mitglied der Mafia zu bewerben. Sollte dies ein Fehler sein, melde dich bitte im Support.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCop
+	{
+		title = "Cop Slot";
+		subtitle = "Du bist kein Mitglied der Polizei!";
+		description = "Es steht dir frei, dich für den Polizeidienst zu bewerben. Sollte dies ein Fehler sein, melde dich bitte im Support";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCopMafia
+	{
+		title = "Falsche Seite des Gesetzes";
+		subtitle = "Du darfst entweder der Mafia oder der Polizei angehören!";
+		description = "Es ist einem Polizisten nicht gestattet als Mafia zu spielen und umgekehrt!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCiv
+	{
+		title = "Zivilisten Slot";
+		subtitle = "Du bist für höheres bestimmt!";
+		description = "Du gehörst der Mafia an. Du willst doch nicht wirklich in dein altes Zivi-Leben zurück?!?";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
 class CfgNotifications
