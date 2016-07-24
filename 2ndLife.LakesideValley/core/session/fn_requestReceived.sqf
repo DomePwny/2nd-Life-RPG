@@ -74,15 +74,15 @@ switch(playerSide) do {
 
 	
 	case civilian: {
-		life_is_arrested = _this select 7;
-		life_arrestMinutes = _this select 9;
-		life_arrestReason = _this select 10;
-		streamSaftey = _this select 11;
+		life_is_arrested = _this select 9;
+		life_arrestMinutes = _this select 10;
+		life_arrestReason = _this select 11;
+		streamSaftey = _this select 12;
 		
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
-		__CONST__(life_mafialevel,0);
-		life_houses = _this select 12;
+		__CONST__(life_mafialevel, parseNumber(_this select 7));
+		life_houses = _this select 13;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;

@@ -19,7 +19,7 @@ if(isNull _sender) exitWith {};
 _query = switch(_side) do {
 	case west: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	case east: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, maf_licenses, mafialevel, maf_gear, arrested, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
-	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, mafialevel, civ_gear, arrested, jailtime, arrestreason, streamSaftey FROM players WHERE playerid='%1'",_uid];};
 	case independent: {format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
 };
 _tickTime = diag_tickTime;
@@ -117,15 +117,15 @@ switch (_side) do {
 		_queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
 	};
 	case civilian: {
-		_tmp = _queryResult select 9;
-		_queryResult set[9,[_tmp] call DB_fnc_numberSafe];
+		_tmp = _queryResult select 10;
+		_queryResult set[10,[_tmp] call DB_fnc_numberSafe];
 
-		_new = _queryResult select 10;
+		_new = _queryResult select 11;
 		_new = format["%1", _new];
-		_queryResult set[10,_new];
+		_queryResult set[11,_new];
 
-		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
-		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];	
+		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
+		_queryResult set[12,([_queryResult select 12,1] call DB_fnc_bool)];	
 		_houseData = _uid call TON_fnc_fetchPlayerHouses;
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
 	};
