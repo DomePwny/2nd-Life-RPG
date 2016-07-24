@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2901.9319,563.84076,5672.5308};
+		pos[]={2755.2927,816.68158,5621.2725};
 		dir[]={-0.004202019,-0.99994999,-0.0090740649};
 		up[]={-0.42019013,0.00999978,-0.90738112};
 		aside[]={-0.90742648,0,0.42021114};
@@ -3653,7 +3653,7 @@ class Mission
 			position[]={2880.342,362.59351,5519.8379};
 			name="reb_spawn_1";
 			type="Empty";
-			angle=177.2133;
+			angle=177.21329;
 			id=333;
 			atlOffset=-33.076172;
 		};
@@ -20871,6 +20871,7 @@ class Mission
 					};
 					id=1583;
 					type="C_man_polo_2_F";
+					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21365,7 +21366,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'playerside == east'];";
+						init=" removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",mafia,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'playerside == east'];";
 						name="reb_1_3";
 					};
 					id=1604;
@@ -23202,8 +23203,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -23212,10 +23213,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -23259,8 +23260,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -23269,10 +23270,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -41456,7 +41457,7 @@ class Mission
 			alpha=0.20009999;
 			a=170;
 			b=110;
-			angle=226.22182;
+			angle=226.2218;
 			id=3205;
 			atlOffset=6.0507318e+011;
 		};
