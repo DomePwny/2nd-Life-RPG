@@ -5,8 +5,8 @@
 	Blah
 */
 
-params [["_group", grpNull, [grpNull]], "_groupID", "_result"];
-
+private["_group","_groupID"];
+_group = param [0,grpNull,[grpNull]];
 if(isNull _group) exitWith {};
 
 _groupID = _group getVariable["gang_id",-1];
