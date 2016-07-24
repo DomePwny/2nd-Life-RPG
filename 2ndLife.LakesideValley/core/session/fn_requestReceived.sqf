@@ -65,7 +65,7 @@ switch(playerSide) do {
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = _This select 14;
+		life_gangData = _this select 14;
 		if(count life_gangData != 0) then {
 			[] call life_fnc_initGang;
 		};
@@ -88,10 +88,6 @@ switch(playerSide) do {
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = _This select 13;
-		if(count life_gangData != 0) then {
-			[] call life_fnc_initGang;
-		};
 		[] call life_fnc_initHouses;
 	};
 	
