@@ -5,12 +5,17 @@
 	Inserts the gang into the database.
 */
 
-params [["_sender", objNull, [objNull]], ["_uid", "", [""]], ["_gangName", "", [""]], "_query", "_queryResult", "_gangMembers", "_group"];
+private ["_query","_queryResult","_gangMembers","_group"];
+params [
+	["_ownerID",objNull,[objNull]],
+	["_uid","",[""]],
+	["_gangName","",[""]]
+];
+_group = group _ownerID;
 
-_group = group _sender;
+if(isNull _ownerID OR _uid isEqualTo "" OR _gangName isEqualTo "") exitWith {}; 
 
-if(isNull _sender OR _uid isEqualTo "" OR _gangName isEqualTo "") exitWith {}; 
-
+_ownerID = owner _ownerID;
 _gangName = [_gangName] call DB_fnc_mresString;
 _query = format["SELECT id FROM gangs WHERE name='%1' AND active='1'",_gangName];
 
@@ -18,8 +23,8 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 
 if(count _queryResult != 0) exitWith {
-	[1,"There is already a gang created with that name please pick another name."] remoteExecCall ["life_fnc_broadcast", _sender];
-	["life_action_gangInUse",nil,missionNamespace] remoteExecCall ["life_fnc_netSetVar",_sender];
+	[1,"There is already a gang created with that name please pick another name."] remoteExecCall ["life_fnc_broadcast", _ownerID];
+	["life_action_gangInUse",nil,missionNamespace] remoteExecCall ["life_fnc_netSetVar",_ownerID];
 };
 
 _query = format["SELECT id FROM gangs WHERE members LIKE '%2%1%2' AND active='1'",_uid,"%"];
@@ -27,8 +32,8 @@ _query = format["SELECT id FROM gangs WHERE members LIKE '%2%1%2' AND active='1'
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 if(count _queryResult != 0) exitWith {
-	[1,"You are currently already active in a gang, please leave the gang first."] remoteExecCall ["life_fnc_broadcast", _sender];
-	["life_action_gangInUse",nil,missionNamespace] remoteExecCall ["life_fnc_netSetVar", _sender];
+	[1,"You are currently already active in a gang, please leave the gang first."] remoteExecCall ["life_fnc_broadcast", _ownerID];
+	["life_action_gangInUse",nil,missionNamespace] remoteExecCall ["life_fnc_netSetVar", _ownerID];
 };
 
 _query = format["SELECT id, active FROM gangs WHERE name='%1' AND active='0'",_gangName];
@@ -49,15 +54,12 @@ _group setVariable["gang_owner",_uid,true];
 _group setVariable["gang_bank",0,true];
 _group setVariable["gang_maxMembers",8,true];
 _group setVariable["gang_members",[_uid],true];
-[_group] remoteExec ["life_fnc_gangCreated",_sender];
+[_group] remoteExec ["life_fnc_gangCreated",_ownerID];
 
-[_uid] spawn {
-	_uid = _this select 0;
-	uiSleep 0.35;
-	_query = format["SELECT id FROM gangs WHERE owner='%1' AND active='1'",_uid];
 
-	_queryResult = [_query,2] call DB_fnc_asyncCall;
+uiSleep 0.35;
+_query = format["SELECT id FROM gangs WHERE owner='%1' AND active='1'",_uid];
 
-	_group setVariable["gang_id",(_queryResult select 0),true];
-};
+_queryResult = [_query,2] call DB_fnc_asyncCall;
 
+_group setVariable["gang_id",(_queryResult select 0),true];
