@@ -2604,7 +2604,7 @@ fnc_item_CG = {
 
 _markerNoCops = ["Dealer_1_3_1","coke_2","coke_1","coke_3","MDMA_1","MDMA_zone_1","coke_zone_1","coke_zone_1_1","coke_zone_1_2","Coke Processing_1","weed_field","meth_zone_1","meth_1","Weed_p_1","Meth Processing","MDMA Processing"];
 
-if (playerSide != civilian) then {
+if (playerSide != civilian && playerSide != east) then {
 	{ deleteMarkerLocal _x; } forEach _markerNoCops;
 };
 
