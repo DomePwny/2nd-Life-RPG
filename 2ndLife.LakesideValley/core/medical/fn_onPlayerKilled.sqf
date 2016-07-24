@@ -124,9 +124,6 @@ _unit spawn
 };
 
 [] spawn life_fnc_deathScreen;
-[7] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
-[6] call SOCK_fnc_updatePartial;
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn
 {
