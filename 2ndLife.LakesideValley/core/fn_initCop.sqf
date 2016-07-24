@@ -22,7 +22,7 @@ if(life_blacklisted) exitWith
 	uiSleep 30;
 };
 
-if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
+if((__GETC__(life_coplevel) == 0) && (__GETC__(life_mafialevel) == 1) && (__GETC__(life_adminlevel) == 0)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
 };

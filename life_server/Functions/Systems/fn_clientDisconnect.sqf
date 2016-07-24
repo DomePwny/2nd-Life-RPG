@@ -43,7 +43,7 @@ if(_unit getVariable ["loaded", true] && {!isNil "_cash"} && {!isNil "_bank"} &&
 	_side = switch(side _unit) do {
 		case west: {"cop"};
 		case civilian: {"civ"};
-		case east: {"civ"};
+		case east: {"maf"};
 		case independent: {"med"};
 	};
 	_query = format["UPDATE players SET cash='%1',bankacc='%2',%3_gear='%4' WHERE playerid='%5'",_cash,_bank,_side,_gear,_uid];

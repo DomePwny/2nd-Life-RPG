@@ -15,6 +15,10 @@ TF_terrain_interception_coefficient = 1;
 
 private["_spawnPos"];
 
+if((__GETC__(life_mafialevel) == 1) && (__GETC__(life_adminlevel) == 0)) then {
+	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+	uiSleep 35;
+};
 
 if(life_is_arrested) then
 {
@@ -37,8 +41,3 @@ if(side player == civilian) then {
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
-
-if((__GETC__(life_mafialevel) == 1)) then {
-	["NotWhitelisted",false,true] call BIS_fnc_endMission;
-	uiSleep 35;
-};
