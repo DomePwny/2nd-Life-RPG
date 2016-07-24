@@ -43570,7 +43570,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; if(isNil getVariable "gang_id") then {this addAction[""Gang Erstellen"",life_fnc_gangDialog];} else {this addAction[""Gang Menü"",life_fnc_gangmenu];};";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Gang Erstellen"",life_fnc_gangDialog]; this addAction[""Gang Menü"",life_fnc_gangmenu];";
 						name="reb_gang";
 					};
 					id=3513;
