@@ -167,12 +167,7 @@ _saveGear =
     ["life_inv_storagesmall", life_inv_storagesmall],
     ["life_inv_storagebig", life_inv_storagebig],
 	["life_inv_condom",life_inv_condom],
-
     ["life_inv_cigarette",life_inv_cigarette],
-    ["life_inv_cokep",life_inv_cokep],
-    ["life_inv_methp",life_inv_methp],
-    ["life_inv_MDMAp",life_inv_MDMAp],
-    ["life_inv_marijuana",life_inv_marijuana],
 	["life_inv_cleankit",life_inv_cleankit]
 ];
 
