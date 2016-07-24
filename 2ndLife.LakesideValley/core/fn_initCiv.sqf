@@ -35,3 +35,13 @@ if(side player == civilian) then {
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
+if((__GETC__(life_mafialevel) == 1) && (__GETC__(life_adminlevel) == 0)) then {
+	disableUserInput true;
+	titleText ["***DU BIST ALS MAFIA GEWHITELISTET***","BLACK_IN"];
+	hint "***DU BIST ALS MAFIA GEWHITELISTET***"; 
+	systemChat "***DU BIST ALS MAFIA GEWHITELISTET***";
+	sleep 5;
+	disableUserInput false;sleep 0.5;
+	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+	sleep 10;
+};

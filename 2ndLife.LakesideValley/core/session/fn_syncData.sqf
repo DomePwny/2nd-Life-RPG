@@ -14,9 +14,7 @@ if(life_session_time) exitWith {
 	["You synced recently!", false] spawn domsg;
 };
 
-[7] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
-[6] call SOCK_fnc_updatePartial;
+[8] call SOCK_fnc_updatePartial;
 
 [] spawn
 {
