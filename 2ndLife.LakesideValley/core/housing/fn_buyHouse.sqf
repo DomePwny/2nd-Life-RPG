@@ -14,6 +14,7 @@ if(!(_house isKindOf "House_F")) exitWith {};
 if((_house getVariable["house_owned",false])) exitWith {["This house is already owned even though you shouldn't be seeing this hint...", false] spawn domsg;};
 if(!isNil {(_house getVariable "house_sold")}) exitWith {[localize "STR_House_Sell_Process", false] spawn domsg;};
 if(!license_civ_home) exitWith {[localize "STR_House_License", false] spawn domsg;};
+if(!license_maf_home) exitWith {[localize "STR_House_License", false] spawn domsg;};
 
 //if(count life_houses >= (__GETC__(life_houseLimit))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 closeDialog 0;
