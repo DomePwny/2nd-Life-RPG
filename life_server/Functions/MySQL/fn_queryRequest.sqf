@@ -128,8 +128,6 @@ switch (_side) do {
 		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];	
 		_houseData = _uid call TON_fnc_fetchPlayerHouses;
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
-		_gangData = _uid call TON_fnc_queryPlayerGang;
-		_queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
 	};
 };
 
