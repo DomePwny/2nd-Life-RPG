@@ -538,9 +538,9 @@ class CfgDebriefing
 {
 	class NotWhitelisted
 	{
-		title = "Mission Failed";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		title = "Nicht Freigeschaltet";
+		subtitle = "Du bist nicht befugt diesen Slot zu verwenden.";
+		description = "Du bist für diesen Slot nicht freigeschaltet.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -591,6 +591,16 @@ class CfgDebriefing
 		title = "Zivilisten Slot";
 		subtitle = "Du bist für höheres bestimmt!";
 		description = "Du gehörst der Mafia an. Du willst doch nicht wirklich in dein altes Zivi-Leben zurück?!?";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SecondLifeWrongModVersion
+	{
+		title = "Falsche Mod Version";
+		subtitle = "Du benutzt eine Falsche Mod Version.";
+		description = "Überprüfe Arma 3 Sync für neue Updates, sollte dies nicht helfen, melde dich bitte im Support.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

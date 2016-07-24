@@ -374,9 +374,6 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F",2500000]
 		];
 
-		if(license_civ_rebel) then
-		{
-		};
 	};
 	case "cop_car":
 	{

@@ -565,7 +565,7 @@ switch (_code) do
 				_veh = vehicle player;
 			};
 			
-			if(_veh isKindOf "House_F" && playerSide == civilian OR playerSide == east) then {
+			if(_veh isKindOf "House_F" && (playerSide == civilian OR playerSide == east)) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(_door == 0) exitWith {[localize "STR_House_Door_NotNear", false] spawn doquickmsg; };
