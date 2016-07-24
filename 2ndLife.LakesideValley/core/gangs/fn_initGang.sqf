@@ -5,8 +5,8 @@
 	Main initialization for gangs?
 */
 private["_exitLoop","_group"];
-if(playerSide != civilian) exitWith {}; //What in the hell?
-[player] join (createGroup civilian);
+if(playerSide != east) exitWith {}; //What in the hell?
+[player] join (createGroup east);
 if(count life_gangData isEqualTo 0) exitWith {}; //Dafuq?
 
 //Loop through to make sure there is not a group already created with the gang.
