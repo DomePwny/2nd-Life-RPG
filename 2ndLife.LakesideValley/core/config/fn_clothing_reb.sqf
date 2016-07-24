@@ -10,7 +10,7 @@ _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Rebel Shop"];
+ctrlSetText[3103,"Mafia Kleidung"];
 
 switch (_filter) do
 {

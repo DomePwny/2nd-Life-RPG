@@ -11,12 +11,12 @@ createDialog "Life_Clothing";
 disableSerialization;
 
 //Cop / Civ Pre Check
-if((_this select 3) == "reb" && !license_civ_rebel) exitWith {["Du bist kein Rebelle", false] spawn domsg; closeDialog 0;};
+if((_this select 3) == "reb" && playerside != east) exitWith {["Du bist nicht in der Mafia.", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {["Du bist kein Polizist", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["brucecop"] && playerSide != west) exitWith {["Du bist kein Polizist", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["sertcop"] && playerSide != west) exitWith {["Du bist kein Polizist", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { [localize "STR_Shop_NotaDive", false] spawn domsg; closeDialog 0;};
-if((_this select 3) == "ems" && playerSide != independent) exitWith {["You are not a EMS!", false] spawn domsg; closeDialog 0;};
+if((_this select 3) == "ems" && playerSide != independent) exitWith {["Du bist kein Mediziner.", false] spawn domsg; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

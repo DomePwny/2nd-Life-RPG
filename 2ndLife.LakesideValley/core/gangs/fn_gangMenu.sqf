@@ -7,7 +7,7 @@
 */
 private["_ownerID","_gangBank","_gangMax","_gangName","_members","_allUnits","_ctrl"];
 disableSerialization;
-if (!(playerside == east)) exitWith {hint "Du gehörst nicht der Mafia an!"};
+if (playerside != east) exitWith {hint "Du bist nicht in der Mafia!"};
 if(isNull (findDisplay 2620)) then {
 	if(!(createDialog "Life_My_Gang_Diag")) exitWith {}; //NOOOOOOOOOOOOOOOOOOOOOOOoooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000oooooo
 };

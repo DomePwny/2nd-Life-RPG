@@ -217,11 +217,10 @@ switch(_shop) do
 			switch(true) do
 			{
 				case (rebelshipment getVariable["notCaptured",FALSE]): {"Die Polizei hat alles entsorgt...!"};
-				case (playerSide != civilian && playerSide != east): {"Du bist kein Zivilist!!"};
-				case (!license_civ_rebel): {"Du brauchst einen Rebellenschein!"};
+				case (playerside != east): {"Du bist nicht in der Mafia."};
 				default
 				{
-					["Rebel Pistols",
+					["Mafia Pistolen",
 						[
 							["RH_vp70",nil,9850],
 							["RH_18Rnd_9x19_VP",nil,125],  
@@ -263,11 +262,10 @@ switch(_shop) do
 			switch(true) do
 			{
 				case (rebelshipment getVariable["notCaptured",FALSE]): {"Die Polizei hat alles entsorgt...!"};
-				case (playerSide != civilian && playerSide != east): {"Du bist kein Zivilist!"};
-				case (!license_civ_rebel): {"Du brauchst einen Rebellenschein!"};
+				case (playerside != east): {"Du bist nicht in der Mafia."};
 				default
 				{
-					["Rebel Primarys",
+					["Mafia Langwaffen",
 						[
 							["optic_MRCO",nil,1220],
 							["RH_Delft",nil,550],
@@ -382,7 +380,7 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
+				case (playerSide != east): {"Du bist nicht in der Mafia."};
 				default
 				{
 					["Hideout Armament",
