@@ -1,4 +1,4 @@
-#include macro.h
+#include <macro.h>
 
 /*
 	File: fn_initCiv.sqf
@@ -37,6 +37,7 @@ if(side player == civilian) then {
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
+
 if((__GETC__(life_mafialevel) == 1)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
