@@ -131,8 +131,8 @@ switch (playerSide) do
 	{
 
 		//Ausweis
-		life_actions = life_actions + [player addAction["<t color='#FF00FF'>ID Card übergeben</t>",life_fnc_copShowLicense,"",1,false,true,"",'
-		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']];
+		life_actions pushBack (player addAction["<t color='#FF00FF'>ID Card übergeben</t>",life_fnc_copShowLicense,"",1,false,true,"",'
+		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']);
 		
 	
 		// Beweise zerstören
@@ -158,7 +158,55 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel") ']);
 
-		life_actions pushBack (player addAction["<t color='#FF0000'>Mobiles Kleidungsgeschäfft</t>",life_fnc_clothingMenu,"bruce",0,false,false,"",' typeOf cursorTarget IN ["critgamin_vangmcc_clothing","critgamin_vangmcc_clothing"] && player distance cursorTarget < 5 && !dialog ']);
+		//Pickup Item
+		life_actions pushBack (player addAction["Gegenstände aufheben",{createDialog "life_pickup_items" && player getVariable ["restrained", false]},"",0,false,false,"",
+		' !isNull nearestObject (screenToWorld [0.5,0.5]) && count (nearestObject (screenToWorld [0.5,0.5]) getVariable ["item",[]]) > 0 && player distance nearestObject (screenToWorld [0.5,0.5]) <= 4 && !life_action_inUse && (isNull objectParent player) && !(player getVariable ["restrained", false])']);
+
+		life_actions pushBack (player addAction["<t color='#fdff01'>Search Building</t>",life_fnc_lootHouse,"",0,false,false,"",'isNull objectParent player && (typeOf cursorTarget in["Land_u_House_Small_01_V1_F","Land_i_Stone_HouseBig_V2_F","Land_i_Stone_HouseBig_V1_F","Land_d_House_Small_01_V1_F","Land_u_House_Big_02_V1_F","Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F","Land_A_Villa_EP1","Land_e76_us_house02a","Land_e76_us_house01","Land_e76_us_house01a","Land_e76_us_house01a","Land_e76_us_house01b","Land_mbg_ger_pub_1","Land_mbg_ger_pub_2","Land_Offices_01_V1_F","Land_MilOffices_V1_F","Land_Cargo_House_V1_F","Land_Cargo_House_V2_F","Land_Cargo_House_V3_F","Land_Medevac_house_V1_F","Land_Research_house_V1_F","Land_Slum_House01_F","Land_Slum_House03_F","Land_Slum_House02_F","Land_cargo_house_slum_F","Land_i_Addon_02_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_03_V1_F","Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F","Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F","Land_i_Garage_V1_F","Land_i_Garage_V2_F","Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F"]) && (vehicle player) distance cursorTarget < 3 && !(cursorTarget getVariable ["looted",FALSE]) && playerSide == civilian']);
+
+		//Heal Person
+		life_actions pushBack (player addAction["Selbstbehandeln",life_fnc_healself,"",0,false,false,"",' (player getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
+
+		//Heal Self
+		life_actions pushBack (player addAction["Person behandeln",life_fnc_healperson,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && isPlayer cursorTarget && (cursorTarget getVariable "playerHealth") > 0.2 && (life_inv_bandage > 0) && !isdragging ']);
+
+		// Heli Fast Rope
+		life_actions pushBack (player addAction["Schnelles abseilen",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
+	
+		//Get out of the electric chair
+		life_actions pushBack (player addAction["Stand Up",life_fnc_electric,"",0,false,false,"",' ( animationState player == "BasicDriver" && isNull objectParent player ) ']);
+	};
+
+	case east:
+	{
+
+		//Ausweis
+		life_actions pushBack (player addAction["<t color='#FF00FF'>ID Card übergeben</t>",life_fnc_copShowLicense,"",1,false,true,"",'
+		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']);
+		
+	
+		// Beweise zerstören
+		life_actions pushBack (player addAction["Beweise zerstören",life_fnc_destroyEvidence,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && !dialog && typeOf cursorTarget == "Land_Suitcase_F"']);
+		
+		life_actions pushBack (player addAction["<t color = '#d02b2b'>Emergency Eject</t>",life_fnc_EmergencyEject,"",0,false,false,"",' (driver vehicle player) == player && (vehicle player) isKindOf "Air" ']);
+
+		life_actions pushBack (player addAction["<t color = '#D660D6'>Person ablegen</t>",life_fnc_dropbody,"",7,false,false,"",' isdragging ']);
+
+		life_actions pushBack (player addAction["<t color = '#D660D6'>Person aufheben</t>",life_fnc_dragbody,"",7,false,false,"",' !life_action_inUse && vehicle player == player && (cursortarget getVariable["dead",FALSE]) && (player distance cursorTarget < 5) ']);
+
+		life_actions pushBack (player addAction["<t color='#ADFF2F'>Bank Teller ATM</t>",life_fnc_atmMenu,"",7,false,false,"",' (cursorTarget getVariable ["ATM_MAN", false]) && cgbankvault animationPhase "d_l_Anim" == 0 && (player distance (getMarkerPos "bank_signup")) < 21 ']);
+
+		life_actions pushBack (player addAction["<t color = '#D660D6'>Anschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']);
+
+		life_actions pushBack (player addAction["<t color = '#D660D6'>Abschnallen</t>",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']);
+
+		//destroyevidence
+
+		life_actions pushBack (player addAction["<t color = '#f4a84e'>Geschäfft erledigen</t>",life_fnc_takeashit,"",0,false,false,"",' life_poop > 80 && (isNull objectParent player) ']);
+
+		life_actions pushBack (player addAction[localize "STR_pAct_Breakout",life_fnc_breakout,"",0,false,false,"",' life_breakouton == 2 && (!life_action_inUse) ']);
+
+		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel") ']);
 
 		//Pickup Item
 		life_actions pushBack (player addAction["Gegenstände aufheben",{createDialog "life_pickup_items" && player getVariable ["restrained", false]},"",0,false,false,"",
@@ -175,7 +223,7 @@ switch (playerSide) do
 		// Heli Fast Rope
 		life_actions pushBack (player addAction["Schnelles abseilen",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
 	
-			//Get out of the electric chair
+		//Get out of the electric chair
 		life_actions pushBack (player addAction["Stand Up",life_fnc_electric,"",0,false,false,"",' ( animationState player == "BasicDriver" && isNull objectParent player ) ']);
 
 		//place roadblock
@@ -186,7 +234,7 @@ switch (playerSide) do
 		_roadblock = nearestObjects[getPos player,["RoadCone_L_F"],3.5] select 0; !isNil "_roadblock" && !isNil {(_roadblock getVariable "RoadBlock")}
 		']);
 	};
-
+	
 	case west:
 	{
 
