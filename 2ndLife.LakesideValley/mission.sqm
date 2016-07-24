@@ -21416,7 +21416,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Trade Bag"",{ if (side player == civilian) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Trade Bag"",{ if (side player == civilian && side player == east) then { {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"") then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player); }; },"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 					};
 					id=1620;
 					type="C_man_polo_2_F";
@@ -21434,7 +21434,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Press MDMA"",life_fnc_processAction,""MDMA"",0,false,false,"""",' life_inv_MDMAu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_MDMA""] call life_fnc_varToStr,[([""MDMA""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMA"",0,false,false,"""",' !license_civ_MDMA && playerSide == civilian '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Press MDMA"",life_fnc_processAction,""MDMA"",0,false,false,"""",' life_inv_MDMAu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_MDMA""] call life_fnc_varToStr,[([""MDMA""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMA"",0,false,false,"""",' !license_civ_MDMA && playerSide == civilian && playerSide == east '];";
 					};
 					id=1621;
 					type="C_man_polo_2_F_afro";
@@ -21567,7 +21567,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Gem Dealer"",life_fnc_virt_menu,""gems"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian '];";
+						init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Gem Dealer"",life_fnc_virt_menu,""gems"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian && playerSide == east '];";
 						name="Dealer_3_2";
 					};
 					id=1631;
@@ -21605,7 +21605,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Package Cocaine Bricks"",life_fnc_processAction,""coke"",0,false,false,"""",' life_inv_cokeu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""coke""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""coke"",0,false,false,"""",' !license_civ_coke && playerSide == civilian '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Package Cocaine Bricks"",life_fnc_processAction,""coke"",0,false,false,"""",' life_inv_cokeu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""coke""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""coke"",0,false,false,"""",' !license_civ_coke && playerSide == civilian && playerside == east '];";
 					};
 					id=1636;
 					type="C_man_polo_2_F_afro";
@@ -23005,7 +23005,7 @@ class Mission
 					{
 						skill=0.60000002;
 						ammo=0;
-						init="this addAction[""Drug Dealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; removeGoggles this; this adduniform ""TRYK_hoodie_Blk""; this addHeadgear ""kio_skl_msk_weed""; this addVest ""TRYK_V_PlateCarrier_JSDF"";";
+						init="this addAction[""Drug Dealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian && playerside == east ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; removeGoggles this; this adduniform ""TRYK_hoodie_Blk""; this addHeadgear ""kio_skl_msk_weed""; this addVest ""TRYK_V_PlateCarrier_JSDF"";";
 						name="Dealer_3_1";
 					};
 					id=3402;
