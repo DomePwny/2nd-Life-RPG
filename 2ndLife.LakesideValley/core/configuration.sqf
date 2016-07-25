@@ -361,18 +361,6 @@ life_inv_items =
 	"life_inv_raxsrum"	
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Setup variable inv vars.
 {missionNamespace setVariable[_x,0];} foreach life_inv_items;
 //Licenses [license var, civ/cop]
@@ -537,7 +525,6 @@ sell_array =
 	["cigarette",1],
 	["Rax's Rum",1]
 ];
-__CONST__(sell_array,sell_array);
 
 buy_array =
 [
