@@ -46,7 +46,7 @@ sleep 0.25;
 0 fadeRadio 1;
 0 fadeSpeech 1;
 
-[player] remoteExec ["TON_fnc_cleanupRequest",RSERV];
+[player] remoteExec ["TON_fnc_cleanupRequest",2];
 
 showChat true;
 disableUserInput false;
