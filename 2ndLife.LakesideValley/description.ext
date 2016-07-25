@@ -541,7 +541,7 @@ class CfgDebriefing
 		title = "Nicht Freigeschaltet";
 		subtitle = "Du bist nicht befugt diesen Slot zu verwenden.";
 		description = "Du bist für diesen Slot nicht freigeschaltet.";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
@@ -551,7 +551,7 @@ class CfgDebriefing
 		title = "Mission Failed";
 		subtitle = "You are blacklisted from cops";
 		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
@@ -561,7 +561,7 @@ class CfgDebriefing
 		title = "Mafia Slot";
 		subtitle = "Du bist kein Mitglied der Mafia!";
 		description = "Es steht dir frei, dich als Mitglied der Mafia zu bewerben. Sollte dies ein Fehler sein, melde dich bitte im Support.";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
@@ -571,17 +571,17 @@ class CfgDebriefing
 		title = "Cop Slot";
 		subtitle = "Du bist kein Mitglied der Polizei!";
 		description = "Es steht dir frei, dich für den Polizeidienst zu bewerben. Sollte dies ein Fehler sein, melde dich bitte im Support";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
 	class NotCopMafia
 	{
-		title = "Falsche Seite des Gesetzes";
-		subtitle = "Du darfst entweder der Mafia oder der Polizei angehören!";
+		title = "Gesetzeskonflikt";
+		subtitle = "Entweder Mafia oder Polizei!";
 		description = "Es ist einem Polizisten nicht gestattet als Mafia zu spielen und umgekehrt!";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
@@ -591,7 +591,7 @@ class CfgDebriefing
 		title = "Zivilisten Slot";
 		subtitle = "Du bist für höheres bestimmt!";
 		description = "Du gehörst der Mafia an. Du willst doch nicht wirklich in dein altes Zivi-Leben zurück?!?";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
@@ -601,7 +601,17 @@ class CfgDebriefing
 		title = "Falsche Mod Version";
 		subtitle = "Du benutzt eine Falsche Mod Version.";
 		description = "Überprüfe Arma 3 Sync für neue Updates, sollte dies nicht helfen, melde dich bitte im Support.";
-		pictureBackground = "";
+		pictureBackground = "textures\2ndLifeOnload.paa";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class Logout
+	{
+		title = "Aufwiedersehen";
+		subTitle = "Deine Daten wurden gespeichert";
+		description = "Das Team von 2nd Life - RPG bedankt sich für deinen Besuch und freut sich dich bald wieder zu sehen. Besuche auch unsere Webseite für Informationen und Updates: http://2nd-life-rpg.de";
+		pictureBackground = "textures\2ndLifeOnload.paa";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};

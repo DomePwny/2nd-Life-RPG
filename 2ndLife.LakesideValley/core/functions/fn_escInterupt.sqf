@@ -56,6 +56,11 @@ while {true} do
 	_Continue = (findDisplay 49) displayCtrl 2;
 	_statusbar = (findDisplay 49) displayCtrl 120;
 	
+	_abortButton ctrlSetEventHandler [
+		"ButtonClick",
+		"["Logout",true,false] spawn BIS_fnc_endMission; (findDisplay 49) closeDisplay 2; true" 
+	];
+	
 	_Continue ctrlSetText "TS: 94.250.223.9:15107";
 	_Continue ctrlSetTooltip "Besuche unseren Ts";
 	
