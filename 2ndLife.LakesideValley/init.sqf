@@ -9,7 +9,10 @@ enableSaving [false, false];
 
 West setFriend [East, 1]; 
 East setFriend [West, 1];
-East setFriend [independent, 1];
+East setFriend [Independent, 1];
+Independent setFriend [East, 1];
+Civilian setFriend [East, 1];
+
 
 [] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
