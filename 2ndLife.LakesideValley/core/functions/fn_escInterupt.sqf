@@ -58,7 +58,7 @@ while {true} do
 	
 	_abortButton ctrlSetEventHandler [
 		"ButtonClick",
-		"["Logout",true,false] spawn BIS_fnc_endMission; (findDisplay 49) closeDisplay 2; true" 
+		"[] spawn life_fnc_logout; (findDisplay 49) closeDisplay 2; true" 
 	];
 	
 	_Continue ctrlSetText "TS: 94.250.223.9:15107";

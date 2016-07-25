@@ -358,6 +358,7 @@ class Life_Client_Core
 		class requestTestDrive {};
 		class testDrive {};
 		class broadcastCheck {};
+		class logout {};
 	};
 	
 	class Network
