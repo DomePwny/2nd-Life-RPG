@@ -6,7 +6,7 @@
 	Monitors when the ESC menu is pulled up and blocks off
 	certain controls when conditions meet.
 */
-private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
+private["_saveButton","_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
 disableSerialization;
 
 _escSync = {
@@ -25,12 +25,13 @@ _escSync = {
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
 		};
 		
-		_abortButton ctrlSetText localize "STR_DISP_INT_ABORT";
+		_abortButton ctrlSetText "2nd-Life verlassen"
+		_abortButton ctrlSetTooltip "Daten werden gespeichert!";
 		_abortButton ctrlCommit 0;
 	};
 	
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	 call life_fnc_saveGear;
+	[8] call SOCK_fnc_updatePartial;
 	
 	if(_this) then {
 		_thread = [] spawn _syncManager;
@@ -51,11 +52,25 @@ while {true} do
 	_abortButton buttonSetAction "[player] remoteExec [""TON_fnc_cleanupRequest"",2]";
 	_respawnButton = (findDisplay 49) displayCtrl 1010;
 	_fieldManual = (findDisplay 49) displayCtrl 122;
+	_saveButton = (findDisplay 49) displayCtrl 103;
+	_Continue = (findDisplay 49) displayCtrl 2;
+	
+	//_Continue ctrlSetText "TS:   94.250.223.9:15107";
+	_Continue ctrlSetTooltip "Besuche unseren Ts";
+	
+	//_SaveButton ctrlSetText "Web: http://2nd-life-rpg.de/";
+	_SaveButton ctrlSetTooltip "Homepage, Forum, Bugracker und mehr...";
+	
+	//_statusbar ctrlSetText "2nd Life";
+	_statusbar ctrlSetTooltip "";
 	
 	//Block off our buttons first.
+	_Continue ctrlEnable false;
+	_saveButton ctrlEnable false;
 	_abortButton ctrlEnable false;
 	_respawnButton ctrlEnable false;
 	_fieldManual ctrlEnable false; //Never re-enable, blocks an old script executor.
+	_fieldManual ctrlShow false;
 	
 	_usebleCtrl = call _canUseControls;
 	_usebleCtrl spawn _escSync;
