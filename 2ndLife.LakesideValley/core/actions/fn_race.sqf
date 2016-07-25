@@ -181,7 +181,7 @@ _vehicle setdamage 0;
 _vehicle allowdamage false;
 
 
-hint "3";
+["3", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -190,7 +190,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "2";
+["2", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -199,7 +199,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "1";
+["1", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -208,7 +208,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "GO!";
+["GO!", false] spawn domsg;
 _laptimes = 0;
 _fastestlap = 9999;
 while { (racemachine getVariable "racing") } do {

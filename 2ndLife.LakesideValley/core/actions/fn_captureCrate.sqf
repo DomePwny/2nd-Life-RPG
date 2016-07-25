@@ -1,8 +1,8 @@
 //if in progress EXIT
 _civs = (civilian countSide playableUnits);
-if(_civs < 20) exitwith { hint "Nicht genug Zivilisten da! (20)"; };
+if(_civs < 20) exitwith {["Nicht genug Zivilisten da! (20)", false] spawn domsg;};
 
-if(rebelshipment getVariable["progress",FALSE]) exitwith { hint "Wurde bereits beschlagnahmt!"; };
+if(rebelshipment getVariable["progress",FALSE]) exitwith {["Wurde bereits beschlagnahmt!",false] spawn domsg;};
 
 //start progress
 rebelshipment setvariable ["progress", true, true];

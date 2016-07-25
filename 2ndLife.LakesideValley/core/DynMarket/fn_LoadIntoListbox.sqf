@@ -8,7 +8,7 @@
 #################################################################
 */
 
-if (isNil "DYNMARKET_prices") then {[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;hint "Getting current prices from the server..";sleep 1;};
+if (isNil "DYNMARKET_prices") then {[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP; ["Rufe Preise ab...", false] spawn domsg; sleep 1;};
 
 disableSerialization;
 _dialog = findDisplay 7100;

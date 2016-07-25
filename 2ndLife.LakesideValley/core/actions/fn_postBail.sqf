@@ -11,7 +11,7 @@ _unit = _this select 1;
 _myposy = getPos _unit;
 if(life_bail_paid) exitWith {};
 if(isNil {life_bail_amount}) then {life_bail_amount = 1000000;};
-if(!isNil "life_canpay_bail") exitWith {hint localize "STR_NOTF_Bail_Post"};
+if(!isNil "life_canpay_bail") exitWith {[localize "STR_NOTF_Bail_Post", false] spawn domsg;};
 if(cash_in_bank < life_bail_amount) exitWith {[format[localize "STR_NOTF_Bail_NotEnough",life_bail_amount], false] spawn domsg;};
 
 _nearestPlayer = nearestObjects[getPosATL _unit,["man"],6] select 1; 

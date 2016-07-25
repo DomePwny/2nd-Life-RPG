@@ -17,7 +17,7 @@ if(cash_in_hand < 50) then
 
 switch (_method) do
 {
-	case 0: {hint "You do not have $500 in cash or in your bank accoumt."};
-	case 1: {vehicle player setDamage 0; ["cash","take",50] call life_fnc_handleCash; hint "You have repaired your vehicle for $500";};
-	case 2: {vehicle player setDamage 0; ["bank","take",50] call life_fnc_handleCash; hint "You have repaired your vehicle for $500";};
+	case 0: {["You do not have $500 in cash or in your bank accoumt.", false] spawn domsg;};
+	case 1: {vehicle player setDamage 0; ["cash","take",50] call life_fnc_handleCash; ["You have repaired your vehicle for $500", false] spawn domsg;};
+	case 2: {vehicle player setDamage 0; ["bank","take",50] call life_fnc_handleCash; ["You have repaired your vehicle for $500", false] spawn domsg;};
 };

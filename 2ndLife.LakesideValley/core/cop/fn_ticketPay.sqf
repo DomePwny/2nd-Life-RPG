@@ -10,10 +10,10 @@ if(cash_in_hand < life_ticket_val) exitWith
 {
 	if(cash_in_bank < life_ticket_val) exitWith 
 	{
-		hint localize "STR_Cop_Ticket_NotEnough";
+		[localize "STR_Cop_Ticket_NotEnough", false] spawn domsg;
 		closeDialog 0;
 	};
-	hint format[localize "STR_Cop_Ticket_Paid",[life_ticket_val] call life_fnc_numberText];
+	[format[(localize "STR_Cop_Ticket_Paid"),[life_ticket_val] call life_fnc_numberText], false] spawn domsg;
 	["bank","take",life_ticket_val] call life_fnc_handleCash; 
 	life_ticket_paid = true;
 	[getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];	
@@ -21,7 +21,7 @@ if(cash_in_hand < life_ticket_val) exitWith
 	[life_ticket_val,player,life_ticket_cop] remoteExecCall ["life_fnc_ticketPaid",life_ticket_cop];
 };
 
-hint format[localize "STR_Cop_Ticket_Paid",[life_ticket_val] call life_fnc_numberText];
+[format[(localize "STR_Cop_Ticket_Paid"),[life_ticket_val] call life_fnc_numberText], false] spawn domsg;
 ["cash","take",life_ticket_val] call life_fnc_handleCash; 
 life_ticket_paid = true;
 [getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];

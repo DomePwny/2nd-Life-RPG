@@ -17,7 +17,7 @@ while{_vehdestroy > 0} do {
 	};
 	_vehdestroy = _vehdestroy - 1;
 	uiSleep 1;
-	hint format["Vehicle will be destroyed in %1 seconds",_vehdestroy];
+	[format["Vehicle will be destroyed in %1 seconds",_vehdestroy], false] spawn domsg;
 };
 
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};

@@ -40,13 +40,13 @@ uiSleep 1;
 
 _timer = 300;
 [player,"start"] spawn life_fnc_nearestSound;
-	hint "3";
+	["3", false] spawn domsg;
 	uiSleep 1;
-	hint "2";
+	["2", false] spawn domsg;
 	uiSleep 1;
-	hint "1";	
+	["1", false] spawn domsg;	
 	uiSleep 1;
-	hint "GO!";
+	["GO", false] spawn domsg;
 	while { _timer > 0 } do {
 		uiSleep 1;
 		_timer = _timer - 1;

@@ -11,7 +11,7 @@ _group = _hideout getVariable ["gangOwner",grpNull];
 
 if(isNil {grpPlayer getVariable "gang_name"}) exitWith {titleText[localize "STR_GNOTF_CreateGang","PLAIN"];};
 if(_group isEqualTo grpPlayer) exitWith {titleText[localize "STR_GNOTF_Controlled","PLAIN"]};
-if((_hideout getVariable ["inCapture",FALSE])) exitWith {hint localize "STR_GNOTF_Captured";};
+if((_hideout getVariable ["inCapture",FALSE])) exitWith {[localize "STR_GNOTF_Captured", false] spawn domsg;};
 if(!isNull _group) then {
 	_gangName = _group getVariable ["gang_name",""];
 	_action = [

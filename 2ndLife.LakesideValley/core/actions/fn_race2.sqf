@@ -3,16 +3,16 @@ private["_skiptotal","_markerstart","_startpos","_vehicle"];
 
 if(life_is_arrested || (player getVariable ["restrained", false]) || (player getVariable ["tied", false])) exitwith {};
 
-if( life_koil_race2 == 1 || life_koil_race == 1 || joinmode == 1 ) exitWith { ["You are already in a queue, please wait.", false] spawn domsg; };
+if( life_koil_race2 == 1 || life_koil_race == 1 || joinmode == 1 ) exitWith {["You are already in a queue, please wait.", false] spawn domsg;};
 
 if(cash_in_hand < 50) exitWith {
-["You need 50 $ to enter", false] spawn domsg;	
+	["You need 50 $ to enter", false] spawn domsg;	
 };
 
 
 if(life_action_inUse) exitWith { };	
 if((racemachine2 getVariable "racefull")) exitWith {
-	hint "This race is full, try the next one!";
+	["This race is full, try the next one!", false] spawn domsg;
 };	
 
 if((player getVariable ["tied", false])) exitWith { };		
@@ -21,7 +21,7 @@ if((player getVariable ["restrained", false])) exitWith { };
 
 _skiptotal = 0;
 if(!(racemachine2 getVariable "start")) then {
-		[1,format["LAKESIDE GO-KARTS: A Race will begin in 5 minutes at the lakeside go-kart track.",player]] remoteExecCall ["life_fnc_broadcast", civilian];
+	[1,format["LAKESIDE GO-KARTS: A Race will begin in 5 minutes at the lakeside go-kart track.",player]] remoteExecCall ["life_fnc_broadcast", civilian];
 	racemachine2 setVariable["start",true,true];
 	racemachine2 setVariable["total",1,true];
 	racemachine2 setVariable["racefull",false,true];
@@ -122,7 +122,7 @@ _vehicle setPos (getmarkerPos _markerstart);
 _vehicle setdamage 0;
 _vehicle allowdamage false;
 
-hint "3";
+["3", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -131,7 +131,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "2";
+["2", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -140,7 +140,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "1";
+["1", false] spawn domsg;
 _num = 1;
 while{_num > 0} do {
 	uiSleep 0.05;
@@ -149,7 +149,7 @@ while{_num > 0} do {
 	_vehicle setPos (getmarkerPos _markerstart);
 	_num = _num - 0.05;
 };
-hint "GO!";
+["GO", false] spawn domsg;
 _laptimes = 0;
 _fastestlap = 9999;
 while { (racemachine2 getVariable "racing") } do {

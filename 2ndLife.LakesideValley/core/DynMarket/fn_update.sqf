@@ -18,7 +18,7 @@ switch (_mode) do {
 	{
 		[[DYNAMICMARKET_boughtItems],"TON_fnc_getUpdate",false,false] spawn life_fnc_MP;
 		if (DYNMARKET_UserNotification) then {
-			hint _txt2;
+			[_txt2, false] spawn domsg;
 		};
 		DYNAMICMARKET_boughtItems = [];
 	};
@@ -29,7 +29,7 @@ switch (_mode) do {
 		sell_array = _itemArray;
 		DYNMARKET_prices = _itemArray;
 		if (DYNMARKET_UserNotification) then {
-			hint _txt1;
+			[_txt1, false] spawn domsg;
 		};
 		if (_needToUpdate) then {DYNMARKET_pricesOld = DYNMARKET_prices;};
 	};

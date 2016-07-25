@@ -6,7 +6,7 @@
 	Doesn't matter, will be revised later.
 */
 _meds = (independent countSide playableUnits);
-if(_meds > 1) exitwith { hint "Es sind Mediziner im Dienst!"; };
+if(_meds > 1) exitwith {["Es sind Mediziner im Dienst!", false] spawn domsg;};
 if(cash_in_hand < 10) exitWith {[format[localize "STR_NOTF_HS_NoCash",10], false] spawn domsg;};
 [localize "STR_NOTF_HS_Healing", false] spawn domsg;
 uiSleep 8;
