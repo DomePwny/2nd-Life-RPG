@@ -25,7 +25,7 @@ _escSync = {
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
 		};
 		
-		_abortButton ctrlSetText "2nd-Life verlassen"
+		_abortButton ctrlSetText "2nd-Life verlassen";
 		_abortButton ctrlSetTooltip "Daten werden gespeichert!";
 		_abortButton ctrlCommit 0;
 	};

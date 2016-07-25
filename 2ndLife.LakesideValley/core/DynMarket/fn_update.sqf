@@ -16,7 +16,7 @@ if (isNil "DYNAMICMARKET_boughtItems") then {DYNAMICMARKET_boughtItems=[];};
 switch (_mode) do {
 	case 0:
 	{
-		[[DYNAMICMARKET_boughtItems],"TON_fnc_getUpdate",false,false] spawn life_fnc_MP;
+		[DYNAMICMARKET_boughtItems] remoteExecCall ["TON_fnc_getUpdate", (call life_fnc_HCC)];
 		if (DYNMARKET_UserNotification) then {
 			[_txt2, false] spawn domsg;
 		};

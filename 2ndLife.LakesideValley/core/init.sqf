@@ -277,7 +277,7 @@ player addEventHandler ["AnimStateChanged", {
 [] execVM "core\fn_addKey.sqf";
 
 DYNAMICMARKET_boughtItems = [];
-[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;
+[getPlayerUID player] remoteExecCall ["TON_fnc_playerLogged", (call life_fnc_HCC)];
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 

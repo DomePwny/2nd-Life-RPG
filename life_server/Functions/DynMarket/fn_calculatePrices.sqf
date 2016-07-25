@@ -123,4 +123,4 @@ DYNMARKET_Items_CurrentPriceArr = _tempArrayHolder;
 	} forEach DYNMARKET_sellarraycopy;
 } forEach DYNMARKET_Items_CurrentPriceArr;
 
-[[1,DYNMARKET_sellarraycopy],"life_fnc_update",true,false] spawn life_fnc_MP;
+[1,DYNMARKET_sellarraycopy] remoteExecCall ["life_fnc_update", (call life_fnc_HCC)];
