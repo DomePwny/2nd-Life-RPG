@@ -54,18 +54,19 @@ while {true} do
 	_fieldManual = (findDisplay 49) displayCtrl 122;
 	_saveButton = (findDisplay 49) displayCtrl 103;
 	_Continue = (findDisplay 49) displayCtrl 2;
+	_statusbar = (findDisplay 49) displayCtrl 120;
 	
-	//_Continue ctrlSetText "TS:   94.250.223.9:15107";
+	_Continue ctrlSetText "TS: 94.250.223.9:15107";
 	_Continue ctrlSetTooltip "Besuche unseren Ts";
 	
-	//_SaveButton ctrlSetText "Web: http://2nd-life-rpg.de/";
+	_SaveButton ctrlSetText "Web: http://2nd-life-rpg.de/";
 	_SaveButton ctrlSetTooltip "Homepage, Forum, Bugracker und mehr...";
 	
-	//_statusbar ctrlSetText "2nd Life";
+	_statusbar ctrlSetText "2nd Life";
 	_statusbar ctrlSetTooltip "";
 	
 	//Block off our buttons first.
-	_Continue ctrlEnable false;
+	//_Continue ctrlEnable false;
 	_saveButton ctrlEnable false;
 	_abortButton ctrlEnable false;
 	_respawnButton ctrlEnable false;
