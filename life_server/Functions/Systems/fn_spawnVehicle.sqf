@@ -8,7 +8,7 @@
 */
 
 params [["_vid", -1, [0]], ["_pid", "",[""]], ["_sp", [], [[], ""]], ["_unit", objNull, [objNull]], ["_price", 0, [0]], ["_dir", 0, [0]],
-"_query", "_sql", "_vehicle", "_nearVehicles", "_name", "_side", "_tickTime"];
+"_query", "_sql", "_vehicle", "_nearVehicles", "_name", "_side", "_tickTime", "_fuel"];
 _name = name _unit;
 _side = side _unit;
 
@@ -17,10 +17,11 @@ if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 publicVariable "serv_sv_use";
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
+_fuel = parseNumber(_queryResult select 9);
 
 diag_log "------------- Client Query Request -------------";
 diag_log format["QUERY: %1",_query];
@@ -95,6 +96,7 @@ if(typeName _sp isEqualTo "STRING") then {
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
+	_vehicle setFuel _fuel;
 };
 _vehicle allowDamage true;
 

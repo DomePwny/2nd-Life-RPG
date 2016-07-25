@@ -39,7 +39,7 @@ if(_impound) then
 	} 
 	else
 	{
-		_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+		_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate, fuel _vehicle];
 
 		_thread = [_query,1] call DB_fnc_asyncCall;
 
@@ -69,7 +69,7 @@ else
 		["life_garage_store",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 	};
 
-	_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	_query = format["UPDATE vehicles SET active='0', fuel='%3' WHERE pid='%1' AND plate='%2'",_uid,_plate, fuel _vehicle];
 
 	_thread = [_query,1] call DB_fnc_asyncCall;
 
