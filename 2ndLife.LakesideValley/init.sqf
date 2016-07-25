@@ -7,6 +7,10 @@ tf_radio_channel_name = "TaskForceRadio";
 tf_radio_channel_password = "sndliferpg";
 enableSaving [false, false];
 
+West setFriend [East, 1]; 
+East setFriend [West, 1];
+East setFriend [independent, 1];
+
 [] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
 
