@@ -4,9 +4,7 @@ File: bank teller payments
 
 if(has_job) exitwith { ["Du hast bereits eine Arbeitstelle, drücke Shift + 4 um zu kündigen!", false] spawn domsg;};
 
-if(side player != civilian) exitwith {
-	["Nur für Zivilisten!", false] spawn domsg;
-};
+if(side player != civilian) exitwith {["Nur für Zivilisten!", false] spawn domsg;};
 if(life_bankteller) exitWith {
 ["Du bist bereits Bänker/in", false] spawn domsg; 
 };
