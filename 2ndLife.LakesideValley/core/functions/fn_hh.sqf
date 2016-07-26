@@ -206,10 +206,10 @@ while { life_koil_hh == 1 } do {
 		"filmGrain" ppEffectEnable false;
 
 	};
-	if(_inc > 15) exitwith {life_koil_hh = 2;};
-	uiSleep 1;
+	if(_inc > 6) exitwith {life_koil_hh = 2;};
+	uiSleep 0.2;
 };
-uiSleep 1;
+uiSleep 0.5;
 
 life_koil_hh = 2;
 playsound "";
