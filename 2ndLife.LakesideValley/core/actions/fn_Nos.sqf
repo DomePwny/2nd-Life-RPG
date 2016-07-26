@@ -71,6 +71,6 @@ if(life_nos_count > 0 && _vehicle isKindOf "Car") then {
 
 } else {
 
-	["You are out of Nos!", false] spawn domsg;
+	["Dein NOS ist aufgebraucht!", false] spawn domsg;
 
 };
