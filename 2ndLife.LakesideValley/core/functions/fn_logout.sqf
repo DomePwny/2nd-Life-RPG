@@ -69,7 +69,7 @@ for "_i" from 1020 to 1022 do {
 
 private _Header = (finddisplay 0) ctrlCreate ["RscPicture", 821];
 _Header ctrlSetPosition [0.2875,-0.32,0.45,0.6];
-_Header ctrlSetText format["%1icons\logo.paa",MISSION_ROOT];
+_Header ctrlSetText format["icons\logo.paa"];
 _Header ctrlCommit 0;
 
 private _Main = (finddisplay 0) ctrlCreate ["RscStructuredText", 822];   
