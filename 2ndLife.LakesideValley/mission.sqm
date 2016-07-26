@@ -3675,13 +3675,13 @@ class Mission
 			position[]={2848.126,395.70004,5514.8066};
 			name="reb_ag_1";
 			type="Empty";
-			angle=137.27896;
+			angle=326.99652;
 			id=342;
 		};
 		class Item287
 		{
 			dataType="Marker";
-			position[]={2873.4707,395.66745,5507.4663};
+			position[]={2875.8145,395.66608,5507.2563};
 			name="reb_cg_1";
 			type="Empty";
 			angle=87.267891;
@@ -20704,8 +20704,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2875.8025,395.67365,5516.3188};
-						angles[]={0,6.1182013,6.2828403};
+						position[]={2875.802,395.67365,5516.3188};
+						angles[]={0,6.1181993,6.2828364};
 					};
 					side="Civilian";
 					flags=4;
@@ -20745,8 +20745,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2878.4045,395.67249,5516.4727};
-						angles[]={0,6.1754255,6.2828403};
+						position[]={2878.405,395.67249,5516.4727};
+						angles[]={0,6.1754284,6.2828364};
 					};
 					side="Civilian";
 					flags=4;
@@ -20757,6 +20757,29 @@ class Mission
 					};
 					id=1668;
 					type="C_man_polo_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item98
 				{
@@ -21540,8 +21563,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -21550,10 +21573,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -21597,8 +21620,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -21607,10 +21630,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -39827,17 +39850,17 @@ class Mission
 		class Item2079
 		{
 			dataType="Marker";
-			position[]={2850.916,6.0507318e+011,5629.0371};
+			position[]={2850.916,4.5304208e+017,5629.0371};
 			name="marker_421";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorRed";
-			alpha=0.20009999;
+			alpha=0.34588492;
 			a=170;
 			b=110;
-			angle=226.22168;
+			angle=226.22198;
 			id=3205;
-			atlOffset=6.0507318e+011;
+			atlOffset=4.5304208e+017;
 		};
 		class Item2080
 		{
@@ -42219,10 +42242,10 @@ class Mission
 		class Item2148
 		{
 			dataType="Marker";
-			position[]={2872.6025,402.97461,5507.1567};
+			position[]={2848.7136,403.00455,5514.5713};
 			name="reb_v_1";
 			type="Empty";
-			angle=91.330139;
+			angle=320.3746;
 			id=3523;
 			atlOffset=7.3066406;
 		};
@@ -42282,7 +42305,7 @@ class Mission
 		class Item2150
 		{
 			dataType="Marker";
-			position[]={584.2323,119.99,8189.8188};
+			position[]={4653.6172,318.35812,9523.9072};
 			name="mafia_versteck";
 			text="Mafia Versteck";
 			type="A3L_Business_Icon";
