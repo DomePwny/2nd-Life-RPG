@@ -2494,7 +2494,6 @@ fnc_fedex = {
 					{
 						["cash","add",theirTotal] call life_fnc_handleCash;
 						[format["A person requesting a taxi got in your vehicle - you got paid %1 !",theirTotal], false] spawn domsg; 
-						life_taxi = false;
 					};
 				} foreach _crew;
 			};
