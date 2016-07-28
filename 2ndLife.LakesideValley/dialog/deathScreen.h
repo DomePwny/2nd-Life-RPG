@@ -51,7 +51,7 @@ class DeathScreen
 			w = (20 / 40);
 			h = (1 / 25);
 			text = "Respawn";
-			onButtonClick = "closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu;";
+			onButtonClick = "closeDialog 0; [getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2]; life_respawned = true; [] call life_fnc_spawnMenu;";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{
