@@ -381,6 +381,8 @@ switch (_shop) do
 		{
 			_return pushBack ["sndlife_taur_pd",45000];
 			_return pushBack ["sndlife_taur_sf",45000];
+			_return pushBack ["sndlife_cvpi_pd",55000];
+			_return pushBack ["sndlife_cvpi_sf",55000];
 			_return pushBack ["A3L_JailBus",50000];
 		};
 		if(__GETC__(life_coplevel) == 2) then
@@ -397,8 +399,16 @@ switch (_shop) do
 			_return pushBack ["sndlife_taur_sf",45000];
 			_return pushBack ["sndlife_cvpi_pd",55000];
 			_return pushBack ["sndlife_cvpi_sf",55000];
+			_return pushBack ["sndlife_cvpi_ml",55000];
 			_return pushBack ["sndlife_evo_pd",65000];
 			_return pushBack ["sndlife_evo_sf",65000];
+			_return pushBack ["sndlife_evo_ml",65000];
+			_return pushBack ["secondlife_shelby_co",65000];
+			_return pushBack ["secondlife_shelby_sh",65000];
+			_return pushBack ["secondlife_shelby_ma",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
+			_return pushBack ["secondlife_e60_m5_sh",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["A3L_JailBus",50000];
 		};
 		if(__GETC__(life_coplevel) == 4) then
@@ -407,8 +417,16 @@ switch (_shop) do
 			_return pushBack ["sndlife_taur_sf",45000];
 			_return pushBack ["sndlife_cvpi_pd",55000];
 			_return pushBack ["sndlife_cvpi_sf",55000];
+			_return pushBack ["sndlife_cvpi_ml",55000];
 			_return pushBack ["sndlife_evo_pd",65000];
 			_return pushBack ["sndlife_evo_sf",65000];
+			_return pushBack ["sndlife_evo_ml",65000];
+			_return pushBack ["secondlife_shelby_co",65000];
+			_return pushBack ["secondlife_shelby_sh",65000];
+			_return pushBack ["secondlife_shelby_ma",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
+			_return pushBack ["secondlife_e60_m5_sh",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["ivory_wrx",67000];
 			_return pushBack ["A3L_JailBus",50000];
 		};
@@ -418,8 +436,16 @@ switch (_shop) do
 			_return pushBack ["sndlife_taur_sf",45000];
 			_return pushBack ["sndlife_cvpi_pd",55000];
 			_return pushBack ["sndlife_cvpi_sf",55000];
+			_return pushBack ["sndlife_cvpi_ml",55000];
 			_return pushBack ["sndlife_evo_pd",65000];
 			_return pushBack ["sndlife_evo_sf",65000];
+			_return pushBack ["sndlife_evo_ml",65000];
+			_return pushBack ["secondlife_shelby_co",65000];
+			_return pushBack ["secondlife_shelby_sh",65000];
+			_return pushBack ["secondlife_shelby_ma",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
+			_return pushBack ["secondlife_e60_m5_sh",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["ivory_wrx",67000];
 			_return pushBack ["A3L_JailBus",50000];
 		};
@@ -434,10 +460,20 @@ switch (_shop) do
 			_return pushBack ["sndlife_evo_pd",65000];
 			_return pushBack ["sndlife_evo_sf",65000];
 			_return pushBack ["sndlife_evo_ml",65000];
+			_return pushBack ["secondlife_shelby_co",65000];
+			_return pushBack ["secondlife_shelby_sh",65000];
+			_return pushBack ["secondlife_shelby_ma",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
+			_return pushBack ["secondlife_e60_m5_sh",65000];
+			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["ivory_wrx",67000];
 			_return pushBack ["charger_sert",40000];
 			_return pushBack ["AM_Holden_UM",40000];
 			_return pushBack ["AM_Holden_SO",40000];
+			_return pushBack ["secondlife_gtr_sert",52000];
+			_return pushBack ["secondlife_458_co",72000];
+			_return pushBack ["secondlife_458_sh",72000];
+			_return pushBack ["secondlife_458_ma",72000];
 			_return pushBack ["ivory_rev_police",95000];
 			_return pushBack ["ivory_rev_sheriff",95000];
 			_return pushBack ["A3L_JailBus",50000];

@@ -711,6 +711,15 @@ life_garage_prices =
 			["B_Boat_Transport_01_F",0],
 			["C_Boat_Civil_01_police_F",0],
 			["B_SDV_01_F",0],
+			["secondlife_shelby_co",0],
+			["secondlife_shelby_sh",0],
+			["secondlife_shelby_ma",0],
+			["secondlife_e60_m5_co",0],
+			["secondlife_e60_m5_sh",0],
+			["secondlife_e60_m5_co",0],
+			["secondlife_458_co",0],
+			["secondlife_458_sh",0],
+			["secondlife_458_ma",0],
 			
 			//Motorräder
 			["tcg_hrly",0],
@@ -1140,6 +1149,15 @@ life_garage_sell =
 			["sndlife_evo_pd",3250],
 			["sndlife_evo_sf",3250],
 			["sndlife_evo_ml",3250],
+			["secondlife_shelby_co",3250],
+			["secondlife_shelby_sh",3250],
+			["secondlife_shelby_ma",3250],
+			["secondlife_e60_m5_co",3250],
+			["secondlife_e60_m5_sh",3250],
+			["secondlife_e60_m5_co",3250],
+			["secondlife_458_co",4200],
+			["secondlife_458_sh",4200],
+			["secondlife_458_ma",4200],
 			
 			//Motorräder
 			["tcg_hrly",2500],
