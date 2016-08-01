@@ -10,7 +10,7 @@ has_job = true;
 life_taxi = true;
 ["Du wirst extra bezahlt für das fahren deines SUV Taxi's.", false] spawn domsg;
 
-_fkit = 45;
+_fkit = 60;
 _payment = 0;
 
 while{_fkit > 0 && life_taxi} do {
@@ -25,8 +25,8 @@ while{_fkit > 0 && life_taxi} do {
 		};	
 	};
 
-	if(_fkit == 1) then {
-		["Your taxi timer stops in 1 minute.", false] spawn domsg;
+	if(_fkit == 5) then {
+		["Deine Anstellung endet in 5 Minuten.", false] spawn domsg;
 	};
 
 };
