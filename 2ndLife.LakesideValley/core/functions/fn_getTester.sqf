@@ -24,7 +24,7 @@ if(_salesman isEqualTo "") then {
 	life_requestingTestDrive = true;
 	life_testDriveRequest = nil;
 
-	[format ["Du hast eine Testfahrt anfrage an %1 gestellt. Wenn nicht geantwortet wird innerhalb 30 Sek. beantrage eine neue!",name _salesman], false] spawn domsg;
+	[format ["Du hast eine Testfahrt anfrage an %1 gestellt. Wenn nicht innerhalb von 30 Sek. geantwortet wird beantrage eine neue!",name _salesman], false] spawn domsg;
 	[_salesman,player] remoteExec ["life_fnc_requestTestDrive",_salesman];
 	_time = time;
 	waitUntil {sleep 1; (!isNil "life_testDriveRequest" || (time - _time) > 30)};
