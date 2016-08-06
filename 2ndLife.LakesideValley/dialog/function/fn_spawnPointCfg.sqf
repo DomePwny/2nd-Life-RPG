@@ -17,11 +17,7 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_3","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_4","Airbase","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Lakeside Knast","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_1","HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 	
@@ -30,12 +26,8 @@ switch (_side) do
 
 		if(playerside == civilian) then {
 			_return = [
-				["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_5","Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","San Crist","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_1","Union City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Keine Ahnung","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 			
 			if(count life_houses > 0) then {
@@ -63,11 +55,8 @@ switch (_side) do
 		if((rebelshipment getVariable["progress",FALSE]) || (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
-				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_6","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_5","Old Bedford","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_1","Union City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_2","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 		if(count life_houses > 0) then {

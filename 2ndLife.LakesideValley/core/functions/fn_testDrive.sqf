@@ -67,7 +67,7 @@ if(_isPassenger) then {
 	["You can use your scroll wheel to cancel the test drive at any time.", false] spawn domsg;
 	life_testDriveTime = time;
 	life_exitTestDrive = false;
-	_testDriveAction = player addAction ["End Test Drive",{life_exitTestDrive = true}, nil, 1.5, true, true, "", "life_onTestDrive"];	
+	_testDriveAction = player addAction ["Probefahrt beenden",{life_exitTestDrive = true}, nil, 1.5, true, true, "", "life_onTestDrive"];	
 	player setVariable ["testDriving", _vehicle, true];
 		
 	waitUntil {uiSleep 1; (time - life_testDriveTime > 60 || life_exitTestDrive)};
