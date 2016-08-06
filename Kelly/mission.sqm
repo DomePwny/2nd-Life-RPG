@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3469;
+		nextID=3471;
 	};
 	class MarkerIDProvider
 	{
@@ -575,7 +575,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1509;
+		items=1510;
 		class Item0
 		{
 			dataType="Marker";
@@ -14923,7 +14923,6 @@ class Mission
 					};
 					id=1105;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.049999237;
 				};
 				class Item15
 				{
@@ -15416,7 +15415,6 @@ class Mission
 						angles[]={0,2.9497159,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15424,6 +15422,7 @@ class Mission
 					};
 					id=1126;
 					type="B_diver_F";
+					atlOffset=4.8875666;
 				};
 				class Item30
 				{
@@ -15531,7 +15530,6 @@ class Mission
 						angles[]={0,4.6982865,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15539,6 +15537,7 @@ class Mission
 					};
 					id=1132;
 					type="C_man_shorts_3_F_euro";
+					atlOffset=9.0449467;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16928,8 +16927,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -16938,10 +16937,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -16985,8 +16984,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -16995,10 +16994,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -17243,7 +17242,6 @@ class Mission
 					};
 					id=2503;
 					type="A3L_Civ20";
-					atlOffset=0.049999237;
 				};
 				class Item90
 				{
@@ -17281,7 +17279,6 @@ class Mission
 					};
 					id=2484;
 					type="C_man_polo_2_F";
-					atlOffset=0.049999237;
 				};
 				class Item92
 				{
@@ -24406,7 +24403,6 @@ class Mission
 			b=0.5;
 			angle=174.35818;
 			id=2476;
-			atlOffset=0.049999237;
 		};
 		class Item1106
 		{
@@ -24425,7 +24421,6 @@ class Mission
 			};
 			id=2477;
 			type="Land_CashDesk_F";
-			atlOffset=0.049999237;
 		};
 		class Item1107
 		{
@@ -24444,7 +24439,7 @@ class Mission
 			};
 			id=2478;
 			type="A3L_Savepoint";
-			atlOffset=0.069000244;
+			atlOffset=0.048999786;
 		};
 		class Item1108
 		{
@@ -24463,7 +24458,7 @@ class Mission
 			};
 			id=2479;
 			type="A3L_Savepoint";
-			atlOffset=0.050000191;
+			atlOffset=0.029999733;
 		};
 		class Item1109
 		{
@@ -24481,7 +24476,7 @@ class Mission
 			};
 			id=2480;
 			type="Land_Billboard_F";
-			atlOffset=8.2221546;
+			atlOffset=1.0221539;
 		};
 		class Item1110
 		{
@@ -24518,7 +24513,6 @@ class Mission
 			};
 			id=2485;
 			type="Land_CashDesk_F";
-			atlOffset=0.049999237;
 		};
 		class Item1112
 		{
@@ -24572,7 +24566,7 @@ class Mission
 			};
 			id=2488;
 			type="A3L_Savepoint";
-			atlOffset=1.1392498;
+			atlOffset=18.625999;
 		};
 		class Item1115
 		{
@@ -24595,7 +24589,6 @@ class Mission
 				angles[]={0,4.0248513,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -24603,6 +24596,7 @@ class Mission
 			};
 			id=2491;
 			type="A3L_Savepoint";
+			atlOffset=7.4030614;
 		};
 		class Item1117
 		{
@@ -24715,7 +24709,6 @@ class Mission
 			};
 			id=2504;
 			type="Land_CashDesk_F";
-			atlOffset=0.049999237;
 		};
 		class Item1125
 		{
@@ -36678,6 +36671,34 @@ class Mission
 			angle=92.552292;
 			id=3385;
 			atlOffset=3.6396008e+031;
+		};
+		class Item1509
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3620.5547,15.001439,3581.8362};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=3470;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3469;
 		};
 	};
 };
