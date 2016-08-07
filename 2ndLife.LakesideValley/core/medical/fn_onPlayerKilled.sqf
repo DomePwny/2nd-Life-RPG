@@ -120,7 +120,7 @@ _unit spawn
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
-	if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; [getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];	};			
+	if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
 };
 
 [] spawn life_fnc_deathScreen;
