@@ -143,35 +143,19 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) == 2) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["A3L_CVPILBFD",55000];
 		};
 		if(__GETC__(life_mediclevel) == 3) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["A3L_CVPILBFD",55000];
-			_return pushBack ["sndlife_taur_ems",45000];
-			_return pushBack ["sndlife_evo_ems1",65000];
-			_return pushBack ["sndlife_evo_ems2",65000];
-			_return pushBack ["sndlife_evo_ems3",65000];
 		};
 		if(__GETC__(life_mediclevel) == 4) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["A3L_CVPILBFD",55000];
-			_return pushBack ["sndlife_taur_ems",45000];
-			_return pushBack ["sndlife_evo_ems1",65000];
-			_return pushBack ["sndlife_evo_ems2",65000];
-			_return pushBack ["sndlife_evo_ems3",65000];
 			_return pushBack ["ivory_wrx",64000];
 		};
 		if(__GETC__(life_mediclevel) == 5) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["A3L_CVPILBFD",55000];
-			_return pushBack ["sndlife_taur_ems",45000];
-			_return pushBack ["sndlife_evo_ems1",65000];
-			_return pushBack ["sndlife_evo_ems2",65000];
-			_return pushBack ["sndlife_evo_ems3",65000];
 			_return pushBack ["ivory_wrx",64000];
 			_return pushBack ["DAR_TahoeEMS",22500];
 			_return pushBack ["AM_Holden_EMS",25000];
@@ -193,27 +177,9 @@ switch (_shop) do
 	{
 		_return = 
 		[	
-			["A3L_Charger",100000],
-			["A3L_ChargerBlack",100000],
-			["A3L_ChargerBlue",100000],
-			["A3L_ChargerWhite",100000],
-			["A3L_ChargerRed",100000],
 			["AM_2015C_Black",140000],
 			["AM_2015C_blue",140000],
 			["AM_2015C_white",140000],
-			["A3L_EvoXDarkGreen",150000],
-			["A3L_OffGreen",150000],
-			["A3L_EvoXOffYellow",150000],
-			["A3L_EvoXYellow",150000],
-			["A3L_EvoXPink",150000],
-			["A3L_EvoXPurple",150000],
-			["A3L_EvoXWhite",150000],
-			["A3L_EvoXBlack",150000],
-			["A3L_EvoXRed",150000],
-			["A3L_EvoXrally_green",170000],
-			["A3L_EvoXrally_white",170000],
-			["A3L_EvoXrally_red",170000],
-			["A3L_EvoXrally_blue",170000],
 			["cl3_z4_2008_white",375000],
 			["cl3_z4_2008_purple",375000],
 			["cl3_z4_2008_navy_blue",375000],
@@ -235,41 +201,6 @@ switch (_shop) do
 			// Gebrauchtwagen
 			["Jonzie_Mini_Cooper",16000],
 			["cl3_suv_taxi",20000],
-			["A3L_RegalBlack",24000],
-			["A3L_RegalBlue",24000],
-			["A3L_RegalOrange",24000],
-			["A3L_RegalRed",24000],
-			["A3L_RegalWhite",24000],
-			["A3L_FordKaBlue",40000],
-			["A3L_FordKaRed",40000],
-			["A3L_FordKaBlack",40000],
-			["A3L_FordKaWhite",40000],
-			["A3L_FordKaGrey",40000],
-			["A3L_Cooper_concept_blue",50000],
-			["A3L_Cooper_concept_black",50000],
-			["A3L_Cooper_concept_red",50000],
-			["A3L_Cooper_concept_white",50000],
-			["A3L_VolksWagenGolfGTired",52000],
-			["A3L_VolksWagenGolfGTiblack",52000],
-			["A3L_VolksWagenGolfGTiblue",52000],
-			["A3L_VolksWagenGolfGTiwhite",52000],
-			["A3L_CVWhite",60000],
-			["A3L_CVBlack",60000],
-			["A3L_CVGrey",60000],
-			["A3L_CVRed",60000],
-			["A3L_CVPink",60000],
-			["A3L_CVBlue",60000],
-			["A3L_GrandCaravan",60000],
-			["A3L_GrandCaravanBlk",60000],
-			["A3L_GrandCaravanBlue",60000],
-			["A3L_GrandCaravanGreen",60000],
-			["A3L_GrandCaravanRed",60000],
-			["A3L_GrandCaravanPurple",60000],
-			["A3L_AMC",60000],
-			["A3L_AMXRed",60000],
-			["A3L_AMXWhite",60000],
-			["A3L_AMXBlue",60000],
-			["A3L_AMXGL",70000],
 			["S_Rangerover_Black",70000],
 			["S_Rangerover_Red",70000],
 			["S_Rangerover_Blue",70000],
@@ -278,36 +209,16 @@ switch (_shop) do
 			["S_Rangerover_Grey",70000],
 			["S_Rangerover_Orange",70000],
 			["S_Rangerover_White",70000],
-			["A3L_TaurusBlack",80000],
-			["A3L_TaurusBlue",80000],
-			["A3L_TaurusRed",80000],
-			["A3L_TaurusWhite",80000],
 			["DAR_TahoeCivSilver",80000],
 			["DAR_TahoeCivBlue",80000],
 			["DAR_TahoeCivRed",80000],
 			["DAR_TahoeCivBlack",80000],
-			["A3L_Challenger",90000],
-			["A3L_ChallengerGreen",90000],
-			["A3L_ChallengerRed",90000],
-			["A3L_ChallengerWhite",90000],
-			["A3L_ChallengerBlack",90000],
-			["A3L_ChallengerBlue",90000],
 			["S_Skyline_Red",90000],
 			["S_Skyline_Blue",90000],
 			["S_Skyline_Black",90000],
 			["S_Skyline_Yellow",90000],
 			["S_Skyline_Purple",90000],
-			["S_Skyline_White",90000],
-			["A3L_RX7_Blue",100000],
-			["A3L_RX7_Red",100000],
-			["A3L_RX7_White",100000],
-			["A3L_RX7_Black",100000],
-			["A3L_SuburbanWhite",180000],
-			["A3L_SuburbanBlue",180000],
-			["A3L_SuburbanRed",180000],
-			["A3L_SuburbanBlack",180000],
-			["A3L_SuburbanGrey",180000],
-			["A3L_SuburbanOrange",180000]
+			["S_Skyline_White",90000]
 		];
 	};
 	case "civ_motorbike":
@@ -351,13 +262,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["A3L_F350Black",700000],
-			["A3L_F350Blue",700000],
-			["A3L_F350Red",700000],
-			["A3L_F350White",700000],
 			["Jonzie_Transit",250000],
-			["A3L_Towtruck",400000],
-			["A3L_Bus",1300000],
 			["Jonzie_Flat_Bed",2590000],
 			["Jonzie_Log_Truck",2590000],
 			["Jonzie_Box_Truck",3750000],
@@ -379,48 +284,23 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) == 1) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["A3L_JailBus",50000];
+
 		};
 		if(__GETC__(life_coplevel) == 2) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["A3L_JailBus",50000];
+
 		};
 		if(__GETC__(life_coplevel) == 3) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["sndlife_cvpi_ml",55000];
-			_return pushBack ["sndlife_evo_pd",65000];
-			_return pushBack ["sndlife_evo_sf",65000];
-			_return pushBack ["sndlife_evo_ml",65000];
 			_return pushBack ["secondlife_shelby_co",65000];
 			_return pushBack ["secondlife_shelby_sh",65000];
 			_return pushBack ["secondlife_shelby_ma",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["A3L_JailBus",50000];
 		};
 		if(__GETC__(life_coplevel) == 4) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["sndlife_cvpi_ml",55000];
-			_return pushBack ["sndlife_evo_pd",65000];
-			_return pushBack ["sndlife_evo_sf",65000];
-			_return pushBack ["sndlife_evo_ml",65000];
 			_return pushBack ["secondlife_shelby_co",65000];
 			_return pushBack ["secondlife_shelby_sh",65000];
 			_return pushBack ["secondlife_shelby_ma",65000];
@@ -428,18 +308,9 @@ switch (_shop) do
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["ivory_wrx",67000];
-			_return pushBack ["A3L_JailBus",50000];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["sndlife_cvpi_ml",55000];
-			_return pushBack ["sndlife_evo_pd",65000];
-			_return pushBack ["sndlife_evo_sf",65000];
-			_return pushBack ["sndlife_evo_ml",65000];
 			_return pushBack ["secondlife_shelby_co",65000];
 			_return pushBack ["secondlife_shelby_sh",65000];
 			_return pushBack ["secondlife_shelby_ma",65000];
@@ -447,19 +318,9 @@ switch (_shop) do
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["ivory_wrx",67000];
-			_return pushBack ["A3L_JailBus",50000];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_return pushBack ["sndlife_taur_pd",45000];
-			_return pushBack ["sndlife_taur_sf",45000];
-			_return pushBack ["sndlife_taur_ml",45000];
-			_return pushBack ["sndlife_cvpi_pd",55000];
-			_return pushBack ["sndlife_cvpi_sf",55000];
-			_return pushBack ["sndlife_cvpi_ml",55000];
-			_return pushBack ["sndlife_evo_pd",65000];
-			_return pushBack ["sndlife_evo_sf",65000];
-			_return pushBack ["sndlife_evo_ml",65000];
 			_return pushBack ["secondlife_shelby_co",65000];
 			_return pushBack ["secondlife_shelby_sh",65000];
 			_return pushBack ["secondlife_shelby_ma",65000];
@@ -476,7 +337,6 @@ switch (_shop) do
 			_return pushBack ["secondlife_458_ma",72000];
 			_return pushBack ["ivory_rev_police",95000];
 			_return pushBack ["ivory_rev_sheriff",95000];
-			_return pushBack ["A3L_JailBus",50000];
 		};
 	};
 	case "fbi_car":
@@ -484,16 +344,6 @@ switch (_shop) do
 		_return =
 		[		
 			["AM_Holden_UM",40000],				
-			["A3L_GrandCaravanUC",30000],
-			["A3L_GrandCaravanUCBlack",30000],
-			["A3L_SuburbanUM",40000],									
-  			["A3L_ChargerUC",70000],
-			["A3L_ChargerUCWhite",70000],			
-			["A3L_TaurusUC",30000],
-			["A3L_TaurusUCBlue",30000],
-			["A3L_TaurusUCGrey",30000],
-			["A3L_TaurusUCRed",30000],
-			["A3L_TaurusUCWhite",30000],
 			["ivory_rev_fbi",75000],
 			["ivory_rev_fbi2",75000],
 			["ivory_rev_fbi3",75000],
@@ -568,10 +418,7 @@ switch (_shop) do
 			["C_Rubberboat",20000],
 			["CUP_B_Zodiac_USMC",40000],
 			["C_Boat_Civil_01_F",125000],
-			["CUP_C_Fishing_Boat_Chernarus",150000],
-			["A3L_Ship",400000],
-			["A3L_Jetski",50000],
-			["A3L_Jetski_yellow",50000]
+			["CUP_C_Fishing_Boat_Chernarus",150000]
 		];
 	};
 	case "cop_ship":
