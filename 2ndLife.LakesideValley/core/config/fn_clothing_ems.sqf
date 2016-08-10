@@ -112,8 +112,6 @@ switch (_filter) do
 			["SFG_Tac_ChopsG",nil,2],
 			["SFG_Tac_ChopsO",nil,2],
 			//bears end
-
-			["A3L_FatHead",nil,2],
 			["Payday_Cagoule",nil,2],
 			["Masque_Chirurgical",nil,2],
 			["Masque_Solitaire",nil,2],

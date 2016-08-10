@@ -147,7 +147,7 @@ life_carSalesman = false;
 life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
-SecondLife_version = "SecondLifeModVersion0001a";
+SecondLife_version = "SecondLifeModVersion0001b";
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for civs and cops? (Medics excluded for now)

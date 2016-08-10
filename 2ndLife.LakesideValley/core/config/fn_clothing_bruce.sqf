@@ -23,11 +23,9 @@ switch (_filter) do
 			["A3LShirt","2ndLife Shirt",25],
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
-			["A3L_Suit_Uniform","Suit",1350],
 			["OrangePlaid_uni","A3L Plaid (Orange)",35],
 			["OrGnGy_uni","A3L Polo (OR-GN-GY)",35],
 			["OrGyBr_uni","A3L Polo (OR-GY-BR)",35],
-			//koil added
 			["2ndLife_DerBeste1",nil,50],
 			["2ndLife_EA1",nil,50],
 			["2ndLife_Herz1",nil,50],
@@ -35,14 +33,7 @@ switch (_filter) do
 			["2ndLife_Mario1",nil,50],
 			["2ndLife_Pika1",nil,50],
 			["2ndLife_Condom1",nil,50],
-			["2ndLife_Fuckyou1",nil,50],
-
-			["A3L_Priest_Uniform","Priest Uniform",100],
-			["A3L_Character_Uniform","Life Uniform",150],
-			["A3L_Dude_Outfit","Dude outfit",200],
-			["A3L_Farmer_Outfit","Farmer Outfit",200],
-			["A3L_Worker_Outfit","Worker Outfit",200],
-			["A3L_Bikini_Girl","Bikini",4000]	
+			["2ndLife_Fuckyou1",nil,50]
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];
@@ -250,23 +241,10 @@ switch (_filter) do
 			["TRYK_H_Bandana_wig",nil,150],
 			["TRYK_H_Bandana_H",nil,150],
 			["TRYK_Kio_Balaclava",nil,150],
-
 			["TRYK_H_wig",nil,150],
-
-			["A3L_Legoman","Lego Helmet",500],
-			["A3L_soa_helmet","Biker Helmet",40],	
-			["A3L_gangster_hat","Gangster Mask",10],
-			["A3L_Mask","Mask",10],				
-			["A3L_longhairblack","Long Hair Black",12],
-			["A3L_longhairblond","Long Hair Blond",12],
-			["A3L_longhairbrown","Long Hair Brown",12],
-			["A3L_Crown","Crown",12],
 			["cowboyhat","Cowboyhat",12],
-			["A3L_mexicanhat","Mexican Hat",12],
 			["santahat","Santa hat",12],
-			["A3L_Sombrero","Sombrero",12],
 			["turban","Turban",12],
-			["A3L_russianhat","Russianhat",12],
 			["H_Cap_tan",nil,12],
 			["H_Cap_blk",nil,12],
 			["H_Cap_blk_CMMG",nil,12],
@@ -306,8 +284,6 @@ switch (_filter) do
 			["SFG_Tac_ChopsG",nil,2],
 			["SFG_Tac_ChopsO",nil,2],
 			//bears end
-
-			["A3L_FatHead",nil,2],
 			["G_Lady_Blue","Damenbrille",10],
 			["Payday_Cagoule",nil,2],
 			["Masque_Solitaire",nil,2],
