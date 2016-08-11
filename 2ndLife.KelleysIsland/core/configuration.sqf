@@ -147,6 +147,7 @@ life_carSalesman = false;
 life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
+maintenance_on = false;
 SecondLife_version = "SecondLifeModVersion0001b";
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?

@@ -34,7 +34,7 @@ if(_isWater) then {
 	};
 };
 
-_spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
+_spikeStrips = nearestObjects[getPos player,["CG_Spikes_Extended"],3] select 0;
 if !(_spikeStrips isEqualTo [""]) then {
 	deletevehicle _spikeStrips;
 	["You picked up some spike strips!", false] spawn domsg; 
