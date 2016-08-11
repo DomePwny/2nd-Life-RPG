@@ -2026,13 +2026,10 @@ fnc_packMetal1 = {
 	};
 };
 
-
-
 fnc_trucking = {
 
 	towvehiclelist = ["IVORY_PRIUS","ivory_gt500","ivory_wrx","ivory_lp560","IVORY_R8","IVORY_R8SPYDER","IVORY_REV","ivory_lfa","ivory_c"];
-
-
+	
 	while{trucking} do {
 
 		["A truck delivery location will be picked shortly!", false] spawn domsg; 
@@ -2107,22 +2104,11 @@ fnc_trucking = {
 	player allowdamage true;
 };
 
-
-
-
-
-
-
-
 fnc_startGarbage = {
-
 	private["_oldBinDir","_oldBinPos"];
-
 	_nearBin = nearestObjects[getPos player,["Land_Dumpster_DED_Dumpster_01_F"],6];
 	_isBin = count _nearBin;
-
 	if(_isBin > 0) then {
-
 		_isBinSelected = _nearBin select 0;
 		_oldBinPos = getpos _isBinSelected;
 		_oldBinDir = getdir _isBinSelected;
@@ -2175,14 +2161,6 @@ fnc_startGarbage = {
 };
 
 
-
-
-
-
-
-
-
-
 fnc_maintstart = {
 	if(side player == west) exitwith {};
 	player forceAddUniform "TRYK_HRP_USMC";
@@ -2191,7 +2169,7 @@ fnc_maintstart = {
 	if(farm) then {
 		airvehspawned = createVehicle ["ivory_tractor", position player, [], 0, "NONE"];
 		[airvehspawned] spawn life_fnc_clearVehicleAmmo;
-		oiljobs = [(getpos wheat1),(getpos wheat2),(getpos wheat3),(getpos wheat4),(getpos wheat5),(getpos wheat6),(getpos wheat7),(getpos wheat8),(getpos wheat9),(getpos wheat10),(getpos wheat11),(getpos wheat12),(getpos wheat13),(getpos wheat14),(getpos wheat15),(getpos wheat16),(getpos wheat17)];
+		oiljobs = [(getpos corn1),(getpos corn2),(getpos corn3),(getpos corn4),(getpos corn5),(getpos corn6),(getpos corn7),(getpos corn8),(getpos corn9),(getpos corn10),(getpos corn11),(getpos corn12),(getpos corn13),(getpos corn14),(getpos corn15),(getpos corn16),(getpos corn17)];
 		bullshit_story = [
 		"Go cut down the wheat in this area!",
 		"Spray pesticide on the marker!",
@@ -2216,11 +2194,8 @@ fnc_maintstart = {
 		];
 	};
 
-
-
 	player action ["getInDriver", airvehspawned];
 	while{maintenance_on && _success} do {
-
 		if(player distance airvehspawned > 500 || deadPlayer) exitwith {};
 		chosen = oiljobs call BIS_fnc_selectRandom;
 		[bullshit_story call BIS_fnc_selectRandom, false] spawn domsg; 
@@ -2263,8 +2238,6 @@ fnc_maintstart = {
 		_goodT = _distance * 7;
 		_goodT = _goodT - _calcT;
 		_payment = _goodT * 50;
-
-
 
 		if(farm) then {
 			 _payment = 110;
@@ -2330,9 +2303,7 @@ fnc_maintstart = {
 
 
 fnc_fedex = {
-
 	while{fedex_on} do {
-
 		["A new job will be placed on your map shortly - STAY INSIDE YOUR VEHICLE UNTIL NEAR THE PERSON!", false] spawn domsg; 
 		sleep 3;
 		_jail = false;

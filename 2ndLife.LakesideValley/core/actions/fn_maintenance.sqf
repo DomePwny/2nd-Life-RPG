@@ -43,15 +43,12 @@ while{_fkit > 0 && maintenance_on} do {
 			["bank","add", 1330] call life_fnc_handleCash;
 			["You just got paid an extra $420 for maintaining the Oil Lines.", false] spawn domsg;
 		};
-		if (player distance wheat1 < 100 ) then
+		if (player distance corn1 < 100 ) then
 		{
-			["bank","add", 520] call life_fnc_handleCash;
+			["bank","add", 220] call life_fnc_handleCash;
 			["You just got paid an extra $220 for maintaining the Fred's Farm.", false] spawn domsg;
 		};
-		if (player distance wheat1 > 200 && farm ) exitwith
-		{
-
-		};
+		if (player distance corn1 > 200 && farm ) exitwith	{};
 	};
 	_fkit = _fkit - 1;
 };
