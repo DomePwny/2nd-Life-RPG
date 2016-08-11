@@ -89,7 +89,7 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 			
 			_onTsServer = "2nd Life RPG Arma 3 Life" == (call TFAR_fnc_getTeamSpeakServerName);
 			if (!(_onTsServer)) then {
-				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 94.250.223.9:15107", "BLACK"];
+				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 89.163.173.50:9987", "BLACK"];
 				A3L_onTsServer = false;
 			} else {
 				if (!(A3L_onTsServer)) then {
