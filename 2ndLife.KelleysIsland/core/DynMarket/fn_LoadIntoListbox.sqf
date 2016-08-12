@@ -8,7 +8,7 @@
 #################################################################
 */
 
-if (isNil "DYNMARKET_prices") then {[getPlayerUID player] remoteExecCall ["TON_fnc_playerLogged", call (life_fnc_HCC)]; ["Rufe Preise ab...", false] spawn domsg; sleep 1;};
+if (isNil "DYNMARKET_prices") then {[getPlayerUID player, false, false] remoteExecCall ["TON_fnc_playerLogged", call (life_fnc_HCC)]; ["Rufe Preise ab...", false] spawn domsg; sleep 1;};
 
 disableSerialization;
 _dialog = findDisplay 7100;

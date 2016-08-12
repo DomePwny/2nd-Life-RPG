@@ -19,7 +19,6 @@ switch (_switch) do
 		switch (_whatanumber) do {
 			case 1: {_query = format["UPDATE dynmarket SET prices='%1'",DYNMARKET_Items_CurrentPriceArr];};
 		};
-		waitUntil {sleep (random 0.3); !DB_Async_Active};
 		_queryResult = [_query,1] call DB_fnc_asyncCall;
 		diag_log "### DYNMARKET >> SUCCESSFULLY BACKUP'D CURRENT PRICES TO DATABASE!   ###";
 	};
@@ -30,7 +29,6 @@ switch (_switch) do
 			case 1: {format["SELECT prices FROM dynmarket WHERE id='1'"];};
 		};
 
-		waitUntil{sleep (random 0.3); !DB_Async_Active};
 		_tickTime = diag_tickTime;
 		_queryResult = [_query,2] call DB_fnc_asyncCall;
 		//DYNMARKET_Items_CurrentPriceArr = _queryResult select 0;
