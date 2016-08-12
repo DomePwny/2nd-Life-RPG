@@ -1011,41 +1011,26 @@ fnc_testdupe = {
 	(findDisplay 602) displayRemoveEventHandler ["MouseMoving",nodrag3];	
 };
 
-fnc_gut_animal = {
-	private["_obj"];
-	_obj = param [0,ObjNull,[ObjNull]];
-	if(isNull _obj) exitWith {}; 
-	if(alive _obj) exitWith {}; 
-
-	if(([true,"Raw Meat",1] call life_fnc_handleInv)) then
-	{
-		deleteVehicle _obj;
-		["Du hast 1 Rohes Fleisch aufgehoben.", false] spawn domsg;
-	};
-};
-
-
-	fnc_doorkick = {
-
-		_doorkick = 45;
-		_failed = false;
-		while{_doorkick > 0} do {
-			uisleep 1;
-			_doorkick = _doorkick - 1;
-			_locked = locked (vehicle player);
-			if(_doorkick == 44 || _doorkick == 25 || _doorkick == 10) then {
-				[player,"glassbreak"] spawn life_fnc_nearestSound;
-			};
-
-			if(_locked != 2) exitwith { _failed = true; };
-			sleep 1;
-			hint format["Du trittst die Türen auf %1.",_doorkick];
-			_vehspeed = speed (vehicle player);
-			if(_vehspeed > 0) exitwith { _failed = true; };
+fnc_doorkick = {
+	_doorkick = 45;
+	_failed = false;
+	while{_doorkick > 0} do {
+		uisleep 1;
+		_doorkick = _doorkick - 1;
+		_locked = locked (vehicle player);
+		if(_doorkick == 44 || _doorkick == 25 || _doorkick == 10) then {
+			[player,"glassbreak"] spawn life_fnc_nearestSound;
 		};
-		hint "";
-		if(!_failed) then { player action ["Eject", vehicle player]; (vehicle player) lock 0; };
+
+		if(_locked != 2) exitwith { _failed = true; };
+		sleep 1;
+		hint format["Du trittst die Türen auf %1.",_doorkick];
+		_vehspeed = speed (vehicle player);
+		if(_vehspeed > 0) exitwith { _failed = true; };
 	};
+	hint "";
+	if(!_failed) then { player action ["Eject", vehicle player]; (vehicle player) lock 0; };
+};
 
 //double click functions
 fnc_removeitem = {

@@ -117,10 +117,10 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	};
 } else {
 	//OK, it wasn't a player so what is it?
-	private["_isVehicle","_miscItems","_money","_animalTypes"];
+	private["_isVehicle","_miscItems","_money"];
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F","Land_Sleeping_bag_blue_folded_F","Land_Screwdriver_V1_F","Land_ButaneCanister_F","Land_Antibiotic_F","Land_VitaminBottle_F","Land_DisinfectantSpray_F","Land_MobilePhone_smart_F","Land_Bandage_F","Land_Pillow_grey_F","plp_bo_BottleBitters","plp_bo_BottleBitters","Land_SatellitePhone_F","Land_Battery_F","Land_Defibrillator_F"];
-	_animalTypes = ["Sheep_random_F","Cock_random_F","Hen_random_F","Goat_random_F"];
+	_animals = [position player, ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F","Rabbit_F"], 3.5] call life_fnc_nearestObjects;
 	_money = "cg_money_stack_1";
 	
 	//It's a vehicle! open the vehicle interaction key!
@@ -132,12 +132,15 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		};
 	} else {
 		//Is it a animal type?
-		if((typeOf _curTarget) in _animalTypes && !alive _curTarget) then {
-			_chance = round (random 100);
-			if(_chance > 60 && !license_civ_rifle) then {
-				["dnopermit", false] remoteExec ["fnc_dispatch",west];	
+		if (count _animals > 0) then {
+			_animal = _animals select 0;
+			if (!alive _animal) then {
+				_chance = round (random 100);
+				if(_chance > 60 && !license_civ_rifle) then {
+					["dnopermit", false] remoteExec ["fnc_dispatch",west];	
+				};	
+				[_animal] call life_fnc_gutAnimal;
 			};
-			[_curTarget] spawn fnc_gutanimal;	
 		} else {
 			//OK, it wasn't a vehicle so let's see what else it could be?
 			if((typeOf _curTarget) in _miscItems) then {

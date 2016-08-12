@@ -194,6 +194,7 @@ class Life_Client_Core
 		class robStore {}; 
 		class surrender {};
 		class carSalesman {};
+		class gutAnimal {};
 	};	
 
 	class Paintball
@@ -359,6 +360,7 @@ class Life_Client_Core
 		class testDrive {};
 		class broadcastCheck {};
 		class logout {};
+		class nearestObjects {};
 	};
 	
 	class Network
