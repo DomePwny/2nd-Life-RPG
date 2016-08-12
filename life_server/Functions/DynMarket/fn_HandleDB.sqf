@@ -26,11 +26,17 @@ switch (_switch) do
 	case 1:
 	{
 		_query = switch(_whatanumber) do {
-			case 1: {format["SELECT prices FROM dynmarket WHERE id='1'"];};
+			case 1: {
+			format["SELECT prices FROM dynmarket WHERE id='1'"];
+			diag_log "########################## DYNAMIC MARKET ##########################";
+			diag_log "### >> Query = "_query"              ###";
+			};
 		};
 
 		_tickTime = diag_tickTime;
 		_queryResult = [_query,2] call DB_fnc_asyncCall;
+		diag_log "########################## DYNAMIC MARKET ##########################";
+		diag_log "### >> Result = "_queryResult"                ###";
 		//DYNMARKET_Items_CurrentPriceArr = _queryResult select 0;
 		_pricearray = _queryResult select 0;
 		if (count _pricearray < 1) then {
