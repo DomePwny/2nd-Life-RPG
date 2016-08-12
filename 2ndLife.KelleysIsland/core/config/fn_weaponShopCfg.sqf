@@ -48,7 +48,7 @@ switch(_shop) do
 					["EMS Basic Shop",
 						[
 							["Second_Life_Kamera_i",nil,950],
-							["Second_Life_Defi_i",Defibrillator,1250],
+							["Second_Life_Defi_i","Defibrillator",1250],
 							["TRYK_Headset_NV","Nachtsichtgerät",25],
 							["acc_flashlight","Extinguisher Flashlight",10],
 							["CG_ATF_Drug_Bottle_01_i","Valium",5],
@@ -87,13 +87,9 @@ switch(_shop) do
 							["TRYK_SPgearG_NV", "Nachtsichtgerät", 25],
 							["acc_flashlight","ACC Flashlight",10],
 							["RH_M6X","RH Flashlight",10],
-							["A3L_M4Flashlight","M4A3 Flashlight",10],
-							["Radar_Gun","Radar Gun",25], 
 							["ToolKit",nil,2500], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
-							["Taser_26","Taser",5],
-							["26_cartridge",nil,2],
 							["Chemlight_red",nil,20],
 							["Chemlight_yellow",nil,20],
 							["Chemlight_green",nil,20],
@@ -113,8 +109,6 @@ switch(_shop) do
 			_ret = [];
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
-					["A3L_Extinguisher",nil,10],
-					["30Rnd_test_mag_Tracer",nil,5],
 					["RH_m9",nil,240],
 					["RH_15Rnd_9x19_M9",nil,5]
 				];
