@@ -8,9 +8,9 @@
 private["_type","_index","_price","_var","_amount","_name"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_index = [_type,sell_array] call TON_fnc_index;
+_index = [_type,sell_array] call fnc_index;
 if(_index == -1) exitWith {};
-_index2 = [_type,DYNMARKET_prices] call TON_fnc_index;
+_index2 = [_type,DYNMARKET_prices] call fnc_index;
 _price = 0.0;
 if(_index2==-1) then {_price = (sell_array select _index) select 1;} else {_price = (DYNMARKET_prices select _index2) select 1;};
 _var = [_type,0] call life_fnc_varHandle;
