@@ -14,11 +14,11 @@ if(player distance _animalCorpse > 3.5) exitWith {}; //WTF need check with neare
 life_action_inUse = true;
 
 switch(typeOf _animalCorpse) do {
-	case "Hen_random_F": {_displayName = "Chicken"; _item = "raw_meat";};
-	case "Cock_random_F": {_displayName = "Rooster"; _item = "raw_meat";};
-	case "Goat_random_F": {_displayName = "Goat"; _item = "raw_meat";};
-	case "Sheep_random_F": {_displayName = "Sheep"; _item = "raw_meat";};
-	case "Rabbit_F": {_displayName = "Rabbit"; _item = "raw_meat";};
+	case "Hen_random_F": {_displayName = "Fleisch"; _item = "raw_meat";};
+	case "Cock_random_F": {_displayName = "Fleisch"; _item = "raw_meat";};
+	case "Goat_random_F": {_displayName = "Fleisch"; _item = "raw_meat";};
+	case "Sheep_random_F": {_displayName = "Fleisch"; _item = "raw_meat";};
+	case "Rabbit_F": {_displayName = "Fleisch"; _item = "raw_meat";};
 	default {_displayName = ""; _item = "";};
 };
 
