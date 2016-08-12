@@ -39,3 +39,5 @@
 #include "creditSalesUI.hpp"
 #include "selectTestDrive.hpp"
 #include "truckColorSelectorUI.hpp"
+#include "dynmarket_prices.hpp"
+#include "dynmarket_changeprice.hpp"
