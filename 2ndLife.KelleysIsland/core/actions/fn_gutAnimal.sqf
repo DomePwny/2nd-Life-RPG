@@ -14,11 +14,11 @@ if(player distance _animalCorpse > 3.5) exitWith {}; //WTF need check with neare
 life_action_inUse = true;
 
 switch(typeOf _animalCorpse) do {
-	case "Hen_random_F": {_displayName = "Chicken"; _item = "hen_raw";};
-	case "Cock_random_F": {_displayName = "Rooster"; _item = "rooster_raw";};
-	case "Goat_random_F": {_displayName = "Goat"; _item = "goat_raw";};
-	case "Sheep_random_F": {_displayName = "Sheep"; _item = "sheep_raw";};
-	case "Rabbit_F": {_displayName = "Rabbit"; _item = "rabbit_raw";};
+	case "Hen_random_F": {_displayName = "Chicken"; _item = "raw_meat";};
+	case "Cock_random_F": {_displayName = "Rooster"; _item = "raw_meat";};
+	case "Goat_random_F": {_displayName = "Goat"; _item = "raw_meat";};
+	case "Sheep_random_F": {_displayName = "Sheep"; _item = "raw_meat";};
+	case "Rabbit_F": {_displayName = "Rabbit"; _item = "raw_meat";};
 	default {_displayName = ""; _item = "";};
 };
 
@@ -37,7 +37,7 @@ _cP = 0.01;
 
 while{true} do {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+		[player,"AinvPknlMstpSnonWnonDnon_medic_1",true] remoteExecCall ["life_fnc_animSync",-2];
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
