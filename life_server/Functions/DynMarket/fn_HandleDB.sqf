@@ -27,7 +27,7 @@ switch (_switch) do
 	case 1:
 	{
 		_query = switch(_whatanumber) do {
-			case 1: {_returnCount = 11; format["SELECT prices FROM dynmarket WHERE id='1'"];};
+			case 1: {format["SELECT prices FROM dynmarket WHERE id='1'"];};
 		};
 
 		waitUntil{sleep (random 0.3); !DB_Async_Active};
