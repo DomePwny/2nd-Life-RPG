@@ -99,19 +99,7 @@ switch (_var) do
 	case "life_inv_opium": {(localize "STR_Item_opium")};
 	case "life_inv_cannabis": {(localize "STR_Item_cannabis")};
 	case "life_inv_pumpkin": {(localize "STR_Item_Pumpkin")};
-	case "life_inv_wheatseeds": {(localize "STR_Item_wheatseeds")};
-	case "life_inv_sunflowerseeds": {(localize "STR_Item_sunflowerseeds")};
-	case "life_inv_cornseeds": {(localize "STR_Item_cornseeds")};
-	case "life_inv_beanseeds": {(localize "STR_Item_beanseeds")};
-	case "life_inv_cottonseeds": {(localize "STR_Item_cottonseeds")};
-	case "life_inv_oliveseeds": {(localize "STR_Item_oliveseeds")};
-	case "life_inv_opiumseeds": {(localize "STR_Item_opiumseeds")};
-	case "life_inv_cannabisseeds": {(localize "STR_Item_cannabisseeds")};
-	case "life_inv_pumpkinseeds": {(localize "STR_Item_Pumpkinseeds")};
-	case "life_inv_rawgoatmeat": {(localize "STR_Item_rawgoatmeat")};
-	case "life_inv_rawchicken": {(localize "STR_Item_rawchicken")};
-	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
-	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
+	case "life_inv_rawmeat": {(localize "STR_Item_rawmeat")};
 	//Additions
 	case "life_inv_zoobeer": {"Light Beer"}; 
 	case "life_inv_zoobeer2": {"Heavy Beer"}; 

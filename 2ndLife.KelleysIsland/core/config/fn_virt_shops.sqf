@@ -21,7 +21,7 @@ switch (_shop) do
 	case "gems": {["Juwelen Händler",["sapphire","ruby","emerald"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Fisch Markt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
-	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]};	
+	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","pumpkin"]]};	
 	case "glass": {["Glas Händler",["glass"]]};
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
 	case "diamond": {["Diamond Dealer",["weddingring","diamond","diamondc"]]};
@@ -31,7 +31,7 @@ switch (_shop) do
 	case "cement": {["Zement Händler",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
 	case "ems": {["Arzt Zubehör",["medschere","medmarijuana","epipen","bandage","genitalcreme","tabletten","antibiotika","stitches","splint","airkit","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "butcher": {["Bob's Flesh'n Besh",["Raw Meat"]]};
+	case "butcher": {["Bob's Flesh'n Besh",["raw_meat"]]};
 };
 
 

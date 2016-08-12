@@ -3012,21 +3012,10 @@
 			<Original>Pumpkin Seeds</Original>
 			<English>Pumpkin Seeds</English>
 		</Key>
-		<Key ID="STR_Item_rawgoatmeat">
+		<Key ID="STR_Item_rawmeat">
 			<Original>Raw Meat</Original>
+			<German>Rohes Fleisch</German>
 			<English>Raw Meat</English>
-		</Key>
-		<Key ID="STR_Item_rawchicken">
-			<Original>Raw Chicken</Original>
-			<English>Raw Chicken</English>
-		</Key>
-		<Key ID="STR_Item_rawsheepmeat">
-			<Original>Raw Sheep meat</Original>
-			<English>Raw Sheep meat</English>
-		</Key>
-		<Key ID="STR_Item_rawrabbit">
-			<Original>Raw Rabbit</Original>
-			<English>Raw Rabbit</English>
 		</Key>
 		<Key ID="STR_Item_Cocaine">
 			<Original>Cocaine</Original>

@@ -43,7 +43,7 @@ if(!isNil "_this" && {count _this != 0}) then {
 		case (_zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1"]): {_gather = "cokeu"; _val = 1;};
 		case (_zone in ["meth_1"]): {_gather = "methu"; _val = 1;};
 		case (_zone in ["MDMA_zone_1"]): {_gather = "MDMAu"; _val = 1;};
-		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;};
+		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;}; // Gefängnisausbruch Item
 		default {""};
 	};
 };
