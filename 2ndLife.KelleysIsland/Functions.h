@@ -92,6 +92,7 @@ class Life_Client_Core
         class ForcePrice {};
         class DYNMARKET_getPrice {};
 		class DYNMARKET_getIcon {};
+		class marktDialog {};
     };
 	
 	class Actions

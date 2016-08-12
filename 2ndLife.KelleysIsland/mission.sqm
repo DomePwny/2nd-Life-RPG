@@ -22885,7 +22885,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addaction [""Marktpreise"",createDialog ""life_dynmarket_prices""];";
+				init="this addAction[""Marktpreise"",life_fnc_marktDialog];";
 			};
 			id=3693;
 			type="bv_terminal_shop";
