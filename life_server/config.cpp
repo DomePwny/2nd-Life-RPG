@@ -148,6 +148,7 @@ class CfgFunctions
             class HandleDB {};
             class playerLogged {};
             class sleeper {};
+			class changePrice {};
         };
 	};
 };
