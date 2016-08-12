@@ -147,7 +147,6 @@ life_carSalesman = false;
 life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
-DYNMARKET_prices = [];
 maintenance_on = false;
 SecondLife_version = "SecondLifeModVersion0001b";
 //Persistent Saving
