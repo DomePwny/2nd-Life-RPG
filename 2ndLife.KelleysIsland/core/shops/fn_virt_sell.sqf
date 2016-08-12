@@ -46,5 +46,11 @@ if(life_shop_type == "heroin") then
 		_array pushBack [getPlayerUID player,profileName,_price];
 		life_shop_npc setVariable["sellers",_array,true];
 	};
+	_chance = round (random 1000);
+	if(_chance < 80) then {
+		[1,"911 DISPATCH: Es sind Drogen im Umlauf."] remoteExecCall ["life_fnc_broadcast", west];
+		["ddrugs", false] remoteExec ["fnc_dispatch",west];
+		sleep 60;
+	};
 };
 
