@@ -8,7 +8,7 @@
 #################################################################
 */
 
-_itemArray = [_this,0,[]] call BIS_fnc_param;
+_itemArray = param [0,[]];
 if (count _itemArray < 1) exitWith {};
 {
 	_itemName = _x select 0;

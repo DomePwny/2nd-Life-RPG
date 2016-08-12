@@ -8,8 +8,6 @@
 #################################################################
 */
 
-private["_value","_query"];
-
 _switch = _this select 0;
 _whatanumber = 1;
 
@@ -19,12 +17,9 @@ switch (_switch) do
 	{
 		_query = "";
 		switch (_whatanumber) do {
-			case 1: {
-				_value = DYNMARKET_Items_CurrentPriceArr;
-				_value = [_value] call DB_fnc_mresArray;
-				_query = format["UPDATE dynmarket SET prices='%1'",_value];
-			};
+			case 1: {_query = format["UPDATE dynmarket SET prices='%1'",DYNMARKET_Items_CurrentPriceArr];};
 		};
+		waitUntil {sleep (random 0.3); !DB_Async_Active};
 		_queryResult = [_query,1] call DB_fnc_asyncCall;
 		diag_log "### DYNMARKET >> SUCCESSFULLY BACKUP'D CURRENT PRICES TO DATABASE!   ###";
 	};
@@ -35,6 +30,7 @@ switch (_switch) do
 			case 1: {_returnCount = 11; format["SELECT prices FROM dynmarket WHERE id='1'"];};
 		};
 
+		waitUntil{sleep (random 0.3); !DB_Async_Active};
 		_tickTime = diag_tickTime;
 		_queryResult = [_query,2] call DB_fnc_asyncCall;
 		//DYNMARKET_Items_CurrentPriceArr = _queryResult select 0;
