@@ -56,3 +56,4 @@ if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_Act
 life_action_inUse = false;
 _house animate [format["door_%1_rot",_door],1];
 _house setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
+_house setVariable["locked",false,true];

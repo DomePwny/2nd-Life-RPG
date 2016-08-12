@@ -21,4 +21,3 @@ _house setVariable["shared5",nil,true];
 
 ["Keys have been wiped, for people online with a set of keys, their keys will be removed on restart.", false] spawn domsg;
 [_house] remoteExecCall ["TON_fnc_dowipekeys",(call life_fnc_HCC)];
-
