@@ -49,14 +49,15 @@ A3L_Fnc_PlayAlarm = {
 		_veh = createVehicle ["SLB2k11_bomb", [2849.1042,15.437719,3831.3342], [], 0, "CAN_COLLIDE"]; 
 		_veh setDir 0.38179398; 
 		_veh setpos (getpos _veh);
+		deletevehicle _veh;
 		"R_60mm_HE" createvehicle [2849.1042,15.437719,-1];
 		prisondoor animate ['main_door', 8]; 
-		deletevehicle _veh;
 		uiSleep 1600;
 		prisondoor setVariable ["robbed", nil, true];
 	};
 
 	while {_timer > 0} do {
+		_object = "Land_DoorGateA";
 		_object say "c4_buttons";
 		uiSleep 1;
 		_timer = _timer - 1;
