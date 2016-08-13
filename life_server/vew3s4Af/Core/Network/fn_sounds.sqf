@@ -44,23 +44,27 @@ A3L_Fnc_BankAlarm = {
 
 A3L_Fnc_PlayAlarm = {
 	params ["_timer", "_object"];
-	if (isServer) exitwith {
+	/*if (isServer) exitwith {
 		uisleep _timer;
 		_veh = createVehicle ["SLB2k11_bomb", [2838.06,3841.68,0.52143909], [], 0, "CAN_COLLIDE"]; 
-		_veh setDir 0.38179398; 
-		_veh setpos (getpos _veh);
+		_veh setpos [2838.06,3841.68,0.52143909];
 		deletevehicle _veh;
 		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];
-	};
+	};*/
 
 	while {_timer > 0} do {
 		prisondoor say "c4_buttons";
+		_veh = createVehicle ["SLB2k11_bomb", [2838.06,3841.68,0.52143909], [], 0, "CAN_COLLIDE"]; 
+		_veh setpos [2838.06,3841.68,0.52143909];
 		uiSleep 1;
 		_timer = _timer - 1;
+		deletevehicle _veh;
 	};
 	if (!isDedicated) then { 
-		prisondoor say "bankAlarm" ;
+		prisondoor say "PrisonAlarm" ;
 		prisondoor animate ['main_door', 8];
+		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];
+		prisondoor say "Explode" ;
 		uiSleep 1600;
 		prisondoor setVariable ["robbed", nil, true];		
 	};
