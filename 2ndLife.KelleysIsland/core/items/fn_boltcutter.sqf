@@ -36,11 +36,6 @@ _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
-	_cP = 0;
-	if(karma_level > 0) then {
-		_cp = karma_level / 100;
-	};
-
 _cpRate = 0.08;
 
 playSound3D ["cg_sndimg\sounds\caralarm.ogg", player, false, getPosASL player, 1, 2, 455];

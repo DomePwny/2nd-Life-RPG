@@ -31,8 +31,6 @@ life_action_inUse = true;
 	if(_cme > 3) exitwith {
 		cursorTarget setVariable["blindfolded", true, true];
 		[player] remoteExecCall ["life_fnc_tieingb", cursorTarget];
-		["Remove",10] call fnc_karma;
 	};
 };
 life_action_inUse = false;
-

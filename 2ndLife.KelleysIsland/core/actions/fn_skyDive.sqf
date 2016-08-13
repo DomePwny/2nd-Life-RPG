@@ -36,14 +36,6 @@ if((player getVariable ["restrained", false])) exitWith {
 
 _price = 500;
 
-if(life_karma > 100) then {
-	["You have received a 10% discount due to good Reputation.", false] spawn domsg;
-	_price = round(_price * 0.9);
-	["cash","take",_price] call life_fnc_handleCash; 	
-} else {
-	["cash","take",_price] call life_fnc_handleCash; 	
-};
-
 _backpackName = backpack player;
 _backpackItems = backpackItems player;
 uiSleep 1;

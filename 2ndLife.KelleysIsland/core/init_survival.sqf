@@ -2305,7 +2305,7 @@ fnc_fedex = {
 		markerf setMarkerTextLocal format["%1", chosen getVariable["realname",name chosen]];
 		_distance = player distance chosen;
 		_distance = floor (_distance / 1000);
-		if( uniform chosen isEqualTo "A3L_Prisoner_Outfit" && (chosen distance (getMarkerPos "shank_1")) < 20 ) then {
+		if( uniform chosen isEqualTo "2ndlife_Prisoner" && (chosen distance (getMarkerPos "shank_1")) < 20 ) then {
 			["This player appears to be in prison, get close to the walls to deliver their package.", false] spawn domsg; 
 		};
 		if(_distance < 1) then { _distance = 1; };
@@ -2315,7 +2315,7 @@ fnc_fedex = {
 		while {fedex_on} do {
 			_calcT = _calcT + 1;
 			markerf setMarkerPosLocal (visiblePosition chosen);
-			if( uniform chosen isEqualTo "A3L_Prisoner_Outfit" && (chosen distance (getMarkerPos "shank_1")) < 20 && player distance chosen < 50 ) exitwith {
+			if( uniform chosen isEqualTo "2ndlife_Prisoner" && (chosen distance (getMarkerPos "shank_1")) < 20 && player distance chosen < 50 ) exitwith {
 				_success = true;
 				_jail = true;
 			};

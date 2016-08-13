@@ -8,7 +8,6 @@ deletevehicle _x;
 if (side player == civilian || side player == east) then {
 _money = 25000;
 [format ["You swapped the stolen cash and received %1",_money],30,"green"] spawn domsg;
-["Remove",500] call fnc_karma;
 [7] call SOCK_fnc_updatePartial;
 ["cash","add",_money] call life_fnc_handleCash; 
 };

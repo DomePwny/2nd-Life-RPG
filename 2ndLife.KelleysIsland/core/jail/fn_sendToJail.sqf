@@ -13,10 +13,8 @@ life_arrestReason = _this select 3;
 
 ["Reset",0] call fnc_battery;
 
-["Remove",500] call fnc_karma;
-
 A3L_Fnc_OldUniform = Uniform player;
-player addUniform "A3L_Prisoner_Outfit";
+player addUniform "2ndlife_Prisoner";
 
 [localize "STR_Jail_LicenseNOTF", false] spawn domsg;
 

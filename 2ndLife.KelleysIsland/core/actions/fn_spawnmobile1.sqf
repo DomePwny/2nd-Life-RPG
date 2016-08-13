@@ -8,11 +8,11 @@ fedex_on = true;
 has_job = true;
 switch(_this select 3) do {
 	case "truck": {
-			 _towtrucks = nearestObjects [player, ["Jonzie_Log_Truck","Jonzie_Superliner","Jonzie_Flatbed_Roadtrain","Jonzie_Flatbed"], 20]; 
-	  		 if(count _towtrucks > 0) exitWith { ["Please wait til trucks move before spawning another..", false] spawn domsg; };
-			vehspawned = createVehicle ["Jonzie_Log_Truck", position player, [], 0, "NONE"];
-			trucking = true;
-			[] spawn fnc_trucking;
+		 _towtrucks = nearestObjects [player, ["Jonzie_Log_Truck","Jonzie_Superliner","Jonzie_Flatbed_Roadtrain","Jonzie_Flatbed"], 20]; 
+	  	 if(count _towtrucks > 0) exitWith { ["Please wait til trucks move before spawning another..", false] spawn domsg; };
+		vehspawned = createVehicle ["Jonzie_Log_Truck", position player, [], 0, "NONE"];
+		trucking = true;
+		[] spawn fnc_trucking;
 	};
 	case "food": {
 		vehspawned = createVehicle ["critgamin_vangmcc_food", (getmarkerPos "job_spawn_1"), [], 0, "NONE"];
@@ -70,7 +70,6 @@ while{_fkit > 0} do {
 		{
 			["bank","add", 1100] call life_fnc_handleCash;
 			["You just got paid an extra $1100", false] spawn domsg;
-			["Add",8] call fnc_karma;
 		};
 	};
 	_fkit = _fkit - 1;

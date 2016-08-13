@@ -33,7 +33,6 @@ life_action_inUse = true;
 		_unit setVariable ["tf_voiceVolume", 0, true];
 		[_unit,"gagged"] spawn life_fnc_nearestSound;
 		[player] remoteExec ["life_fnc_gaggingb", _unit];
-		["Remove",10] call fnc_karma;
 	};
 };
 life_action_inUse = false;

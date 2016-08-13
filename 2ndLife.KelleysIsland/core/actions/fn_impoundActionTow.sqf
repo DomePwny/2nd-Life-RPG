@@ -48,9 +48,6 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 	_cP = 0;
 	_vehicle setVariable["beingImpounded",true,true];
-	if(karma_level > 0) then {
-		_cp = karma_level / 100;
-	};
 	_progress progressSetPosition _cP;
 	while{true} do
 	{

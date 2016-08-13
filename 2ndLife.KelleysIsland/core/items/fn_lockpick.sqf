@@ -30,10 +30,7 @@ _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
-	_cP = 0;
-	if(karma_level > 0) then {
-		_cp = karma_level / 100;
-	};
+
 player setVariable ["lockpicking",true,true];
 //make this play max once per xx time or something to prevent spam
 
