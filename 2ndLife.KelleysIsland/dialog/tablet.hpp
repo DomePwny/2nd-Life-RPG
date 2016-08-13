@@ -187,51 +187,6 @@ class appbutton7: RscButtonSilent
 	h = 0.066 * safezoneH;
 	action = "closedialog 0; [] spawn life_fnc_animMenu;";
 };
-class appbutton9: RscButtonSilent
-{
-	idc = 85708;
-	text = "";
-	x = 0.587 * safezoneW + safezoneX;
-	y = 0.451 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-	action = "closedialog 0; [] spawn fnc_joinPaintball;";
-};
-
-
-class appbutton10: RscButtonSilent
-{
-	idc = 85709;
-	text = "";
-	x = 0.629 * safezoneW + safezoneX;
-	y = 0.451 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-	action = "closedialog 0; [] spawn life_fnc_race;";
-};
-
-class appbutton11: RscButtonSilent
-{
-	idc = 85710;
-	text = "";
-	x = 0.545 * safezoneW + safezoneX;
-	y = 0.52 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-	action = "closedialog 0; [] spawn life_fnc_race2;";
-};
-
-
-
-
-
-
-
-
-
-
-
-
 
 class appbutton12: RscButtonSilent
 {
@@ -425,36 +380,6 @@ class app7: RscPicture
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
 };
-class app9: RscPicture
-{
-	idc = 85460;
-	text = "";
-	x = 0.587 * safezoneW + safezoneX;
-	y = 0.451 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-};
-
-class app10: RscPicture
-{
-	idc = 85462;
-	text = "";
-	x = 0.629 * safezoneW + safezoneX;
-	y = 0.451 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-};
-class app11: RscPicture
-{
-	idc = 85464;
-	text = "";
-	x = 0.545 * safezoneW + safezoneX;
-	y = 0.520 * safezoneH + safezoneY;
-	w = 0.041 * safezoneW;
-	h = 0.066 * safezoneH;
-};
-
-
 
 //answer call
 class app12: RscPicture
