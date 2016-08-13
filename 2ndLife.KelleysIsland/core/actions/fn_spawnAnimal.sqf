@@ -3,6 +3,7 @@
 	Author: NerdsRPG
 */
 if(im_hunting) exitwith {};
+if (playerside == west OR playerside == independent) exitwith { ["VERPISS DICH DU TÖTEST KEINE TIERE!",false] spawn domsg; };
 ["Jage die Tiere - Benutze die Windows Taste um sie zu schlachten.",false] spawn domsg;
 im_hunting = true;
 private["_animal","_tempPos"];
