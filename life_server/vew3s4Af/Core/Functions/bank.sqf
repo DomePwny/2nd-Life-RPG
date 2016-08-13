@@ -1,5 +1,5 @@
 fnc_armc4 = {
-	_c4pic_array = ["\A3L_Client2\c4files\pic0.paa","\A3L_Client2\c4files\pic1.paa","\A3L_Client2\c4files\pic2.paa","\A3L_Client2\c4files\pic3.paa","\A3L_Client2\c4files\pic4.paa","\A3L_Client2\c4files\pic5.paa","\A3L_Client2\c4files\pic6.paa","\A3L_Client2\c4files\pic7.paa","\A3L_Client2\c4files\pic8.paa","\A3L_Client2\c4files\pic9.paa"];
+	_c4pic_array = ["\secondlife_client\c4files\pic0.paa","\secondlife_client\c4files\pic1.paa","\secondlife_client\c4files\pic2.paa","\secondlife_client\c4files\pic3.paa","\secondlife_client\c4files\pic4.paa","\secondlife_client\c4files\pic5.paa","\secondlife_client\c4files\pic6.paa","\secondlife_client\c4files\pic7.paa","\secondlife_client\c4files\pic8.paa","\secondlife_client\c4files\pic9.paa"];
 	_eentallenpic = ctrltext 154269;
 	_tientallenpic = ctrltext 154268;
 	_eentallen = _c4pic_array find _eentallenpic;

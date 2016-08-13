@@ -46,13 +46,12 @@ A3L_Fnc_PlayAlarm = {
 	params ["_timer", "_object"];
 	if (isServer) exitwith {
 		uisleep _timer;
-		_veh = createVehicle ["A3L_Bomb", [9623.14,10052.4,1.4], [], 0, "CAN_COLLIDE"]; 
-		_veh setDir 310.922; 
+		_veh = createVehicle ["SLB2k11_bomb", [2849.1042,15.437719,3831.3342], [], 0, "CAN_COLLIDE"]; 
+		_veh setDir 0.38179398; 
 		_veh setpos (getpos _veh);
+		"R_60mm_HE" createvehicle [2849.1042,15.437719,-1];
+		prisondoor animate ['main_door', 8]; 
 		deletevehicle _veh;
-		"R_60mm_HE" createvehicle [9623.14,10052.4,-1];
-		prisondoor animate ['maindoor1', 1.6]; 
-		prisondoor animate ['maindoor2', -1.6];
 		uiSleep 1600;
 		prisondoor setVariable ["robbed", nil, true];
 	};
