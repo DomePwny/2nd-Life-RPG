@@ -39,7 +39,7 @@ if(!skip_all) then {
 	if(side _civ == independent) then {_message = "EMS Department"};
 	if(side _civ == west) then  {_message = "Police Officer"};
 	if(side _civ == civilian) then {_message = "Civilian"};
-	if(side _civ == east) then {_message = "Civilian"};	
+	if(side _civ == east) then {_message = "Mafioso"};	
 	_id_faction ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\faction.paa'/> Info:<t color='#C80000'> %1 </t>",_message];
 
 	_message = getPlayerUID _civ;

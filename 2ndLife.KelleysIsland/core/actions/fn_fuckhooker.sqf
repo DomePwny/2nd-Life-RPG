@@ -1,8 +1,7 @@
 _price = 250;
 if(cash_in_hand < _price) exitWith {
-	["Du brauchst 250$ um die Nutte zu bezahlen!", false] spawn domsg;
+	["Der Spass kostet dich 250$. Komm mit Kohle wieder!", false] spawn domsg;
 };
-
 
 _chance = round (random 100);
 
@@ -14,7 +13,7 @@ if(life_std == 0) then {
 	};	
 };
 
-["Du fühlst dich großartig nach dem Sex - Du kannst mit deiner Waffe für 90 Minuten besser umgehen!", false] spawn domsg;
+["Der Druck ist weg, du kannst jetzt besser mit anderen Sachen schiessen!", false] spawn domsg;
 life_num = 0;
 uiSleep 1;
 life_num = 5400;

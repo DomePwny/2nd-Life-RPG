@@ -95,8 +95,6 @@ if(playerSide == west) then {
 			if(count crew _curTarget == 0 && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
 		} else {
 			_Btn6 ctrlSetText "Umdrehen";
-
-
 			_Btn6 buttonSetAction "life_vInact_curTarget setPosASL [getPosASL life_vInact_curTarget select 0, getPosASL life_vInact_curTarget select 1, (getPosASL life_vInact_curTarget select 2) + 0.5]; closeDialog 0;";
 			if(count crew _curTarget == 0) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false;};
 		};
@@ -119,11 +117,9 @@ if(playerSide == west) then {
 	_Btn10 ctrlSetText "Zerstören";
 	_Btn10 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_checkdefect;";
 
-
 	if(!command) then {
 		_Btn10 ctrlEnable false;	
 	};
-
 
 	_Btn11 ctrlSetText "Kennzeichen Prüfen";
 	_Btn11 buttonSetAction "[life_the_driver] spawn life_fnc_licensesLook; closeDialog 0;";
@@ -140,8 +136,6 @@ if(playerSide == west) then {
 		_Btn9 ctrlEnable false;
 		_Btn11 ctrlEnable false;	
 	};
-
-
 
 	_Btn12 ctrlSetText "Parkgebühr 500";
 	_Btn12 buttonSetAction "life_vInact_curTarget setVariable[""parkingTicket"",true,true]; closeDialog 0;";
@@ -161,7 +155,6 @@ if(playerSide == west) then {
 	} else {
 		_Btn13 ctrlEnable true;	
 	};
-
 
 		_Btn14 ctrlSetText "Anstoßen";
 		_Btn14 buttonSetAction "[1] spawn life_fnc_pushVehicle; closeDialog 0;";
@@ -221,20 +214,19 @@ if(playerSide == west) then {
 			_Btn6 ctrlEnable false;
 			_Btn7 ctrlEnable false;
 		};
-	_Btn8 ctrlShow false;
-	_Btn9 ctrlShow false;
-	_Btn10 ctrlShow false;
-	_Btn11 ctrlShow false;
-	_Btn12 ctrlShow false;
-	_Btn13 ctrlShow false;
-	_Btn14 ctrlShow false;
-	_Btn15 ctrlShow false;
-	_Btn16 ctrlShow false;
-	_Btn17 ctrlShow false;
-	_Btn18 ctrlShow false;
-	}
-	else {
-	
+		
+		_Btn8 ctrlShow false;
+		_Btn9 ctrlShow false;
+		_Btn10 ctrlShow false;
+		_Btn11 ctrlShow false;
+		_Btn12 ctrlShow false;
+		_Btn13 ctrlShow false;
+		_Btn14 ctrlShow false;
+		_Btn15 ctrlShow false;
+		_Btn16 ctrlShow false;
+		_Btn17 ctrlShow false;
+		_Btn18 ctrlShow false;
+	} else {
 		if(_curTarget isKindOf "Ship") then {
 			_Btn2 ctrlSetText "Anstoßen";
 			_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -251,19 +243,18 @@ if(playerSide == west) then {
 			};
 		};
 		
-
 		_Btn3 ctrlSetText "Rausziehen";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+		
 		if(cursorTarget in life_vehicles && {player distance cursorTarget < 5}) then { _Btn4 ctrlEnable true; } else {	_Btn4 ctrlEnable false; };
-
 		_Btn4 ctrlSetText "Abschleppen";
 		_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundActionTow; closeDialog 0;";
+		
 		if((player distance (getMarkerPos "tow_truck")) < 12) then {
 			_Btn4 ctrlEnable true;
 		} else {
 			_Btn4 ctrlEnable false;
 		};
-
 
 		_Btn5 ctrlSetText "Anstoßen";
 		_Btn5 buttonSetAction "[1] spawn life_fnc_pushVehicle; closeDialog 0;";
@@ -280,22 +271,20 @@ if(playerSide == west) then {
 			_Btn7 ctrlEnable false;
 		};
 
-	_Btn8 ctrlShow false;
-	_Btn9 ctrlShow false;
-	_Btn10 ctrlShow false;
-	_Btn11 ctrlShow false;
-	_Btn12 ctrlShow false;
-	_Btn13 ctrlShow false;
-	_Btn14 ctrlShow false;
-	_Btn15 ctrlShow false;
-	_Btn16 ctrlShow false;
-	_Btn17 ctrlShow false;
-	_Btn18 ctrlShow false;
+		_Btn8 ctrlShow false;
+		_Btn9 ctrlShow false;
+		_Btn10 ctrlShow false;
+		_Btn11 ctrlShow false;
+		_Btn12 ctrlShow false;
+		_Btn13 ctrlShow false;
+		_Btn14 ctrlShow false;
+		_Btn15 ctrlShow false;
+		_Btn16 ctrlShow false;
+		_Btn17 ctrlShow false;
+		_Btn18 ctrlShow false;
 	};
 };
 
-
-
-	_Btn19 ctrlShow false;
-	_Btn20 ctrlShow false;
-	_Btn21 ctrlShow false;
+_Btn19 ctrlShow false;
+_Btn20 ctrlShow false;
+_Btn21 ctrlShow false;

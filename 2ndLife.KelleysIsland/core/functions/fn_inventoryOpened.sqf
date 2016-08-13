@@ -14,7 +14,6 @@ if(vehicle player != player || _container isKindOf "Car" || _container isKindOf 
 };	
 */
 
-
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
 if(_isPack == 1) exitWith {
 	handle = true;
