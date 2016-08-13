@@ -23,7 +23,7 @@ controls[]=
 class background: RscPicture
 {
 	idc = 1200;
-	text = "\A3L_Client2\c4files\bomb.paa";
+	text = "\secondlife_client\c4files\bomb.paa";
 	x = 0.285937 * safezoneW + safezoneX;
 	y = 0.213074 * safezoneH + safezoneY;
 	w = 0.416093 * safezoneW;
@@ -32,7 +32,7 @@ class background: RscPicture
 class colon: RscPicture
 {
 	idc = 1205;
-	text = "\A3L_Client2\c4files\colon.paa";
+	text = "\secondlife_client\c4files\colon.paa";
 	x = 0.524218 * safezoneW + safezoneX;
 	y = 0.478 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
@@ -41,7 +41,7 @@ class colon: RscPicture
 class zero1: RscPicture
 {
 	idc = 1203;
-	text = "\A3L_Client2\c4files\pic0.paa";
+	text = "\secondlife_client\c4files\pic0.paa";
 	x = 0.492291 * safezoneW + safezoneX;
 	y = 0.47337 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
@@ -50,7 +50,7 @@ class zero1: RscPicture
 class zero2: RscPicture
 {
 	idc = 1204;
-	text = "\A3L_Client2\c4files\pic0.paa";
+	text = "\secondlife_client\c4files\pic0.paa";
 	x = 0.508854 * safezoneW + safezoneX;
 	y = 0.473148 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
@@ -59,7 +59,7 @@ class zero2: RscPicture
 class displaydoubles: RscPicture
 {
 	idc = 154268;
-	text = "\A3L_Client2\c4files\pic0.paa";
+	text = "\secondlife_client\c4files\pic0.paa";
 	x = 0.529375 * safezoneW + safezoneX;
 	y = 0.47337 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
@@ -68,7 +68,7 @@ class displaydoubles: RscPicture
 class displaysingles: RscPicture
 {
 	idc = 154269;
-	text = "\A3L_Client2\c4files\pic0.paa";
+	text = "\secondlife_client\c4files\pic0.paa";
 	x = 0.546874 * safezoneW + safezoneX;
 	y = 0.473148 * safezoneH + safezoneY;
 	w = 0.0257812 * safezoneW;
