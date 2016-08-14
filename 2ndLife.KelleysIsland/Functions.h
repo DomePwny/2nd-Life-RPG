@@ -285,6 +285,7 @@ class Life_Client_Core
 	class Functions
 	{
 		file = "core\functions";
+		class animmenu {};
 		class A3L_bankrobbery {};
 		class pettycash {};
 		class handleCash {};
@@ -437,7 +438,6 @@ class Life_Client_Core
 		class emsInteractionMenu2 {};
 		class copInteractionMenu {};
 		class helpmenu {};
-		class animmenu {};
 		class licensesLook {};
 		class repairDoor {};
 		class doorAnimate {};

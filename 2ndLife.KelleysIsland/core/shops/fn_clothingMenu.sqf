@@ -6,7 +6,7 @@
 	Opens and initializes the clothing store menu.
 	Started clean, finished messy.
 */
-private["_list","_clothes","_pic","_filter"];
+private["_list","_clothes","_pic","_filter","_pos","_oldPos","_oldDir","_oldBev","_testLogic","_nearVeh","_ut1","_ut2","_ut3","_ut4","_ut5","_light"];
 createDialog "Life_Clothing";
 disableSerialization;
 
@@ -17,6 +17,47 @@ if((_this select 3) in ["brucecop"] && playerSide != west) exitWith {["Du bist k
 if((_this select 3) in ["sertcop"] && playerSide != west) exitWith {["Du bist kein Polizist", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { [localize "STR_Shop_NotaDive", false] spawn domsg; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {["Du bist kein Mediziner.", false] spawn domsg; closeDialog 0;};
+
+_oldDir = getDir player;
+_oldPos = visiblePositionASL player;
+_oldBev = behaviour player;
+
+_testLogic = "Logic" createVehicleLocal _pos;
+_testLogic setPosATL _pos;
+
+_nearVeh = _testLogic nearEntities ["AllVehicles", 20];
+
+_ut1 = "UserTexture10m_F" createVehicleLocal (_testLogic modelToWorld [0,5,10]);
+_ut1 attachTo [_testLogic,[0,5,5]];
+_ut1 setDir 0;
+_ut2 = "UserTexture10m_F" createVehicleLocal (_testLogic modelToWorld [5,0,10]);
+_ut2 attachTo [_testLogic,[5,0,5]];
+_ut2 setDir (getDir _testLogic) + 90;
+_ut3 = "UserTexture10m_F" createVehicleLocal (_testLogic modelToWorld [-5,0,10]);
+_ut3 attachTo [_testLogic,[-5,0,5]];
+_ut3 setDir (getDir _testLogic) - 90;
+_ut4 = "UserTexture10m_F" createVehicleLocal (_testLogic modelToWorld [0,-5,10]);
+_ut4 attachTo [_testLogic,[0,-5,5]];
+_ut4 setDir 180;
+_ut5 = "UserTexture10m_F" createVehicleLocal (_testLogic modelToWorld [0,0,10]);
+_ut5 attachTo [_testLogic,[0,0,0]];
+_ut5 setObjectTexture [0,"a3\map_data\gdt_concrete_co.paa"];
+detach _ut5;
+_ut5 setVectorDirAndUp [[0,0,-.33],[0,.33,0]];
+
+_light = "#lightpoint" createVehicleLocal _pos;
+_light setlightbrightness 0.5;
+_light setlightcolor [1,1,1];
+_light setlightambient [1,1,1];
+_light lightAttachObject [_testLogic, [0,0,0]];
+
+{if(_x != player) then {_x hideObject true;};} foreach playableUnits;
+{_x setObjectTexture [0,"#(argb,8,8,3)color(0,0,0,1)"];} foreach [_ut1,_ut2,_ut3,_ut4];
+
+player setBehaviour "SAFE";
+player attachTo [_testLogic,[0,0,0]];
+player switchMove "";
+player setDir 360;
 
 life_clothing_store = _this select 3;
 
@@ -62,28 +103,33 @@ life_oldGlasses = goggles player;
 life_oldHat = headgear player;
 
 waitUntil {isNull (findDisplay 3100)};
+
+{if(_x != player) then {_x hideObject false;};} foreach playableUnits;
+
+detach player;
+player setBehaviour _oldBev;
+player setPosASL _oldPos;
+player setDir _oldDir;
+
+{deleteVehicle _x;} foreach [_testLogic,_ut1,_ut2,_ut3,_ut4,_ut5,_light];
+
+
 life_shop_cam cameraEffect ["TERMINATE","BACK"];
 camDestroy life_shop_cam;
 life_clothing_filter = 0;
-if(isNil "life_clothesPurchased") exitWith
-{
+if(isNil "life_clothesPurchased") exitWith {
 	life_clothing_purchase = [-1,-1,-1,-1,-1];
 	if(life_oldClothes != "") then {player addUniform life_oldClothes;} else {removeUniform player};
 	if(life_oldHat != "") then {player addHeadgear life_oldHat} else {removeHeadgear player;};
 	if(life_oldGlasses != "") then {player addGoggles life_oldGlasses;} else {removeGoggles player};
-	if(backpack player != "") then
-	{
-		if(life_oldBackpack == "") then
-		{
+	if(backpack player != "") then {
+		if(life_oldBackpack == "") then {
 			removeBackpack player;
-		}
-			else
-		{
+		} else {
 			removeBackpack player;
 			player addBackpack life_oldBackpack;
 			clearAllItemsFromBackpack player;
-			if(count life_oldBackpackItems > 0) then
-			{
+			if(count life_oldBackpackItems > 0) then {
 				{
 					[_x,true,true] call life_fnc_handleItem;
 				} foreach life_oldBackpackItems;
@@ -91,22 +137,16 @@ if(isNil "life_clothesPurchased") exitWith
 		};
 	};
 	
-	if(count life_oldUniformItems > 0) then
-	{
+	if(count life_oldUniformItems > 0) then {
 		{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldUniformItems;
 	};
 	
-	if(vest player != "") then
-	{
-		if(life_oldVest == "") then
-		{
+	if(vest player != "") then {
+		if(life_oldVest == "") then {
 			removeVest player;
-		}
-			else
-		{
+		} else {
 			player addVest life_oldVest;
-			if(count life_oldVestItems > 0) then
-			{
+			if(count life_oldVestItems > 0) then {
 				{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldVestItems;
 			};
 		};
@@ -115,37 +155,30 @@ if(isNil "life_clothesPurchased") exitWith
 life_clothesPurchased = nil;
 
 //Check uniform purchase.
-if((life_clothing_purchase select 0) == -1) then
-{
+if((life_clothing_purchase select 0) == -1) then {
 	if(life_oldClothes != uniform player) then {player addUniform life_oldClothes;};
 };
+
 //Check hat
-if((life_clothing_purchase select 1) == -1) then
-{
+if((life_clothing_purchase select 1) == -1) then {
 	if(life_oldHat != headgear player) then {if(life_oldHat == "") then {removeHeadGear player;} else {player addHeadGear life_oldHat;};};
 };
+
 //Check glasses
-if((life_clothing_purchase select 2) == -1) then
-{
-	if(life_oldGlasses != goggles player) then
-	{
-		if(life_oldGlasses == "") then 
-		{
+if((life_clothing_purchase select 2) == -1) then {
+	if(life_oldGlasses != goggles player) then {
+		if(life_oldGlasses == "") then {
 			removeGoggles player;
-		}
-			else
-		{
+		} else {
 			player addGoggles life_oldGlasses;
 		};
 	};
 };
+
 //Check Vest
-if((life_clothing_purchase select 3) == -1) then
-{
-	if(life_oldVest != vest player) then
-	{
-		if(life_oldVest == "") then {removeVest player;} else
-		{
+if((life_clothing_purchase select 3) == -1) then {
+	if(life_oldVest != vest player) then {
+		if(life_oldVest == "") then {removeVest player;} else {
 			player addVest life_oldVest;
 			{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldVestItems;
 		};
@@ -153,12 +186,9 @@ if((life_clothing_purchase select 3) == -1) then
 };
 
 //Check Backpack
-if((life_clothing_purchase select 4) == -1) then
-{
-	if(life_oldBackpack != backpack player) then
-	{
-		if(life_oldBackpack == "") then {removeBackpack player;} else
-		{
+if((life_clothing_purchase select 4) == -1) then {
+	if(life_oldBackpack != backpack player) then {
+		if(life_oldBackpack == "") then {removeBackpack player;} else {
 			removeBackpack player;
 			player addBackpack life_oldBackpack;
 			{[_x,true,true] call life_fnc_handleItem;} foreach life_oldBackpackItems;
@@ -167,5 +197,4 @@ if((life_clothing_purchase select 4) == -1) then
 };
 
 life_clothing_purchase = [-1,-1,-1,-1,-1];
-
 [] call life_fnc_saveGear;
