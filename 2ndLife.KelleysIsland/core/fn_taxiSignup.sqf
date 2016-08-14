@@ -9,11 +9,11 @@ life_taxi = true;
 
 ["Du bekommst deinen Lohn nur, wenn du im Taxi sitzt.", false] spawn domsg;
 
-_fkit = 60;
+_fkit = 12;
 _payment = 0;
 
 while{_fkit > 0 && life_taxi} do {
-	uisleep 60;
+	uisleep 300;
 	_fkit = _fkit - 1;
 
 	if(vehicle player != player) then

@@ -82,6 +82,16 @@ class Life_Client_Core
 		class mafiaLoadout {};	
 	};
 	
+	class Taxi	
+	{		
+		file = "core\taxi";		
+		class requestTaxi {};	
+		class taxiCall {};
+		class taxiMarker {};
+		class taxiMarkers {};
+		class taxiRequest {};
+	};
+	
 	class Actions
 	{
 		file = "core\actions";
@@ -94,7 +104,6 @@ class Life_Client_Core
 		class gaggingActionb {};
 		class tieingAction {};
 		class breakout {};
-		class spawntaxi {};
 		class captureCrate {};
 		class licensetest {};
 		class bankteller {};
@@ -182,7 +191,6 @@ class Life_Client_Core
 		class surrender {};
 		class carSalesman {};
 		class gutAnimal {};
-		class taxiCall {};
 	};	
 
 	class Paintball
@@ -350,7 +358,6 @@ class Life_Client_Core
 		class broadcastCheck {};
 		class logout {};
 		class nearestObjects {};
-		class taxi {};
 	};
 	
 	class Network

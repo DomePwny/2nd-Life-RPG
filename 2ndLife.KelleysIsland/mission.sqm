@@ -22863,7 +22863,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowdamage false; this enablesimulation false; this addAction[""Taxi SignUp"",life_fnc_spawntaxi,"""",0,false,false,"""",' player distance _target < 3 && isNull objectParent player && playerSide == civilian && !life_action_inUse '];";
+				init="this allowdamage false; this enablesimulation false; this addAction[""Taxi SignUp"",life_fnc_taxiSignup,"""",0,false,false,"""",' player distance _target < 3 && isNull objectParent player && playerSide == civilian && !life_action_inUse '];";
 			};
 			id=3698;
 			type="MBG_ApS_TWYA";
@@ -22880,7 +22880,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowdamage false; this enablesimulation false; this addAction[""Taxi SignUp"",life_fnc_spawntaxi,"""",0,false,false,"""",' player distance _target < 3 && isNull objectParent player && playerSide == civilian && !life_action_inUse '];";
+				init="this allowdamage false; this enablesimulation false; this addAction[""Taxi SignUp"",life_fnc_taxiSignup,"""",0,false,false,"""",' player distance _target < 3 && isNull objectParent player && playerSide == civilian && !life_action_inUse '];";
 			};
 			id=3699;
 			type="MBG_ApS_TWYA";
