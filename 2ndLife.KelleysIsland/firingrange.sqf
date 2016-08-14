@@ -24,11 +24,11 @@ uiSleep 2;
 life_firing_range = true;
 while {_count > 0} do {
 
-	if((player ammo (currentWeapon player)) < 2) then {
+	if((player ammo (currentWeapon player)) == 0) then {
 		["Nachladen..", false] spawn domsg;
 		_unit say3D "reloadnow";
 		uiSleep 6;
-		if((player ammo (currentWeapon player)) < 2) exitwith {
+		if((player ammo (currentWeapon player)) == 0) exitwith {
 			_myscore = 0;
   			["You failed to reload in time.", false] spawn domsg;
   			_count = 0;
@@ -38,7 +38,7 @@ while {_count > 0} do {
 		["Reload Complete..", false] spawn domsg;
 	};
 
-	player setDir 180;
+	player setDir 270;
 
 	["Spawning Target", false] spawn doquickmsg;
 	uiSleep 0.5;
