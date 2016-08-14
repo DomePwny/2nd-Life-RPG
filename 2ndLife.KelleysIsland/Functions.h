@@ -118,7 +118,6 @@ class Life_Client_Core
 		class middlefinger {};
 		class punchSystem {};
 		class trydriver {};
-		class taxi {};
 		class rally1 {};
 		class skyDive {};
 		class packupRoadcones {};
@@ -168,8 +167,8 @@ class Life_Client_Core
 		class pickupItem2 {};
 		class pickupMoney {};
 		class ticketAction {};
-		class packupSpikes {};
 		class storeVehicle {};
+		class packupSpikes {};
 		class robAction {};
 		class captureHideout {};
 		class gather {};
