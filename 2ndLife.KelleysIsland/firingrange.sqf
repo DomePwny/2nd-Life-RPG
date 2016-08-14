@@ -3,6 +3,7 @@
 if( life_firing_range ) exitwith { };
 
 _myscore = 0;
+_endscore = 0;
 
 _count = 50;
 _unit = player;
@@ -24,7 +25,7 @@ life_firing_range = true;
 while {_count > 0} do {
 
 	if((player ammo (currentWeapon player)) < 2) then {
-		["Reload Now..", false] spawn domsg;
+		["Nachladen..", false] spawn domsg;
 		_unit say3D "reloadnow";
 		uiSleep 6;
 		if((player ammo (currentWeapon player)) < 2) exitwith {
@@ -138,43 +139,43 @@ while {_count > 0} do {
 	uiSleep 0.5;
 	[format ["Score: %1",_myscore], false] spawn doquickmsg;
 
-
+	
 	};
+	
+	_endscore = _myscore;
 
 };
 
-deleteVehicle _spawnedunit;
+_bonuscash = _endscore * 40;
 
-_bonuscash = _myscore * 40;
-
-if(_myscore > 10) then {
+if(_endscore > 10) then {
 	_unit say3D "finishrange";
 	_bonuscash = _bonuscash + round (random 200);
 };
 
-if(_myscore > 20) then {
+if(_endscore > 20) then {
 	_bonuscash = _bonuscash + round (random 220);
 };
 
-if(_myscore > 30) then {
+if(_endscore > 30) then {
 	_bonuscash = _bonuscash + round (random 250);
 };
 
-if(_myscore > 40) then {
+if(_endscore > 40) then {
 	_bonuscash = _bonuscash + round (random 250);
 };
 
-if(_myscore > 45) then {
+if(_endscore > 45) then {
 	_bonuscash = _bonuscash + round (random 350);
 };
 
-if(_myscore > 48) then {
+if(_endscore > 48) then {
 
 	_bonuscash = _bonuscash + round (random 450);
 };
 life_firing_range = false;
 "chromAberration" ppEffectEnable false;
 
-[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
+[format ["Score: %1 - Bonus Cash: %2",_endscore, _bonuscash], false] spawn domsg;
 
-["cash","add",round(_bonuscash)] call life_fnc_handleCash; 
+["cash","add",round(_endscore)] call life_fnc_handleCash; 
