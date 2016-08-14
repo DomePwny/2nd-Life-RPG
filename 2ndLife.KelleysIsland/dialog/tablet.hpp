@@ -175,7 +175,7 @@ class appbutton6: RscButtonSilent
 	y = 0.382 * safezoneH + safezoneY;
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
-	action = "closedialog 0; [] call life_fnc_taxiCall;";
+	action = "closedialog 0; [] call life_fnc_requestTaxi;";
 };
 class appbutton7: RscButtonSilent
 {
