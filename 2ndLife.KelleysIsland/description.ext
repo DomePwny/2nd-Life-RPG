@@ -30,9 +30,7 @@ corpseRemovalMinTime = 600;
 corpseRemovalMaxTime = 800;
 
 #include "dialog\MasterHandler.h"
-#include "slot_machine.hpp"
 #include "dialog\pickup.hpp"
-#include "blackjack.hpp"
 #include "dialog\openboard.hpp"
 #include "infiSTAR_AdminMenu.hpp"
 class RscTitles

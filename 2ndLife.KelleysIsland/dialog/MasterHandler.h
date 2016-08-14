@@ -39,3 +39,5 @@
 #include "creditSalesUI.hpp"
 #include "selectTestDrive.hpp"
 #include "truckColorSelectorUI.hpp"
+#include "blackjack.hpp"
+#include "slot_machine.hpp"
