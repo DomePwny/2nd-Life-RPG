@@ -11,7 +11,7 @@ _cops = (west countSide playableUnits);
 if(_cops < 4) exitWith { hint "Es müssen mehr Polizisten im Dienst sein. (4+)"; }; 
 
 if(vehicle player != _robber) exitWith { hint "Wirklich? Aus dem Fahrzeug? Vergiss es!"; }; 
-if(playerside !(civilian || east)) exitWith { hint "Du willst nicht korrupt sein mein Freund!"; };
+if !(playerside in [civilian, east]) exitWith { hint "Du willst nicht korrupt sein mein Freund!"; };
 _factor = player distance (getmarkerpos "cop_spawn_1");
 
 _payment = 0;
