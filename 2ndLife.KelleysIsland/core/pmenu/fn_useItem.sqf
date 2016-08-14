@@ -123,6 +123,14 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "fish_bomb"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			["LAUF! TEST! LAUF!", false] spawn domsg;
+			[] spawn fnc_dynamiteScript;
+		};
+	};
 
 
 	case (_item == "zoobeer2"):
