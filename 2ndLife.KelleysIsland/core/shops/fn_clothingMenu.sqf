@@ -18,6 +18,8 @@ if((_this select 3) in ["sertcop"] && playerSide != west) exitWith {["Du bist ke
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { [localize "STR_Shop_NotaDive", false] spawn domsg; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {["Du bist kein Mediziner.", false] spawn domsg; closeDialog 0;};
 
+_pos = [1000,1000,10000];
+
 _oldDir = getDir player;
 _oldPos = visiblePositionASL player;
 _oldBev = behaviour player;
