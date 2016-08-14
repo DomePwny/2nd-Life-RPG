@@ -30,6 +30,7 @@ if (isDedicated) exitwith {};
 A3L_fnc_AlarmPHint = {
 if (isDedicated) exitwith {};
 	if (side player isEqualTo west) then {
+		["dbe", false] remoteExec ["fnc_dispatch",west];
 		["911 Automatic Dispatch: Gefängnis Ausbruch, alle verfügbaren Einheiten eintreffen!",false] spawn domsg;
 	};
 };
@@ -38,8 +39,7 @@ A3L_Fnc_BankAlarm = {
 	params ["_timer", "_object"];
 	if (prisondoor getVariable ["robbed", false]) exitwith {};
 	prisondoor setVariable ["robbed", true, true];
-	[_timer,prisondoor] remoteExec ["A3L_Fnc_PlayAlarm"];
-	[] remoteExecCall ["A3L_fnc_AlarmPHint"]; 
+	[_timer,prisondoor] remoteExec ["A3L_Fnc_PlayAlarm"]; 
 };
 
 A3L_Fnc_PlayAlarm = {
@@ -51,7 +51,8 @@ A3L_Fnc_PlayAlarm = {
 		deletevehicle _veh;
 		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];
 	};*/
-
+	if (_timer == 0) exitWith { ["Du musst eine Zeit eingeben! Du willst dich ja nicht selbst umbringen.",false] spawn domsg; };
+	
 	while {_timer > 0} do {
 		prisondoor say "c4_buttons";
 		_veh = createVehicle ["SLB2k11_bomb", [2838.06,3841.68,0.52143909], [], 0, "CAN_COLLIDE"]; 
@@ -60,7 +61,8 @@ A3L_Fnc_PlayAlarm = {
 		_timer = _timer - 1;
 		deletevehicle _veh;
 	};
-	if (!isDedicated) then { 
+	if (!isDedicated) then {
+		[] remoteExecCall ["A3L_fnc_AlarmPHint"];	
 		prisondoor say "PrisonAlarm" ;
 		prisondoor animate ['main_door', 8];
 		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];

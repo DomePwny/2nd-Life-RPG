@@ -7,6 +7,5 @@ if ((player distance prisondoor) < 10) then {
 
 	if (prisondoor getVariable ["robbed", false]) exitwith {["A jailbreak took place already within the last 30 minutes.",30,"red"] spawn domsg;};
 	if (!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {["You don't have a satchel charge.",30,"red"] spawn domsg;};
-	["dbe", false] remoteExec ["fnc_dispatch",west];
 	[] call fnc_placec4;
 };
