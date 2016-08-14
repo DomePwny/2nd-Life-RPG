@@ -183,6 +183,7 @@ class Life_Client_Core
 		class surrender {};
 		class carSalesman {};
 		class gutAnimal {};
+		class taxiSignup {};
 	};	
 
 	class Paintball
@@ -349,6 +350,7 @@ class Life_Client_Core
 		class broadcastCheck {};
 		class logout {};
 		class nearestObjects {};
+		class taxi {};
 	};
 	
 	class Network
@@ -362,6 +364,8 @@ class Life_Client_Core
 		class setTexture {};
 		class say3D {};
 		class HCC {};
+		class MP {};
+		class MPexec {};
 	};
 	
 	class Civilian

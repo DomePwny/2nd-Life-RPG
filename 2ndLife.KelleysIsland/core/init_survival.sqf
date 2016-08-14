@@ -2395,11 +2395,11 @@ fnc_fedex = {
 
 
 
-
+/*
 	fnc_trytaxi = {
 
-		if(life_taxi) exitwith { ["You are a taxi driver..?", false] spawn domsg; };
-		if(checked_taxi) exitwith { ["You called a taxi recently, please wait!", false] spawn domsg; };
+		if(life_taxi) exitwith { ["Du bist selber Taxifahrer!", false] spawn domsg; };
+		if(checked_taxi) exitwith { ["Du hast gerade erst ein Taxi gerufen, warte bitte kurz.", false] spawn domsg; };
 		checked_taxi = true;
 		player remoteExec ["fnc_taxi",civilian];
 		["You have called a taxi, please wait!", false] spawn domsg;
@@ -2459,7 +2459,7 @@ fnc_fedex = {
 		};
 		deleteMarkerLocal format["%1_marker",_unit];
 	};
-
+*/
 
 	fnc_Pull_ID =
 	{

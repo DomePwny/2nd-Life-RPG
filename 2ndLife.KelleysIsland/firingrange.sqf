@@ -3,17 +3,16 @@
 if( life_firing_range ) exitwith { };
 
 _myscore = 0;
-_endscore = 0;
 
 _count = 50;
 _unit = player;
 _myposy = getPos player;
 
-["This run will begin in 5 seconds your direction will be automatically adjusted after each round.", false] spawn domsg;
+["Dein Versuch startet in 5 Sekunden. Deine Position wird automatisch ausgerichtet.", false] spawn domsg;
 
 uiSleep 3;
 
-["Enabling Virtual Glasses to spawn targets.", false] spawn domsg;
+["Virtuelle Brille wird aktiviert.", false] spawn domsg;
 
 "chromAberration" ppEffectEnable true;
 "chromAberration" ppEffectAdjust [0.02,0.02,true];
@@ -30,12 +29,12 @@ while {_count > 0} do {
 		uiSleep 6;
 		if((player ammo (currentWeapon player)) == 0) exitwith {
 			_myscore = 0;
-  			["You failed to reload in time.", false] spawn domsg;
+  			["Game Over, zu langsam nachgeladen.", false] spawn domsg;
   			_count = 0;
   			"chromAberration" ppEffectEnable false;
   			life_firing_range = false;
 		};
-		["Reload Complete..", false] spawn domsg;
+		["Nachladen abgeschlossen..", false] spawn domsg;
 	};
 
 	player setDir 270;
@@ -142,40 +141,38 @@ while {_count > 0} do {
 	
 	};
 	
-	_endscore = _myscore;
-
 };
 
-_bonuscash = _endscore * 40;
+_bonuscash = _myscore * 40;
 
-if(_endscore > 10) then {
+if(_myscore > 10) then {
 	_unit say3D "finishrange";
 	_bonuscash = _bonuscash + round (random 200);
 };
 
-if(_endscore > 20) then {
+if(_myscore > 20) then {
 	_bonuscash = _bonuscash + round (random 220);
 };
 
-if(_endscore > 30) then {
+if(_myscore > 30) then {
 	_bonuscash = _bonuscash + round (random 250);
 };
 
-if(_endscore > 40) then {
+if(_myscore > 40) then {
 	_bonuscash = _bonuscash + round (random 250);
 };
 
-if(_endscore > 45) then {
+if(_myscore > 45) then {
 	_bonuscash = _bonuscash + round (random 350);
 };
 
-if(_endscore > 48) then {
+if(_myscore > 48) then {
 
 	_bonuscash = _bonuscash + round (random 450);
 };
 life_firing_range = false;
 "chromAberration" ppEffectEnable false;
 
-[format ["Score: %1 - Bonus Cash: %2",_endscore, _bonuscash], false] spawn domsg;
+[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
 
-["cash","add",round(_endscore)] call life_fnc_handleCash; 
+["cash","add",round(_myscore)] call life_fnc_handleCash; 
