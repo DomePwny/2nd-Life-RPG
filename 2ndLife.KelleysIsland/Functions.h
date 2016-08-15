@@ -90,6 +90,7 @@ class Life_Client_Core
 		class taxiMarkers {};
 		class taxiRequest {};
 		class taxiSignup {};
+		class deleteTaximarker {};
 	};
 	
 	class Actions
