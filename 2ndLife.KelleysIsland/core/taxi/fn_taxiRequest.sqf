@@ -7,7 +7,7 @@
 	if they want to take the request or not.
 */
 private["_callerName"];
-if(playerside == civilian) && (player getVariable "taxi_driver") then {
+if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 	_callerName = [_this,0,"Unknown Player",[""]] call BIS_fnc_param;
 	if(isNull _callerName) exitWith {}; //Bad data
 	_alreadyInList= false;
