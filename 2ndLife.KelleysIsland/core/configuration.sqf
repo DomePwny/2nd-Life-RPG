@@ -80,7 +80,6 @@ life_garage_store = false;
 life_session_tries = 0;
 life_net_dropped = false;
 life_hit_explosive = false;
-life_taxi = false;
 life_seatbelt = false;
 life_seatwarn = false;
 life_smoking = false;
