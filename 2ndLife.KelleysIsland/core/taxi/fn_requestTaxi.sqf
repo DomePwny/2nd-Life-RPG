@@ -9,9 +9,10 @@ private["_taxiOnline"];
 if(player getVariable "taxi_driver") exitwith {["Du bist selber Taxifahrer!", false] spawn domsg;};
 if(checked_taxi) exitWith {["Du kannst nur alle 5 Minuten ein Taxi rufen.", false] spawn domsg;};
 _taxiOnline = {_x != player && {side _x == civilian} && {alive _x} && {_x getVariable "taxi_driver"}} count playableUnits > 0; //Check if medics (indep) are in the room.
-if(!_taxiOnline) exitWith {["Es ist kein Taxi verfügbar", false] spawn domsg;};
+if(!_taxiOnline) exitWith {["Es ist kein Taxi verfügbar.", false] spawn domsg;};
+_player = name player;
 
-[[name player],"life_fnc_taxiRequest",civilian,FALSE] spawn life_fnc_MP;
+[_player] remoteExec ["life_fnc_taxiRequest",civilian];
 ["Du hast ein Taxi gerufen!", false] spawn domsg;
 
 [] spawn 
