@@ -148,7 +148,7 @@ life_onTestDrive = false;
 life_requestingTestDrive = false;
 life_testDriveRequests = [];
 maintenance_on = false;
-totallogs = [];
+totallogs = 0;
 life_taxiMarker = [];
 SecondLife_version = "SecondLifeModVersion0001b";
 //Persistent Saving
