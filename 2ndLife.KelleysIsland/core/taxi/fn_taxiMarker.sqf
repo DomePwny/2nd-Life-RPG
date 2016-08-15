@@ -17,7 +17,7 @@ if(visibleMap) then {
 	{
 		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorYellow";
-		_marker setMarkerTypeLocal "Mil_dot";
+		_marker setMarkerTypeLocal "plp_mark_civ_taxi";
 		_marker setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
 	
 		_markers pushBack [_marker,_x];

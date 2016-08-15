@@ -11,8 +11,8 @@ sleep 0.25;
 if(visibleMap) then {
 	{
 			_marker = createMarkerLocal [format["%1_taxi_marker",_x select 0],getPos (_x select 0)];
-			_marker setMarkerColorLocal "ColorYellow";
-			_marker setMarkerTypeLocal "hd_warning";
+			_marker setMarkerColorLocal "ColorRed";
+			_marker setMarkerTypeLocal "plp_mark_civ_taxi";
 			_marker setMarkerTextLocal format["%1 ruft ein Taxi",_x select 0];
 			_markers pushBack _marker;
 	} foreach life_taxiMarker;
