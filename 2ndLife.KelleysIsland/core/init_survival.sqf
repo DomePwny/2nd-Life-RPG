@@ -582,11 +582,12 @@
 		marker_on = true;
 		drawmessage = param [0,"",[""]];
 		posinext = param [1,[],[[]]];
+		_markername = param [2,"",[""]];
 		while{marker_on} do {
 		   	if(player distance posinext < 10 && drawmessage != "Driving Test") exitwith { ["You arrived to your location!",false] spawn domsg;};
 		   	if(player distance posinext < 110 && drawmessage == "Oil") exitwith {};
 		   	if(drawmessage == "Oil Maintenance" && !maintenance_on) exitwith {};
-			if(player distance posinext < 10 && drawmessage == "Fahrgast") exitwith {["Warte bis dein Fahrgast eingestiegen ist.",false] spawn domsg;};
+			if(player distance posinext < 10 && drawmessage == "Fahrgast") exitwith {["Warte bis dein Fahrgast eingestiegen ist.",false] spawn domsg; deleteMarkerLocal _markername;};
 		   	sleep 0.05;
 	    };
 	    marker_on = false;
