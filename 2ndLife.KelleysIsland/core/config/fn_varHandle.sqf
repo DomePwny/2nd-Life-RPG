@@ -234,17 +234,6 @@ switch (_mode) do
 			case "life_inv_sexonthebeach": {"sexonthebeach"};
 			case "life_inv_tequila": {"tequila"};
 			case "life_inv_jackdanielsandcoke": {"jackdanielsandcoke"};
-			case "zoobeer2": {"life_inv_zoobeer2"};
-			case "jackdaniels": {"life_inv_jackdaniels"};
-			case "vodka": {"life_inv_vodka"};
-			case "jagerbomb": {"life_inv_jagerbomb"};
-			case "absinthe": {"life_inv_absinthe"};
-			case "redwine": {"life_inv_redwine"};
-			case "whitewine": {"life_inv_whitewhine"};
-			case "whiterussian": {"life_inv_whiterussian"};
-			case "sexonthebeach": {"life_inv_sexonthebeach"};
-			case "tequila": {"life_inv_tequila"};
-			case "jackdanielsandcoke": {"life_inv_jackdanielsandcoke"};
 			case "life_inv_RoadConeStripB": {"RoadConeStripB"};
 			case "life_inv_RoadConeB": {"RoadConeB"};
 			case "life_inv_RoadConeStrip": {"RoadConeStrip"};
