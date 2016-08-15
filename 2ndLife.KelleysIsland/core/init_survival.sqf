@@ -1605,11 +1605,11 @@ fnc_castScript = {
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		["Du hast dein Köter verloren!", false] spawn domsg; 
+		["Du hast dein Köter verloren!", false] spawn doquickmsg; 
 		deletevehicle _vehicle;
 	};
 
-	["Erfolgreicher Wurf.", false] spawn domsg; 
+	["Erfolgreicher Wurf.", false] spawn doquickmsg; 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 
 	_timeOut = 0;
@@ -1625,7 +1625,7 @@ fnc_castScript = {
 	};
 
 	if(_fail) exitwith {
-		["Du hast du dich zuweit von deinem Köter entfernt.", false] spawn domsg; 
+		["Du hast du dich zuweit von deinem Köter entfernt.", false] spawn doquickmsg; 
 		deletevehicle _vehicle;
 	};
 

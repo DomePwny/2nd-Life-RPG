@@ -123,6 +123,7 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "bombfish"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -268,6 +269,7 @@ switch (true) do
 
 
 
+	case (_item == "rumrax"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
