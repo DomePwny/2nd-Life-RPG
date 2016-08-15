@@ -12,7 +12,7 @@ switch (_shop) do
 {
 	case "phones": {["Zubehör",["nos"]]};
 	case "market": {["Markt",["medkit","condom","bandage","water","tierope","bec","cigarette","rabbit","apple","redgull","tbacon","pickaxe","lockpick","fuelF","peach","boltcutter","storagesmall","storagebig"]]};
-	case "drinks": {["Leckerchen",["cigarette","zoobeer","zoobeer2","vodka","jagerbomb","absinthe","redwine","whiterussian","sexonthebeach","tequila","jackdanielsandcoke","Rax's Rum","water","redgull"]]};
+	case "drinks": {["Leckerchen",["cigarette","zoobeer","zoobeer2","vodka","jagerbomb","absinthe","redwine","whiterussian","sexonthebeach","tequila","jackdanielsandcoke","RaxsRum","water","redgull"]]};
 	case "rebel": {["Mafia Markt",["tierope","bandage","RoadBlockConc","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","hackingtool"]]};
 	case "gang": {["Gang Markt", ["bandage","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
@@ -20,7 +20,7 @@ switch (_shop) do
 	case "heroin": {["Drogen Händler",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu"]]};
 	case "gems": {["Juwelen Händler",["sapphire","ruby","emerald"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
-	case "fishmarket": {["Fisch Markt",["fish_bomb","salema","ornate","mackerel","mullet","tuna","catshark"]]};
+	case "fishmarket": {["Fisch Markt",["fishbomb","salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","pumpkin"]]};	
 	case "glass": {["Glas Händler",["glass"]]};
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};

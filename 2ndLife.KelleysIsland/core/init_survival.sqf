@@ -1605,11 +1605,11 @@ fnc_castScript = {
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "You lost your bait!";
+		["Du hast dein Köter verloren!", false] spawn domsg; 
 		deletevehicle _vehicle;
 	};
 
-	hint "Successful Cast";
+	["Erfolgreicher Wurf.", false] spawn domsg; 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 
 	_timeOut = 0;
@@ -1625,7 +1625,7 @@ fnc_castScript = {
 	};
 
 	if(_fail) exitwith {
-		hint "You lost your bait from moving too far.";
+		["Du hast du dich zuweit von deinem Köter entfernt.", false] spawn domsg; 
 		deletevehicle _vehicle;
 	};
 
@@ -1659,62 +1659,62 @@ fnc_castScript = {
 		case 0 :
 		{
 			player additem "Fish_1_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 1 :
 		{
 			player additem "Fish_1_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 2 :
 		{
 			player additem "Fish_2_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 3 :
 		{
 			player additem "Fish_3_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 4 :
 		{
 			player additem "Fish_4_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 5 :
 		{
 			player additem "Fish_5_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 6 :
 		{
 			player additem "Fish_1_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 7 :
 		{
 			player additem "Fish_2_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 8 :
 		{
 			player additem "Fish_3_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 9 :
 		{
 			player additem "Fish_4_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 		case 10 :
 		{
 			player additem "Fish_5_i"; 
-			hint "You caught a Fish!";
+			["Du hast ein Fisch gefangen!", false] spawn domsg; 
 		};
 
 		default
 		{
-			hint "You failed to catch anything!";
+			["Da war wohl kein Fisch am Köter.", false] spawn domsg; 
 		};
 
 	};										
