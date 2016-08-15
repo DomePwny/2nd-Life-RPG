@@ -95,9 +95,5 @@ _units = nearestObjects [player, ["Man"], 6];
 if(marker_on) then {
 	_distance = floor( getpos player distance posinext );     
 	_distance = format ["%1 | %2",drawmessage, _distance];
-	if(drawmessage == "Fahrgast") then {
-		drawIcon3D ["\plp_markers\icons\plp_mark_civ_taxi.pac", [1,1,1,1], posinext, 0.7, 0.7, 5, _distance, 1, 0.036, "PuristaLight"];
-	} else {
-		drawIcon3D ["\A3\ui_f\data\map\markers\military\pickup_ca.paa", [1,1,1,1], posinext, 0.7, 0.7, 5, _distance, 1, 0.036, "PuristaLight"];
-	};
+	drawIcon3D ["\A3\ui_f\data\map\markers\military\pickup_ca.paa", [1,1,1,1], posinext, 0.7, 0.7, 5, _distance, 1, 0.036, "PuristaLight"];  
 };
