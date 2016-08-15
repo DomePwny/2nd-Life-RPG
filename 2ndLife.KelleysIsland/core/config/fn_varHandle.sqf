@@ -126,8 +126,8 @@ switch (_mode) do
 			case "sexonthebeach": {"life_inv_sexonthebeach"};
 			case "tequila": {"life_inv_tequila"};
 			case "jackdanielsandcoke": {"life_inv_jackdanielsandcoke"};
-			case "RaxsRum": {"life_inv_raxsrum"};
-			case "FishBomb": {"life_inv_fishbomb"};
+			case "rumrax": {"life_inv_rumrax"};
+			case "bombfish": {"life_inv_bombfish"};
 		};
 	};
 	
@@ -243,8 +243,8 @@ switch (_mode) do
 			case "life_inv_RoadBlockRebel": {"RoadBlockRebel"};
 			case "life_inv_BarGate": {"BarGate"};
 			case "life_inv_cigarette": {"cigarette"};
-			case "life_inv_raxsrum": {"RaxsRum"};
-			case "life_inv_fishbomb": {"FishBomb"};
+			case "life_inv_bombfish": {"bombfish"};
+			case "life_inv_rumrax": {"rumrax"};
 		};
 	};
 };

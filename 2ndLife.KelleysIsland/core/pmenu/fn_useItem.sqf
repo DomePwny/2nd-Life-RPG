@@ -123,7 +123,6 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "fish_bomb"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -269,7 +268,6 @@ switch (true) do
 
 
 
-	case (_item == "Rax's Rum"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{

@@ -122,8 +122,9 @@ switch (_var) do
 	case "life_inv_RoadBlockRebel": {"Road Block (Wreck)"};
 	case "life_inv_BarGate": {"Police Bar Gate"};
 	case "life_inv_cigarette": {"Cigarette"};
-	case "life_inv_raxsrum": {"Rax's Rum"};
-	case "life_inv_fishbomb": {"Fisch Bombe"};
+	case "life_inv_rumrax": {"Raxs Rum"};
+	case "life_inv_bombfish": {"Fisch Bombe"};
+
 	
 	//License Block
 	case "license_civ_driver": {("Führerschein")};

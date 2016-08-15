@@ -112,7 +112,7 @@ switch (_item) do
 	case "RoadBlockConc": {5};
 	case "RoadBlockRebel": {26};
 	case "BarGate": {23};
-	case "RaxsRum" : {1};
+	case "rumrax" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "zoobeer2": {1}; // Duff Beer
 	case "vodka": {1};
@@ -126,7 +126,7 @@ switch (_item) do
 	case "sexonthebeach": {1};
 	case "tequila": {1};
 	case "jackdanielsandcoke": {1};
-	case "fishbomb": {5};
+	case "bombfish": {5};
 
 	default {1};
 };

@@ -349,8 +349,8 @@ life_inv_items =
 	"life_inv_sexonthebeach",
 	"life_inv_tequila",
 	"life_inv_jackdanielsandcoke",
-	"life_inv_raxsrum",
-	"life_inv_fishbomb"
+	"life_inv_rumrax",
+	"life_inv_bombfish"
 ];
 
 //Setup variable inv vars.
@@ -503,8 +503,8 @@ sell_array =
 	["RoadConeB",1],
 	["RoadConeStripB",5],
 	["cigarette",1],
-	["RaxsRum",1],
-	["FishBomb",1]
+	["rumrax",1],
+	["bombfish",1]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -583,8 +583,8 @@ buy_array =
         ["RoadConeB",10],
         ["RoadConeStripB",50],
         ["cigarette",925],
-        ["RaxsRum",5],
-		["FishBomb",500]
+        ["rumrax",5],
+		["bombfish",500]
 ];
 __CONST__(buy_array,buy_array);
 
