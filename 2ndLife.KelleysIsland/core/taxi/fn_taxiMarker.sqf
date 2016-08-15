@@ -11,7 +11,7 @@ _taxi = [];
 
 sleep 0.5;
 if(visibleMap) then {
-	{if((side _x == civilian) && (player getVariable "taxi_driver") then {_taxi pushBack _x;}} foreach playableUnits;
+	{if((side _x == civilian) && (player getVariable "taxi_driver") then {_taxi pushBack _x;})} foreach playableUnits;
 	
 	//Create markers
 	{

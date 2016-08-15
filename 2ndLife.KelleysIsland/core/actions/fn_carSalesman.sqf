@@ -18,7 +18,7 @@ life_carSalesman = true;
 carSalesmanList pushBack player;
 publicVariable "carSalesmanList";
 player setVariable["Salesman", true, true];
-["Du wirst extra bezahlt in der Umgebung des Autohauses ebenfalls erhälst du 10$ provision für verkaufte Autos!", false] spawn domsg; 
+["Du wirst extra bezahlt in der Umgebung des Autohauses ebenfalls erhälst du 10% provision für verkaufte Autos!", false] spawn domsg; 
 
 _fkit = 45;
 while{_fkit > 0 && life_carSalesman && !deadPlayer} do {
