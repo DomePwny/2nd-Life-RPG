@@ -4,7 +4,7 @@
 */
 
 // Run Some Client Stuff
-[] execVM "A3L_Stuff\bank.sqf";
+[] execVM "scripts\bank.sqf";
 
 player setVariable["tf_receivingDistanceMultiplicator", 10];
 player setVariable["tf_sendingDistanceMultiplicator", 10];

@@ -86,7 +86,6 @@ class Life_Client_Core
 	{		
 		file = "core\taxi";		
 		class requestTaxi {};	
-		class taxiCall {};
 		class taxiMarker {};
 		class taxiMarkers {};
 		class taxiRequest {};
