@@ -23,6 +23,6 @@ if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 	playSound "ringing";
 	["Jemand hat ein Taxi gerufen! Schau auf deine Karte."] spawn domsg;
 	_vehicle = vehicle player;
-	waitUntil{count crew _vehicle > 1}
+	waitUntil{count crew _vehicle > 1};
 	[_caller] call life_fnc_deleteTaximarker;
 };
