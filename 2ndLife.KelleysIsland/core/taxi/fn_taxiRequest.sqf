@@ -6,7 +6,7 @@
 	Notifies the medics that someone has requested emergency and prompts them
 	if they want to take the request or not.
 */
-private["_caller","_callerName","vehicle"];
+private["_caller","_callerName","_vehicle"];
 if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 	_caller = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 	_callerName = [_this,1,"Unknown Player",[""]] call BIS_fnc_param;
@@ -19,7 +19,7 @@ if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 		};
 	}foreach life_taxiMarker;
 	if(_alreadyInList) exitWith {};
-	life_taxiMarker set [count life_taxiMarker,[_callerName]];
+	life_taxiMarker set [count life_taxiMarker,[_caller,_callerName]];
 	playSound "ringing";
 	["Jemand hat ein Taxi gerufen! Schau auf deine Karte."] spawn domsg;
 	_vehicle = vehicle player;

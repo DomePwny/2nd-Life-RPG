@@ -1605,7 +1605,7 @@ fnc_castScript = {
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		["Du hast dein Köter verloren!", false] spawn doquickmsg; 
+		["Du hast deinen Köder verloren!", false] spawn doquickmsg; 
 		deletevehicle _vehicle;
 	};
 
@@ -1625,7 +1625,7 @@ fnc_castScript = {
 	};
 
 	if(_fail) exitwith {
-		["Du hast du dich zuweit von deinem Köter entfernt.", false] spawn doquickmsg; 
+		["Du hast du dich zuweit von deinem Köder entfernt.", false] spawn doquickmsg; 
 		deletevehicle _vehicle;
 	};
 
@@ -1714,7 +1714,7 @@ fnc_castScript = {
 
 		default
 		{
-			["Da war wohl kein Fisch am Köter.", false] spawn domsg; 
+			["Da war wohl kein Fisch am Köder.", false] spawn domsg; 
 		};
 
 	};										

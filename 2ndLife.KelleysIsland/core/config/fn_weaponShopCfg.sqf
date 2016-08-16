@@ -52,8 +52,6 @@ switch(_shop) do
 							["TRYK_Headset_NV","Nachtsichtgerät",25],
 							["acc_flashlight","Extinguisher Flashlight",10],
 							["CG_ATF_Drug_Bottle_01_i","Valium",5],
-							["A3L_Extinguisher",nil,35],
-							["30Rnd_test_mag_Tracer",nil,35],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
 							["tf_anprc152",nil,10],
@@ -359,10 +357,12 @@ switch(_shop) do
 				{
 					["Hunting Shop",
 						[
-							["A3L_CZ550",nil,17500],
-							["A3L_CZ550mag",nil,5],
-							["A3L_CZ550Scope",nil,12500],
-							["arifle_SDAR_F","Turtle ONLY SDAR",1000],
+							["Trixie_CZ550","CZ500",7500],
+							["Trixie_CZ550_Rail","CZ500-Scope",1000],
+							["Trixie_CZ550_Mag","CZ500-Magazin",20],
+							["vvv_fishing_rod","Angel",5000],
+							["cebos","Angelköder",1000],
+							["arifle_SDAR_F","Turtle ONLY SDAR",10000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",120]
 						]
 					];
@@ -386,7 +386,7 @@ switch(_shop) do
 				};
 			};
         };
-       
+  
         case "genstore":
         {
 			["General and Fishing",
