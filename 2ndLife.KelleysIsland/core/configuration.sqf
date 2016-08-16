@@ -349,7 +349,8 @@ life_inv_items =
 	"life_inv_tequila",
 	"life_inv_jackdanielsandcoke",
 	"life_inv_rumrax",
-	"life_inv_bombfish"
+	"life_inv_bombfish",
+	"live_inv_fishmeat"
 ];
 
 //Setup variable inv vars.
@@ -503,7 +504,8 @@ sell_array =
 	["RoadConeStripB",5],
 	["cigarette",1],
 	["rumrax",1],
-	["bombfish",1]
+	["bombfish",1],
+	["fishmeat",250]
 ];
 __CONST__(sell_array,sell_array);
 

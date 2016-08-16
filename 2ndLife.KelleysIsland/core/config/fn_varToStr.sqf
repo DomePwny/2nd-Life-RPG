@@ -124,6 +124,7 @@ switch (_var) do
 	case "life_inv_cigarette": {"Cigarette"};
 	case "life_inv_rumrax": {"Raxs Rum"};
 	case "life_inv_bombfish": {"Fisch Bombe"};
+	case "life_inv_fishmeat": {"Frischer Fisch"};
 
 	
 	//License Block
