@@ -5,10 +5,17 @@
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
-private["_upp","_ui","_progress","_pgText","_cP","_displayName"];
+private["_hasfish","_upp","_ui","_progress","_pgText","_cP","_displayName"];
 life_interrupted = false;
-fishArray = ["Fish_1_i","Fish_2_i","Fish_3_i","Fish_4_i","Fish_5_i"];
-if(fishArray in (items player)) then {_hasfish = true} else {_hasfish = false};
+if("Fish_1_i" in (items player)) then {_hasfish = true} else {
+	if("Fish_2_i" in (items player)) then {_hasfish = true} else {
+		if("Fish_3_i" in (items player)) then {_hasfish = true} else {
+			if("Fish_4_i" in (items player)) then {_hasfish = true} else {
+				if("Fish_5_i" in (items player)) then {_hasfish = true} else {_hasfish = false};
+			};
+		};
+	};
+};
 if !(_hasfish) exitWith {["Du hast keine Fische.",false] spawn doquickmsg};
 if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst den Fisch nicht verbundenen Armen ausweiden.", false] spawn domsg};
 if(_hasfish) then
