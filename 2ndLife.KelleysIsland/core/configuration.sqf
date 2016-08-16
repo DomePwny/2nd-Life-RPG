@@ -323,8 +323,7 @@ life_inv_items =
 	"life_inv_medcanna",
 	"life_inv_medmarijuana",
 	"life_inv_rawmeat",
-	//Additions
-	"life_inv_zoobeer", // Duff Beer
+	"life_inv_zoobeer",
 	"life_inv_RoadCone",
 	"life_inv_RoadConeStrip",
 	"life_inv_RoadConeB",
@@ -350,7 +349,7 @@ life_inv_items =
 	"life_inv_jackdanielsandcoke",
 	"life_inv_rumrax",
 	"life_inv_bombfish",
-	"live_inv_fishmeat"
+	"live_inv_meatfish"
 ];
 
 //Setup variable inv vars.
@@ -505,7 +504,7 @@ sell_array =
 	["cigarette",1],
 	["rumrax",1],
 	["bombfish",1],
-	["fishmeat",250]
+	["meatfish",250]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -586,7 +585,7 @@ buy_array =
         ["cigarette",925],
         ["rumrax",5],
 		["bombfish",500],
-		["fishmeat",500]
+		["meatfish",500]
 ];
 __CONST__(buy_array,buy_array);
 

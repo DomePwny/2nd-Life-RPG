@@ -28,7 +28,7 @@ switch (_mode) do
 			case "medcanna": {"life_inv_medcanna"};
 			case "medkit": {"life_inv_medkit"};
 			case "methu": {"life_inv_methu"};
-			case "methp": {"life_inv_methp"};   // into case 0 field 
+			case "methp": {"life_inv_methp"};
 			case "cokeu": {"life_inv_cokeu"};
 			case "cokep": {"life_inv_cokep"};
 			case "MDMAu": {"life_inv_MDMAu"};
@@ -113,8 +113,7 @@ switch (_mode) do
 			case "RoadBlockConc": {"life_inv_RoadBlockConc"};
 			case "RoadBlockRebel": {"life_inv_RoadBlockRebel"};
 			case "BarGate": {"life_inv_BarGate"};
-			//beer glass  wine glass
-			case "zoobeer": {"life_inv_zoobeer"}; // Duff Beer
+			case "zoobeer": {"life_inv_zoobeer"};
 			case "zoobeer2": {"life_inv_zoobeer2"};
 			case "jackdaniels": {"life_inv_jackdaniels"};
 			case "vodka": {"life_inv_vodka"};
@@ -128,7 +127,7 @@ switch (_mode) do
 			case "jackdanielsandcoke": {"life_inv_jackdanielsandcoke"};
 			case "rumrax": {"life_inv_rumrax"};
 			case "bombfish": {"life_inv_bombfish"};
-			case "fishmeat": {"life_inv_fishmeat"};
+			case "meatfish": {"life_inv_meatfish"};
 		};
 	};
 	
@@ -156,16 +155,16 @@ switch (_mode) do
 			case "life_inv_emerald": {"emerald"};
 			case "life_inv_sapphire": {"sapphire"};
 			case "life_inv_ruby": {"ruby"};
-			case "life_inv_stitches": {"stitches"}; // in the case 1 field 
+			case "life_inv_stitches": {"stitches"};
 			case "life_inv_splint": {"splint"};
 			case "life_inv_epipen": {"epipen"};
 			case "life_inv_MDMAu": {"MDMAu"};
-			case "life_inv_MDMAp": {"MDMAp"}; // in the case 1 field 
+			case "life_inv_MDMAp": {"MDMAp"};
 			case "life_inv_bec": {"bec"};
 			case "life_inv_methu": {"methu"};
-			case "life_inv_methp": {"methp"}; // in the case 1 field 
+			case "life_inv_methp": {"methp"};
 			case "life_inv_cokeu": {"cokeu"};
-			case "life_inv_cokep": {"cokep"}; // in the case 1 field 
+			case "life_inv_cokep": {"cokep"};
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};
@@ -246,7 +245,7 @@ switch (_mode) do
 			case "life_inv_cigarette": {"cigarette"};
 			case "life_inv_bombfish": {"bombfish"};
 			case "life_inv_rumrax": {"rumrax"};
-			case "life_inv_fishmeat": {"fishmeat"};
+			case "life_inv_meatfish": {"meatfish"};
 		};
 	};
 };

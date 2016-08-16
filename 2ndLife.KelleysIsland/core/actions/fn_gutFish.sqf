@@ -11,7 +11,9 @@ _fisharray = ["Fish_1_i","Fish_2_i","Fish_3_i","Fish_4_i","Fish_5_i"];
 _hasfish = 0;
 
 {
-_hasfish = _hasfish + [count (_x in (items player))];
+if (_x in (items player)) then {
+	_hasfish = _hasfish + 1;
+};
 } foreach _fisharray;
 
 if(_hasfish == 0) exitWith {["Du hast keine Fische.",false] spawn doquickmsg};
