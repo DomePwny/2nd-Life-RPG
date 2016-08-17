@@ -128,6 +128,7 @@ switch (_mode) do
 			case "rumrax": {"life_inv_rumrax"};
 			case "bombfish": {"life_inv_bombfish"};
 			case "meatfish": {"life_inv_meatfish"};
+			case "fish": {"life_inv_fish"};
 		};
 	};
 	
@@ -246,6 +247,7 @@ switch (_mode) do
 			case "life_inv_bombfish": {"bombfish"};
 			case "life_inv_rumrax": {"rumrax"};
 			case "life_inv_meatfish": {"meatfish"};
+			case "life_inv_fish": {"fish"};
 		};
 	};
 };

@@ -1652,64 +1652,20 @@ fnc_castScript = {
 	player addmagazine "cebos";
 	deletevehicle _vehicle;
 
-	_type = floor (random(25));
+	_type = floor (random(5));
 
 	switch (_type) do
 	{
-		case 0 :
-		{
-			player additem "Fish_1_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 1 :
-		{
-			player additem "Fish_1_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
 		case 2 :
 		{
-			player additem "Fish_2_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 3 :
-		{
-			player additem "Fish_3_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 4 :
-		{
-			player additem "Fish_4_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 5 :
-		{
-			player additem "Fish_5_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 6 :
-		{
-			player additem "Fish_1_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 7 :
-		{
-			player additem "Fish_2_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 8 :
-		{
-			player additem "Fish_3_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 9 :
-		{
-			player additem "Fish_4_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
-		};
-		case 10 :
-		{
-			player additem "Fish_5_i"; 
-			["Du hast ein Fisch gefangen!", false] spawn domsg; 
+			_gather = "fish"; _val = 1;
+			_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+			if(_diff == 0) exitWith {["Dein Inventar ist voll!", false] spawn domsg;};
+			if(([true,_gather,_diff] call life_fnc_handleInv)) then
+			{
+				_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
+				["Du hast ein Fisch gefangen!", false] spawn domsg; 
+			};
 		};
 
 		default

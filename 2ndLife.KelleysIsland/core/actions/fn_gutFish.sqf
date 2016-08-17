@@ -1,54 +1,64 @@
 /*
-	File: fn_repairTruck.sqf
+	File: fn_processAction.sqf
 	
 	
 	Description:
-	Main functionality for toolkits, to be revised in later version.
+	Master handling for processing an item.
 */
-private["_hasfish","_upp","_ui","_progress","_pgText","_cP","_displayName"];
-life_interrupted = false;
-_fisharray = ["Fish_1_i","Fish_2_i","Fish_3_i","Fish_4_i","Fish_5_i"];
-_hasfish = 0;
+private["_vendor","_type","_itemInfo","_oldItem","_newItem","_upp","_itemName","_oldVal","_ui","_progress","_pgText","_cP"];
+_vendor = param [0,ObjNull,[ObjNull]];
+_type = param [3,"",[""]];
+//Error check
+if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 
+//unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
+_itemInfo = switch (_type) do
 {
-if (_x in (items player)) then {
-	_hasfish = _hasfish + 1;
+	case "fish": {["fish","meatfish","Zerlege Fisch"];};
+	default {[];};
 };
-} foreach _fisharray;
 
-if(_hasfish == 0) exitWith {["Du hast keine Fische.",false] spawn doquickmsg};
-if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst den Fisch nicht verbundenen Armen ausweiden.", false] spawn domsg};
-if(_hasfish > 0) then
+//Error checking
+if(count _itemInfo == 0) exitWith {};
+
+//Setup vars.
+_oldItem = _itemInfo select 0;
+_newItem = _itemInfo select 1;
+_upp = _itemInfo select 2;
+
+_itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
+_oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
+_weight = ([_oldItem] call life_fnc_itemWeight) * _oldVal;
+//Some more checks
+if(_oldVal == 0) exitWith {};
+
+//Setup our progress bar.
+disableSerialization;
+5 cutRsc ["life_progress","PLAIN"];
+_ui = uiNameSpace getVariable "life_progress";
+_progress = _ui displayCtrl 38201;
+_pgText = _ui displayCtrl 38202;
+_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
+_cP = 0.01;
+
+_progress progressSetPosition _cp;
+life_is_processing = true;
+
+_delay = (1/150)*_weight;
+
+while{true} do
 {
-	_cP = 0;
-	life_action_inUse = true;
-	_displayName = "Fisch";
-	_upp = format["Weide %1 aus",_displayName];
-	//Setup our progress bar.
-	disableSerialization;
-	5 cutRsc ["life_progress","PLAIN"];
-	_ui = uiNameSpace getVariable "life_progress";
-	_progress = _ui displayCtrl 38201;
-	_pgText = _ui displayCtrl 38202;
-	_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
-	_progress progressSetPosition _cp;
-	while{true} do
-	{
-		uiSleep 0.75;
-		if(animationState player != "Acts_carFixingWheel") then {
-			player playmovenow "Acts_carFixingWheel";  
-			player disableAI "anim"; 
-		};
-		_cP = _cP + 0.05;
-		_progress progressSetPosition _cP;
-		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-		if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
-		if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst den Fisch nicht verbundenen Armen ausweiden.", false] spawn domsg};
-	};
-	player switchmove "";
-	life_action_inUse = false;
-	5 cutText ["","PLAIN"];
-	if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
-	if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
-	["Der Fisch wurde ausgeweidet", false] spawn domsg;
+	uiSleep _delay;
+	_cP = _cP + 0.01;
+	_progress progressSetPosition _cP;
+	_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
+	if(_cP >= 1) exitWith {};
+	if(player distance _vendor > 10) exitWith {};
 };
+	
+if(player distance _vendor > 10) exitWith {[localize "STR_Process_Stay", false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
+if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
+5 cutText ["","PLAIN"];
+[format[localize "STR_Process_Processed",_oldVal,_itemName], false] spawn domsg;
+life_is_processing = false;
