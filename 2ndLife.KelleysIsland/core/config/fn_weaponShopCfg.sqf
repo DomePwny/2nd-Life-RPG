@@ -368,7 +368,50 @@ switch(_shop) do
 					];
 				};
 			};
-        };      
+        };    
+
+		case "magazin": 
+		{
+			_ret = [];
+			if(playerSide in [civilian,east]) then {
+				_temp = [
+					["KPFS_8Rnd_9x19_PARA",nil,120],
+					["kpfs_8Rnd_765x17_PP",nil,120],
+					["kpfs_6Rnd_635x15",nil,120],
+					["KPFS_15rnd_9x19_P99",nil,125],
+					["RH_17Rnd_9x19_g17",nil,120],
+					["RH_15Rnd_9x19_M9",nil,120],
+					["RH_14Rnd_9x19_sw",nil,150],
+					["16Rnd_9x21_Mag",nil,125],
+					["RH_18Rnd_9x19_gsh",nil,195],
+					["RH_7Rnd_45cal_m1911",nil,275]
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;
+			};
+			if(playerSide == west) then {
+				_temp = [
+					["RH_15Rnd_9x19_M9",nil,5],
+					["RH_15Rnd_45cal_fnp",nil,4],
+					["11Rnd_45ACP_Mag",nil,5],
+					["hlc_30Rnd_9x19_GD_MP5",nil,25],
+					["RH_30Rnd_556x45_M855A1",nil,20],
+					["RH_30Rnd_6x35_mag",nil,220],
+					["RH_16Rnd_40cal_usp",nil,5],
+					["RH_30Rnd_68x43_FMJ",nil,220],
+					["prpl_6Rnd_12Gauge_Slug","Rubber Bullets",20],
+					["RH_6Rnd_454_Mag",nil,4],
+					["RH_6Rnd_454_Mag",nil,4],
+					["RH_20Rnd_762x51_M80A1",nil,220],
+					["RH_20Rnd_57x28_FN",nil,20]
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;
+			};
+			["Magazine", _ret select 0];
+		};
        
         case "gang":
         {

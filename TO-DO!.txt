@@ -2,6 +2,5 @@ Taxi-Job fertig stellen
 ADAC-Job einbauen
 Tow-Truck überarbeiten
 Fahrzeuge in die Shops
-Verarbeitung für Fische
 Mafia - Hideout / Stadt fertig stellen
 Alle Jobs testen (Wege + Machbarkeit)
