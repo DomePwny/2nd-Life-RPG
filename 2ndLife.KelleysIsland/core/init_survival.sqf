@@ -1652,7 +1652,7 @@ fnc_castScript = {
 	player addmagazine "cebos";
 	deletevehicle _vehicle;
 
-	_type = floor (random(5));
+	_type = floor (random(3));
 
 	switch (_type) do
 	{
