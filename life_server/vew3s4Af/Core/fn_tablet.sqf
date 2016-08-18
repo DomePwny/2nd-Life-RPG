@@ -10,14 +10,14 @@ tabletapp_array = [
 ["AnswerCall","AnswerCall","icons\answer.paa","icons\answer.paa",[""],"life_ff_menu"],
 ["HangUp","HangUp","icons\hangup.paa","icons\hangup.paa",[""],"life_ff2_menu"],
 ["disable","disable","icons\disable.paa","icons\disable.paa",[""],"life_ff3_menu"],
-["AnswerCall","AnswerCall","icons2\volumeup.paa","icons2\volumeup.paa",[""],"life_ff234_menu"],
-["HangUp","HangUp","icons2\volumedown.paa","icons2\volumedown.paa",[""],"life_ff2324324_menu"],
-["disable","disable","icons2\speakers.paa","icons2\speakers.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\currentCall.paa","icons2\currentCall.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\ear.paa","icons2\ear.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\police.paa","icons2\police.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\doc.paa","icons2\doc.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\ems.paa","icons2\ems.paa",[""],"life_ff3243423_menu"]
+["AnswerCall","AnswerCall","icons\volumeup.paa","icons\volumeup.paa",[""],"life_ff234_menu"],
+["HangUp","HangUp","icons\volumedown.paa","icons\volumedown.paa",[""],"life_ff2324324_menu"],
+["disable","disable","icons\speakers.paa","icons\speakers.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\currentCall.paa","icons\currentCall.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\ear.paa","icons\ear.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\police.paa","icons\police.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\doc.paa","icons\doc.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\ems.paa","icons\ems.paa",[""],"life_ff3243423_menu"]
 ];
 } else {
 tabletapp_array = [
@@ -31,11 +31,11 @@ tabletapp_array = [
 ["AnswerCall","AnswerCall","icons\answer.paa","icons\answer.paa",[""],"life_ff_menu"],
 ["HangUp","HangUp","icons\hangup.paa","icons\hangup.paa",[""],"life_ff2_menu"],
 ["disable","disable","icons\disable.paa","icons\disable.paa",[""],"life_ff3_menu"],
-["AnswerCall","AnswerCall","icons2\volumeup.paa","icons2\volumeup.paa",[""],"life_ff234_menu"],
-["HangUp","HangUp","icons2\volumedown.paa","icons2\volumedown.paa",[""],"life_ff2324324_menu"],
-["disable","disable","icons2\speakers.paa","icons\speakers.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\currentCall.paa","icons\currentCall.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\ear.paa","icons\ear.paa",[""],"life_ff3243423_menu"]
+["AnswerCall","AnswerCall","icons\volumeup.paa","icons\volumeup.paa",[""],"life_ff234_menu"],
+["HangUp","HangUp","icons\volumedown.paa","icons\volumedown.paa",[""],"life_ff2324324_menu"],
+["disable","disable","icons\speakers.paa","icons\speakers.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\currentCall.paa","icons\currentCall.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\ear.paa","icons\ear.paa",[""],"life_ff3243423_menu"]
 ];
 };
 if (side player == independent) then {
@@ -50,14 +50,14 @@ tabletapp_array = [
 ["AnswerCall","AnswerCall","icons\answer.paa","icons\answer.paa",[""],"life_ff_menu"],
 ["HangUp","HangUp","icons\hangup.paa","icons\hangup.paa",[""],"life_ff2_menu"],
 ["disable","disable","icons\disable.paa","icons\disable.paa",[""],"life_ff3_menu"],
-["AnswerCall","AnswerCall","icons2\volumeup.paa","icons2\volumeup.paa",[""],"life_ff234_menu"],
-["HangUp","HangUp","icons2\volumedown.paa","icons2\volumedown.paa",[""],"life_ff2324324_menu"],
-["disable","disable","icons2\speakers.paa","icons2\speakers.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\currentCall.paa","icons2\currentCall.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\ear.paa","icons2\ear.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\police.paa","icons2\police.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\doc.paa","icons2\doc.paa",[""],"life_ff3243423_menu"],
-["disable","disable","icons2\ems.paa","icons2\ems.paa",[""],"life_ff3243423_menu"]
+["AnswerCall","AnswerCall","icons\volumeup.paa","icons\volumeup.paa",[""],"life_ff234_menu"],
+["HangUp","HangUp","icons\volumedown.paa","icons\volumedown.paa",[""],"life_ff2324324_menu"],
+["disable","disable","icons\speakers.paa","icons\speakers.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\currentCall.paa","icons\currentCall.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\ear.paa","icons\ear.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\police.paa","icons\police.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\doc.paa","icons\doc.paa",[""],"life_ff3243423_menu"],
+["disable","disable","icons\ems.paa","icons\ems.paa",[""],"life_ff3243423_menu"]
 ];
 };
 apploc_array = [

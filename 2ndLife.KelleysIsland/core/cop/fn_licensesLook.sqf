@@ -34,24 +34,24 @@ if(side player == west) then {
 
 if(!skip_all) then {
 	_message = name _civ;
-	_id_name ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\name.paa'/> Name:<t color='#C80000'> %1 </t>",_message];
+	_id_name ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\name.paa'/> Name:<t color='#C80000'> %1 </t>",_message];
 
 	if(side _civ == independent) then {_message = "EMS Department"};
 	if(side _civ == west) then  {_message = "Police Officer"};
 	if(side _civ == civilian) then {_message = "Civilian"};
 	if(side _civ == east) then {_message = "Mafioso"};	
-	_id_faction ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\faction.paa'/> Info:<t color='#C80000'> %1 </t>",_message];
+	_id_faction ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\faction.paa'/> Info:<t color='#C80000'> %1 </t>",_message];
 
 	_message = getPlayerUID _civ;
-	_id_uid ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\uid.paa'/> ID#:<t color='#C80000'> %1 </t>",_message];
+	_id_uid ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\uid.paa'/> ID#:<t color='#C80000'> %1 </t>",_message];
 
-	_id_city ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\city.paa'/> Residence:<t color='#C80000'> Lakeside </t>",_message];
+	_id_city ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\city.paa'/> Residence:<t color='#C80000'> Lakeside </t>",_message];
 
 	_message = count target_houses;
-	_id_houses ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\houses.paa'/> House Count:<t color='#C80000'> %1 (Shown on Map)</t>",_message];
+	_id_houses ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\houses.paa'/> House Count:<t color='#C80000'> %1 (Shown on Map)</t>",_message];
 
 	_message = target_licenses;
-	_id_licenses ctrlSetStructuredText parseText format["<img size='0.5' image='id_icons\license.paa'/> Licenses:<t color='#C80000'> %1 </t>",_message];
+	_id_licenses ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\license.paa'/> Licenses:<t color='#C80000'> %1 </t>",_message];
 
 	OldHead = headgear _civ;
 	OldGoggles = goggles _civ;

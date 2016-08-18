@@ -80,28 +80,28 @@ hud_fnc_loop =
 		if ( myhealth > 0 ) then
 		{
 			if(myHealth > 0.8) exitwith {
-				_message = "<img size='2.5' image='icons2\health6.paa'/>";
+				_message = "<img size='2.5' image='icons\health6.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(myHealth > 0.6) exitwith {
-				_message = "<img size='2.5' image='icons2\health5.paa'/>";
+				_message = "<img size='2.5' image='icons\health5.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(myHealth > 0.45) exitwith {
-				_message = "<img size='2.5' image='icons2\health4.paa'/>";
+				_message = "<img size='2.5' image='icons\health4.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};	
 
 			if(myHealth > 0.3) exitwith {
-				_message = "<img size='2.5' image='icons2\health3.paa'/>";
+				_message = "<img size='2.5' image='icons\health3.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(myHealth > 0.15) exitwith {
-				_message = "<img size='2.5' image='icons2\health2.paa'/>";
+				_message = "<img size='2.5' image='icons\health2.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(myHealth > 0) exitwith {
-				_message = "<img size='2.5' image='icons2\health1.paa'/>";
+				_message = "<img size='2.5' image='icons\health1.paa'/>";
 				_mylife ctrlSetStructuredText parseText format["%1",_message];
 			};				
 		}
@@ -120,28 +120,28 @@ hud_fnc_loop =
 
 
 			if(life_hunger > 60) exitwith {
-				_message = "<img size='2.5' image='icons2\food1.paa'/>";
+				_message = "<img size='2.5' image='icons\food1.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(life_hunger > 50) exitwith {
-				_message = "<img size='2.5' image='icons2\food2.paa'/>";
+				_message = "<img size='2.5' image='icons\food2.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(life_hunger > 40) exitwith {
-				_message = "<img size='2.5' image='icons2\food3.paa'/>";
+				_message = "<img size='2.5' image='icons\food3.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};	
 
 			if(life_hunger > 30) exitwith {
-				_message = "<img size='2.5' image='icons2\food4.paa'/>";
+				_message = "<img size='2.5' image='icons\food4.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(life_hunger > 15) exitwith {
-				_message = "<img size='2.5' image='icons2\food5.paa'/>";
+				_message = "<img size='2.5' image='icons\food5.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(life_hunger > 0) exitwith {
-				_message = "<img size='2.5' image='icons2\food6.paa'/>";
+				_message = "<img size='2.5' image='icons\food6.paa'/>";
 				_myfood ctrlSetStructuredText parseText format["%1",_message];
 			};	
 
@@ -160,28 +160,28 @@ hud_fnc_loop =
 		if ( life_thirst < 65 ) then
 		{
 			if(life_thirst > 60) exitwith {
-				_message = "<img size='2.5' image='icons2\drink1.paa'/>";
+				_message = "<img size='2.5' image='icons\drink1.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(life_thirst > 50) exitwith {
-				_message = "<img size='2.5' image='icons2\drink2.paa'/>";
+				_message = "<img size='2.5' image='icons\drink2.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(life_thirst > 40) exitwith {
-				_message = "<img size='2.5' image='icons2\drink3.paa'/>";
+				_message = "<img size='2.5' image='icons\drink3.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};	
 
 			if(life_thirst > 30) exitwith {
-				_message = "<img size='2.5' image='icons2\drink4.paa'/>";
+				_message = "<img size='2.5' image='icons\drink4.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};
 			if(life_thirst > 15) exitwith {
-				_message = "<img size='2.5' image='icons2\drink5.paa'/>";
+				_message = "<img size='2.5' image='icons\drink5.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};		
 			if(life_thirst > 0) exitwith {
-				_message = "<img size='2.5' image='icons2\drink6.paa'/>";
+				_message = "<img size='2.5' image='icons\drink6.paa'/>";
 				_mydrink ctrlSetStructuredText parseText format["%1",_message];
 			};	
 
@@ -344,7 +344,7 @@ hud_fnc_loop =
 		_tbewdgopro = _ui displayCtrl 444453;
 		if ( has_job ) then
 		{
-			_message = "<img size='2' image='icons2\working.paa'/>";
+			_message = "<img size='2' image='icons\working.paa'/>";
 			_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
 		}
 		else
@@ -362,10 +362,10 @@ hud_fnc_loop =
 		if ( vehicle player != player ) then
 		{
 			if(life_seatbelt) then {
-				_message = "<img size='2' image='icons2\seatbelton.paa'/>";
+				_message = "<img size='2' image='icons\seatbelton.paa'/>";
 				_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
 			} else {
-				_message = "<img size='2' image='icons2\seatbeltoff.paa'/>";
+				_message = "<img size='2' image='icons\seatbeltoff.paa'/>";
 				_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
 			};
 		}
@@ -381,7 +381,7 @@ hud_fnc_loop =
 		_tbewdgopro = _ui displayCtrl 444455;
 		if ( life_nos_count > 0 ) then
 		{
-			_message = "<img size='2' image='icons2\nos.paa'/>";
+			_message = "<img size='2' image='icons\nos.paa'/>";
 			_tbewdgopro ctrlSetStructuredText parseText format["%1",_message];
 		}
 		else
