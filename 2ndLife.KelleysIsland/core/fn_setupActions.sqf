@@ -131,7 +131,7 @@ switch (playerSide) do
 	{
 
 		//Ausweis
-		life_actions pushBack (player addAction["<t color='#FF00FF'>ID Card übergeben</t>",life_fnc_copShowLicense,"",1,false,true,"",'
+		life_actions pushBack (player addAction["<t color='#FF00FF'>Ausweise zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",'
 		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']);
 		
 	
@@ -156,7 +156,7 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction[localize "STR_pAct_Breakout",life_fnc_breakout,"",0,false,false,"",' life_breakouton == 2 && (!life_action_inUse) ']);
 
-		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel") ']);
+		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel")']);
 
 		//Pickup Item
 		life_actions pushBack (player addAction["Gegenstände aufheben",{createDialog "life_pickup_items" && player getVariable ["restrained", false]},"",0,false,false,"",
@@ -174,7 +174,7 @@ switch (playerSide) do
 		life_actions pushBack (player addAction["Schnelles abseilen",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']);
 	
 		//Get out of the electric chair
-		life_actions pushBack (player addAction["Stand Up",life_fnc_electric,"",0,false,false,"",' ( animationState player == "BasicDriver" && isNull objectParent player ) ']);
+		life_actions pushBack (player addAction["Aufstehen",life_fnc_electric,"",0,false,false,"",' ( animationState player == "BasicDriver" && isNull objectParent player ) ']);
 	};
 
 	case east:
