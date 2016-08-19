@@ -16,10 +16,4 @@ if (isServer) then {
 	Jail setdir 270;
 	Jail allowDamage false;
 	Jail enableSimulationGlobal false;
-	
-	_vehicle_2 = ["Land_LampStreet_F","Land_LampDecor_F","Land_LampHalogen_F","Land_LampShabby_F"];
-	publicvariable "Lamps";
-	_vehicle_2 = Lamps
-	Lamps allowDamage false;
-	Lamps enableSimulationGlobal true;
 };
