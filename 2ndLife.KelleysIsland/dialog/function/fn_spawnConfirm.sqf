@@ -20,7 +20,7 @@ if(count life_spawn_point == 0) then
 			// Run our code for hospital spawn
 			if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
 			{
-				[] call A3L_Fnc_HospitalSpawn;
+				[] call life_fnc_hospitalSpawn;
 			};			
 			
 		} else {
@@ -36,7 +36,7 @@ if(count life_spawn_point == 0) then
 		// Run our code for hospital spawn
 		if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
 		{
-			[] call A3L_Fnc_HospitalSpawn;
+			[] call life_fnc_hospitalSpawn;
 		};					
 	};
 }

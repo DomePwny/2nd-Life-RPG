@@ -359,6 +359,7 @@ class Life_Client_Core
 		class broadcastCheck {};
 		class logout {};
 		class nearestObjects {};
+		class hospitalSpawn {};
 	};
 	
 	class Network
