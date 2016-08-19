@@ -71,15 +71,15 @@
 
 [] spawn
 {
-	if(side player != civilian) exitWith {};
+	if(side player in [west,independent]) exitWith {};
 	while{true} do
 	{
 		_vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) == player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
 
-			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_10")) < 20 ) then {
+			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_5")) < 20 ) then {
 				_vel = speed player; 
-				if(_vel > 90 && _vel < 140) then {
+				if(_vel > 50 && _vel < 60) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -104,7 +104,7 @@
 					};
 				};
 				
-				if(_vel > 139 && _vel < 200) then {
+				if(_vel > 59 && _vel < 75) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -128,7 +128,7 @@
 						["bank","take",210] call life_fnc_handleCash;
 					};
 				};	
-				if(_vel > 199) then {
+				if(_vel > 74) then {
 					["Du wurdest geblitzt! 2000$ Strafe und dein Führerschein wurde dir entzogen!", false] spawn domsg;
 					if(cash_in_bank > 2000) then {
 						["bank","take", 2000] call life_fnc_handleCash
@@ -162,11 +162,11 @@
 				};		
 				uiSleep 30;
 			};
-			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
+			if((player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
 				_vel = speed player; 
-				if(_vel > 140 && _vel < 160) then {
+				if(_vel > 130 && _vel < 150) then {
 					["Du wurdest geblitzt! 100$ wurden dir als Strafe abgebucht!", false] spawn domsg;
-					if(cash_in_bank > 100) then {
+					if(cash_in_bank > 200) then {
 						["bank","take",100] call life_fnc_handleCash; 
 					};
 
@@ -189,7 +189,7 @@
 					"colorCorrections" ppEffectEnable false;	
 
 				};
-				if(_vel > 159 && _vel < 224) then {
+				if(_vel > 149 && _vel < 185) then {
 					["Du wurdest geblitzt! 350$ wurden dir als Strafe abgebucht!", false] spawn domsg;
 					if(cash_in_bank > 350) then {
 						["bank","take",350] call life_fnc_handleCash;
@@ -214,7 +214,7 @@
 					"colorCorrections" ppEffectEnable false;	
 
 				};	
-				if(_vel > 225) then {
+				if(_vel > 184) then {
 					["Du wurdest geblitzt! 1000$ Strafe und dein Führerschein wurde dir entzogen!", false] spawn domsg;
 					if(cash_in_bank > 1000) then {
 						["bank","take", 1000] call life_fnc_handleCash
