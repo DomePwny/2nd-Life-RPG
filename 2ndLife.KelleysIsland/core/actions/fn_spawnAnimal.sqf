@@ -40,4 +40,3 @@ myanimal = _type createUnit [_tempPos, _grp,"", 0.5, "private"];
 sleep 35;
 im_hunting = false;
 [] spawn life_fnc_spawnanimal;
-["Deine Jagdzeit ist beendet melde dich neu an.",false] spawn domsg;
