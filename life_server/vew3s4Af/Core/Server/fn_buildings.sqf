@@ -9,10 +9,17 @@ if (isServer) then {
 	prisondoor enableSimulationGlobal false;
 	
 	_vehicle_1 = objNull;
-	Jail = createVehicle ["Land_MainSection", [2837.72,3834.81,0], [], 0, "CAN_COLLIDE"];
+	Jail = createVehicle ["Land_MainSection", [2862.72,4602.42,0], [], 0, "CAN_COLLIDE"];
 	publicvariable "Jail";
 	_vehicle_1 = Jail;
-	Jail setPos [2837.72,3834.81,0];
+	Jail setPos [2862.72,4602.42,0];
+	Jail setdir 270;
 	Jail allowDamage false;
 	Jail enableSimulationGlobal false;
+	
+	_vehicle_2 = ["Land_LampStreet_F","Land_LampDecor_F","Land_LampHalogen_F","Land_LampShabby_F"];
+	publicvariable "Lamps";
+	_vehicle_2 = Lamps
+	Lamps allowDamage false;
+	Lamps enableSimulationGlobal true;
 };
