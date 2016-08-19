@@ -8,7 +8,7 @@
 private["_markers"];
 _markers = [];
 sleep 0.25;
-if(visibleMap) then {
+if(visibleMap && (player getVariable "taxi_driver")) then {
 	{
 			_marker = createMarkerLocal [format["%1_taxi_marker",_x select 1],getPos (_x select 0)];
 			_marker setMarkerColorLocal "ColorRed";

@@ -114,7 +114,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	};
 } else {
 	//OK, it wasn't a player so what is it?
-	private["_isVehicle","_miscItems","_money"];
+	private["_isVehicle","_miscItems","_money","_animals"];
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F","Land_Sleeping_bag_blue_folded_F","Land_Screwdriver_V1_F","Land_ButaneCanister_F","Land_Antibiotic_F","Land_VitaminBottle_F","Land_DisinfectantSpray_F","Land_MobilePhone_smart_F","Land_Bandage_F","Land_Pillow_grey_F","plp_bo_BottleBitters","plp_bo_BottleBitters","Land_SatellitePhone_F","Land_Battery_F","Land_Defibrillator_F"];
 	_animals = [position player, ["Sheep_random_F","Goat_random_F","Hen_random_F","Cock_random_F","Rabbit_F"], 3.5] call life_fnc_nearestObjects;

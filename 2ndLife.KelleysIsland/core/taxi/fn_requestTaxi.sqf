@@ -30,8 +30,8 @@ life_taxiMarker set [count life_taxiMarker,[player,name player]];
 	checked_taxi = false;
 };
 
-waitUntil{
-	if (vehicle player != player) exitWith {true};
+while {vehicle player == player} do {
+	sleep 30;
 };
 
 life_taxiMarker deleteAt (life_taxiMarker find player);
