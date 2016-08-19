@@ -30,6 +30,8 @@ life_taxiMarker set [count life_taxiMarker,[player,name player]];
 	checked_taxi = false;
 };
 
-waitUntil{vehicle player != player};
+waitUntil{
+	if (vehicle player != player) exitWith {true};
+};
+
 life_taxiMarker deleteAt (life_taxiMarker find player);
-[player] call life_fnc_deleteTaximarker;

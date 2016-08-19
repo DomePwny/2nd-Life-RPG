@@ -41,9 +41,6 @@ if (count _spikeStrips > 0) then {
 	player additem "CG_Spikes_Collapsed";
 };
 
-
-
-
 if(isNull _curTarget) exitWith {
 	if(_isWater) then {
 		private["_fish","_turtle"];
