@@ -4,7 +4,7 @@
 */
 if(im_hunting) exitwith {};
 if (playerside == west OR playerside == independent) exitwith { ["VERPISS DICH DU TÖTEST KEINE TIERE!",false] spawn domsg; };
-["Jage die Tiere - Benutze die Windows Taste um sie zu schlachten.",false] spawn domsg;
+["Jage die Tiere!",false] spawn domsg;
 im_hunting = true;
 private["_animal","_tempPos"];
 _chances = 35 + (floor random 15);
@@ -37,6 +37,7 @@ _chancerr = (floor random 4);
 };
 _type = huntarray call bis_fnc_selectRandom;
 myanimal = _type createUnit [_tempPos, _grp,"", 0.5, "private"];
-sleep 900;
+sleep 35;
 im_hunting = false;
+[] spawn life_fnc_spawnanimal;
 ["Deine Jagdzeit ist beendet melde dich neu an.",false] spawn domsg;
