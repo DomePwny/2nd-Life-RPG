@@ -11,13 +11,13 @@ if(_isPassenger) then {
 	[format ["Your test drive with %1 has begun, they will have 5 minutes to drive the vehicle and then you will be returned to the dealer.",name _person], false] spawn domsg;
 	waitUntil {sleep 1; isNull _vehicle};
 	if!(player getVariable ["restrained",false] && !deadPlayer) then {
-		if(player distance [8547.99,6770.71,0.759686] > 50) then {
-			player setPosATL [8547.99,6770.71,0.759686];
+		if(player distance [3547.99,3352.37,0.00143909] > 50) then {
+			player setPosATL [3547.99,3352.37,0.00143909];
 		};
 	};
 	life_onTestDrive = false;
 } else {
-	_trackPoints = ["start_race_1","start_race_2","start_race_3","start_race_4","start_race_5","start_race_6","start_race_7","start_race_8"];
+	_trackPoints = ["testdrive_1","testdrive_2","testdrive_3"];
 	_spawnPoint = "";
 	
 	{
@@ -102,8 +102,8 @@ if(_isPassenger) then {
 	};			
 	deleteVehicle _vehicle;
 	if!(player getVariable ["restrained",false] && !deadPlayer) then {
-		if(player distance [8547.99,6770.71,0.759686] > 50) then {
-			player setPosATL [8547.99,6770.71,0.759686];
+		if(player distance [3547.99,3352.37,0.00143909] > 50) then {
+			player setPosATL [3547.99,3352.37,0.00143909];
 		};
 	};
 	player removeAction _testDriveAction;

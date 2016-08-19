@@ -3,7 +3,7 @@ Lakeside Spray Car Finish
 SprayCarFinish.sqf
 */
 _price = 1000;
-if(side player != civilian && side player != east) exitwith {["Spray Guy: I don't paint Government Cars!", false] spawn domsg;};
+if !(side player in [civilian,east]) exitwith {["Spray Guy: I don't paint Government Cars!", false] spawn domsg;};
 if(vehicle player == player) exitwith { ["Spray Guy: You must be the driver of a vehicle!", false] spawn domsg; };
 if(driver (vehicle player) != player) exitwith { ["Spray Guy: You must be the driver of a vehicle!", false] spawn domsg; };
 if(cash_in_hand < _price) exitWith { ["Spray Guy: Not enough money, I need $1000!", false] spawn domsg; };	
