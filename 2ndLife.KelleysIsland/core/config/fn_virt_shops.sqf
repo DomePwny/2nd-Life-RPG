@@ -20,7 +20,7 @@ switch (_shop) do
 	case "heroin": {["Drogen Händler",["marijuana","cokep","cokeu","methp","methu","MDMAp","MDMAu"]]};
 	case "gems": {["Juwelen Händler",["sapphire","ruby","emerald"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
-	case "fishmarket": {["Fisch Markt",["bombfish","meatfish"]]};
+	case "fishmarket": {["Fisch Markt",["bombfish","Fish"]]};
 	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","pumpkin"]]};	
 	case "glass": {["Glas Händler",["glass"]]};
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};

@@ -30,6 +30,8 @@ switch(_shop) do
 				default {
 					["EMS Supplies Shop",
 						[
+							["cg_torch",nil,550], 
+							["cg_torchbattery",nil,50],
 							["ToolKit",nil,2500],
 							["ItemCompass",nil,50],
 							["tf_anprc152",nil,10],
@@ -48,8 +50,6 @@ switch(_shop) do
 					["EMS Basic Shop",
 						[
 							["Second_Life_Defi_i","Defibrillator",1250],
-							["TRYK_Headset_NV","Nachtsichtgerät",25],
-							["acc_flashlight","Extinguisher Flashlight",10],
 							["CG_ATF_Drug_Bottle_01_i","Valium",5],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
@@ -78,9 +78,10 @@ switch(_shop) do
 					["Police Utility Shop",								
 						[
 							["Second_Life_Binder_i",nil,10],
+							["cg_torch",nil,550], 
+							["cg_torchbattery",nil,50],
 							["CG_Spikes_Collapsed",nil,250], 
 							["gign_shield","Riot Shield",10],
-							["TRYK_SPgearG_NV", "Nachtsichtgerät", 25],
 							["acc_flashlight","ACC Flashlight",10],
 							["RH_M6X","RH Flashlight",10],
 							["ToolKit",nil,2500], 
@@ -91,7 +92,6 @@ switch(_shop) do
 							["Chemlight_green",nil,20],
 							["Chemlight_blue",nil,20],
 							["Binocular",nil,15],
-							["Rangefinder","Rangefinder SERT ONLY",500],
 							["ItemGPS",nil,10],  
 							["tf_anprc152",nil,10]
 						]
@@ -166,6 +166,7 @@ switch(_shop) do
 					["RH_ta648",nil,222],
 					["prpl_benelli_14_pgs_rail","Shotgun Rubber",2200],
 					["prpl_6Rnd_12Gauge_Slug","Rubber Bullets",20],
+					["Rangefinder",nil,500],
 					["RH_bull",nil,240],
 					["RH_6Rnd_454_Mag",nil,4],
 					["RH_bullb",nil,240],
@@ -356,7 +357,6 @@ switch(_shop) do
 					["Hunting Shop",
 						[
 							["Trixie_CZ550","CZ500",7500],
-							["Trixie_CZ550_Rail","CZ500-Scope",1000],
 							["Trixie_CZ550_Mag","CZ500-Magazin",20],
 							["vvv_fishing_rod","Angel",5000],
 							["cebos","Angelköder",1000],
@@ -436,10 +436,8 @@ switch(_shop) do
 			["General and Fishing",
 				[
 					["2nd_lifetabletd",nil,50],
-					["TRYK_Shemagh_MESH_NV", "Nachtsichtgerät",250],
-					["TRYK_Shemagh_G_NV", "Nachtsichtgerät",250],
-					["TRYK_Shemagh_TAN_NV", "Nachtsichtgerät",250],
-					["TRYK_Shemagh_WH_NV", "Nachtsichtgerät", 250],
+					["cg_torch",nil,550], 
+					["cg_torchbattery",nil,50],
 					["CG_ATF_Pizza_Box_i","Pizza",1400],
 					["CG_ATF_Donut_Box_i","Donuts",1600],				
 					["ItemMap",nil,6],
