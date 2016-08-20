@@ -110,7 +110,7 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 	};
 };
 
-Second_Life_Version = getText (configFile >> "CfgPatches" >> "seconlife_client" >> "Modversion");
+Second_Life_Version = getText (configFile >> "CfgPatches" >> "secondlife_client" >> "Modversion");
 _secondlife_mods_version = Second_Life_Version;
 
 if(_secondlife_mods_version != SecondLife_version) then {
