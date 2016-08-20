@@ -111,7 +111,7 @@ life_deathCamera camCommit 0;
 
 _unit spawn
 {
-	private["maxTime","_RespawnBtn","_Timer"];
+	private["_RespawnBtn","_Timer"];
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
