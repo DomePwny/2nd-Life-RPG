@@ -846,12 +846,6 @@ life_garage_prices =
 			["DAR_TahoeCivBlue",0],
 			["DAR_TahoeCivRed",0],
 			["DAR_TahoeCivBlack",0],
-			["S_Skyline_Red",0],
-			["S_Skyline_Blue",0],
-			["S_Skyline_Black",0],
-			["S_Skyline_Yellow",0],
-			["S_Skyline_Purple",0],
-			["S_Skyline_White",0],
 			
 			//Neuwagen
 			["cl3_z4_2008_white",0],
@@ -1112,12 +1106,6 @@ life_garage_sell =
 			["DAR_TahoeCivBlue",4000],
 			["DAR_TahoeCivRed",4000],
 			["DAR_TahoeCivBlack",4000],
-			["S_Skyline_Red",4500],
-			["S_Skyline_Blue",4500],
-			["S_Skyline_Black",4500],
-			["S_Skyline_Yellow",4500],
-			["S_Skyline_Purple",4500],
-			["S_Skyline_White",4500],
 			
 			//Neuwagen
 			["cl3_z4_2008_white",18750],

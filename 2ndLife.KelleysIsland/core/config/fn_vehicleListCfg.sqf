@@ -212,13 +212,7 @@ switch (_shop) do
 			["DAR_TahoeCivSilver",80000],
 			["DAR_TahoeCivBlue",80000],
 			["DAR_TahoeCivRed",80000],
-			["DAR_TahoeCivBlack",80000],
-			["S_Skyline_Red",90000],
-			["S_Skyline_Blue",90000],
-			["S_Skyline_Black",90000],
-			["S_Skyline_Yellow",90000],
-			["S_Skyline_Purple",90000],
-			["S_Skyline_White",90000]
+			["DAR_TahoeCivBlack",80000]
 		];
 	};
 	case "civ_motorbike":
