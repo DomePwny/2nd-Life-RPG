@@ -29,7 +29,8 @@ if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 	
 	waitUntil{count crew _vehicle > 1};
 	{
-	_passenger = crew _vehicle;
+	sleep 1;
+	passenger = crew _vehicle;
 	life_taxiMarker deleteAt (life_taxiMarker find _x);
-	} foreach _passenger;
+	} foreach passenger;
 };
