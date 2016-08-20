@@ -9,7 +9,6 @@ A3L_fnc_serverexec = [
 A3L_fnc_PVList = [
 "\Core\fn_messagesystem.sqf",
 "\Core\fn_tablet.sqf",
-"\Core\Farming\fn_client.sqf",
 "\Core\Network\fn_sounds.sqf",
 "\Core\Functions\bank.sqf",
 "\Core\Functions\message.sqf"

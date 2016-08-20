@@ -278,7 +278,7 @@ hud_fnc_loop =
 		_earPlugs ctrlCommit 0;
 
 		//update gopro
-		_gopro = _ui displayCtrl 444448;
+/*		_gopro = _ui displayCtrl 444448;
 		if ( life_gopro && "Second_Life_Kamera_i" in magazines player ) then
 		{
 			_message = "<img size='2' image='icons\record.paa'/>";
@@ -295,7 +295,7 @@ hud_fnc_loop =
 		};
 		_gopro ctrlCommit 0;
 
-
+*/
 		//update drug usage
 		_dgopro = _ui displayCtrl 444449;
 		if ( life_crazy > 0 ) then

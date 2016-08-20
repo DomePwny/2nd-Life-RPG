@@ -709,8 +709,8 @@ fnc_delivery = {
 	if(_mytype isEqualTo "standard") exitwith {
 		_chance = round (random 7);
 		if(_chance < 2) then {
-			player addItemToBackpack "Second_Life_Kamera_i";
-			["Jemand schickte dir eine Kamera, überprüfe dein Rucksack!", false] spawn domsg;
+			[true,"condom",4] call life_fnc_handleInv;
+			["Da möchte wohl jemand das du Spass hast. Überprüfe deine virtuellen Items!", false] spawn domsg;
 		};
 		if(_chance isEqualTo 2) then {
 			["cash","add",1250] call life_fnc_handleCash; 
@@ -1039,7 +1039,7 @@ fnc_removeitem = {
 	player removeitem _remove;
 };
 //GoPro Toggle
-fnc_gopro = {
+/*fnc_gopro = {
 	if(life_gopro) then {
 		life_gopro = false;
 	} else {
@@ -1047,7 +1047,7 @@ fnc_gopro = {
 	};
 	[player,"endbeep"] spawn life_fnc_nearestSound;
 };
-
+*/
 
 
 fnc_joinPaintball = {

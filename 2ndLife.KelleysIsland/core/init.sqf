@@ -9,10 +9,7 @@
 player setVariable["tf_receivingDistanceMultiplicator", 10];
 player setVariable["tf_sendingDistanceMultiplicator", 10];
 deadPlayer = false;
-candy = 0;
-scarylevel = 0;
 godMode = false;
-// A3L CURRENT VERSION
 
 life_firstSpawn = true;
 life_session_completed = false;
@@ -22,11 +19,6 @@ _timeStamp = diag_tickTime;
 
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
-
-
-
-
-
 
 [] call life_fnc_setupEVH;
 waitUntil {(!isNil {clientGangLeader})};
@@ -276,7 +268,6 @@ player addEventHandler ["AnimStateChanged", {
 
 [] execVM "core\fn_addKey.sqf";
 
-DYNAMICMARKET_boughtItems = [];
 [getPlayerUID player] remoteExecCall ["TON_fnc_playerLogged", (call life_fnc_HCC)];
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
