@@ -26,8 +26,9 @@ if((playerside == civilian) && (player getVariable "taxi_driver")) then {
 	["Jemand hat ein Taxi gerufen! Schau auf deine Karte."] spawn domsg;
 	
 	_vehicle = vehicle player;
+	
 	waitUntil{count crew _vehicle > 1};
 	{
 	life_taxiMarker deleteAt (life_taxiMarker find _x);
-	} foreach player in (crew _vehicle);
+	} foreach player in [crew _vehicle];
 };
