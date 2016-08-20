@@ -94,12 +94,6 @@ class CfgSounds
 		sound[] = {"\PhoneSounds\cgphone_hangup.ogg", 1.5, 1};
 		titles[] = {};
 	};
-	class scarryshiet
-	{
-		name = "scarryshiet";
-		sound[] = {"\sounds\darkness.ogg", 1, 1};
-		titles[] = {};
-	};
 	class cgphone_nodialtone
 	{
 		name = "cgphone_nodialtone";
