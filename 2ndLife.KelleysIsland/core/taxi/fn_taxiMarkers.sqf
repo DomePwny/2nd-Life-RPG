@@ -10,10 +10,10 @@ _markers = [];
 sleep 0.25;
 if(visibleMap && (player getVariable "taxi_driver")) then {
 	{
-			_marker = createMarkerLocal [format["%1_taxi_marker",_x select 1],getPos (_x select 0)];
+			_marker = createMarkerLocal [format["%1_taxi_marker",name _x],getPos _x];
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "plp_mark_civ_taxi";
-			_marker setMarkerTextLocal format["%1 ruft ein Taxi",_x select 1];
+			_marker setMarkerTextLocal format["%1 ruft ein Taxi",name _x];
 			_markers pushBack _marker;
 	} foreach life_taxiMarker;
 

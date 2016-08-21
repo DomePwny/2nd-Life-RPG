@@ -131,7 +131,7 @@ switch(_shop) do
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
 			};
-			if(__GETC__(life_coplevel) > 4) then {
+			if(__GETC__(life_coplevel) > 3) then {
 				_temp =  [
 					["RH_M4A1_ris",nil,4222],
 					["RH_30Rnd_556x45_M855A1",nil,20],

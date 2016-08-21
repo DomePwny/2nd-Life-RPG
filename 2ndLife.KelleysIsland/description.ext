@@ -33,6 +33,7 @@ corpseRemovalMaxTime = 800;
 #include "dialog\pickup.hpp"
 #include "dialog\openboard.hpp"
 #include "infiSTAR_AdminMenu.hpp"
+
 class RscTitles
 {
 	#include "dialog\ui.hpp"
@@ -42,35 +43,44 @@ class RscTitles
 	#include "dialog\a3ljailhud.hpp"
 
 class introLife
+	{
+		idd = -1;
+		duration = 6;
+		class controls
+		{
+			class ExampleControl
+			{
+				idc = -1;
+				type = 0;
+				style = 2192;
+				x = 0.125;
+				y = 0.125;
+				h = 0.75;
+				w = 0.75;
+				font = "EtelkaNarrowMediumPro";
+				sizeEx = 0.05; 
+				colorBackground[] = {1,1,1,0};
+				colorText[] = {1,1,1,1};
+				text = "icons\logo.paa";
+				lineSpacing = 1;
+			}; 
+		}; 
+	}; 
+};
+
+class CfgTaskTypes
 {
-   idd = -1;
-   duration = 6;
-   class controls
-   {
-         class ExampleControl
-         {
-            idc = -1;
-            type = 0;
-            style = 2192;
-            x = 0.125;
-            y = 0.125;
-            h = 0.75;
-            w = 0.75;
-            font = "EtelkaNarrowMediumPro";
-            sizeEx = 0.05; 
-            colorBackground[] = {1,1,1,0};
-            colorText[] = {1,1,1,1};
-            text = "icons\logo.paa";
-            lineSpacing = 1;
-         }; 
-      }; 
-   }; 
+	class taxi
+	{
+		icon = \plp_markers\icons\plp_mark_civ_taxi.pac;
+	};
 };
 
 class CfgFunctions
 {
 	#include "Functions.h"
 };
+
 class CfgSounds
 {
 	sounds[] = {};

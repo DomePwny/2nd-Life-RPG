@@ -1,36 +1,11 @@
-/*
-	File: fn_medicRequest.sqf
-	Author: Bryan "Tonic" Boardwine
-	
-	Description:
-	Notifies the medics that someone has requested emergency and prompts them
-	if they want to take the request or not.
-*/
-private["_caller","_callerName","_vehicle"];
-if((playerside == civilian) && (player getVariable "taxi_driver")) then {
-	_caller = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-	_callerName = [_this,1,"Unknown Player",[""]] call BIS_fnc_param;
-	if(isNull _caller) exitWith {}; //Bad data
-	if(typeOf(vehicle player) != "cl3_suv_taxi") exitwith {["Du hast einen Funkspruch verpasst!"] spawn domsg;};
-	
-	_alreadyInList= false;
-	{
-		if(_x select 0 == _caller)then{
-			_alreadyInList = true;
-		};
-	}foreach life_taxiMarker;
-	if(_alreadyInList) exitWith {};
-	life_taxiMarker set [count life_taxiMarker,[_caller,_callerName]];
-	
-	playSound "ringing";
-	["Jemand hat ein Taxi gerufen! Schau auf deine Karte."] spawn domsg;
-	
-	_vehicle = vehicle player;
-	
-	waitUntil{count crew _vehicle > 1};
-	{
-	sleep 1;
-	passenger = crew _vehicle;
-	life_taxiMarker deleteAt (life_taxiMarker find _x);
-	} foreach passenger;
-};
+if !(player getvariable["taxi_driver", false]) exitWith {};
+//if (typeOf(vehicle player) != "cl3_suv_taxi") exitwith {["Du hast einen Funkspruch verpasst!"] spawn domsg;}; Sinnfrei da sonst die Leute auf ein Taxi warten und keiner kommt
+params["_unit","_from","_msg","_id"];
+[player,
+[("Taxi Auftrag: " + _id)],
+[(_from + ": " + _msg + "<br/><br/><executeClose expression='[(""Dein Taxi Auftrag: "" + " + str _id + "),""CANCELED"",true] call BIS_fnc_taskSetState;[(""Taxi Auftrag: "" + " + str _id + "),""CANCELED"",true] call BIS_fnc_taskSetState;[(""Dein Taxi Auftrag: "" + " + str _id + "),[(""Dein Taxi Auftrag: "" + " + str _id + " + "" ist abgelehnt!""),(""Dein Taxi Auftrag: "" + " + str _id + "),(""Dein Taxi Auftrag: "" + " + str _id + ")]] call bis_fnc_tasksetdescription;[(""Taxi Auftrag: "" + " + str _id + "),[(""Taxi Auftrag: "" + " + str _id + " + "" ist abgelehnt!""),(""Taxi Auftrag: "" + " + str _id + "),(""Taxi Auftrag: "" + " + str _id + ")]] call bis_fnc_tasksetdescription'>Auftrag ablehen</executeClose>"),("Taxi Auftrag: " + _id),("Taxi Auftrag: " + _id)],
+_unit,
+0,
+1,
+true,
+"taxi"] call BIS_fnc_taskCreate;
