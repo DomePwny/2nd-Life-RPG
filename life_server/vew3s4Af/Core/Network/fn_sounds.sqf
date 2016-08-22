@@ -64,11 +64,15 @@ A3L_Fnc_PlayAlarm = {
 	if (!isDedicated) then {
 		[] remoteExecCall ["A3L_fnc_AlarmPHint"];	
 		prisondoor say "PrisonAlarm" ;
-		prisondoor animate ['main_door', 8];
+		prisondoor animate ['main_door', 12];
+		prisonbreak = true;
+		publicvariable "prisonbreak";
 		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];
 		prisondoor say "Explode" ;
 		uiSleep 1600;
-		prisondoor setVariable ["robbed", nil, true];		
+		prisondoor setVariable ["robbed", nil, true];
+		prisonbreak = false;
+		publicvariable "prisonbreak";
 	};
 
 };

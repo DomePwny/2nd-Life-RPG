@@ -192,6 +192,7 @@ class Life_Client_Core
 		class carSalesman {};
 		class gutAnimal {};
 		class gutFish{};
+		class hackTerminal{};
 	};	
 
 	class Paintball
