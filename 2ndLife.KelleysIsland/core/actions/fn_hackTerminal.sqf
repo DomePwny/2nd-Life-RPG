@@ -17,6 +17,7 @@ if(player distance (getMarkerPos "Terminal") > 3) exitWith {["Hier kannst du nic
 if !(prisonbreak) exitWith {["Das Tor zum Gefängnis muss zuerst aufgesprengt werden.", false] spawn domsg};
 
 life_action_inUse = true;
+_cP = 0;
 _upp = "Terminal wird gehackt";
 //Setup our progress bar.
 disableSerialization;
@@ -30,7 +31,7 @@ _progress progressSetPosition _cp;
 _veh = createVehicle ["Land_Secondlife_Laptop",[5186.4,2033.45,1.55], [], 0, "CAN_COLLIDE"];
 _veh setDir 272.5;
 
-["Second_Life_Laptop"] spawn fnc_removeitem;
+["Second_Life_Laptop_i"] spawn fnc_removeitem;
 
 playSound "hackingjail";
 
@@ -66,4 +67,4 @@ _cells = ['A1','A2','A3','A4','A5','A6','A7','A8','A9','A10','A11','A12','B1','B
 {
 jail animate [_x,-1];
 } foreach _cells;
-
+["Du hast erfolgreich das Gefängnis gehackt!", false] spawn domsg;

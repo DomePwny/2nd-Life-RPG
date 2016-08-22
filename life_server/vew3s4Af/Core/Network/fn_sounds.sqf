@@ -68,7 +68,7 @@ A3L_Fnc_PlayAlarm = {
 		prisondoor animate ['main_door', 12];
 		prisonbreak = true;
 		publicvariable "prisonbreak";
-		"R_60mm_HE" createvehicle [2838.06,3841.68,-1];
+		"R_60mm_HE" createvehicle [2858.2,4528.11,-1];
 		prisondoor say "Explode" ;
 		uiSleep 1600;
 		prisondoor setVariable ["robbed", nil, true];
