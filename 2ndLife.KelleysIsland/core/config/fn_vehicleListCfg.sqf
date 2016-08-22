@@ -177,9 +177,6 @@ switch (_shop) do
 	{
 		_return = 
 		[	
-			["AM_2015C_Black",140000],
-			["AM_2015C_blue",140000],
-			["AM_2015C_white",140000],
 			["cl3_z4_2008_white",375000],
 			["cl3_z4_2008_purple",375000],
 			["cl3_z4_2008_navy_blue",375000],
