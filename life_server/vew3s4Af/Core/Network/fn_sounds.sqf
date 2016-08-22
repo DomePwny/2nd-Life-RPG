@@ -55,8 +55,9 @@ A3L_Fnc_PlayAlarm = {
 	
 	while {_timer > 0} do {
 		prisondoor say "c4_buttons";
-		_veh = createVehicle ["SLB2k11_bomb", [2838.06,3841.68,0.52143909], [], 0, "CAN_COLLIDE"]; 
-		_veh setpos [2838.06,3841.68,0.52143909];
+		_veh = createVehicle ["SLB2k11_bomb", [2858.2,4528.11,0.52143909], [], 0, "CAN_COLLIDE"];  
+		_veh setpos [2858.2,4528.11,0.52143909]; 
+		_veh setdir 90;
 		uiSleep 1;
 		_timer = _timer - 1;
 		deletevehicle _veh;
