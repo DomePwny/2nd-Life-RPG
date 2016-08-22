@@ -70,10 +70,7 @@ A3L_Fnc_PlayAlarm = {
 		publicvariable "prisonbreak";
 		"R_60mm_HE" createvehicle [2858.2,4528.11,-1];
 		prisondoor say "Explode" ;
-		uiSleep 1600;
+		uiSleep 1800;
 		prisondoor setVariable ["robbed", nil, true];
-		prisonbreak = false;
-		publicvariable "prisonbreak";
 	};
-
 };

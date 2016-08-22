@@ -13,8 +13,8 @@ life_interrupted = false;
 if(vehicle player != player) exitWith {};
 if(playerside in [west,independent]) exitWith {["Dein Ernst?!?", false] spawn domsg};
 if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst nicht mit verbundenen Armen hacken.", false] spawn domsg};
-if(player distance (getMarkerPos "Terminal") > 3) exitWith {["Hier kannst du nicht hacken.", false] spawn domsg};
 if !(prisonbreak) exitWith {["Das Tor zum Gefängnis muss zuerst aufgesprengt werden.", false] spawn domsg};
+if(player distance (getMarkerPos "Terminal") > 3) exitWith {["Hier kannst du nicht hacken.", false] spawn domsg};
 
 life_action_inUse = true;
 _cP = 0;
