@@ -374,7 +374,7 @@ switch(_shop) do
 			{
 				_ret = [];
 				if(playerSide in [civilian,east]) then {
-					_temp = [
+					_ret = [
 						["KPFS_8Rnd_9x19_PARA",nil,120],
 						["kpfs_8Rnd_765x17_PP",nil,120],
 						["kpfs_6Rnd_635x15",nil,120],
@@ -386,12 +386,9 @@ switch(_shop) do
 						["RH_18Rnd_9x19_gsh",nil,195],
 						["RH_7Rnd_45cal_m1911",nil,275]
 					];
-					{
-						(_ret select 0) pushBack _x;
-					} foreach _temp;
 				};
 				if(playerSide == west) then {
-					_temp = [
+					_ret = [
 						["RH_15Rnd_9x19_M9",nil,5],
 						["RH_15Rnd_45cal_fnp",nil,4],
 						["11Rnd_45ACP_Mag",nil,5],
@@ -406,9 +403,6 @@ switch(_shop) do
 						["RH_20Rnd_762x51_M80A1",nil,220],
 						["RH_20Rnd_57x28_FN",nil,20]
 					];
-					{
-						(_ret select 0) pushBack _x;
-					} foreach _temp;
 				};
 			};
 			["Magazine", _ret select 0];
