@@ -5,7 +5,7 @@
 	Description:
 	Starts the tazed animation and broadcasts out what it needs to.
 */
-private["_curWep","_curMags","_attach"];
+private["_curWep","_curMags","_attach","_ui"];
 params [["_unit", objNull, [objNull]], ["_shooter", objNull, [objNull]], ["_dist", 0, [0]]];
 
 //50% chance of failure
@@ -16,7 +16,7 @@ if(_chance < 30) exitwith {
 
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
 _ui = uiNameSpace getVariable ["playerHUD",displayNull];
-//_POPUP = _ui displayCtrl 44444;
+
 
 _sleeptime = 40 - _dist;
 //exit if distance over 50m
