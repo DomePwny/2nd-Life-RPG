@@ -18,7 +18,7 @@ switch (_className) do
 	case "Jonzie_Log_Truck": {200};
 	case "Jonzie_Box_Truck": {300};
 	case "Jonzie_Tanker_Truck": {300};
-	case "Jonzie_Log_Truck": {300};
+	case "Jonzie_Log_Truck": {0};
 
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};
