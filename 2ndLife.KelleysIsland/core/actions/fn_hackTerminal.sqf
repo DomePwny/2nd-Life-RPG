@@ -1,9 +1,8 @@
 /*
-	File: fn_repairTruck.sqf
-	
-	
+	File: fn_hackTerminal.sqf
+	Author: Nexarion		
 	Description:
-	Main functionality for toolkits, to be revised in later version.
+	Hacks the Jail Doors and Cells for a Prison Break!
 */
 closeDialog 0;
 
