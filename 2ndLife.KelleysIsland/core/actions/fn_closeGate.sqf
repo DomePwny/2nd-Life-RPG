@@ -10,9 +10,11 @@ _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
 if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst das Fahrzeug nicht mit verbundenen Arme reparieren.", false] spawn domsg};
+
+_cP = 0;
+
 if("ToolKit" in (items player)) then
 {
-	_cP = 0;
 	life_action_inUse = true;
 	_upp = "Tor versiegeln";
 	//Setup our progress bar.
@@ -24,7 +26,7 @@ if("ToolKit" in (items player)) then
 	_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 	_progress progressSetPosition _cp;
 
-	playSound3D ["cg_sndimg\sounds\repair.ogg", player, false, getPosASL player, 1, 1, 125];
+	//playSound3D ["cg_sndimg\sounds\repair.ogg", player, false, getPosASL player, 1, 1, 125];
 
 	while{true} do
 	{
