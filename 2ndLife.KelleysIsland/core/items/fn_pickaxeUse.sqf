@@ -18,9 +18,10 @@ switch (true) do
 	case (player distance (getMarkerPos "sand_1") < 75) : {_mine = "sand"; _val = 5;};
 	case (player distance (getMarkerPos "diamond_1") < 50): {_mine = "diamond"; _val = 2;};
 	case (player distance (getMarkerPos "oil_1") < 40) : {_mine = "oilu"; _val = 1;};
-	case (player distance (getMarkerPos "oil_2") < 40) : {_mine = "oilu"; _val = 1;};
 	case (player distance (getMarkerPos "rock_1") < 50): {_mine = "rock"; _val = 2;};
 	case (player distance (getMarkerPos "cotton_1") < 50): {_mine = "cotton"; _val = 2;};
+	case (player distance (getMarkerPos "wheat_1") < 40): {_mine = "wheat"; _val = 2;};
+	case (player distance (getMarkerPos "corn_1") < 40): {_mine = "corn"; _val = 3;};
 	default {_mine = "";};
 };
 
@@ -37,7 +38,7 @@ player playactionnow "Cl3_anim_Gathering1";
 sleep 4.761;
 
 _chance = (floor random 4);
-if(_chance > 1) exitwith { ["Der versuch ist fehlgeschlagen!", false] spawn doquickmsg; harvesting = false;harvesting = false; };
+if(_chance > 2) exitwith { ["Der versuch ist fehlgeschlagen!", false] spawn doquickmsg; harvesting = false;harvesting = false; };
 
 
 if(vehicle player != player) exitWith {[localize "STR_ISTR_Pick_MineVeh", false] spawn doquickmsg; harvesting = false;};

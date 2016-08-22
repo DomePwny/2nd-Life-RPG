@@ -15,7 +15,7 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 _itemInfo = switch (_type) do
 {
 	case "fish": {["fish","meatfish","Zerlege Fisch"];};
-	case "meat": {["rawmeat","meatfish","Schneide Fleisch"];};
+	case "meat": {["raw_meat","meat","Schneide Fleisch"];};
 	default {[];};
 };
 

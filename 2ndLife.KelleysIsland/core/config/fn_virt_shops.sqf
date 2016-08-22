@@ -31,7 +31,7 @@ switch (_shop) do
 	case "cement": {["Zement Händler",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
 	case "ems": {["Arzt Zubehör",["medschere","medmarijuana","epipen","bandage","genitalcreme","tabletten","antibiotika","stitches","splint","airkit","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "butcher": {["Butcher Bob",["raw_meat"]]};
+	case "butcher": {["Butcher Bob",["meat"]]};
 };
 
 

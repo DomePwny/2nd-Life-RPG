@@ -7,7 +7,7 @@
 */
 closeDialog 0;
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1"];
+_resourceZones = ["weed_field","coke_zone","meth_zone","MDMA_zone","SHANK_zone"];
 _zone = "";
 _gather = "";
 _val = 1;
@@ -40,10 +40,11 @@ if(!isNil "_this" && {count _this != 0}) then {
 } else {
 	if(_zone == "") exitWith {_exit = true;};
 	switch(true) do {
-		case (_zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1"]): {_gather = "cokeu"; _val = 1;};
-		case (_zone in ["meth_1"]): {_gather = "methu"; _val = 1;};
-		case (_zone in ["MDMA_zone_1"]): {_gather = "MDMAu"; _val = 1;};
-		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;}; // Gefängnisausbruch Item
+		case (_zone in ["coke_zone"]): {_gather = "cokeu"; _val = 1;};
+		case (_zone in ["meth_zone"]): {_gather = "methu"; _val = 1;};
+		case (_zone in ["MDMA_zone"]): {_gather = "MDMAu"; _val = 1;};
+		case (_zone in ["weed_field"]): {_gather = "cannabis"; _val = 1;};
+		case (_zone in ["SHANK_zone"]): {_gather = "shank"; _val = 1;}; // Gefängnisausbruch Item
 		default {""};
 	};
 };

@@ -351,7 +351,8 @@ life_inv_items =
 	"life_inv_rumrax",
 	"life_inv_bombfish",
 	"life_inv_meatfish",
-	"life_inv_fish"
+	"life_inv_fish",
+	"life_inv_meat"
 ];
 
 //Setup variable inv vars.
@@ -477,7 +478,6 @@ sell_array =
 	["olive",277],
 	["opium",100],
 	["pumpkin",110],
-	["raw_meat",550],
 	["spikeStrip",12],
 	["cement",550],
 	["goldbar",9500], 
@@ -506,7 +506,8 @@ sell_array =
 	["cigarette",1],
 	["rumrax",1],
 	["bombfish",1],
-	["fish",250]
+	["fish",350],
+	["meat",450]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -555,7 +556,6 @@ buy_array =
         ["redgull",12],
         ["fuelF",85],
         ["cannabis",400],
-        ["raw_meat",580],
         ["spikeStrip",250],
         ["blastingcharge",15000],
         ["hackingtool",15000],
