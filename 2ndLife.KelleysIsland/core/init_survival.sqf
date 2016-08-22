@@ -2507,7 +2507,7 @@ fnc_item_CG = {
 	if (_item == "CG_ATF_Donut_Box_i") then { [true] spawn life_fnc_bronutsbrah; [_item] spawn fnc_removeitem; closeDialog 0; };
 	if (_item == "Second_Life_Binder_i") then { ["Du kannst damit festnehmen...", false] spawn domsg; closeDialog 0; };
 	//if (_item == "Second_Life_Kamera_i") then { [] spawn fnc_GoPro; closeDialog 0; };
-	if (_item == "Second_Life_Laptop") then { [] spawn life_fnc_hackTerminal; closeDialog 0;};
+	if (_item == "Second_Life_Laptop_i") then { [] spawn life_fnc_hackTerminal; closeDialog 0;};
 	if (_item == "CG_ATF_Drug_Bottle_01_i") then { [_item] spawn fnc_removeitem; player forceWalk false; [player,"pillswallow"] spawn life_fnc_nearestSound; player setVariable["severeInjuries", nil, true]; closeDialog 0; };
 	false
 };
