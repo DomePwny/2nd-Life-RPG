@@ -438,6 +438,7 @@ switch(_shop) do
 					["2nd_lifetabletd",nil,50],
 					["cg_torch",nil,550], 
 					["cg_torchbattery",nil,50],
+					["Second_Life_Laptop_i",nil,20000],
 					["CG_ATF_Pizza_Box_i","Pizza",1400],
 					["CG_ATF_Donut_Box_i","Donuts",1600],				
 					["ItemMap",nil,6],
