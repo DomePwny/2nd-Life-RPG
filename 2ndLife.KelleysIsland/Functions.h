@@ -193,6 +193,7 @@ class Life_Client_Core
 		class gutAnimal {};
 		class gutFish{};
 		class hackTerminal{};
+		class closeGate{};
 	};	
 
 	class Paintball
