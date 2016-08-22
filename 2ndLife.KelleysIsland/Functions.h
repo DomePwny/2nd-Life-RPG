@@ -362,6 +362,7 @@ class Life_Client_Core
 		class logout {};
 		class nearestObjects {};
 		class hospitalSpawn {};
+		class myTruck {};
 	};
 	
 	class Network

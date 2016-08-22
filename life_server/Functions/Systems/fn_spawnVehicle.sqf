@@ -138,7 +138,11 @@ if((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) isEqualTo "IVORY_REV")
 {
 	[_vehicle,"cop_rev",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
+if((_vInfo select 1) isEqualTo "civ" && (_vInfo select 2) isEqualTo "Jonzie_Log_Truck") then
+{
+	[_vehicle,true] remoteExecCall ["life_fnc_myTruck",_unit];
+};
 
-[1,"Your vehicle is ready!"] remoteExecCall ["life_fnc_broadcast", _unit];
+[1,"Dein Fahrzeug steht bereit!"] remoteExecCall ["life_fnc_broadcast", _unit];
 serv_sv_use = serv_sv_use - [_vid];
 publicVariable "serv_sv_use";

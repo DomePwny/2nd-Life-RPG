@@ -21,7 +21,7 @@ switch (_shop) do
 	case "gems": {["Juwelen Händler",["sapphire","ruby","emerald"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Fisch Markt",["bombfish","fish"]]};
-	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","pumpkin"]]};	
+	case "farmingmarket": {["Landwirtschaft",["wheat","sunflower","corn","bean","cotton","olive","opium","pumpkin","wood"]]};	
 	case "glass": {["Glas Händler",["glass"]]};
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
 	case "diamond": {["Diamond Dealer",["weddingring","diamond","diamondc"]]};

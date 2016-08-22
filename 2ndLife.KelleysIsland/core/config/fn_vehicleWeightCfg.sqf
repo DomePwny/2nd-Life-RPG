@@ -11,20 +11,14 @@ _className = param [0,"",[""]];
 switch (_className) do
 {
 	// Boats
-	case "A3L_Ship": {100};
-	case "A3L_Jetski_yellow": {2};
-	case "A3L_Jetski": {2};
 	case "2ndLife_EMS_Boat": {50};
 	
-	case "A3L_F350Black": {100};
-	case "A3L_F350Blue": {100};
-	case "A3L_F350Red": {100};
-	case "A3L_F350White": {100};
 	case "Jonzie_Transit": {150};
 	case "Jonzie_Flat_Bed": {200};
 	case "Jonzie_Log_Truck": {200};
 	case "Jonzie_Box_Truck": {300};
 	case "Jonzie_Tanker_Truck": {300};
+	case "Jonzie_Log_Truck": {300};
 
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};

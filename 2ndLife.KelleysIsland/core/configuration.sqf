@@ -352,7 +352,8 @@ life_inv_items =
 	"life_inv_bombfish",
 	"life_inv_meatfish",
 	"life_inv_fish",
-	"life_inv_meat"
+	"life_inv_meat",
+	"life_inv_wood"
 ];
 
 //Setup variable inv vars.
@@ -507,7 +508,8 @@ sell_array =
 	["rumrax",1],
 	["bombfish",1],
 	["fish",350],
-	["meat",450]
+	["meat",450],
+	["wood",550]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -727,7 +729,8 @@ life_garage_prices =
 			["Jonzie_Tanker_Truck",0],
 			["Nhz_audia8limo",0],
 			["wirk_h3_limo",0],
-			
+			["Jonzie_Log_Truck",0],
+						
 			//Sportwagen
 			["cl3_murcielago_white",0],
 			["cl3_murcielago_purple",0],
@@ -986,7 +989,8 @@ life_garage_sell =
 			["Jonzie_Tanker_Truck",187500],
 			["Nhz_audia8limo",165000],
 			["wirk_h3_limo",600000],
-			
+			["Jonzie_Log_Truck",60000],
+					
 			//Sportwagen
 			["cl3_murcielago_white",112500],
 			["cl3_murcielago_purple",112500],

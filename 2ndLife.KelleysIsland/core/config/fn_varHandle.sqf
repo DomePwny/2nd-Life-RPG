@@ -130,6 +130,7 @@ switch (_mode) do
 			case "meatfish": {"life_inv_meatfish"};
 			case "fish": {"life_inv_fish"};
 			case "meat": {"life_inv_meat"};
+			case "wood": {"life_inv_wood"};
 		};
 	};
 	
@@ -250,6 +251,7 @@ switch (_mode) do
 			case "life_inv_meatfish": {"meatfish"};
 			case "life_inv_fish": {"fish"};
 			case "life_inv_meat": {"meat"};
+			case "life_inv_wood": {"wood"};
 		};
 	};
 };

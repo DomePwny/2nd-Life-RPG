@@ -127,6 +127,7 @@ switch (_var) do
 	case "life_inv_meatfish": {"Fischfilet"};
 	case "life_inv_fish": {"Frischer Fisch"};
 	case "life_inv_meat": {"Verarbeitetes Fleisch"};
+	case "life_inv_wood": {"Holz"};
 	
 	//License Block
 	case "license_civ_driver": {("Führerschein")};

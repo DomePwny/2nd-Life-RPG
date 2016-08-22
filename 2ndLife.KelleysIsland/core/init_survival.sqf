@@ -1735,7 +1735,8 @@ fnc_refineWood = {
 			deletevehicle _x; 
 			_sound = round(random 5);
 			playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosAsl Player, 11, 1, 15];
-			player additem "CG_Refined_Wood";	
+			//player additem "CG_Refined_Wood";	
+			[true,"wood",1] call life_fnc_handleInv;
 			sleep 1.5;
 			hint "You are refining wood, stay still!"
 		};
