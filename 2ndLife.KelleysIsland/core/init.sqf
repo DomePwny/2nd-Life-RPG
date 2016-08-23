@@ -208,7 +208,8 @@ marker_on = false;
 godMode = false;
 
 //arrays for masked items
-GoggleList = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","A3L_Balaclava","Payday_Cagoule","Masque_Chirurgical","Masque_Solitaire"];		
+GoggleList = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","A3L_Balaclava","Payday_Cagoule","Masque_Chirurgical","Masque_Solitaire"];
+publicVariable "GoogleList";		
 HatList = ["kio_vfv_mask","cg_dinomask","cg_dinomask_p","cg_dinomask_r","cg_horsehead","cg_horsehead_2",
 "cg_horsehead_blk","cg_horsehead_pnk","Masque_Alien1","Masque_Anonymous","Masque_Chains","Payday_GeneralO","Casque_Moto",
 "Masque_Clinton","Masque_speedRunner","Masque_Unic","Masque_Aubrey","Masque_Bonnie","Masque_Bush","Masque_Mempo","Masque_Lincoln",
@@ -228,7 +229,9 @@ HatList = ["kio_vfv_mask","cg_dinomask","cg_dinomask_p","cg_dinomask_r","cg_hors
 "Gorb_CoolElfMask1","Gorb_CoolElfMask2","Gorb_CoolElfMask3","Gorb_TreeMask1","Gorb_TreeMask2","Gorb_TreeMask3","Gorb_TreeMask4","Gorb_TreeMask5",
 "Gorb_TreeMask6","Gorb_MrsClaus1","Gorb_MrsClaus2","Gorb_MrsClaus3","kio_skl_msk_fire","kio_skl_msk_weed","kio_skl_msk_frost","kio_skl_msk_pun",
 "kio_skl_msk_adc","kio_skl_msk_blood","kio_skl_msk_redranger","kio_skl_msk_UK","kio_skl_msk_US","kio_skl_msk_black","kio_skl_msk_can","kio_skl_msk_german",
-"kio_skl_msk_GOW","kio_skl_msk_grey","kio_skl_msk_irish","kio_skl_msk_nirish","kio_skl_msk_o","kio_skl_msk_p","kio_skl_msk_scot","kio_skl_msk_fran"];
+"kio_skl_msk_GOW","kio_skl_msk_grey","kio_skl_msk_irish","kio_skl_msk_nirish","kio_skl_msk_o","kio_skl_msk_p","kio_skl_msk_scot","kio_skl_msk_fran"
+];
+publicVariable "HatList";
 
 
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
