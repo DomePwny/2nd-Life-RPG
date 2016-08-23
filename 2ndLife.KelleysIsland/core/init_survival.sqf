@@ -1729,6 +1729,7 @@ fnc_cutWood = {
 };
 
 fnc_refineWood = {
+	if(isNil vehSpawned) exitWith {["Du hast keinen aktiven Truck",false] spawn doquickmsg;};
 	if(vehSpawned distance player > 15) exitwith {["Dein Truck ist zu weit weg!", false] spawn doquickmsg;}; 
 	{ 
 		if(_x distance vehspawned < 11) then {
