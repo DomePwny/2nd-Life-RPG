@@ -34,7 +34,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["prpl_benelli_14_pgs_rail"]) exitwith {
-			if(!life_isdowned && vehicle player == player && side _source == west) then {
+			if(!life_isdowned && vehicle player == player) then {
 				_dist = _source distance player;
 				[_unit,_source,_dist] call life_fnc_downed;
 			};
@@ -42,7 +42,6 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["Taser_26"]) exitwith {
-			if(side _source == west) then {
 				[_unit,_source] call life_fnc_tazed;
 			};
 			_damage = 0;	
