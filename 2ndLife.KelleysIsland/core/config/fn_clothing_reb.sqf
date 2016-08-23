@@ -61,14 +61,12 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["A3L_gangster_hat","Gangster",105],
 			["ALE_H_Cowboy_Black",nil,105],
 			["ALE_H_Cowboy_White",nil,105],
 			["H_GuyFawkesMask",nil,105],
 			["H_Bandanna_camo",nil,65],
 			["jokermask","Joker Mask",500],
 			["TRYK_Kio_Balaclava","Ghost Balaclava",500],
-			["A3L_Halloween_JigSaw","JigSaw Mask",500],
 			["kio_skl_msk","Black Skull Mask",500],
 			["kio_skl_msk_grn","Green Skull Mask",500],
 			["kio_skl_msk_red","Red Skull Mask",500],
@@ -111,8 +109,7 @@ switch (_filter) do
 			["G_Combat",nil,5],
 			["G_Balaclava_blk",nil,137],
 			["G_Balaclava_combat",nil,137],
-			["G_Balaclava_lowprofile",nil,137],
-			["A3L_Balaclava",nil,137]
+			["G_Balaclava_lowprofile",nil,137]
 		];
 	};
 	

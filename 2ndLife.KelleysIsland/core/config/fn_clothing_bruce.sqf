@@ -179,15 +179,6 @@ switch (_filter) do
 			["Masque_Incendiaire",nil,1112],
 			["Masque_Dallas",nil,1110],
 
-			["cg_dinomask",nil,1120],
-			["cg_dinomask_p",nil,1110],
-			["cg_dinomask_r",nil,1110],
-
-			["cg_horsehead",nil,1112],
-			["cg_horsehead_2",nil,1110],
-			["cg_horsehead_blk",nil,1110],
-			["cg_horsehead_pnk",nil,1120],
-
 			["ALE_H_NewEra_Monster",nil,110],
 			["ALE_H_NewEra_Rouge",nil,110],
 			["ALE_H_NewEra_Superman",nil,112],
