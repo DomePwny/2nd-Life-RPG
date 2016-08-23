@@ -35,8 +35,6 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 	if(!life_isdowned) then
 	{
 		_ui = uiNameSpace getVariable ["playerHUD",displayNull];
-		_msgs = _sleeptime + 5;
-		message_active = message_active + _msgs;
 		_message = "Rubber Bullet Hit!";
 		_POPUP = _ui displayCtrl 44444;
 		_POPUP ctrlSetStructuredText parseText format["%1 <br/> Downtime: %2",_message,_sleeptime];

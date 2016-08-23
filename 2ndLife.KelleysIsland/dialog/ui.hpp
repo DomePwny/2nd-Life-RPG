@@ -1018,6 +1018,23 @@
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=true;
 				text="";
+			};
+			class downtime
+			{
+				type=CT_STRUCTURED_TEXT;
+				idc=44444;
+				style=ST_LEFT;
+				x = 0.01 * safezoneW + safezoneX;
+				y = 0.200 * safezoneH + safezoneY;
+				w = 0.55;
+				h = 0.11;
+				sizeEx=0.03;
+				size=1;
+				font="PuristaLight";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=false;
+				text="";
 			};	
-		};   
+		};   			 
  	};
