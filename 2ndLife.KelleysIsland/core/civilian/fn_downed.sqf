@@ -39,7 +39,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 		_POPUP ctrlSetStructuredText parseText format["%1 <br/> Downtime: %2",_message,_sleeptime];
 		_POPUP ctrlCommit 0;
 		life_isdowned = true;
-		[] spawn KK_fnc_forceRagdoll;
+		[] spawn life_fnc_forceRagdoll;
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
 		_attach = if(primaryWeapon player != "") then {primaryWeaponItems _unit} else {[]};

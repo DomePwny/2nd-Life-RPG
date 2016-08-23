@@ -23,7 +23,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 	if(!life_istazed && !life_isdowned) then
 	{
 		life_istazed = true;
-		[] spawn KK_fnc_forceRagdoll;
+		[] spawn life_fnc_forceRagdoll;
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
 		_attach = if(primaryWeapon player != "") then {primaryWeaponItems _unit} else {[]};

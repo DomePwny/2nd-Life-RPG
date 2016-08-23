@@ -25,7 +25,7 @@ while {!drugs_used} do {
 	_chance = round (random 100);
 	if(_chance < 1) then {
 		["Du hattest eine Herzattacke. Dieses Meth ist sehr stark.", false] spawn domsg;
-		[] spawn KK_fnc_forceRagdoll;
+		[] spawn life_fnc_forceRagdoll;
 	};
 
 	if(getAnimSpeedCoef player < 1.2) then { player setAnimSpeedCoef 1.2; };

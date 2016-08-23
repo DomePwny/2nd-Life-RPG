@@ -445,7 +445,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[2] spawn life_fnc_hudElements;
 				};
@@ -458,7 +458,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -471,7 +471,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -506,7 +506,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -519,7 +519,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -564,7 +564,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[2] spawn life_fnc_hudElements;
 				};
@@ -585,7 +585,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[2] spawn life_fnc_hudElements;
 				};
@@ -620,7 +620,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[2] spawn life_fnc_hudElements;
 				};
@@ -634,7 +634,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -651,7 +651,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[2] spawn life_fnc_hudElements;
 				};
@@ -665,7 +665,7 @@ hud_fnc_loop =
 				{
 					if(isNull objectParent player) then
 					{
-						[] spawn KK_fnc_forceRagdoll;
+						[] spawn life_fnc_forceRagdoll;
 					};
 					[1] spawn life_fnc_hudElements;
 				};
@@ -757,7 +757,7 @@ hud_fnc_loop =
 					{
 						if(isNull objectParent player) then
 						{
-							[] spawn KK_fnc_forceRagdoll;
+							[] spawn life_fnc_forceRagdoll;
 						};
 					["Remove",0.05] call fnc_doHealth;
 					};

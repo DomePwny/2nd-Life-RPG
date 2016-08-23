@@ -15,7 +15,7 @@ if(!isNull _source) then {
 		    if ( _vehicle isKindOf "Air" || _vehicle isKindOf "Car" || _vehicle isKindOf "Boat" ) then
 		    {
 				_speed = speed _vehicle;
-				[] spawn KK_fnc_forceRagdoll;
+				[] spawn life_fnc_forceRagdoll;
 				if(_speed < 50) then { _damage = 0.1; }; 
 				if(_speed < 25) then { _damage = 0; }; 
 				if(_speed > 49) then { _damage = _speed / 100; };

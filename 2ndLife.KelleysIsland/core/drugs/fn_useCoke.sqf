@@ -24,7 +24,7 @@ while {!drugs_used} do {
 	_chance = round (random 100);
 	if(_chance < 1) then {
 		["Verdammt dieses Koks bringt mich noch um...'", false] spawn domsg;
-		[] spawn KK_fnc_forceRagdoll;
+		[] spawn life_fnc_forceRagdoll;
 	};
 
 	life_crazy = life_crazy - 5;

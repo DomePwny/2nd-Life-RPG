@@ -363,6 +363,7 @@ class Life_Client_Core
 		class nearestObjects {};
 		class hospitalSpawn {};
 		class myTruck {};
+		class forceRagdoll {};
 	};
 	
 	class Network

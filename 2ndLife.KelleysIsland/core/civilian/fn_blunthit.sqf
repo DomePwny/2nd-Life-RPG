@@ -17,7 +17,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 
 	if(!life_istazed) then
 	{
-		[] spawn KK_fnc_forceRagdoll;
+		[] spawn life_fnc_forceRagdoll;
 		life_istazed = true;
 		_curWep = currentWeapon player;
 		_curMags = magazines player;

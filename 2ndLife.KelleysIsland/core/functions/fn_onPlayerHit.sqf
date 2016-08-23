@@ -12,7 +12,7 @@ if(!isNull _source) then {
 
 		if(vehicle _source != _source && vehicle _unit == _unit && isplayer _source) exitwith {
 			[] spawn {
-				[] spawn KK_fnc_forceRagdoll;
+				[] spawn life_fnc_forceRagdoll;
 			};
 			_speed = round speed _source;
 			_speed = _speed / 120;

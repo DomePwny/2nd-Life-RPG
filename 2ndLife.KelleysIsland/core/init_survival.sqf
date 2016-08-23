@@ -913,25 +913,25 @@ fnc_airkit =
 			if(life_intox > 0.15) then {
 				_chance = round (random 100);
    			 	if(_chance < 5) then {
-   				  		[] spawn KK_fnc_forceRagdoll;
+   				  		[] spawn life_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.25) then {
 				_chance = round (random 100);
    			 	if(_chance < 7) then {
-   				  		[] spawn KK_fnc_forceRagdoll;
+   				  		[] spawn life_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.35) then {
 				_chance = round (random 100);
    			 	if(_chance < 8) then {
-   				  		[] spawn KK_fnc_forceRagdoll;
+   				  		[] spawn life_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.45) then {
 				_chance = round (random 100);
    			 	if(_chance < 11 && _chance > 4) then {
-   				  		[] spawn KK_fnc_forceRagdoll;
+   				  		[] spawn life_fnc_forceRagdoll;
    				};
 			};
 
