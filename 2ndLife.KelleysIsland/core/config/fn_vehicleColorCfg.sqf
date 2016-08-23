@@ -139,14 +139,16 @@ switch (_vehicle) do
 			[_path + "sportorange.paa","civ"],
 			["#(argb,8,8,3)color(0,0,0.545098,1.0,CO)","civ","#(argb,8,8,3)color(0.501961,0.501961,0,1.0,CO)"],
 			["#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","civ","#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
-			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"],
-			[_path + "ems.paa","med"],
+			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_wrx_slicktop": {
+		_path = "\ivory_wrx\data\";
+		_ret =
+		[
 			[_path + "pd.paa","cop"],
-			[_path + "sert.paa","cop"],
-			[_path + "so.paa","cop"],
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"]
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
 		];
 	};
 	case "ivory_gt500": {

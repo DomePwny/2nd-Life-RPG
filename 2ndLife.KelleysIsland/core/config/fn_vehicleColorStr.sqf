@@ -133,14 +133,13 @@ switch (_vehicle) do
 			case 2:  {_color = "White";};
 		};
 	};
-	case "ivory_wrx_cop_slicktop" :
+	case "ivory_wrx_slicktop" :
 	{
 		switch (_index) do
 		{
 			case 0:  {_color = "Police Department";};
 			case 1:  {_color = "S.E.R.T.";};
 			case 2:  {_color = "Sheriff's Office";};
-			case 3:  {_color = "State Troopers";};
 		};
 	};
 	case "ivory_wrx_med_ems" :
@@ -176,13 +175,6 @@ switch (_vehicle) do
 			case 19: {_color = "Classic";};
 			case 20: {_color = "Candy";};
 			case 21: {_color = "Orange";};
-			case 22:  {_color = "EMS";};
-			case 23:  {_color = "Police";};
-			case 24:  {_color = "S.E.R.T";};
-			case 25:  {_color = "Sheriff";};
-			case 26:  {_color = "UM Schwarz";};
-			case 27:  {_color = "UM Grau";};
-			case 28:  {_color = "UM Weiss";};
 		};
 	};
 	case "ivory_gt500" :

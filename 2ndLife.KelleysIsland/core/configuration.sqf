@@ -620,6 +620,7 @@ life_garage_prices =
 			["Jonzie_Ambulance",0],
 			
 			//Police Cars
+			["ivory_wrx_slicktop",0],
 			["DAR_ExplorerPolice",0],
 			["charger_pd",0],
 			["charger_pd_skinned",0],
@@ -901,6 +902,7 @@ life_garage_sell =
 			["Jonzie_Ambulance",12750],
 			
 			//Police Cars
+			["ivory_wrx_slicktop",5000],
 			["DAR_ExplorerPolice",20000],
 			["DAR_ExplorerSheriff",20000],
 			["charger_sert",20000],

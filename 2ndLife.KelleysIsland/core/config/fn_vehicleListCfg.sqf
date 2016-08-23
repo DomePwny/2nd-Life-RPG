@@ -299,7 +299,7 @@ switch (_shop) do
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx",67000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
@@ -309,7 +309,7 @@ switch (_shop) do
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx",67000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
@@ -319,7 +319,7 @@ switch (_shop) do
 			_return pushBack ["secondlife_e60_m5_co",65000];
 			_return pushBack ["secondlife_e60_m5_sh",65000];
 			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx",67000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
 			_return pushBack ["charger_sert",40000];
 			_return pushBack ["AM_Holden_UM",40000];
 			_return pushBack ["AM_Holden_SO",40000];
