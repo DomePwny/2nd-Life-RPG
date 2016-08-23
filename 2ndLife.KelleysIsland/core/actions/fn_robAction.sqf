@@ -20,4 +20,4 @@ if(_target getVariable["robbed",false]) exitWith {};
 _reason = "212";
 
 _target setVariable["robbed",TRUE,TRUE];
-[player,player,_reason] spawn life_fnc_createEvidence;
+[player,_target,_reason] spawn life_fnc_createEvidence;

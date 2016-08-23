@@ -7,7 +7,7 @@ _victim = param [1,ObjNull,[ObjNull]];
 _crime = param [2];
 
 _chance = round (random 1000);
-if(headgear _suspect IN HatList || goggles _suspect IN GoggleList) then {
+if(headgear IN HatList || goggles _suspect IN GoggleList) then {
 	_chance = round (random 1000);
 	if(_chance < 200) exitWith {["Deine Maske hat es verhindert Beweise zu hinterlassen!",false] spawn domsg;};
 };
@@ -25,6 +25,9 @@ if(_crime == "487") then {
 };
 if(_crime == "334") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "334"], true];
+};
+if(_crime == "212") then {
+	_vehicle setVariable ["evidence", [_suspect, _victim, "212"], true];
 };
 _vehicle enablesimulation false;
 _vehicle setPos [getPos _vehicle select 0, getPos _vehicle select 1, (getPos _vehicle select 2) + 0.5];

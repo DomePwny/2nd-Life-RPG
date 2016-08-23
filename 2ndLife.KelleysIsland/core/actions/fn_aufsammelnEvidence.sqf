@@ -1,8 +1,8 @@
 /*
 File: gather evidence
 */
-private["_curTarget","_unit","_victim","_crime","_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
-_curTarget = cursorTarget;
+private["_unit","_victim","_crime","_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
+
 _target = cursorTarget;
 
 ["Gathering Evidence 10+ seconds..", false] spawn domsg;
@@ -10,7 +10,7 @@ titleFadeOut 10;
 
 _target setVariable["EVIDO",player,TRUE];
 
-_evidence = _curTarget getVariable "evidence";
+_evidence = _target getVariable "evidence";
 
 _suspect = _evidence select 0;
 _victim = _evidence select 1;
@@ -54,7 +54,7 @@ if(life_interrupted) exitWith {["You interrupted the evidence gathering.", false
 
 
 
-[format["You have collected evidence and have been paid $8000 for adding %1 to the wanted list for a %2 crime.", name _suspect, _crime], false] spawn domsg;
+[format["You have collected evidence and have been paid $5000 for adding %1 to the wanted list for a %2 crime.", name _suspect, _crime], false] spawn domsg;
 
 if(_crime == "187") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"187"] remoteExec ["life_fnc_wantedAdd",2];
@@ -68,8 +68,11 @@ if(_crime == "487") then {
 if(_crime == "334") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"334"] remoteExec ["life_fnc_wantedAdd",2];
 };
+if(_crime == "212") then {
+	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"212"] remoteExec ["life_fnc_wantedAdd",2];
+};
 
 
 
-["cash","add",80] call life_fnc_handleCash;
-deleteVehicle _curTarget;
+["cash","add",5000] call life_fnc_handleCash;
+deleteVehicle _target;
