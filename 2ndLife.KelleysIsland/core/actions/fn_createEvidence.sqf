@@ -7,7 +7,7 @@ _victim = param [1,ObjNull,[ObjNull]];
 _crime = param [2];
 
 _chance = round (random 1000);
-if((headgear IN HatList) || (goggles _suspect IN GoggleList)) then {
+if((headgear _suspect IN HatList) || (goggles _suspect IN GoggleList)) then {
 	_chance = round (random 1000);
 	if(_chance < 200) exitWith {["Deine Maske hat es verhindert Beweise zu hinterlassen!",false] spawn domsg;};
 };
