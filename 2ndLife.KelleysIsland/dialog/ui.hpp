@@ -1019,22 +1019,5 @@
 				shadow=true;
 				text="";
 			};
-			class downtime
-			{
-				type=CT_STRUCTURED_TEXT;
-				style=0x0c+0x02;
-				idc=44444;
-				x = 0.01 * safezoneW + safezoneX;
-				y = 0.200 * safezoneH + safezoneY;
-				w = 0.55;
-				h = 0.11;
-				sizeEx=0.035;
-				size=0.035;
-				font="PuristaMedium";
-				colorBackground[]={0,0,0,0.6};
-				colorText[] = { 1 , 1 , 1 , 1 };
-				shadow=false;
-				text="";
-			};
 		};   			 
  	};
