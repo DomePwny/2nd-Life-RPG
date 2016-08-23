@@ -15,7 +15,7 @@ if(_chance < 30) exitwith {
 };
 
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
-
+_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 
 _sleeptime = 40 - _dist;
 //exit if distance over 50m
@@ -34,7 +34,6 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 {
 	if(!life_isdowned) then
 	{
-		_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 		_message = "Rubber Bullet Hit!";
 		_POPUP = _ui displayCtrl 44444;
 		_POPUP ctrlSetStructuredText parseText format["%1 <br/> Downtime: %2",_message,_sleeptime];
