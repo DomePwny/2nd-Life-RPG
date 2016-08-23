@@ -32,7 +32,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["prpl_benelli_14_pgs_rail"]) exitwith {
-			["Remove",0.15,_source] call fnc_doHealth;
+			["Remove",0.0015,_source] call fnc_doHealth;
 			if(!life_isdowned && vehicle player == player) then {
 				_dist = _source distance player;
 				[_unit,_source,_dist] spawn life_fnc_downed;
