@@ -1664,7 +1664,7 @@ fnc_castScript = {
 			if(([true,_gather,_diff] call life_fnc_handleInv)) then
 			{
 				_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-				["Du hast ein Fisch gefangen!", false] spawn domsg; 
+				["Du hast ein Fisch gefangen!", false] spawn domsg;
 			};
 		};
 
@@ -1729,25 +1729,25 @@ fnc_cutWood = {
 };
 
 fnc_refineWood = {
-	if(vehSpawned distance player > 15) exitwith { hint "Your truck is too far away!"; }; 
+	if(vehSpawned distance player > 15) exitwith {["Dein Truck ist zu weit weg!", false] spawn doquickmsg;}; 
 	{ 
 		if(_x distance vehspawned < 11) then {
 			deletevehicle _x; 
-			_sound = round(random 5);
 			playSound3D ["CG_Jobs\sounds\sawing\saw.ogg", player, false, getPosAsl Player, 11, 1, 15];
 			//player additem "CG_Refined_Wood";	
 			[true,"wood",1] call life_fnc_handleInv;
 			sleep 1.5;
-			hint "You are refining wood, stay still!"
+			["Du sägst gerade dein Holz.", false] spawn domsg;
 		};
 	} forEach attachedObjects vehspawned;
-	hint "Wood refined & placed in inventory";  
+	["Du hast dein Holz verarbeitet.", false] spawn domsg;
 	totalLogs = 0;
 };
 
 fnc_packLogs = {
-	if(vehSpawned distance player > 15) exitwith { hint "Your truck is too far away!"; }; 
-	if(totalLogs == 23) exitwith { hint "Load is full!"; };
+	if !(playerside in [civilian,east]) exitwith {["Nur für Zivilisten.", false] spawn doquickmsg;};
+	if(vehSpawned distance player > 15) exitwith {["Dein Truck ist zu weit weg!", false] spawn doquickmsg;}; 
+	if(totalLogs == 23) exitwith {["Dein Truck ist voll!", false] spawn doquickmsg;};
 	mylog = createVehicle ["vvv_tronco", position player, [], 0, "NONE"];
 
 	totalLogs = totalLogs + 1;

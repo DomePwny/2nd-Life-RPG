@@ -5,7 +5,6 @@ private["_curTarget","_unit","_victim","_crime","_target","_revivable","_targetN
 _curTarget = cursorTarget;
 _target = cursorTarget;
 
-
 ["Gathering Evidence 10+ seconds..", false] spawn domsg;
 titleFadeOut 10;
 
@@ -25,11 +24,7 @@ _progressBar = _ui displayCtrl 38201;
 _titleText = _ui displayCtrl 38202;
 _titleText ctrlSetText format["Gathering Evidence on %1",_suspect];
 _progressBar progressSetPosition 0.01;
-	_cP = 0;
-
-
-
-
+_cP = 0;
 _bad = 0;
 //Lets reuse the same thing!
 while {true} do
