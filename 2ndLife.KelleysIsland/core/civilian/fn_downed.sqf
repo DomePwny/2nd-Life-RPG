@@ -15,7 +15,6 @@ if(_chance < 30) exitwith {
 };
 
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
-_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 
 
 _sleeptime = 40 - _dist;
@@ -35,6 +34,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 {
 	if(!life_isdowned) then
 	{
+		_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 		_msgs = _sleeptime + 5;
 		message_active = message_active + _msgs;
 		_message = "Rubber Bullet Hit!";

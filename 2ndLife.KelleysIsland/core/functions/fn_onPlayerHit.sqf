@@ -31,7 +31,7 @@ if(!isNull _source) then {
 			_penis = true;
 		};
 
-		if(_curWep in ["prpl_benelli_14_pgs_rail"] && side _source == west) exitwith {
+		if(_curWep in ["prpl_benelli_14_pgs_rail"]) exitwith {
 			["Remove",0.15,_source] call fnc_doHealth;
 			if(!life_isdowned && vehicle player == player) then {
 				_dist = _source distance player;
@@ -40,7 +40,7 @@ if(!isNull _source) then {
 			_penis = true;
 		};
 
-		if(_curWep in ["Taser_26"] && side _source == west) exitwith {
+		if(_curWep in ["Taser_26"]) exitwith {
 			["Remove",0.1,_source] call fnc_doHealth;
 			[_unit,_source] spawn life_fnc_tazed;
 			_penis = true;
