@@ -280,7 +280,7 @@ switch (_shop) do
 		};
 		if(__GETC__(life_coplevel) == 2) then
 		{
-
+			_return pushBack ["DRPG_15Charger_P_P",55000];
 		};
 		if(__GETC__(life_coplevel) == 3) then
 		{
