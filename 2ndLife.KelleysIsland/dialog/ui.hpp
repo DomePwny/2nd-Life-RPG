@@ -1026,8 +1026,8 @@
 				style=ST_LEFT;
 				x = 0.01 * safezoneW + safezoneX;
 				y = 0.200 * safezoneH + safezoneY;
-				w = 1;
-				h = 1;
+				w = 0.5;
+				h = 0.5;
 				sizeEx=0.03;
 				size=1;
 				font="PuristaLight";
