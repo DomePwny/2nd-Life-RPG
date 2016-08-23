@@ -150,7 +150,6 @@ maintenance_on = false;
 totallogs = 0;
 life_taxiMarker = [];
 prisonbreak = false;
-vehspawned = nil;
 SecondLife_version = "SecondLifeModVersion101";
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
