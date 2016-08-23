@@ -63,6 +63,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 			_sleeptime = _this;
 			uiSleep _sleeptime;
 			_message = "";
+			_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 			_POPUP = _ui displayCtrl 44444;
 			_POPUP ctrlSetStructuredText parseText format["%1",_message];
 			_POPUP ctrlCommit 0;

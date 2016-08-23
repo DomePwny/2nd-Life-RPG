@@ -40,7 +40,7 @@ switch (_var) do
 	case "life_inv_condom": {"Condom"};
 	case "life_inv_MDMAp": {"Pure MDMA Pills"};
 	case "life_inv_methu": {"Seperated Meth"};
-	case "life_inv_shank": {"Shank"};
+	case "life_inv_shank": {"Tunnel"};
 	case "life_inv_methp": {"Pure Meth"};
 	case "life_inv_cokeu": {"Unpackaged Cocaine"};
 	case "life_inv_cokep": {"Cocaine Bricks"};

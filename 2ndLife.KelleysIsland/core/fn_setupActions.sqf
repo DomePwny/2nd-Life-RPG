@@ -156,7 +156,7 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction[localize "STR_pAct_Breakout",life_fnc_breakout,"",0,false,false,"",' life_breakouton == 2 && (!life_action_inUse) ']);
 
-		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel")']);
+		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "CG_Shovel")']);
 
 		//Pickup Item
 		life_actions pushBack (player addAction["Gegenstände aufheben",{createDialog "life_pickup_items" && player getVariable ["restrained", false]},"",0,false,false,"",
@@ -206,7 +206,7 @@ switch (playerSide) do
 
 		life_actions pushBack (player addAction[localize "STR_pAct_Breakout",life_fnc_breakout,"",0,false,false,"",' life_breakouton == 2 && (!life_action_inUse) ']);
 
-		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "A3L_Shovel") ']);
+		life_actions pushBack (player addAction[localize "STR_pAct_ShovelWork",life_fnc_shovelwork,"",0,false,false,"",' (life_is_arrested) && (!life_action_inUse) && ((currentWeapon player) == "CG_Shovel") ']);
 
 		//Pickup Item
 		life_actions pushBack (player addAction["Gegenstände aufheben",{createDialog "life_pickup_items" && player getVariable ["restrained", false]},"",0,false,false,"",

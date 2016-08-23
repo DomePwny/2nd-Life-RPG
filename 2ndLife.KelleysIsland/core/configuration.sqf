@@ -353,6 +353,7 @@ life_inv_items =
 	"life_inv_meatfish",
 	"life_inv_fish",
 	"life_inv_meat",
+	"life_inv_shank",
 	"life_inv_wood"
 ];
 
