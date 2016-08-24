@@ -329,7 +329,7 @@ switch (_vehicle) do
 			case 7: {_color = "White";};
 		};
 	};
-	case "ivory_rs4" :
+	case "ivory_rs4_taxi" :
 	{
 		switch (_index) do
 		{
