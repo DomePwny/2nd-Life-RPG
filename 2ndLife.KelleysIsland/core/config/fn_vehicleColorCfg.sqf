@@ -24,8 +24,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.823529,0.0941176,0.184314,1.0,co)","civ"],
 			["#(argb,8,8,3)color(0.219608,0.258824,0.580392,1.0,co)","civ"],
 			["#(argb,8,8,3)color(1,1,1,1.0,co)","civ"],
-			["#(argb,8,8,3)color(0,0,0,1.0,co)","civ","#(argb,8,8,3)color(0,0,0,1.0,co)","#(argb,8,8,3)color(0,0,0,0.9,ca)","#(argb,8,8,3)color(0,0,0,0.9,co)"],
-			[_path + "walker.paa","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,co)","civ","#(argb,8,8,3)color(0,0,0,1.0,co)","#(argb,8,8,3)color(0,0,0,0.9,ca)","#(argb,8,8,3)color(0,0,0,0.9,co)"]
 		];
 	};
 	case "ivory_supra": {
@@ -142,17 +141,8 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
 		];
 	};
-	case "ivory_wrx_marked": {
+	case "ivory_wrx_tuned": {
 		_path = "\ivory_wrx\data\";
-		_ret =
-		[
-			[_path + "pd.paa","cop"],
-			[_path + "sert_patrol.paa","cop"],
-			[_path + "so_patrol.paa","cop"]
-		];
-	};
-	case "ivory_gt500": {
-		_path = "\ivory_gt500\data\";
 		_ret =
 		[
 			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
@@ -165,11 +155,327 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0,0.333333,0.290196,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
-			[_path + "bodyBG.paa","civ"],
-			[_path + "bodyGB.paa","civ"],
-			[_path + "bodyRW.paa","civ"],
-			[_path + "bodyWB.paa","civ"],
+			[_path + "redblack.paa","civ"],
+			[_path + "bluecamo.paa","civ"],
+			[_path + "nyan.paa","civ"],
+			[_path + "blackgray.paa","civ"],
+			[_path + "rpd.paa","civ"],
+			[_path + "monster.paa","civ"],
+			[_path + "graystripe.paa","civ"],
+			[_path + "candy.paa","civ"],
+			[_path + "sportorange.paa","civ"],
+			["#(argb,8,8,3)color(0,0,0.545098,1.0,CO)","civ","#(argb,8,8,3)color(0.501961,0.501961,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","civ","#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
+		];
+	};		
+	case "ivory_wrx_slicktop": {
+		_path = "\ivory_wrx\data\";
+		_ret =
+		[
+			[_path + "wrx_police.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
+		];
+	};
+	case "ivory_wrx_unmarked": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_evox_unmarked": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_evox_slicktop": {
+		_path = "\ivory_evox\data\";
+		_ret =
+		[
+			[_path + "evox_police.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
+		];
+	};
+	case "ivory_isf_unmarked": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_isf_slicktop": {
+		_path = "\ivory_isf\data\";
+		_ret =
+		[
+			[_path + "isf_police.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
+		];
+	};
+	case "ivory_m3_unmarked": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_m3_slicktop": {
+		_path = "\ivory_m3\data\";
+		_ret =
+		[
+			[_path + "m3_police.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
+		];
+	};
+	case "ivory_rs4_unmarked": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_rs4_slicktop": {
+		_path = "\ivory_rs4\data\";
+		_ret =
+		[
+			[_path + "rs4_police.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "so_patrol.paa","cop"]
+		];
+	};
+	case "ivory_gt500": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.027451,0.211765,0.972549,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.333333,0.290196,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_elise_tuned": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_elise": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_rs4_taxi": {
+		_path = "\ivory_rs4\data\"
+		_ret =
+		[
+			[_path + "rs4_taxi.paa","civ"]
+		];
+	};
+	case "ivory_rs4": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_r34_tuned": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_r34": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_gti": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_f1_tuned": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_f1": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_evox_tuned": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_evox": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_e36": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_veyron": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_190e": {
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+		];
+	};
+	case "ivory_190e_taxi": {
+		_path = "\ivory_190e\data\"
+		_ret =
+		[
+			[_path + "190e_taxi.paa","civ"]
 		];
 	};
 	case "ivory_c": {
@@ -188,18 +494,12 @@ switch (_vehicle) do
 			[_path + "bentley_con_livery02.paa","civ"],
 			[_path + "bentley_con_livery03.paa","civ"],
 			[_path + "bentley_con_livery04.paa","civ"],
-			[_path + "gee.paa","civ"],
-			[_path + "race.paa","civ"],
-			[_path + "goldee.paa","civ"],
-			[_path + "camo.paa","civ"],
-			[_path + "velvet.paa","civ"],
 			["#(argb,8,8,3)color(0.027451,0.211765,0.972549,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0,0.333333,0.290196,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ","#(argb,8,8,3)color(1,1,1,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.85,CA)"],
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
 		];
 	};
-
 	case "ivory_lfa": {
 		_path = "\ivory_lfa\data\";
 		_ret =
@@ -230,28 +530,6 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
 		];
 	};
-
-
-	case "IVORY_PRIUS": {
-		_path = "\IVORY_Prius\data\";
-		_ret =
-		[
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.501961,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.25098,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.541176,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,1,1.0,CO)","civ"],
-			[_path + "tex_sports1_co.paa","civ"],
-			[_path + "tex_sports2_co.paa","civ"],
-			[_path + "tex_sports3_co.paa","civ"],
-			[_path + "tex_sports4_co.paa","civ"],
-			[_path + "tex_taxi1_co.paa","civ"]
-
-		];
-	};
-
 	case "IVORY_R8SPYDER": {
 		_path = "\IVORY_R8SPYDER\data\";
 		_ret =
@@ -272,7 +550,6 @@ switch (_vehicle) do
 			[_path + "audi_r8_livery04_hr.paa","civ"]
 		];
 	};
-
 	case "IVORY_R8": {
 		_path = "\IVORY_R8SPYDER\data\";
 		_ret =
@@ -293,17 +570,13 @@ switch (_vehicle) do
 			[_path + "audi_r8_livery04_hr.paa","civ"]
 
 		];
-
-
 	};
-
 	case "O_Heli_Transport_04_F": {
 		_ret =
 		[
 			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,1.0,CO)"]
 		];
 	};
-	
 	case "O_Heli_Transport_04_covered_F": {
 		_ret =
 		[

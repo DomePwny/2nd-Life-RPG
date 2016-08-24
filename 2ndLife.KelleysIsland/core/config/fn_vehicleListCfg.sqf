@@ -16,8 +16,6 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["ivory_wrx",1020000],
-			["ivory_c",1100000],
 			["cl3_e63_amg_white",1200000],
 			["cl3_e63_amg_purple",1200000],
 			["cl3_e63_amg_navy_blue",1200000],
@@ -28,8 +26,6 @@ switch (_shop) do
 			["cl3_e63_amg_gold",1200000],
 			["cl3_e63_amg_burgundy",1200000],
 			["cl3_e63_amg_black",1200000],
-			["ivory_m3",1250000],
-			["ivory_gt500",1430000],
 			["cl3_e60_m5_white",1460000],
 			["cl3_e60_m5_purple",1460000],
 			["cl3_e60_m5_navy_blue",1460000],
@@ -40,7 +36,6 @@ switch (_shop) do
 			["cl3_e60_m5_gold",1460000],
 			["cl3_e60_m5_burgundy",1460000],
 			["cl3_e60_m5_black",1460000],
-			["ivory_m3_gts",1550000],
 			["cl3_carrera_gt_white",1640000],
 			["cl3_carrera_gt_purple",1640000],
 			["cl3_carrera_gt_navy_blue",1640000],
@@ -50,7 +45,8 @@ switch (_shop) do
 			["cl3_carrera_gt_gold",1640000],
 			["cl3_carrera_gt_burgundy",1640000],
 			["cl3_carrera_gt_black",1640000],
-			["ivory_isf",1730000],
+			["ivory_rs4",1680000],
+			["ivory_rs4_taxi",1680000],
 			["IVORY_R8",1850000],
 			["IVORY_R8SPYDER",1850000],
 			["cl3_dbs_volante_white",1930000],
@@ -104,12 +100,18 @@ switch (_shop) do
 			["cl3_lamborghini_gt1_gold",2620000],
 			["cl3_lamborghini_gt1_burgundy",2620000],
 			["cl3_lamborghini_gt1_black",2620000],
+			["ivory_r34_tuned",2640000],
+			["ivory_m3_gts",2780000],
+			["ivory_elise_tuned",3185000],
+			["ivory_wrx_tuned",3200000],
+			["ivory_evox_tuned",3225000],
 			["ivory_lfa",3250000],
+			["ivory_c",3370000],
 			["ivory_lp560",3450000],
-			["cl3_veyron_blk_wht",11250000],
-			["cl3_veyron_lblue_dblue",11250000],
-			["cl3_veyron_lblue_lblue",11250000],
-			["cl3_veyron_brn_blk",11250000]
+			["ivory_f1",3550000],
+			["ivory_supra_tuned",7550000],
+			["ivory_f1_tuned",8550000],
+			["ivory_veyron",11250000]
 		];
 	};
 	case "showroom_car":
@@ -151,14 +153,11 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) == 4) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["ivory_wrx",64000];
 		};
 		if(__GETC__(life_mediclevel) == 5) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25500];
-			_return pushBack ["ivory_wrx",64000];
 			_return pushBack ["DAR_TahoeEMS",22500];
-			_return pushBack ["AM_Holden_EMS",25000];
 		};
 	};
 	case "med_air_hs": {
@@ -177,6 +176,10 @@ switch (_shop) do
 	{
 		_return = 
 		[	
+			["ivory_gti",284000],
+			["ivory_evox",314000],
+			["ivory_supra",342000],
+			["ivory_wrx",358000],
 			["cl3_z4_2008_white",375000],
 			["cl3_z4_2008_purple",375000],
 			["cl3_z4_2008_navy_blue",375000],
@@ -186,8 +189,7 @@ switch (_shop) do
 			["cl3_z4_2008_grey",375000],
 			["cl3_z4_2008_burgundy",375000],
 			["cl3_z4_2008_black",375000],
-			["ivory_supra",342000],
-			["ivory_supra_tuned",740000]
+			["ivory_elise",383000]
 		];
 	};
 
@@ -198,6 +200,11 @@ switch (_shop) do
 			// Gebrauchtwagen
 			["Jonzie_Mini_Cooper",16000],
 			["cl3_suv_taxi",20000],
+			["ivory_190e",20000],
+			["ivory_190e_taxi",20000],
+			["ivory_e36",42000],
+			["ivory_r34",54000],
+			["ivory_isf",67500],
 			["S_Rangerover_Black",70000],
 			["S_Rangerover_Red",70000],
 			["S_Rangerover_Blue",70000],
@@ -276,57 +283,41 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) == 1) then
 		{
-
+			_return pushBack ["ivory_isf_slicktop",25000];
 		};
 		if(__GETC__(life_coplevel) == 2) then
 		{
-			_return pushBack ["DRPG_15Charger_P_P",55000];
+			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
 		};
 		if(__GETC__(life_coplevel) == 3) then
 		{
-			_return pushBack ["secondlife_shelby_co",65000];
-			_return pushBack ["secondlife_shelby_sh",65000];
-			_return pushBack ["secondlife_shelby_ma",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["secondlife_e60_m5_sh",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
+			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_rs4_slicktop",63000];
 		};
 		if(__GETC__(life_coplevel) == 4) then
 		{
-			_return pushBack ["secondlife_shelby_co",65000];
-			_return pushBack ["secondlife_shelby_sh",65000];
-			_return pushBack ["secondlife_shelby_ma",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["secondlife_e60_m5_sh",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx_marked",67000];
+			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
-			_return pushBack ["secondlife_shelby_co",65000];
-			_return pushBack ["secondlife_shelby_sh",65000];
-			_return pushBack ["secondlife_shelby_ma",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["secondlife_e60_m5_sh",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx_marked",67000];
+			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_evox_slicktop",76500];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_return pushBack ["secondlife_shelby_co",65000];
-			_return pushBack ["secondlife_shelby_sh",65000];
-			_return pushBack ["secondlife_shelby_ma",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["secondlife_e60_m5_sh",65000];
-			_return pushBack ["secondlife_e60_m5_co",65000];
-			_return pushBack ["ivory_wrx_marked",67000];
-			_return pushBack ["charger_sert",40000];
-			_return pushBack ["AM_Holden_UM",40000];
-			_return pushBack ["AM_Holden_SO",40000];
-			_return pushBack ["secondlife_gtr_sert",52000];
-			_return pushBack ["secondlife_458_co",72000];
-			_return pushBack ["secondlife_458_sh",72000];
-			_return pushBack ["secondlife_458_ma",72000];
+			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_evox_slicktop",76500];
 			_return pushBack ["ivory_rev_police",95000];
 			_return pushBack ["ivory_rev_sheriff",95000];
 		};
@@ -334,8 +325,12 @@ switch (_shop) do
 	case "fbi_car":
 	{
 		_return =
-		[		
-			["AM_Holden_UM",40000],				
+		[	
+			["ivory_isf_unmarked",75000],
+			["ivory_m3_unmarked",75000],
+			["ivory_rs4_unmarked",75000],
+			["ivory_wrx_unmarked",75000],
+			["ivory_evox_unmarked",75000],
 			["ivory_rev_fbi",75000],
 			["ivory_rev_fbi2",75000],
 			["ivory_rev_fbi3",75000],

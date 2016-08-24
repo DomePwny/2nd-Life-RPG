@@ -25,7 +25,6 @@ switch (_vehicle) do
 			case 6:  {_color = "Royal Sapphire Pearl";};
 			case 7:  {_color = "Super White";};
 			case 8:  {_color = "Blacked Out";};
-			case 9:  {_color = "Walker";};
 		};
 	};
 	case "ivory_supra" :
@@ -114,41 +113,6 @@ switch (_vehicle) do
 			case 20: {_color = "25th";};
 		};
 	};
-	case "ivory_wrx_cop_marked" :
-	{
-		switch (_index) do
-		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
-			case 3:  {_color = "State Troopers";};
-		};
-	};
-	case "ivory_wrx_cop_unmarked" :
-	{
-		switch (_index) do
-		{
-			case 0:  {_color = "Black";};
-			case 1:  {_color = "Gray";};
-			case 2:  {_color = "White";};
-		};
-	};
-	case "ivory_wrx_marked" :
-	{
-		switch (_index) do
-		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
-		};
-	};
-	case "ivory_wrx_med_ems" :
-	{
-		switch (_index) do
-		{
-			case 0:  {_color = "EMS";};
-		};
-	};
 	case "ivory_wrx" :
 	{
 		switch (_index) do
@@ -177,6 +141,149 @@ switch (_vehicle) do
 			case 21: {_color = "Orange";};
 		};
 	};
+	case "ivory_wrx_tuned" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Black";};
+			case 1:  {_color = "Blue";};
+			case 2:  {_color = "Gold";};
+			case 3:  {_color = "Gray";};
+			case 4:  {_color = "Green";};
+			case 5:  {_color = "Pink";};
+			case 6:  {_color = "Purple";};
+			case 7:  {_color = "Red";};
+			case 8:  {_color = "Teal";};
+			case 9:  {_color = "White";};
+			case 10: {_color = "Red & Black";};
+			case 11: {_color = "Camo";};
+			case 12: {_color = "Nyan";};
+			case 13: {_color = "Black & Gray";};
+			case 14: {_color = "RPD";};
+			case 15: {_color = "Monster";};
+			case 16: {_color = "Gray Stripe";};
+			case 17: {_color = "Candy";};
+			case 18: {_color = "Sport Orange";};
+			case 19: {_color = "Classic";};
+			case 20: {_color = "Candy";};
+			case 21: {_color = "Orange";};
+		};
+	};
+	case "ivory_wrx_slicktop" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police Department";};
+			case 1:  {_color = "S.E.R.T.";};
+			case 2:  {_color = "Sheriff's Office";};
+		};
+	};
+	case "ivory_wrx_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_evox_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_evox_slicktop" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police Department";};
+			case 1:  {_color = "S.E.R.T.";};
+			case 2:  {_color = "Sheriff's Office";};
+		};
+	};
+	case "ivory_isf_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_isf_slicktop" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police Department";};
+			case 1:  {_color = "S.E.R.T.";};
+			case 2:  {_color = "Sheriff's Office";};
+		};
+	};
+	case "ivory_m3_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_m3_slicktop" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police Department";};
+			case 1:  {_color = "S.E.R.T.";};
+			case 2:  {_color = "Sheriff's Office";};
+		};
+	};
+	case "ivory_rs4_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_rs4_slicktop" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police Department";};
+			case 1:  {_color = "S.E.R.T.";};
+			case 2:  {_color = "Sheriff's Office";};
+		};
+	};
 	case "ivory_gt500" :
 	{
 		switch (_index) do
@@ -191,11 +298,203 @@ switch (_vehicle) do
 			case 7:  {_color = "Red";};
 			case 8:  {_color = "Teal";};
 			case 9:  {_color = "White";};
-			case 10: {_color = "Gray on Black";};
-			case 11: {_color = "Black on Gray";};
-			case 12: {_color = "White on Red";};
-			case 13: {_color = "Blue on White";};
-			case 14: {_color = "Orange";};
+			case 10: {_color = "Orange";};
+		};
+	};
+	case "ivory_elise_tuned" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_elise" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_rs4" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Taxi";};
+		};
+	};
+	case "ivory_rs4" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_r34_tuned" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_r34" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_gti" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_f1_tuned" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_f1" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_evox_tuned" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_e36" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_veyron" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_190e" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_190e_taxi" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Taxi";};
 		};
 	};
 	case "ivory_c" :
@@ -214,15 +513,10 @@ switch (_vehicle) do
 			case 9: {_color = "8";};
 			case 10: {_color = "Revo";};
 			case 11: {_color = "Ksport";};
-			case 12: {_color = "Gee";};
-			case 13: {_color = "Race";};
-			case 14: {_color = "Goldee";};
-			case 15: {_color = "Camo";};
-			case 16: {_color = "Velvet";};
-			case 17: {_color = "Blue";};
-			case 18: {_color = "Teal";};
-			case 19: {_color = "Wedding";};
-			case 20: {_color = "Orange";};
+			case 12: {_color = "Blue";};
+			case 13: {_color = "Teal";};
+			case 14: {_color = "Wedding";};
+			case 15: {_color = "Orange";};
 		};
 	};
 	case "ivory_lfa" :
@@ -253,27 +547,6 @@ switch (_vehicle) do
 			case 21: {_color = "Blue";};
 			case 22: {_color = "Teal";};
 			case 23: {_color = "Orange";};
-		};
-	};
-	case "IVORY_PRIUS" :
-	{
-		switch (_index) do
-		{
-			case 0:  {_color = "Black";};
-			case 1:  {_color = "Blue";};
-			case 2:  {_color = "Gold";};
-			case 3:  {_color = "Gray";};
-			case 4:  {_color = "Green";};
-			case 5:  {_color = "Pink";};
-			case 6:  {_color = "Purple";};
-			case 7:  {_color = "Red";};
-			case 8:  {_color = "Teal";};
-			case 9:  {_color = "White";};
-			case 10: {_color = "Sports 1";};
-			case 11: {_color = "Sports 2";};
-			case 12: {_color = "Sports 3";};
-			case 13: {_color = "Sports 4";};
-			case 14: {_color = "Taxi";};
 		};
 	};
 	case "IVORY_R8SPYDER" :
