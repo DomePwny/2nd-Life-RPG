@@ -30,7 +30,7 @@ _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],20]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],50]) == 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints isEqualTo typeName []) then {
@@ -49,9 +49,13 @@ if(_spawnPoint isEqualTo "") exitWith {["Ein Fahrzeug blockiert den Spawn!", fal
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(_spawnPoint in ["med_air_1", "med_air_2_1"]) then {
-		_obj = nearestObject [getMarkerPos _spawnPoint, "Land_Hospital_side2_F"];
-		_vehicle = createVehicle [_className, _obj modelToWorld [-0.4,-4,12.65], [], 0, "NONE"];
+	if(_spawnPoint in ["medic_spawn_1", "med_air_2_1"]) then {
+		_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
+		_vehicle allowDamage false;
+		_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
+		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+		sleep 0.6;
 	} else {
 		_vehicle = createVehicle [_className, getMarkerPos _spawnPoint, [], 0, "NONE"];
 	};

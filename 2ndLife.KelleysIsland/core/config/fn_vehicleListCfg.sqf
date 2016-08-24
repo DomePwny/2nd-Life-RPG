@@ -260,10 +260,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["Jonzie_Log_Truck",150000],
+			["Jonzie_Log_Truck",200000],
 			["Jonzie_Transit",250000],
 			["Jonzie_Flat_Bed",2590000],
-			["Jonzie_Log_Truck",2590000],
 			["Jonzie_Box_Truck",3750000],
 			["Jonzie_Tanker_Truck",3750000],
 			["Nhz_audia8limo",3300000],
