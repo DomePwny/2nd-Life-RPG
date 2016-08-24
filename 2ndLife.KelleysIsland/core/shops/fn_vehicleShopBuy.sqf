@@ -49,26 +49,17 @@ if(_spawnPoint isEqualTo "") exitWith {["Ein Fahrzeug blockiert den Spawn!", fal
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(_spawnPoint in ["medic_spawn_1", "med_air_2_1"]) then {
-		_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
-		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
-		_vehicle allowDamage false;
-		_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
-		sleep 0.6;
-	} else {
-		_vehicle = createVehicle [_className, getMarkerPos _spawnPoint, [], 0, "NONE"];
-	};
+	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
+	_vehicle allowDamage false;
+	_hs = nearestObject [getMarkerPos _spawnPoint, "Land_Hospital_side2_F"];
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	sleep 0.6;
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;
 	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 	_vehicle setDir (markerDir _spawnPoint);
-	if(_spawnPoint in ["med_air_2", "med_air_2_1"]) then {
-		_vehicle setPosATL (_obj modelToWorld [0,0,25.8]);
-	} else {
-		_vehicle setPos (getMarkerPos _spawnPoint);
-	};
 	[_vehicle,_colorIndex] spawn life_fnc_colorVehicle;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	_vehicle setVariable["trunk_in_use",false,true];
