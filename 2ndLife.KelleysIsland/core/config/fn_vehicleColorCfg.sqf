@@ -322,7 +322,7 @@ switch (_vehicle) do
 		];
 	};
 	case "ivory_rs4_taxi": {
-		_path = "\ivory_rs4\data\"
+		_path = "\ivory_rs4\data\";
 		_ret =
 		[
 			[_path + "rs4_taxi.paa","civ"]
@@ -472,7 +472,7 @@ switch (_vehicle) do
 		];
 	};
 	case "ivory_190e_taxi": {
-		_path = "\ivory_190e\data\"
+		_path = "\ivory_190e\data\";
 		_ret =
 		[
 			[_path + "190e_taxi.paa","civ"]
