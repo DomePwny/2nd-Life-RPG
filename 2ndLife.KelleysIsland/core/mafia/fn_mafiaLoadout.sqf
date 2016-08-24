@@ -11,7 +11,7 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default mafia gear.
-player addUniform "2ndLife_sndlife";
+player addUniform "2ndLife_sndlife1";
 
 /* ITEMS */
 player additem "2nd_lifetabletd";
