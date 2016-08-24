@@ -13,7 +13,6 @@ _ret = [];
 switch (_vehicle) do
 {
 	case "ivory_supra_tuned": {
-		_path = "\ivory_supra\data\";
 		_ret =
 		[
 			["#(argb,8,8,3)color(0.8,0.8,0.8,1.0,co)","civ"],
@@ -23,8 +22,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.0705882,0.266667,0.141176,1.0,co)","civ"],
 			["#(argb,8,8,3)color(0.823529,0.0941176,0.184314,1.0,co)","civ"],
 			["#(argb,8,8,3)color(0.219608,0.258824,0.580392,1.0,co)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,co)","civ"],
-			["#(argb,8,8,3)color(0,0,0,1.0,co)","civ","#(argb,8,8,3)color(0,0,0,1.0,co)","#(argb,8,8,3)color(0,0,0,0.9,ca)","#(argb,8,8,3)color(0,0,0,0.9,co)"]
+			["#(argb,8,8,3)color(1,1,1,1.0,co)","civ"]
 		];
 	};
 	case "ivory_supra": {
