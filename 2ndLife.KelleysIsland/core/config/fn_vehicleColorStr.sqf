@@ -12,7 +12,7 @@ _color = "";
 
 switch (_vehicle) do
 {
-	case "ivory_supra_tuned" :
+	case "ivory_supra_topsecret" :
 	{
 		switch (_index) do
 		{

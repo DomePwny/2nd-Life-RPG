@@ -812,7 +812,7 @@ life_garage_prices =
 			["ivory_c",0],
 			["ivory_lp560",0],
 			["ivory_f1",0],
-			["ivory_supra_tuned",0],
+			["ivory_supra_topsecret",0],
 			["ivory_f1_tuned",0],
 			["ivory_veyron",0],
 			
@@ -1064,7 +1064,7 @@ life_garage_sell =
 			["ivory_c",168500],
 			["ivory_lp560",172500],
 			["ivory_f1",177500],
-			["ivory_supra_tuned",377500],
+			["ivory_supra_topsecret",377500],
 			["ivory_f1_tuned",427500],
 			["ivory_veyron",526500],
 			

@@ -12,7 +12,7 @@ _ret = [];
 
 switch (_vehicle) do
 {
-	case "ivory_supra_tuned": {
+	case "ivory_supra_topsecret": {
 		_ret =
 		[
 			["#(argb,8,8,3)color(0.8,0.8,0.8,1.0,co)","civ"],

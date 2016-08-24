@@ -109,7 +109,7 @@ switch (_shop) do
 			["ivory_c",3370000],
 			["ivory_lp560",3450000],
 			["ivory_f1",3550000],
-			["ivory_supra_tuned",7550000],
+			["ivory_supra_topsecret",7550000],
 			["ivory_f1_tuned",8550000],
 			["ivory_veyron",11250000]
 		];
