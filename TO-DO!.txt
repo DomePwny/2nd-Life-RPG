@@ -1,7 +1,5 @@
 JETZT:
 
-Holzfäller (Refine Action hinzufügen per Mission.sqm)
-Gefängnis ausbruch (Shank gedöhns)
 Fahrzeuge in die Shops
 Mafia - Hideout / Stadt fertig stellen
 Marker 

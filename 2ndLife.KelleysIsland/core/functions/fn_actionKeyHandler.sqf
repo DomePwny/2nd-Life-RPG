@@ -81,7 +81,6 @@ life_action_inUse = true;
 	life_action_inUse = false;
 };
 
-_curTarget = cursorTarget;
 if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
 	if((_curTarget getVariable["dead",FALSE]) && "Second_Life_Defi_i" in magazines player) then {
 		[_curTarget] call life_fnc_revivePlayer;
@@ -98,11 +97,7 @@ if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialo
 	};
 };
 
-if(!dialog && playerSide == civilian && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
-		[_curTarget] call life_fnc_civInteractionMenu;
-};
-
-if(!dialog && playerSide == east && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
+if(!dialog && (playerSide in [civilian,east]) && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
 		[_curTarget] call life_fnc_civInteractionMenu;
 };
 
