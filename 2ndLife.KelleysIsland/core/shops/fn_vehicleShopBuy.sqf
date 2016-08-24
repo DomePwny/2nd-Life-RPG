@@ -89,12 +89,20 @@ switch(playerSide) do {
 		if(_className isEqualTo "B_Heli_Light_01_F") then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
+		if(_classname isEqualTo "Jonzie_Log_Truck") then
+		{
+			[_vehicle,true] remoteExecCall ["life_fnc_myTruck",player];
+		};
 	};
 
 	
 	case civilian: {
 		if(_className isEqualTo "B_Heli_Light_01_F") then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
+		};
+		if(_classname isEqualTo "Jonzie_Log_Truck") then
+		{
+			[_vehicle,true] remoteExecCall ["life_fnc_myTruck",player];
 		};
 	};
 	
