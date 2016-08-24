@@ -181,27 +181,27 @@ switch (_vehicle) do
 	case "ivory_wrx_unmarked": {
 		_ret =
 		[
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
 	case "ivory_evox_unmarked": {
 		_ret =
 		[
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
 	case "ivory_evox_slicktop": {
@@ -216,14 +216,14 @@ switch (_vehicle) do
 	case "ivory_isf_unmarked": {
 		_ret =
 		[
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
 	case "ivory_isf_slicktop": {
@@ -238,14 +238,14 @@ switch (_vehicle) do
 	case "ivory_m3_unmarked": {
 		_ret =
 		[
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
 	case "ivory_m3_slicktop": {
@@ -260,14 +260,14 @@ switch (_vehicle) do
 	case "ivory_rs4_unmarked": {
 		_ret =
 		[
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.843137,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
 	case "ivory_rs4_slicktop": {
