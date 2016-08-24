@@ -417,6 +417,28 @@ switch (_shop) do
 			["B_SDV_01_F",100000]
 		];
 	};
+	case "mafia_car":
+	{
+		_return = 
+		[
+			["Jonzie_Quattroporte",150000],
+			["Jonzie_30CSL",30000],
+			["Jonzie_Viper",45000],
+			["Jonzie_Datsun_Z432",50000],
+			["Jonzie_STI",73000],
+			["Jonzie_Escalade",40000],
+			["Jonzie_Datsun_510",20000],
+			["Jonzie_Ceed",7500],
+			["Jonzie_Raptor",40000],
+			["Jonzie_Galant",5000],
+			["Jonzie_Corolla",3500],
+			["Jonzie_Mini_Cooper",1000],
+			["Jonzie_Mini_Cooper_R_spec",5000],
+			["Jonzie_XB",30000],
+			["Jonzie_VE",30000],
+			["Jonzie_Ute",30000]
+		];
+	};	
 };
 
 _return;

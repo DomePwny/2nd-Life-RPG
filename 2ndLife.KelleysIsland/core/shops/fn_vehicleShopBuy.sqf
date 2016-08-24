@@ -49,9 +49,9 @@ if(_spawnPoint isEqualTo "") exitWith {["Ein Fahrzeug blockiert den Spawn!", fal
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(_spawnPoint in ["med_air_2", "med_air_2_1"]) then {
-		_obj = nearestObject [getMarkerPos _spawnPoint, "Land_pier_box_f"];
-		_vehicle = createVehicle [_className, _obj modelToWorld [0,0,25.8], [], 0, "NONE"];
+	if(_spawnPoint in ["med_air_1", "med_air_2_1"]) then {
+		_obj = nearestObject [getMarkerPos _spawnPoint, "Land_Hospital_side2_F"];
+		_vehicle = createVehicle [_className, _obj modelToWorld [-0.4,-4,12.65], [], 0, "NONE"];
 	} else {
 		_vehicle = createVehicle [_className, getMarkerPos _spawnPoint, [], 0, "NONE"];
 	};

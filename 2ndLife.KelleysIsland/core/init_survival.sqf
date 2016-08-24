@@ -2516,7 +2516,7 @@ fnc_item_CG = {
 
 [] spawn {	while {true} do	{		enableSentences false;		sleep 20;	};};
 
-_markerNoCops = ["Dealer_1_3_1","coke_2","coke_1","coke_3","MDMA_1","MDMA_zone_1","coke_zone_1","coke_zone_1_1","coke_zone_1_2","Coke Processing_1","weed_field","meth_zone_1","meth_1","Weed_p_1","Meth Processing","MDMA Processing"];
+_markerNoCops = ["Drogendealer","coke_zone","MDMA_zone","Coke_p","weed_field","meth_zone","Weed_p","Meth_p","MDMA_p"];
 
 if (playerSide != civilian && playerSide != east) then {
 	{ deleteMarkerLocal _x; } forEach _markerNoCops;

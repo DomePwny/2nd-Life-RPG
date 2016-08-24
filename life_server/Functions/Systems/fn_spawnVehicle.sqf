@@ -77,10 +77,10 @@ if(typeName _sp isEqualTo "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
-	_obj = nearestObject [getMarkerPos _sp, "Land_pier_box_f"];
+	_obj = nearestObject [getMarkerPos _sp, "Land_Hospital_side2_F"];
 	_vehicle setDir markerDir _sp;
-	_vehicle setPosATL (_obj modelToWorld [0,0,25.8]);
-	uiSleep 0.6;
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	sleep 0.6;
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	

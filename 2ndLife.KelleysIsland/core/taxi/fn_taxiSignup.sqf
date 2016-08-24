@@ -7,13 +7,13 @@ if(has_job) exitwith { ["Du hast bereits ein Job! Drücke Shift + 4 to quit!", f
 has_job = true;
 player setVariable["taxi_driver", true, true];
 
-["Du bekommst deinen Lohn nur, wenn du im Taxi sitzt.", false] spawn domsg;
+["Du bekommst deinen Lohn nur, wenn du in einem Taxi sitzt.", false] spawn domsg;
 
 _fkit = 12;
 
 while{_fkit > 0 && (player getVariable "taxi_driver") && has_job} do {
 	if(vehicle player != player) then {
-		if(driver (vehicle player) == player && typeOf (vehicle player) == "cl3_suv_taxi") then {
+		if(driver (vehicle player) == player && typeOf (vehicle player) in ["ivory_rs4_taxi","cl3_suv_taxi","ivory_190e_taxi"]) then {
 			["bank","add", 250] call life_fnc_handleCash;
 			["Dein Lohn von 250$ wurde überwiesen", false] spawn domsg; 
 		};	

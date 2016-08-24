@@ -27,7 +27,7 @@ switch (_side) do
 		if(playerside == civilian) then {
 			_return = [
 				["civ_spawn_1","Union City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Keine Ahnung","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_2","Darthmouth City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 			
 			if(count life_houses > 0) then {
@@ -48,15 +48,13 @@ switch (_side) do
 		if(!(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
-				["reb_spawn_1","Mafia Stadt","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_2","Mafia Posten","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_1","El Patro Island","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 		if((rebelshipment getVariable["progress",FALSE]) || (rebelshipment getVariable["notCaptured",FALSE])) then {
 
 			_return = [
-				["civ_spawn_1","Union City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Knoxville","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_2","Belle Valley","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};
 		if(count life_houses > 0) then {
@@ -72,10 +70,7 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_2","Lakeside","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_4","Lakeside S&R","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],			
-			["medic_spawn_3","Los D","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_1","Morrison Town","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Union City","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
