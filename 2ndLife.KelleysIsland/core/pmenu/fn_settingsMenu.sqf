@@ -33,7 +33,7 @@ _objs = _display displayCtrl 2972;
 
 if(isNil "life_tagson") then {
 	life_sidechat = true;
-	life_tagson = false;
+	life_tagson = true;
 	life_revealObjects = true;
 };
 
