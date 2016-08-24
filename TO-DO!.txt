@@ -2,9 +2,22 @@ JETZT:
 
 Fahrzeuge in die Shops
 Mafia - Hideout / Stadt fertig stellen
-Marker 
+Marker
+RobShops überarbeiten, da Cops/Medics? ausrauben können evtl. auch die Rob Action bei manchen Shops entfernen!!! 
 TESTEN!!!
 
 Irgendwann:
 Tow-Truck überarbeiten
 ADAC einbauen
+
+------ SYNC DATEN FÜR DAS UPDATE ------
+Repository name
+2nd Life Testserver (Per Hand eintippen)
+Protocol FTP
+Host ftp://89.163.173.50 Port 2070 (Per Hand eintippen)
+Loginname 2ndLife
+Pw: 2ndliferpg
+
+Quitscope für die Map anschreiben !WICHTIG!
+
+Dome Pwny: Bearbeitung der neuen Map (Terrain,Asphalt,Tiere spawn, Städte adden)
