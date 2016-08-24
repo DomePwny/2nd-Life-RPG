@@ -133,7 +133,7 @@ switch (_vehicle) do
 			case 2:  {_color = "White";};
 		};
 	};
-	case "ivory_wrx_slicktop" :
+	case "ivory_wrx_marked" :
 	{
 		switch (_index) do
 		{

@@ -142,7 +142,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"]
 		];
 	};
-	case "ivory_wrx_slicktop": {
+	case "ivory_wrx_marked": {
 		_path = "\ivory_wrx\data\";
 		_ret =
 		[
