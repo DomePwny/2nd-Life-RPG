@@ -18,14 +18,14 @@ if(!(alive _target)) exitWith {};
 if(playerSide == west) then
 {
 	_id = "<img image='idcards\AusweisCop.paa' size='8'/>";
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/>", name player,_id];
+	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><br/>%2<br/>", name player,_id];
 	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 };
 
 if(playerSide == independent) then
 {
 	_id = "<img image='idcards\AusweisMedic.paa' size='8'/>";
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/>", name player,_id];
+	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><br/>%2<br/>", name player,_id];
 	[_message] remoteExec ["life_fnc_copLicenseShown",_target];
 };
 

@@ -84,5 +84,6 @@ _flagTexture = [
 _this select 0 setFlagTexture _flagTexture;
 [[0,1],format[localize "STR_GNOTF_CaptureSuccess",name player,(group player) getVariable "gang_name" ]] remoteExecCall ["life_fnc_broadcast", east];
 ["Die Mafia hat den Drogendealer freigegeben!", false] remoteExec ["domsg",civilian];
+hideout setVariable ["captured",true,true];
 _hideout setVariable["inCapture",false,true];
 _hideout setVariable["gangOwner",grpPlayer,true];

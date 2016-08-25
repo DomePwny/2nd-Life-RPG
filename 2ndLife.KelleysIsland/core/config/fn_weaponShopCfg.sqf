@@ -429,17 +429,17 @@ switch(_shop) do
         {
 			["General and Fishing",
 				[
-					["2nd_lifetabletd",nil,50],
 					["cg_torch",nil,550], 
 					["cg_torchbattery",nil,50],
-					["Second_Life_Laptop_i",nil,20000],
+					["cg_hatchet","Axt",3000],
+					["ToolKit",nil,2500],
 					["CG_ATF_Pizza_Box_i","Pizza",1400],
 					["CG_ATF_Donut_Box_i","Donuts",1600],
-					["cg_hatchet","Axt",3000],					
+					["Second_Life_Laptop_i",nil,20000],
+					["2nd_lifetabletd",nil,50],
 					["ItemMap",nil,6],
 					["ItemGPS",nil,110],
 					["Binocular",nil,110],
-					["ToolKit",nil,2500],
 					["ItemCompass",nil,50],
 					["ItemWatch",nil,10]
 				]

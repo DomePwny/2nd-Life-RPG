@@ -1,6 +1,6 @@
 // Koil virtual hunting.
 
-if( life_firing_range ) exitwith { };
+if(life_firing_range) exitwith {};
 
 _myscore = 0;
 
@@ -10,7 +10,7 @@ _myposy = getPos player;
 
 ["Dein Versuch startet in 5 Sekunden. Deine Position wird automatisch ausgerichtet.", false] spawn domsg;
 
-uiSleep 3;
+uiSleep 5;
 
 ["Virtuelle Brille wird aktiviert.", false] spawn domsg;
 
@@ -86,17 +86,13 @@ while {_count > 0} do {
 		_myscore = _myscore + 1;
 		_unit say3D "ding";
 	};
-
 	deleteVehicle _spawnedunit;
 	uiSleep 0.5;
 	[format ["Score: %1",_myscore], false] spawn doquickmsg;
-
-
 	};
 
 	if(_lmfaolol == 2) then {
 		_spawnedunit = "C_man_polo_2_F" createVehicleLocal (player modelToWorld [0 + round (random 3), 15 + round (random 10), 0]);
-
 		_spawnedunit setDamage 0.98;
 
 	if( player distance _myposy > 3 || (deadPlayer) ) exitwith { 
@@ -106,7 +102,6 @@ while {_count > 0} do {
   			"chromAberration" ppEffectEnable false;
   			life_firing_range = false;
     };
-
 	_count = _count - 1;
 	uiSleep 0.35;
 	if(_count < 10) then {
@@ -133,14 +128,10 @@ while {_count > 0} do {
 		_myscore = _myscore + 1;
 		_unit say3D "ding";
 	};
-
 	deleteVehicle _spawnedunit;
 	uiSleep 0.5;
 	[format ["Score: %1",_myscore], false] spawn doquickmsg;
-
-	
 	};
-	
 };
 
 _bonuscash = _myscore * 40;
@@ -173,6 +164,6 @@ if(_myscore > 48) then {
 life_firing_range = false;
 "chromAberration" ppEffectEnable false;
 
-[format ["Score: %1 - Bonus Cash: %2",_myscore, _bonuscash], false] spawn domsg;
+[format ["Punkte: %1 - Gewinn: %2",_myscore, _bonuscash], false] spawn domsg;
 
 ["cash","add",round(_myscore)] call life_fnc_handleCash; 

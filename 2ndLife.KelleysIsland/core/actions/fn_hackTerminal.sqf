@@ -13,7 +13,7 @@ if(vehicle player != player) exitWith {};
 if(playerside in [west,independent]) exitWith {["Dein Ernst?!?", false] spawn domsg};
 if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Du kannst nicht mit verbundenen Armen hacken.", false] spawn domsg};
 if !(prisonbreak) exitWith {["Das Tor zum Gefängnis muss zuerst aufgesprengt werden.", false] spawn domsg};
-if(player distance (getMarkerPos "Terminal") > 3) exitWith {["Hier kannst du nicht hacken.", false] spawn domsg};
+if(player distance (getMarkerPos "Terminal") > 5) exitWith {["Hier kannst du nicht hacken.", false] spawn domsg};
 
 life_action_inUse = true;
 _cP = 0;
@@ -36,16 +36,16 @@ playSound "hackingjail";
 
 while{true} do
 {
-	uiSleep 3;
+	uiSleep 2.85;
 	if(animationState player != "CL3_anim_codecrackerATM") then {
 		player playmovenow "CL3_anim_codecrackerATM";  
 		player disableAI "anim";
 	};
-	if (player distance (getMarkerPos "Terminal") > 3) exitwith {life_interrupted = true};
+	if (player distance (getMarkerPos "Terminal") > 5) exitwith {life_interrupted = true};
 	_cP = _cP + 0.01;
-	if(_cP == 0.3) then {playSound "hackingjail";};
-	if(_cP == 0.6) then {playSound "hackingjail";};
-	if(_cP == 0.9) then {playSound "hackingjail";};
+	if(_cP >= 0.3 && _cp <= 0.32) then {playSound "hackingjail";};
+	if(_cP >= 0.6 && _cp <= 0.62) then {playSound "hackingjail";};
+	if(_cP >= 0.9 && _cp <= 0.92) then {playSound "hackingjail";};
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 	if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};

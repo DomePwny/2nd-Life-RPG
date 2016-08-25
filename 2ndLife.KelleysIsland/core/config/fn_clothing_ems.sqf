@@ -74,6 +74,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+		_ret =
 		[
 			["TRYK_H_woolhat", nil, 2],
 			["TRYK_H_woolhat_WH", nil, 2],
@@ -87,6 +88,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+		_ret =
 		[
 			["G_Diving",nil,50],
 			["G_Bandanna_blk",nil,2],
@@ -139,6 +141,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
+		_ret =
 		[
 			["2ndLife_EMS_Vest",nil,5],
 			["V_RebreatherB",nil,5]
@@ -148,8 +151,11 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+		_ret =
 		[
 			["PwnyEMS",nil,5]
 		];
 	};
 };
+
+_ret;

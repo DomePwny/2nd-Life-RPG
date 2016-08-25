@@ -45,7 +45,7 @@ if(!skip_all) then {
 	_message = getPlayerUID _civ;
 	_id_uid ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\uid.paa'/> ID#:<t color='#C80000'> %1 </t>",_message];
 
-	_id_city ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\city.paa'/> Residence:<t color='#C80000'> Lakeside </t>",_message];
+	_id_city ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\city.paa'/> Residence:<t color='#C80000'> Union City </t>",_message];
 
 	_message = count target_houses;
 	_id_houses ctrlSetStructuredText parseText format["<img size='0.5' image='idcards\houses.paa'/> House Count:<t color='#C80000'> %1 (Shown on Map)</t>",_message];

@@ -194,7 +194,6 @@ switch (_filter) do
 
 			["kio_vfv_mask","Anon", 100],
 			["Kio_Capital_Hat","Top Hat w/Monacle", 100],
-			["a3l_hardhat","Hard Hat", 20],
 			["Kio_Afro_Hat","Brown Afro", 20],
 			["H_Beret_blk","Black Beret", 20],
 			["H_Booniehat_khk",nil, 40],
