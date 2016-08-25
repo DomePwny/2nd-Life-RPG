@@ -294,6 +294,7 @@ switch (_shop) do
 			_return pushBack ["ivory_isf_slicktop",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_evox_slicktop",76500];
 		};
 		if(__GETC__(life_coplevel) == 4) then
 		{
@@ -301,6 +302,7 @@ switch (_shop) do
 			_return pushBack ["ivory_m3_slicktop",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_evox_slicktop",76500];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
