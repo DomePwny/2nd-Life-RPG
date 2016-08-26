@@ -521,7 +521,14 @@ switch (_shop) do
 			["Urbanized_GranTurismo_lime",1342000],
 			["Urbanized_LaFerrari_Black_S",13250000],
 			["Urbanized_LaFerrari_Blue_S",13250000],
-			["Urbanized_LaFerrari_Lime_S",13250000]
+			["Urbanized_LaFerrari_Lime_S",13250000],
+			["Jonzie_Log_Truck",200000],
+			["Jonzie_Transit",250000],
+			["Jonzie_Flat_Bed",2590000],
+			["Jonzie_Box_Truck",3750000],
+			["Jonzie_Tanker_Truck",3750000],
+			["Nhz_audia8limo",3300000],
+			["wirk_h3_limo",12000000]
 		];
 	};	
 };
