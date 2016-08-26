@@ -24,10 +24,8 @@ if(_bad) then
 };
 if(license_civ_gun OR license_maf_gun) then 
 {
-	license_civ_driver = false;
-	license_civ_truck = false;
-	license_maf_driver = false;
-	license_maf_truck = false;
+	license_civ_gun = false;
+	license_maf_gun = false;
 	[2] call SOCK_fnc_updatePartial;
 };
 if(life_inv_methu > 0) then {[false,"methu",life_inv_methu] call life_fnc_handleInv;};
