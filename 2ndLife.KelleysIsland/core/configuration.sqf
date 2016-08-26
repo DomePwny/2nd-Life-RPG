@@ -1048,12 +1048,11 @@ life_garage_sell =
 			//Civ Truck
 			["Jonzie_Transit",12500],
 			["Jonzie_Flat_Bed",129500],
-			["Jonzie_Log_Truck",129500],
 			["Jonzie_Box_Truck",187500],
 			["Jonzie_Tanker_Truck",187500],
 			["Nhz_audia8limo",165000],
 			["wirk_h3_limo",600000],
-			["Jonzie_Log_Truck",60000],
+			["Jonzie_Log_Truck",10000],
 					
 			//Sportwagen
 			["cl3_murcielago_white",112500],
