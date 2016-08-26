@@ -34,5 +34,18 @@ switch (_className) do
 	case "B_Boat_Transport_01_F": {45};
 	case "Land_CargoBox_V1_F": {5000};
 	case "B_supplyCrate_F": {700};
+	case "Sab_af_An2": {0};
+	case "Sab_tk_An2": {0};
+	case "Sab_ca_An2": {0};
+	case "Sab_ana_An2": {0};
+	case "Sab_yel_An2": {0};
+	case "Sab_fd_An2": {0};
+	case "Sab_Sea2_An2": {0};
+	case "Sab_Sea4_An2": {0};
+	case "Sab_Amphi_An2": {0};
+	case "sab_camel": {0};
+	case "C_Heli_Light_01_civil_F": {0};
+	case "ivory_b206": {0};
+	case "ivory_b206_news": {0};
 	default {35};
 };

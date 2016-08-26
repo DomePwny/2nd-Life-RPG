@@ -190,7 +190,7 @@ switch (_shop) do
 			_return pushBack ["ivory_evox_marked",76500];
 		};
 	};
-	case "med_air_hs": {
+	case "med_air": {
 		_return = 
 		[
 			["ivory_b206_rescue",650000],
@@ -424,23 +424,13 @@ switch (_shop) do
 			["Sab_ana_An2",300000],
 			["Sab_yel_An2",300000],
 			["Sab_fd_An2",300000],
-
 			["Sab_Sea2_An2",300000],
 			["Sab_Sea4_An2",300000],
 			["Sab_Amphi_An2",300000],
-
 			["sab_camel",300000],
-
-			["IVORY_T6A_1",300000],
 			["C_Heli_Light_01_civil_F",350000],
 			["ivory_b206",350000],
-			["ivory_b206_news",400000],
-			["CUP_C_DC3_CIV",800000],
-			["CUP_C_C47_CIV",1000000],			
-			["GNT_C185",1000000],
-			["IVORY_CRJ200_1",1000000],
-			["IVORY_ERJ135_1",1000000],
-			["IVORY_YAK42D_1",1000000]
+			["ivory_b206_news",400000]		
 		];
 	};
 	case "cop_air":

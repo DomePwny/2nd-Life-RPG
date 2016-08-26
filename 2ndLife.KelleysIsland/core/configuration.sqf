@@ -693,8 +693,6 @@ life_garage_prices =
 			["B_Heli_Light_01_F",0],
 			["C_Heli_Light_01_civil_F",0],
 			["melb_h6m",0],
-			["B_Heli_Light_01_F",0],
-			["C_Heli_Light_01_civil_F",0],
 			["B_Boat_Transport_01_F",0],
 			["C_Boat_Civil_01_police_F",0],
 			["B_SDV_01_F",0],
@@ -734,27 +732,6 @@ life_garage_prices =
 			["CUP_B_Zodiac_USMC",0],
 			["C_Boat_Civil_01_F",0],
 			["CUP_C_Fishing_Boat_Chernarus",0],
-			
-			//Civ Air
-			["Sab_af_An2",0],
-			["Sab_tk_An2",0],
-			["Sab_ca_An2",0],
-			["Sab_ana_An2",0],
-			["Sab_yel_An2",0],
-			["Sab_fd_An2",0],
-			["Sab_Sea2_An2",0],
-			["Sab_Sea4_An2",0],
-			["Sab_Amphi_An2",0],
-			["sab_camel",0],
-			["IVORY_T6A_1",0],
-			["ivory_b206",0],
-			["ivory_b206_news",0],
-			["CUP_C_DC3_CIV",0],
-			["CUP_C_C47_CIV",0],			
-			["GNT_C185",0],
-			["IVORY_CRJ200_1",0],
-			["IVORY_ERJ135_1",0],
-			["IVORY_YAK42D_1",0],
 			
 			//Civ Truck
 			["Jonzie_Transit",0],
@@ -924,28 +901,19 @@ life_garage_prices =
 			["cl3_z4_2008_burgundy",0],
 			["cl3_z4_2008_black",0],
 			["ivory_elise",0],
-			
 			//Civ Air
-			["Sab_af_An2",25000],
-			["Sab_tk_An2",25000],
-			["Sab_ca_An2",25000],
-			["Sab_ana_An2",25000],
-			["Sab_yel_An2",25000],
-			["Sab_fd_An2",25000],
-			["Sab_Sea2_An2",25000],
-			["Sab_Sea4_An2",25000],
-			["Sab_Amphi_An2",25000],
-			["sab_camel",25000],
-			["IVORY_T6A_1",25000],
-			["C_Heli_Light_01_civil_F",2500],
-			["ivory_b206",25000],
-			["ivory_b206_news",25000],
-			["CUP_C_DC3_CIV",25000],
-			["CUP_C_C47_CIV",25000],			
-			["GNT_C185",25000],
-			["IVORY_CRJ200_1",25000],
-			["IVORY_ERJ135_1",25000],
-			["IVORY_YAK42D_1",25000]
+			["Sab_af_An2",0],
+			["Sab_tk_An2",0],
+			["Sab_ca_An2",0],
+			["Sab_ana_An2",0],
+			["Sab_yel_An2",0],
+			["Sab_fd_An2",0],
+			["Sab_Sea2_An2",0],
+			["Sab_Sea4_An2",0],
+			["Sab_Amphi_An2",0],
+			["sab_camel",0],
+			["ivory_b206",0],
+			["ivory_b206_news",0]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -1037,8 +1005,6 @@ life_garage_sell =
 			["B_Heli_Light_01_F",2250],
 			["C_Heli_Light_01_civil_F",2250],
 			["melb_h6m",4250],
-			["B_Heli_Light_01_F",2250],
-			["C_Heli_Light_01_civil_F",2250],
 			["B_Boat_Transport_01_F",1500],
 			["C_Boat_Civil_01_police_F",1000],
 			["B_SDV_01_F",5000],
@@ -1259,15 +1225,7 @@ life_garage_sell =
 			["Sab_Sea4_An2",15000],
 			["Sab_Amphi_An2",15000],
 			["sab_camel",15000],
-			["IVORY_T6A_1",15000],
-			["C_Heli_Light_01_civil_F",17500],
 			["ivory_b206",17500],
-			["ivory_b206_news",20000],
-			["CUP_C_DC3_CIV",40000],
-			["CUP_C_C47_CIV",50000],			
-			["GNT_C185",50000],
-			["IVORY_CRJ200_1",50000],
-			["IVORY_ERJ135_1",50000],
-			["IVORY_YAK42D_1",50000]
+			["ivory_b206_news",20000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
