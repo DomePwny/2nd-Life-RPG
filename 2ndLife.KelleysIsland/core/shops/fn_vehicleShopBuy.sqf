@@ -65,6 +65,25 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+};
+
+if((life_veh_shop select 0) isEqualTo "cop_airhq") then {
+	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
+	_vehicle allowDamage false;
+	_hs = nearestObject [getMarkerPos _spawnPoint, "Land_PoliceStation"];
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,7.65]);
+	sleep 0.6;
+	waitUntil {!isNil "_vehicle"}; //Wait?
+	_vehicle allowDamage false; //Temp disable damage handling..
+	_vehicle lock 2;
+	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+	_vehicle setDir (markerDir _spawnPoint);
+	[_vehicle,_colorIndex] spawn life_fnc_colorVehicle;
+	[_vehicle] call life_fnc_clearVehicleAmmo;
+	_vehicle setVariable["trunk_in_use",false,true];
+	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
+	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
