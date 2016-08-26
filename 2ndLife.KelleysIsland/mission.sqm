@@ -20869,6 +20869,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""Fleisch schneiden"",life_fnc_gutFish,""meat"",0,false,false,"""",' life_inv_fish > 0 && !life_is_processing'];";
 			};
 			id=3804;
 			type="bv_pig_table";
@@ -20886,7 +20887,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this enableSimulation false; this allowDamage false; this addAction[""Fische ausnehmen"",life_fnc_gutFish,""fish"",0,false,false,"""",' life_inv_fish > 0 && !life_is_processing'];";
+				init="this enableSimulation false; this allowDamage false; this addAction[""Fische ausnehmen"",life_fnc_gutFish,""fish"",0,false,false,"""",' life_inv_rawmeat > 0 && !life_is_processing'];";
 			};
 			id=3807;
 			type="bv_fish_table";
