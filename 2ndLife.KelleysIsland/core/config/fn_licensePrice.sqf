@@ -11,52 +11,52 @@ if(_type == "") exitWith {-1};
 
 switch (_type) do
 {
-	case "MDMA": {15500};
-	case "MDMAMAF": {15500};
-	case "meth": {15500};
-	case "methMAF": {15500};
-	case "coke": {15500};
-	case "cokeMAF": {15500};
-	case "driver": {300};
-	case "driverMAF": {300};	//Drivers License cost
-	case "boat": {1500}; //Boating license cost
-	case "boatMAF": {1500}; //Boating license cost
+	case "MDMA": {25125};
+	case "MDMAMAF": {25125};
+	case "meth": {23750};
+	case "methMAF": {23750};
+	case "coke": {22500};
+	case "cokeMAF": {22500};
+	case "driver": {500};
+	case "driverMAF": {500};	//Drivers License cost
+	case "boat": {1750}; //Boating license cost
+	case "boatMAF": {1750}; //Boating license cost
 	case "pilot": {25000}; //Pilot/air license cost
 	case "pilotMAF": {25000}; //Pilot/air license cost
-	case "gun": {25000}; //Firearm/gun license cost
-	case "gunMAF": {25000}; //Firearm/gun license cost
-	case "dive": {400}; //Diving license cost
-	case "diveMAF": {400}; //Diving license cost
-	case "oil": {1000}; //Oil processing license cost
-	case "oilMAF": {1000}; //Oil processing license cost
-	case "cair": {1500}; //Cop Pilot License cost
+	case "gun": {27500}; //Firearm/gun license cost
+	case "gunMAF": {32500}; //Firearm/gun license cost
+	case "dive": {1000}; //Diving license cost
+	case "diveMAF": {1000}; //Diving license cost
+	case "oil": {3000}; //Oil processing license cost
+	case "oilMAF": {3000}; //Oil processing license cost
+	case "cair": {2000}; //Cop Pilot License cost
 	case "swat": {3500}; //Swat License cost
-	case "cg": {800}; //Coast guard license cost
-	case "heroin": {4500}; //Heroin processing license cost
-	case "heroinMAF": {4500}; //Heroin processing license cost
-	case "marijuana": {2250}; //Marijuana processing license cost
-	case "marijuanaMAF": {2250}; //Marijuana processing license cost
-	case "medmarijuana": {150}; //Medical Marijuana processing license cost
-	case "truck": {8000}; //Truck license cost
-	case "truckMAF": {8000}; //Truck license cost
-	case "diamond": {3500};
-	case "diamondMAF": {3500};
-	case "salt": {1200};
-	case "saltMAF": {1200};
-	case "cocaine": {15000};
-	case "cocaineMAF": {15000};
-	case "sand": {1450};
-	case "sandMAF": {1450};
-	case "iron": {950};
-	case "ironMAF": {950};
+	case "cg": {1125}; //Coast guard license cost
+	case "heroin": {19800}; //Heroin processing license cost
+	case "heroinMAF": {19800}; //Heroin processing license cost
+	case "marijuana": {21750}; //Marijuana processing license cost
+	case "marijuanaMAF": {21750}; //Marijuana processing license cost
+	case "medmarijuana": {500}; //Medical Marijuana processing license cost
+	case "truck": {11585}; //Truck license cost
+	case "truckMAF": {11585}; //Truck license cost
+	case "diamond": {5980};
+	case "diamondMAF": {5980};
+	case "salt": {3125};
+	case "saltMAF": {3125};
+	case "cocaine": {17175};
+	case "cocaineMAF": {17175};
+	case "sand": {2845};
+	case "sandMAF": {2845};
+	case "iron": {1655};
+	case "ironMAF": {1655};
 	case "copper": {800};
 	case "copperMAF": {800};
-	case "cement": {650};
-	case "cementMAF": {650};
-	case "mair": {1500};
-	case "home": {125500};
-	case "homeMAF": {125500};
+	case "cement": {899};
+	case "cementMAF": {899};
+	case "mair": {1000};
+	case "home": {185725};
+	case "homeMAF": {185725};
 	
-	case "rifle": {2000};
-	case "rifleMAF": {2000};
+	case "rifle": {3560};
+	case "rifleMAF": {3560};
 };
