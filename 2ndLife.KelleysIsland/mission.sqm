@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3843.1296,41.984314,3091.7856};
-		dir[]={-0.72174263,-0.68051183,-0.12648293};
-		up[]={-0.67030191,0.73273182,-0.11746806};
-		aside[]={-0.17261709,1.1525117e-007,0.98499227};
+		pos[]={3827.6558,55.941986,3037.293};
+		dir[]={0.028826034,-0.61015785,0.79190046};
+		up[]={0.022198755,0.79220921,0.60983765};
+		aside[]={0.99945349,7.2660441e-007,-0.036379483};
 	};
 };
 binarizationWanted=0;
@@ -1103,7 +1103,7 @@ class Mission
 			position[]={3788.4487,8.0529842e+015,3115.0525};
 			name="med_car_1";
 			type="Empty";
-			angle=278.44931;
+			angle=278.44928;
 			id=147;
 			atlOffset=8.0529842e+015;
 		};
@@ -11518,8 +11518,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -11528,10 +11528,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -11575,8 +11575,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -11585,10 +11585,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -28040,15 +28040,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3835.3579,15.001438,3076.4929};
-						angles[]={0,5.3999429,0};
+						position[]={3835.3579,15.001439,3076.4932};
+						angles[]={0,5.3999443,0};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" removeallWeapons this; this allowDamage false;  this enableSimulation false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_1"",""med"",""Lakeside Valley Hosptial""]];";
+						init=" removeallWeapons this; this allowDamage false;  this enableSimulation false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air"",independent,""med_air_1"",""med"",""Lakeside Valley Hosptial""]];";
 						name="AirfieldPD_1";
 					};
 					id=4161;
@@ -28088,7 +28088,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3832.9941,15.838612,3075.8838};
+				position[]={3832.9939,15.83857,3075.884};
 				angles[]={0,3.3096504,0};
 			};
 			side="Empty";
@@ -28099,6 +28099,7 @@ class Mission
 			};
 			id=4162;
 			type="bv_terminal_air";
+			atlOffset=-0.012999535;
 		};
 		class Item1019
 		{
@@ -33627,12 +33628,12 @@ class Mission
 		class Item1301
 		{
 			dataType="Marker";
-			position[]={3830.0488,8.0743607e+035,3082.6025};
+			position[]={3831.2351,1.2111953e+021,3087.2749};
 			name="med_air_1";
 			type="Empty";
-			angle=8.9677582;
+			angle=8.9679995;
 			id=4691;
-			atlOffset=8.0743607e+035;
+			atlOffset=1.2111953e+021;
 		};
 	};
 };
