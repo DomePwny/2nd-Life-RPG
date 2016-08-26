@@ -80,7 +80,7 @@ if(typeName _sp isEqualTo "STRING") then {
 		_vehicle allowDamage false;
 		_obj = nearestObject [getMarkerPos _sp, "Land_HeliPad"];
 		_vehicle setDir markerDir _sp;
-		_vehicle setPosATL (_obj modelToWorld [0,0,0]);
+		_vehicle setPosATL (_obj modelToWorld [4,-10,6.00]);
 		sleep 0.6;
 	} else {
 		_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
