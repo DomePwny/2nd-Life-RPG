@@ -116,7 +116,9 @@ switch(_shop) do
 					["hgun_Pistol_heavy_01_F",nil,240],
 					["11Rnd_45ACP_Mag",nil,5],
 					["hlc_smg_mp5a4",nil,3100],
-					["hlc_30Rnd_9x19_GD_MP5",nil,25]
+					["hlc_30Rnd_9x19_GD_MP5",nil,25],
+					["SMG_05_F",nil,2850],
+					["30Rnd_9x21_Mag_SMG_02",nil,20]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -125,7 +127,11 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 2) then {
 				_temp =  [
 					["RH_compM2l","Rifle Aimpoint Low",25],
-					["RH_compM2","Rifle Aimpoint",25]
+					["RH_compM2","Rifle Aimpoint",25],
+					["hlc_rifle_CQBR",nil,3425],
+					["hlc_30rnd_556x45_EPR",nil,25],
+					["hlc_smg_mp5k",nil,3625],
+					["hlc_30Rnd_9x19_B_MP5",nil,25]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -137,7 +143,10 @@ switch(_shop) do
 					["RH_30Rnd_556x45_M855A1",nil,20],
 					["RH_barska_rds","Barska Red Dot",25],
 					["RH_cmore","C-more Red Dot",25],
-					["RH_m4covers_f",nil,25]
+					["RH_m4covers_f",nil,25],
+					["KPFS_G36C",nil,3725],
+					["KPFS_30Rnd_556x45_G36",nil,25]
+					
 				];
 				{
 					(_ret select 0) pushBack _x;
