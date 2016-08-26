@@ -7,7 +7,7 @@ cgbankvault is the variable name
 private ["_cops"];
 
 _cops = (west countSide playableUnits);
-if(_cops < 12) exitWith { ["Es müssen 12 Polizisten im Dienst sein!", false] spawn domsg; }; 
+/*if(_cops < 12) exitWith { ["Es müssen 12 Polizisten im Dienst sein!", false] spawn domsg; };*/
 
 _storename = "hi";
 

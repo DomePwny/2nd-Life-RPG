@@ -6,7 +6,7 @@ params [["_shop", objNull, [objNull]], ["_robber", objNull, [objNull]], "_action
 
 if(!life_canrob) exitWith {["Innerhalb der ersten 10 Minuten nach dem aufwachen kannst du keinen Raub begehen", false] spawn doquickmsg}; 
 _cops = (west countSide playableUnits);
-if(_cops < 4) exitWith {["Es müssen mind. 4 Polizisten im Dienst sein.", false] spawn doquickmsg}; 
+/*if(_cops < 4) exitWith {["Es müssen mind. 4 Polizisten im Dienst sein.", false] spawn doquickmsg};*/
 
 if(vehicle player != _robber) exitWith {["Wirklich? Aus dem Fahrzeug? Vergiss es!", false] spawn doquickmsg;}; 
 if(playerside in [west,independent]) exitWith {["Du willst nicht korrupt sein mein Freund!", false] spawn doquickmsg;};
