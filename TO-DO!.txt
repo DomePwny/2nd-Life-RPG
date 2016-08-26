@@ -1,7 +1,6 @@
 JETZT:
 
-Fahrzeuge in die Shops
-Mafia - Hideout / Stadt fertig stellen
+CatalinaObjects entfernen
 TESTEN!!!
 
 Irgendwann:
@@ -15,8 +14,6 @@ Protocol FTP
 Host ftp://89.163.173.50 Port 2070 (Per Hand eintippen)
 Loginname 2ndLife
 Pw: 2ndliferpg
-
-Quitscope für die Map anschreiben !WICHTIG!
 
 Dome Pwny: Bearbeitung der neuen Map (Terrain,Asphalt,Tiere spawn, Städte adden)
 Dome Pwny: Ivory_Evox Skins adden
