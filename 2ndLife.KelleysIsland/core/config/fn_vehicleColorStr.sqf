@@ -173,9 +173,17 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+		};
+	};
+	case "ivory_wrx_marked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+			case 2:  {_color = "EMS";};
 		};
 	};
 	case "ivory_wrx_unmarked" :
@@ -210,9 +218,17 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+		};
+	};
+	case "ivory_evox_marked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+			case 2:  {_color = "EMS";};
 		};
 	};
 	case "ivory_isf_unmarked" :
@@ -233,9 +249,17 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+		};
+	};
+	case "ivory_isf_marked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+			case 2:  {_color = "EMS";};
 		};
 	};
 	case "ivory_m3_unmarked" :
@@ -256,9 +280,17 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+		};
+	};
+	case "ivory_m3_marked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+			case 2:  {_color = "EMS";};
 		};
 	};
 	case "ivory_rs4_unmarked" :
@@ -279,9 +311,17 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police Department";};
-			case 1:  {_color = "S.E.R.T.";};
-			case 2:  {_color = "Sheriff's Office";};
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+		};
+	};
+	case "ivory_rs4_marked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Police";};
+			case 1:  {_color = "Sheriff";};
+			case 2:  {_color = "EMS";};
 		};
 	};
 	case "ivory_gt500" :

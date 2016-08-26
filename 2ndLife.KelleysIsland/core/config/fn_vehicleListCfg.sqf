@@ -69,16 +69,13 @@ switch (_shop) do
 			["cl3_murcielago_gold",2250000],
 			["cl3_murcielago_burgundy",2250000],
 			["cl3_murcielago_black",2250000],
-			["cl3_458_white",2320000],
-			["cl3_458_purple",2320000],
-			["cl3_458_navy_blue",2320000],
-			["cl3_458_lime",2320000],
-			["cl3_458_light_yellow",2320000],
-			["cl3_458_light_blue",2320000],
-			["cl3_458_grey",2320000],
-			["cl3_458_gold",2320000],
-			["cl3_458_burgundy",2320000],
-			["cl3_458_black",2320000],
+			["Urbanized_458Ferrari_black",2320000],
+			["Urbanized_458Ferrari_white",2320000],
+			["Urbanized_458Ferrari_blue",2320000],
+			["Urbanized_458Ferrari_pink",2320000],
+			["Urbanized_458Ferrari_orange",2320000],
+			["Urbanized_458Ferrari_darkred",2320000],
+			["Urbanized_458Ferrari_yellow",2320000],
 			["ivory_rev_black",2500000],
 			["ivory_rev_blue",2500000],
 			["ivory_rev_lime",2500000],
@@ -111,6 +108,24 @@ switch (_shop) do
 			["ivory_f1",3550000],
 			["ivory_supra_topsecret",7550000],
 			["ivory_f1_tuned",8550000],
+			["Urbanized_LaFerrari_black",9820000],
+			["Urbanized_LaFerrari_white",9820000],
+			["Urbanized_LaFerrari_blue",9820000],
+			["Urbanized_LaFerrari_purple",9820000],
+			["Urbanized_LaFerrari_pink",9820000],
+			["Urbanized_LaFerrari_orange",9820000],
+			["Urbanized_LaFerrari_darkred",9820000],
+			["Urbanized_LaFerrari_hotpink",9820000],
+			["Urbanized_LaFerrari_yellow",9820000],
+			["Urbanized_LaFerrari_lime",9820000],
+			["Urbanized_LP700_black",10500000],
+			["Urbanized_LP700_white",10500000],
+			["Urbanized_LP700_blue",10500000],
+			["Urbanized_LP700_purple",10500000],
+			["Urbanized_LP700_pink",10500000],
+			["Urbanized_LP700_orange",10500000],
+			["Urbanized_LP700_yellow",10500000],
+			["Urbanized_LP700_lime",10500000],
 			["ivory_veyron",11250000]
 		];
 	};
@@ -140,24 +155,39 @@ switch (_shop) do
 	{
 		if(__GETC__(life_mediclevel) == 1) then
 		{
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["Jonzie_Ambulance",25500];
 		};
 		if(__GETC__(life_mediclevel) == 2) then
 		{
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["ivory_m3_marked",47000];
 		};
 		if(__GETC__(life_mediclevel) == 3) then
 		{
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["ivory_m3_marked",47000];
+			_return pushBack ["ivory_rs4_marked",63000];
 		};
 		if(__GETC__(life_mediclevel) == 4) then
 		{
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["Jonzie_Ambulance",25500];
+			_return pushBack ["ivory_m3_marked",47000];
+			_return pushBack ["ivory_rs4_marked",63000];
+			_return pushBack ["ivory_wrx_marked",67000];
 		};
 		if(__GETC__(life_mediclevel) == 5) then
 		{
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["Jonzie_Ambulance",25500];
 			_return pushBack ["DAR_TahoeEMS",22500];
+			_return pushBack ["ivory_m3_marked",47000];
+			_return pushBack ["ivory_rs4_marked",63000];
+			_return pushBack ["ivory_wrx_marked",67000];
+			_return pushBack ["ivory_evox_marked",76500];
 		};
 	};
 	case "med_air_hs": {
@@ -180,6 +210,15 @@ switch (_shop) do
 			["ivory_evox",314000],
 			["ivory_supra",342000],
 			["ivory_wrx",358000],
+			["Urbanized_CTSV_black",361000],
+			["Urbanized_CTSV_white",361000],
+			["Urbanized_CTSV_blue",361000],
+			["Urbanized_CTSV_purple",361000],
+			["Urbanized_CTSV_pink",361000],
+			["Urbanized_CTSV_orange",361000],
+			["Urbanized_CTSV_yellow",361000],
+			["Urbanized_CTSV_lime",361000],
+			["Urbanized_CTSV_chrome",361000],
 			["cl3_z4_2008_white",375000],
 			["cl3_z4_2008_purple",375000],
 			["cl3_z4_2008_navy_blue",375000],
@@ -283,44 +322,65 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) == 1) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_isf_marked",25000];
 		};
 		if(__GETC__(life_coplevel) == 2) then
 		{
-			_return pushBack ["ivory_isf_slicktop",25000];
-			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_isf_marked",25000];
+			_return pushBack ["ivory_m3_marked",47000];
 		};
 		if(__GETC__(life_coplevel) == 3) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_m3_marked",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
-			_return pushBack ["ivory_evox_slicktop",76500];
+			_return pushBack ["ivory_rs4_marked",63000];
+			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_wrx_marked",67000];
 		};
 		if(__GETC__(life_coplevel) == 4) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_m3_marked",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_rs4_marked",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_wrx_marked",67000];
 			_return pushBack ["ivory_evox_slicktop",76500];
+			_return pushBack ["ivory_evox_marked",76500];
 		};
 		if(__GETC__(life_coplevel) == 5) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_m3_marked",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_rs4_marked",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_wrx_marked",67000];
 			_return pushBack ["ivory_evox_slicktop",76500];
+			_return pushBack ["ivory_evox_marked",76500];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
+			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
+			_return pushBack ["ivory_m3_marked",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
+			_return pushBack ["ivory_rs4_marked",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
+			_return pushBack ["ivory_wrx_marked",67000];
 			_return pushBack ["ivory_evox_slicktop",76500];
+			_return pushBack ["ivory_evox_marked",76500];
 			_return pushBack ["ivory_rev_police",95000];
 			_return pushBack ["ivory_rev_sheriff",95000];
+			_return pushBack ["Urbanized_LP700_P",225000];
 		};
 	};
 	case "fbi_car":
@@ -332,6 +392,14 @@ switch (_shop) do
 			["ivory_rs4_unmarked",75000],
 			["ivory_wrx_unmarked",75000],
 			["ivory_evox_unmarked",75000],
+			["Urbanized_67Mustang_UC1",75000],
+			["Urbanized_67Mustang_UC2",75000],
+			["Urbanized_67Mustang_UC3",75000],
+			["Urbanized_CTSV_UC1",75000],
+			["Urbanized_CTSV_UC2",75000],
+			["Urbanized_CTSV_UC3",75000],
+			["Urbanized_G65_UC1",75000],
+			["Urbanized_G65_UC3",75000],
 			["ivory_rev_fbi",75000],
 			["ivory_rev_fbi2",75000],
 			["ivory_rev_fbi3",75000],
@@ -422,22 +490,38 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["Jonzie_Quattroporte",150000],
-			["Jonzie_30CSL",30000],
-			["Jonzie_Viper",45000],
-			["Jonzie_Datsun_Z432",50000],
-			["Jonzie_STI",73000],
-			["Jonzie_Escalade",40000],
-			["Jonzie_Datsun_510",20000],
-			["Jonzie_Ceed",7500],
-			["Jonzie_Raptor",40000],
-			["Jonzie_Galant",5000],
-			["Jonzie_Corolla",3500],
-			["Jonzie_Mini_Cooper",1000],
-			["Jonzie_Mini_Cooper_R_spec",5000],
-			["Jonzie_XB",30000],
-			["Jonzie_VE",30000],
-			["Jonzie_Ute",30000]
+			["Urbanized_67Mustang_black",800000],
+			["Urbanized_67Mustang_white",800000],
+			["Urbanized_67Mustang_blue",800000],
+			["Urbanized_67Mustang_orange",800000],
+			["Urbanized_67Mustang_darkred",800000],
+			["Urbanized_427_black",835250],
+			["Urbanized_427_white",835250],
+			["Urbanized_427_blue",835250],
+			["Urbanized_427_pink",835250],
+			["Urbanized_427_yellow",835250],
+			["Urbanized_427_red",835250],
+			["Urbanized_427_orange",835250],
+			["Urbanized_G65_black",921300],
+			["Urbanized_G65_white",921300],
+			["Urbanized_G65_blue",921300],
+			["Urbanized_G65_purple",921300],
+			["Urbanized_G65_pink",921300],
+			["Urbanized_G65_orange",921300],
+			["Urbanized_G65_yellow",921300],
+			["Urbanized_G65_lime",921300],
+			["Urbanized_GranTurismo_black",1342000],
+			["Urbanized_GranTurismo_white",1342000],
+			["Urbanized_GranTurismo_blue",1342000],
+			["Urbanized_GranTurismo_purple",1342000],
+			["Urbanized_GranTurismo_orange",1342000],
+			["Urbanized_GranTurismo_darkred",1342000],
+			["Urbanized_GranTurismo_hotpink",1342000],
+			["Urbanized_GranTurismo_yellow",1342000],
+			["Urbanized_GranTurismo_lime",1342000],
+			["Urbanized_LaFerrari_Black_S",13250000],
+			["Urbanized_LaFerrari_Blue_S",13250000],
+			["Urbanized_LaFerrari_Lime_S",13250000]
 		];
 	};	
 };
