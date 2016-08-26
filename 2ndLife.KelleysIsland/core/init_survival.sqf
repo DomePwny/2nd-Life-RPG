@@ -1599,7 +1599,7 @@ fnc_castScript = {
 	_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
 	_vel = velocity _vehicle;
 	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
-	playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 5, 1, 35]; 
+	playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 2.5, 1, 35]; 
 
 
 	sleep 2.5;
