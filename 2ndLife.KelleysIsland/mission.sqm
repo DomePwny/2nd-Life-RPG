@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3827.6558,55.941986,3037.293};
-		dir[]={0.028826034,-0.61015785,0.79190046};
-		up[]={0.022198755,0.79220921,0.60983765};
-		aside[]={0.99945349,7.2660441e-007,-0.036379483};
+		pos[]={3802.1616,80.166183,3047.6533};
+		dir[]={0.099952914,-0.78231335,0.61500323};
+		up[]={0.12550297,0.62283844,0.77221155};
+		aside[]={0.98716414,1.9393337e-007,-0.16043676};
 	};
 };
 binarizationWanted=0;
@@ -1103,7 +1103,7 @@ class Mission
 			position[]={3788.4487,8.0529842e+015,3115.0525};
 			name="med_car_1";
 			type="Empty";
-			angle=278.44928;
+			angle=278.44925;
 			id=147;
 			atlOffset=8.0529842e+015;
 		};
@@ -11518,8 +11518,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -11528,10 +11528,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -11575,8 +11575,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -11585,10 +11585,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -33628,10 +33628,10 @@ class Mission
 		class Item1301
 		{
 			dataType="Marker";
-			position[]={3831.2351,1.2111953e+021,3087.2749};
+			position[]={3830.0071,1.2111953e+021,3087.3896};
 			name="med_air_1";
 			type="Empty";
-			angle=8.9679995;
+			angle=8.9679985;
 			id=4691;
 			atlOffset=1.2111953e+021;
 		};
