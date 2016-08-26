@@ -1964,7 +1964,7 @@
 
 		</Key>
 		<Key ID="STR_Jail_LicenseNOTF">
-			<Original>You have lost the following licenses. Firearms License</Original>
+			<Original>Dein Waffenschein wurde dir entzogen!</Original>
 		</Key>
 		<Key ID="STR_Jail_EscapeNOTF">
 			<Original>%1 has escaped from jail!</Original>

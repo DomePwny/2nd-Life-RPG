@@ -153,10 +153,11 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;	
 
-					if(license_civ_driver OR license_civ_truck OR license_civ_boat) then {
+					if(license_civ_driver OR license_civ_truck OR license_maf_driver OR license_maf_truck) then {
 						license_civ_driver = false;
 						license_civ_truck = false;
-						license_civ_boat = false;
+						license_maf_driver = false;
+						license_maf_truck = false;
 						[2] call SOCK_fnc_updatePartial;
 					};
 				};		
@@ -239,10 +240,12 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;						
 
-					if(license_civ_driver OR license_civ_truck OR license_civ_boat) then {
+					if(license_civ_driver OR license_civ_truck OR license_maf_driver OR license_maf_truck) then {
 						license_civ_driver = false;
 						license_civ_truck = false;
-						license_civ_boat = false;
+						license_maf_driver = false;
+						license_maf_truck = false;
+						[2] call SOCK_fnc_updatePartial;
 					};
 				};
 				uiSleep 30;	

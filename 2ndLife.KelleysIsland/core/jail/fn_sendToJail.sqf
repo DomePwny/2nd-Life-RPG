@@ -17,11 +17,18 @@ A3L_Fnc_OldUniform = Uniform player;
 player addUniform "2ndlife_Prisoner";
 
 [localize "STR_Jail_LicenseNOTF", false] spawn domsg;
-
 if(_bad) then
 {
 	waitUntil {sleep 1; !deadPlayer};
 	uiSleep 1;
+};
+if(license_civ_gun OR license_maf_gun) then 
+{
+	license_civ_driver = false;
+	license_civ_truck = false;
+	license_maf_driver = false;
+	license_maf_truck = false;
+	[2] call SOCK_fnc_updatePartial;
 };
 if(life_inv_methu > 0) then {[false,"methu",life_inv_methu] call life_fnc_handleInv;};
 if(life_inv_methp > 0) then {[false,"methp",life_inv_methp] call life_fnc_handleInv;};

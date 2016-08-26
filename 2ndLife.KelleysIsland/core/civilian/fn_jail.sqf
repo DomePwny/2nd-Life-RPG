@@ -22,7 +22,7 @@ player setPos (getMarkerPos "jail_marker");
 
 if (uniform player == "2ndlife_Prisoner") then 
 {
-	A3L_Fnc_OldUniform = "A3L_Shirt";
+	A3L_Fnc_OldUniform = "2ndLife_sndlife1";
 } 
 else
 {
