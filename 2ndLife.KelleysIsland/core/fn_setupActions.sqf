@@ -182,7 +182,7 @@ switch (playerSide) do
 
 		//Ausweis
 		life_actions pushBack (player addAction["<t color='#FF00FF'>ID Card übergeben</t>",life_fnc_copShowLicense,"",1,false,true,"",'
-		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']);
+		playerSide == east && !isNull cursorTarget && player distance cursorTarget < 2.5 && cursorTarget isKindOf "Man" && alive cursortarget ']);
 		
 	
 		// Beweise zerstören

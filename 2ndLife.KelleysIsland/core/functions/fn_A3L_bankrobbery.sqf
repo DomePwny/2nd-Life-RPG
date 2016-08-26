@@ -39,7 +39,7 @@ _pile setVariable ["robbed", true, true];
 			_veh = "Land_Sleeping_bag_blue_folded_F" createvehicle (getpos player);
 			{_veh disableCollisionWith _x} foreach playableUnits;
 			_veh setVariable ["pickup",false,true];
-			_veh attachto [player, [0.1,-0.18,0], "rfemur"];
+			_veh attachto [player, [-.02,-.006,-0.2], "RightHandMiddle1"];
 			_veh setVectorDirAndUp [[0.5,0.5,0],[-0.5,0.5,0]];
 			_veh setpos (getpos _veh);
 			_id = player addAction ["Drop Bag of Cash", {detach (_this select 3)},_veh];

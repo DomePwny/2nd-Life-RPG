@@ -5,10 +5,10 @@ cgbankvault is the variable name
 */
 
 if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-	["Vault Opening Starting.", false] spawn domsg;
+	["Tresor Tür wird geöffnet...", false] spawn domsg;
 	uiSleep 5;
-	["Vault Opened Engaged.", false] spawn domsg;
 	cgbankvault animate ["d_o_Anim",1];
+	["Tresor Tür geöffnet.", false] spawn domsg;
 } else {
-	["The vault appears to be locked/open already..", false] spawn domsg;
+	["Der Tresor scheint abgeschlossen zu sein oder er ist schon offen.", false] spawn domsg;
 };

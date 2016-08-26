@@ -26,23 +26,23 @@ _startpos = getpos player;
 while {true} do {
 	if(player distance _startpos > 15 || deadPlayer) exitwith { _success = false;};
 	_calcT = _calcT + 1;
-	if(_calcT > 1200) exitwith { _success = true; ["Einnahme beendet!", false] spawn domsg;  };
-	if(_calcT == 60 || _calcT == 120 || _calcT == 180 || _calcT == 240 || _calcT == 300 || _calcT == 360 || _calcT == 420 || _calcT == 480 || _calcT == 540 ) then {
+	if(_calcT > 600) exitwith { _success = true; ["Einnahme beendet!", false] spawn domsg;  };
+	if(_calcT == 60 || _calcT == 120 || _calcT == 180 || _calcT == 240) then {
 		["Die Polizei raidet den Mafia Bunker.", false] remoteExec ["domsg",east];
 		["Saubere Arbeit Kollegen. Seid weiterhin vorsichtig!", false] remoteExec ["domsg",west];		
 
 	};
-	if(_calcT == 900 || _calcT == 960 || _calcT == 1020) then {
+	if(_calcT == 300 || _calcT == 360 || _calcT == 420) then {
 		["Die Polizei ist kurz davor die Waffen und das Geld zu beschlagnahmen.", false] remoteExec ["domsg",east];
 		["Weiter so Kollegen ihr habt es fast geschafft. Seid weiterhin vorsichtig!", false] remoteExec ["domsg",west]; 		
 	};
-	if(_calcT == 1080) then {
-		["Der Mafia bleibt nur noch 120 Sekunden Zeit die Polizei davon abzuhalten die Waffen und das Geld zu beschlagnahmen.", false] remoteExec ["domsg",east];
-		["Es sind nur noch 120 Sekunden übrig. Bleibt wachsam!", false] remoteExec ["domsg",west]; 		
+	if(_calcT == 480) then {
+		["Der Mafia bleibt nur noch 2 Minuten Zeit die Polizei davon abzuhalten die Waffen und das Geld zu beschlagnahmen.", false] remoteExec ["domsg",east];
+		["Es sind nur noch 2 Minuten übrig. Bleibt wachsam!", false] remoteExec ["domsg",west]; 		
 	};
 
 	uisleep 1;
-	hintSilent parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast bereits %1 sekunden gebraucht. <br/> Gebraucht wird insgesamt 1200 sekunden.",_calcT];
+	hintSilent parsetext format["<img size='1' image='icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Du hast bereits %1 sekunden gebraucht. <br/> Gebraucht werd insgesamt 1200 sekunden.",_calcT];
 };
 
 //Client side checks have finished - turn off progress.
