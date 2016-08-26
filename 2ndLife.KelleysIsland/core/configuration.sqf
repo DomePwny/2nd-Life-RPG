@@ -510,6 +510,7 @@ sell_array =
 	["bombfish",1],
 	["fish",350],
 	["meat",450],
+	["meatfish",755],
 	["wood",550]
 ];
 __CONST__(sell_array,sell_array);

@@ -1,6 +1,6 @@
 //if in progress EXIT
 _mafs = (east countSide playableUnits);
-/*if(_mafs < 12) exitwith {["Es sind nicht genug Mafia Leute da! (12)", false] spawn domsg;};*/
+if(_mafs < 12) exitwith {["Es sind nicht genug Mafia Leute da! (12)", false] spawn domsg;};
 
 if(rebelshipment getVariable["progress",FALSE]) exitwith {["Wurde bereits beschlagnahmt!",false] spawn domsg;};
 

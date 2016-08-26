@@ -154,8 +154,6 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 5) then {
 				_temp =  [
-					["RH_PDW",nil,4220],
-					["RH_30Rnd_6x35_mag",nil,220],
 					["RH_uspm",nil,240],
 					["RH_16Rnd_40cal_usp",nil,5]						
 				];

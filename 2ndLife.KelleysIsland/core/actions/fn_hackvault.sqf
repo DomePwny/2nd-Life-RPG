@@ -7,7 +7,7 @@ cgbankvault is the variable name
 private ["_cops"];
 
 _cops = (west countSide playableUnits);
-/*if(_cops < 12) exitWith { ["Es müssen 12 Polizisten im Dienst sein!", false] spawn domsg; };*/
+if(_cops < 12) exitWith { ["Es müssen 12 Polizisten im Dienst sein!", false] spawn domsg; };
 
 _storename = "hi";
 
@@ -41,7 +41,7 @@ if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "d_l_Anim
 
 			playSound3D ["cg_sndimg\sounds\starthack.ogg", player, false, getPosASL player, 1, 1, 225];
 
-			[1,format["911 DISPATCH: KELLEYS HAUPTBANK WIRD AUSGERAUBT!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
+			[1,format["911 DISPATCH: KELLEYS ISLAND HAUPTBANK WIRD AUSGERAUBT!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
 			[1,format["911 EMERGENCY: MENSCHENLEBEN KÖNNTEN BEI DER BANK IN GEFAHR SEIN!",_storename]] remoteExecCall ["life_fnc_broadcast", independent];
 		};
 		if(deadPlayer) exitwith {

@@ -2,14 +2,14 @@
 private ["_timer"];
 _pile = _this select 0;
 if ( cgbankvault animationPhase "d_o_Anim" != 1 ) exitWith {
-	["The vault door is closed, you cant grab cash right now...",30,"red"] spawn domsg;
+	["Der Tresor ist geschlossen du kannst nichts sammeln...",30,"red"] spawn domsg;
 };
 
-if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["You're already grabbing a bag of cash!",30,"red"] spawn domsg;};
-if (count (attachedobjects player) > 1) exitwith {["You are carrying too much.",30,"red"] spawn domsg;}; 
-if (_pile getVariable ["robbed", false]) exitwith {["This stash of cash was recently robbed.",30,"red"] spawn domsg;};
+if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["Du sammelst schon...",30,"red"] spawn domsg;};
+if (count (attachedobjects player) > 1) exitwith {["Du trägst zuviel bei dir.",30,"red"] spawn domsg;}; 
+if (_pile getVariable ["robbed", false]) exitwith {["Dieser haufen wurde bereits geplündert.",30,"red"] spawn domsg;};
 _timer = 5 + (floor(random 5));
-["Grabbing the money.. this will take a few seconds!",30,"blue"] spawn domsg;
+["Sammle das Geld.. das wird ein paar Sekunden dauern.",30,"blue"] spawn domsg;
 _pile setVariable ["robbed", true, true];
 
 [_timer,_pile] spawn {
@@ -35,14 +35,14 @@ _pile setVariable ["robbed", true, true];
 		if (_timer < 1) exitwith {
 			private ["_veh","_id"];
 			[_pile,true] remoteExecCall ["TON_fnc_hideThis",2];
-			["You stashed all the money inside a bag, bring it to the trader!",30,"green"] spawn domsg;
+			["Du hast das Geld in den Sack gepackt, bring es zum Geldwäscher.",30,"green"] spawn domsg;
 			_veh = "Land_Sleeping_bag_blue_folded_F" createvehicle (getpos player);
 			{_veh disableCollisionWith _x} foreach playableUnits;
 			_veh setVariable ["pickup",false,true];
 			_veh attachto [player, [-.02,-.006,-0.2], "RightHandMiddle1"];
 			_veh setVectorDirAndUp [[0.5,0.5,0],[-0.5,0.5,0]];
 			_veh setpos (getpos _veh);
-			_id = player addAction ["Drop Bag of Cash", {detach (_this select 3)},_veh];
+			_id = player addAction ["Geldsack ablegen", {detach (_this select 3)},_veh];
 			
 			[_veh,_id] spawn {
 				_veh = _this select 0;
@@ -61,10 +61,10 @@ _pile setVariable ["robbed", true, true];
 						_veh = "Land_Sleeping_bag_blue_folded_F" createvehicle (getpos player);
 						{_veh disableCollisionWith _x} foreach playableUnits;
 						_veh setVariable ["pickup",false,true];
-						_veh attachto [player, [0.1,-0.18,0], "rfemur"];
+						_veh attachto [player, [-.02,-.006,-0.2], "RightHandMiddle1"];
 						_veh setVectorDirAndUp [[0.5,0.5,0],[-0.5,0.5,0]];
 						_veh setpos (getpos _veh);
-						_id = player addAction ["Drop Bag of Cash", {detach (_this select 3)},_veh];
+						_id = player addAction ["Geldsack ablegen", {detach (_this select 3)},_veh];
 						_suitcaseDeleted = false;
 					};
 					
