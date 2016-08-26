@@ -27,6 +27,19 @@ _itemInfo = switch (_type) do
 	case "meth": {["methu","methp",500,"Packaging Meth"];};
 	case "MDMA": {["MDMAu","MDMAp",500,"Pill Pressing MDMA"];};
 	case "coke": {["cokeu","cokep",500,"Packaging Cocaine"];};
+	case "oilMAF": {["oilu","oilp",120,(localize "STR_Process_Oil")];};
+	case "diamondMAF": {["diamond","diamondc",130,(localize "STR_Process_Diamond")];};
+	case "heroinMAF": {["heroinu","heroinp",170,(localize "STR_Process_Heroin")];};
+	case "copperMAF": {["copperore","copper_r",70,(localize "STR_Process_Copper")];};
+	case "ironMAF": {["ironore","iron_r",110,(localize "STR_Process_Iron")];};
+	case "sandMAF": {["sand","glass",60,(localize "STR_Process_Sand")];};
+	case "saltMAF": {["salt","salt_r",40,(localize "STR_Process_Salt")];};
+	case "marijuanaMAF": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
+	case "medmarijuana": {["medcanna","medmarijuana",120,"Verarbeite Med. Marijuana"];};
+	case "cementMAF": {["rock","cement",30,(localize "STR_Process_Cement")];};
+	case "methMAF": {["methu","methp",500,"Packaging Meth"];};
+	case "MDMAMAF": {["MDMAu","MDMAp",500,"Pill Pressing MDMA"];};
+	case "cokeMAF": {["cokeu","cokep",500,"Packaging Cocaine"];};
 	default {[];};
 };
 

@@ -52,8 +52,6 @@ if(_bad == 1) exitWith { ["You moved to far from the evidence", false] spawn dom
 if(life_interrupted) exitWith {["You interrupted the evidence gathering.", false] spawn domsg};
 
 
-
-
 [format["You have collected evidence and have been paid $5000 for adding %1 to the wanted list for a %2 crime.", name _suspect, _crime], false] spawn domsg;
 
 if(_crime == "187") then {
@@ -71,8 +69,6 @@ if(_crime == "334") then {
 if(_crime == "212") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"212"] remoteExec ["life_fnc_wantedAdd",2];
 };
-
-
 
 ["cash","add",5000] call life_fnc_handleCash;
 deleteVehicle _target;

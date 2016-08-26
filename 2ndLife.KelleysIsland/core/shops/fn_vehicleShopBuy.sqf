@@ -71,7 +71,7 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}}; //Wait?
 		_vehicle allowDamage false;
 		_hs = nearestObject [getMarkerPos _spawnPoint, "Land_HeliPad"];
-		_vehicle setPosATL (_hs modelToWorld [0,-1,4]);
+		_vehicle setPosATL (_hs modelToWorld [0,0,0]);
 		sleep 0.6;
 		waitUntil {!isNil "_vehicle"}; //Wait?
 		_vehicle allowDamage false; //Temp disable damage handling..

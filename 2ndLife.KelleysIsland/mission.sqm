@@ -9920,7 +9920,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilu > 0 && !life_is_processing']; this addAction[""Oil Processing ($1,000)"",life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide == civilian '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilu > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Oil"",life_fnc_processAction,""oilMAF"",0,false,false,"""",' life_inv_oilu > 0 && !life_is_processing && playerSide == east']; this addAction[""Oil Processing ($1,000)"",life_fnc_buyLicense,""oil"",0,false,false,"""",' !license_civ_oil && playerSide == civilian '];";
 					};
 					id=1080;
 					type="C_man_polo_2_F";
@@ -9939,7 +9939,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Iron"",life_fnc_processAction,""iron"",0,false,false,"""",' life_inv_ironore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_iron""] call life_fnc_varToStr,[([""iron""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !license_civ_iron && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_iron""] call life_fnc_varToStr,[([""ironMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""ironMAF"",0,false,false,"""",' !license_maf_iron && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Iron"",life_fnc_processAction,""iron"",0,false,false,"""",' life_inv_ironore > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Iron"",life_fnc_processAction,""ironMAF"",0,false,false,"""",' life_inv_ironore > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_iron""] call life_fnc_varToStr,[([""iron""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !license_civ_iron && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_iron""] call life_fnc_varToStr,[([""ironMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""ironMAF"",0,false,false,"""",' !license_maf_iron && playerSide == east '];";
 					};
 					id=1081;
 					type="C_man_polo_2_F";
@@ -9981,7 +9981,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_marijuana""] call life_fnc_varToStr,[([""marijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_marijuana""] call life_fnc_varToStr,[([""marijuanaMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""marijuanaMAF"",0,false,false,"""",' !license_maf_marijuana && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuanaMAF"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_marijuana""] call life_fnc_varToStr,[([""marijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_marijuana""] call life_fnc_varToStr,[([""marijuanaMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""marijuanaMAF"",0,false,false,"""",' !license_maf_marijuana && playerSide == east '];";
 					};
 					id=1083;
 					type="C_man_polo_3_F";
@@ -10138,7 +10138,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Diamanten verarbeiten"",life_fnc_processAction,""diamond"",0,false,false,"""",' life_inv_diamond > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_diamond""] call life_fnc_varToStr,[([""diamond""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_diamond""] call life_fnc_varToStr,[([""diamondMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""diamondMAF"",0,false,false,"""",' !license_maf_diamond && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Diamanten verarbeiten"",life_fnc_processAction,""diamond"",0,false,false,"""",' life_inv_diamond > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Diamanten verarbeiten"",life_fnc_processAction,""diamondMAF"",0,false,false,"""",' life_inv_diamond > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_diamond""] call life_fnc_varToStr,[([""diamond""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_diamond""] call life_fnc_varToStr,[([""diamondMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""diamondMAF"",0,false,false,"""",' !license_maf_diamond && playerSide == east '];";
 					};
 					id=1107;
 					type="C_man_polo_2_F";
@@ -10215,7 +10215,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Copper"",life_fnc_processAction,""copper"",0,false,false,"""",' life_inv_copperore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_copper""] call life_fnc_varToStr,[([""copper""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !license_civ_copper && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_maf_copper""] call life_fnc_varToStr,[([""copperMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copperMAF"",0,false,false,"""",' !license_maf_copper && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Copper"",life_fnc_processAction,""copper"",0,false,false,"""",' life_inv_copperore > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Copper"",life_fnc_processAction,""copperMAF"",0,false,false,"""",' life_inv_copperore > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_copper""] call life_fnc_varToStr,[([""copper""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !license_civ_copper && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_maf_copper""] call life_fnc_varToStr,[([""copperMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copperMAF"",0,false,false,"""",' !license_maf_copper && playerSide == east '];";
 					};
 					id=1110;
 					type="C_man_polo_2_F";
@@ -10275,7 +10275,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_sand""] call life_fnc_varToStr,[([""sand""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !license_civ_sand && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_sand""] call life_fnc_varToStr,[([""sandMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sandMAF"",0,false,false,"""",' !license_maf_sand && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Sand"",life_fnc_processAction,""sandMAF"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_sand""] call life_fnc_varToStr,[([""sand""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !license_civ_sand && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_sand""] call life_fnc_varToStr,[([""sandMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sandMAF"",0,false,false,"""",' !license_maf_sand && playerSide == east '];";
 					};
 					id=1112;
 					type="C_man_polo_2_F";
@@ -10378,7 +10378,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Rock"",life_fnc_processAction,""cement"",0,false,false,"""",' life_inv_rock > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_cement""] call life_fnc_varToStr,[([""cement""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cement"",0,false,false,"""",' !license_civ_cement && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_cement""] call life_fnc_varToStr,[([""cementMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cementMAF"",0,false,false,"""",' !license_maf_cement && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Process Rock"",life_fnc_processAction,""cement"",0,false,false,"""",' life_inv_rock > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Process Rock"",life_fnc_processAction,""cementMAF"",0,false,false,"""",' life_inv_rock > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_cement""] call life_fnc_varToStr,[([""cement""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cement"",0,false,false,"""",' !license_civ_cement && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_cement""] call life_fnc_varToStr,[([""cementMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cementMAF"",0,false,false,"""",' !license_maf_cement && playerSide == east '];";
 					};
 					id=1125;
 					type="C_man_polo_2_F";
@@ -10641,7 +10641,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Press MDMA"",life_fnc_processAction,""MDMA"",0,false,false,"""",' life_inv_MDMAu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_MDMA""] call life_fnc_varToStr,[([""MDMA""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMA"",0,false,false,"""",' !license_civ_MDMA && playerSide == civilian '];this addAction[format[""%1 ($%2)"",[""license_maf_MDMA""] call life_fnc_varToStr,[([""MDMAMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMAMAF"",0,false,false,"""",' !license_maf_MDMA && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Press MDMA"",life_fnc_processAction,""MDMA"",0,false,false,"""",' life_inv_MDMAu > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Press MDMA"",life_fnc_processAction,""MDMAMAF"",0,false,false,"""",' life_inv_MDMAu > 0 && !life_is_processing && playerSide == east'];this addAction[format[""%1 ($%2)"",[""license_civ_MDMA""] call life_fnc_varToStr,[([""MDMA""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMA"",0,false,false,"""",' !license_civ_MDMA && playerSide == civilian '];this addAction[format[""%1 ($%2)"",[""license_maf_MDMA""] call life_fnc_varToStr,[([""MDMAMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""MDMAMAF"",0,false,false,"""",' !license_maf_MDMA && playerSide == east '];";
 					};
 					id=1139;
 					type="C_man_polo_2_F_afro";
@@ -11236,7 +11236,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Meth kochen"",life_fnc_processAction,""meth"",0,false,false,"""",' life_inv_methu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_meth""] call life_fnc_varToStr,[([""meth""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""meth"",0,false,false,"""",' !license_civ_meth && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_meth""] call life_fnc_varToStr,[([""methMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""methMAF"",0,false,false,"""",' !license_maf_meth && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Meth kochen"",life_fnc_processAction,""meth"",0,false,false,"""",' life_inv_methu > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Meth kochen"",life_fnc_processAction,""methMAF"",0,false,false,"""",' life_inv_methu > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_meth""] call life_fnc_varToStr,[([""meth""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""meth"",0,false,false,"""",' !license_civ_meth && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_meth""] call life_fnc_varToStr,[([""methMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""methMAF"",0,false,false,"""",' !license_maf_meth && playerSide == east '];";
 					};
 					id=1176;
 					type="C_man_polo_2_F_afro";
@@ -11666,7 +11666,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false; this allowDamage false; this addAction[""Packe Cocaine"",life_fnc_processAction,""coke"",0,false,false,"""",' life_inv_cokeu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""coke""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""coke"",0,false,false,"""",' !license_civ_coke && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""cokeMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cokeMAF"",0,false,false,"""",' !license_maf_coke && playerSide == east '];";
+						init=" this enableSimulation false; this allowDamage false; this addAction[""Packe Cocaine"",life_fnc_processAction,""coke"",0,false,false,"""",' life_inv_cokeu > 0 && !life_is_processing && playerSide == civilian']; this addAction[""Packe Cocaine"",life_fnc_processAction,""cokeMAF"",0,false,false,"""",' life_inv_cokeu > 0 && !life_is_processing && playerSide == east']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""coke""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""coke"",0,false,false,"""",' !license_civ_coke && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_coke""] call life_fnc_varToStr,[([""cokeMAF""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cokeMAF"",0,false,false,"""",' !license_maf_coke && playerSide == east '];";
 					};
 					id=1198;
 					type="C_man_polo_2_F_afro";
