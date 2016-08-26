@@ -1,745 +1,1521 @@
-if (isServer) then {
-
-
-_vehicle_3 = objNull;
-
-_this = createVehicle ["A3L_Store_General", [8386.4043, 6369.6646, 0.045718066], [], 0, "CAN_COLLIDE"];
-_vehicle_3 = _this;
-_this setDir 291.0871;
-_this setPos [8386.4043, 6369.6646, 0.045718066];
-_this allowdamage false;
-_this enableSimulationGlobal false;
-
-
-_vehicle_4 = objNull;
-
-_this = createVehicle ["A3L_Store_General", [6624.1646, 3760.3296, 0.26592425], [], 0, "CAN_COLLIDE"];
-_vehicle_4 = _this;
-_this setDir -8.68256;
-_this setPos [6624.1646, 3760.3296, 0.26592425];
-_this allowdamage false;
-_this enableSimulationGlobal false;
-
-
-_vehicle_5 = objNull;
-
-_this = createVehicle ["A3L_Store_Clothing", [6617.4116, 3759.2253, 0.048869777], [], 0, "CAN_COLLIDE"];
-_vehicle_5 = _this;
-_this setDir -8.6811638;
-_this setPos [6617.4116, 3759.2253, 0.048869777];
-_this allowdamage false;
-_this enableSimulationGlobal false;
-
-
-_vehicle_6 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_medium_F", [6624.5874, 3764.3647, -3.4093857e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_6 = _this;
-_this setPos [6624.5874, 3764.3647, -3.4093857e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_7 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6620.6191, 3759.718, -7.8678131e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_7 = _this;
-_this setPos [6620.6191, 3759.718, -7.8678131e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_8 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6615.2539, 3757.8108, 2.2649765e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_8 = _this;
-_this setPos [6615.2539, 3757.8108, 2.2649765e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_9 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6628.9551, 3760.8931, 4.0531158e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_9 = _this;
-_this setPos [6628.9551, 3760.8931, 4.0531158e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_10 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6656.3809, 3857.8093, 6.0677528e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_10 = _this;
-_this setPos [6656.3809, 3857.8093, 6.0677528e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_12 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6659.9409, 3853.2993, 1.7881393e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_12 = _this;
-_this setPos [6659.9409, 3853.2993, 1.7881393e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_14 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6663.9097, 3847.8237, -7.6293945e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_14 = _this;
-_this setPos [6663.9097, 3847.8237, -7.6293945e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_16 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6664.1787, 3838.959, -2.2292137e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_16 = _this;
-_this setPos [6664.1787, 3838.959, -2.2292137e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_18 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6665.7173, 3831.8857, -8.8214874e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_18 = _this;
-_this setPos [6665.7173, 3831.8857, -8.8214874e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_20 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6666.0488, 3859.1655, -2.3603439e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_20 = _this;
-_this setPos [6666.0488, 3859.1655, -2.3603439e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_22 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6670.3789, 3854.4761, 8.3446503e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_22 = _this;
-_this setPos [6670.3789, 3854.4761, 8.3446503e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_24 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6674.6201, 3850.7048, 4.0531158e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_24 = _this;
-_this setPos [6674.6201, 3850.7048, 4.0531158e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_26 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6671.9009, 3845.1709, -4.7683716e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_26 = _this;
-_this setPos [6671.9009, 3845.1709, -4.7683716e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_28 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6674.4238, 3838.8743, 1.0728836e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_28 = _this;
-_this setPos [6674.4238, 3838.8743, 1.0728836e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_30 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6670.96, 3836.8813, -5.364418e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_30 = _this;
-_this setPos [6670.96, 3836.8813, -5.364418e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_32 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6678.0811, 3853.6262, -2.3365021e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_32 = _this;
-_this setPos [6678.0811, 3853.6262, -2.3365021e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_34 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6682.4028, 3850.4644, 3.1590462e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_34 = _this;
-_this setPos [6682.4028, 3850.4644, 3.1590462e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_36 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6681.9004, 3843.2808, -5.0544739e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_36 = _this;
-_this setPos [6681.9004, 3843.2808, -5.0544739e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_38 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6682.1831, 3837.1167, 7.7486038e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_38 = _this;
-_this setPos [6682.1831, 3837.1167, 7.7486038e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_40 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6678.7075, 3832.7505, 7.390976e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_40 = _this;
-_this setPos [6678.7075, 3832.7505, 7.390976e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_42 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6673.167, 3829.9836, -1.2278557e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_42 = _this;
-_this setPos [6673.167, 3829.9836, -1.2278557e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_44 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6670.3359, 3824.1602, -1.5497208e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_44 = _this;
-_this setPos [6670.3359, 3824.1602, -1.5497208e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_46 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6666.811, 3820.4995, 5.6266785e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_46 = _this;
-_this setPos [6666.811, 3820.4995, 5.6266785e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_48 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6663.0371, 3827.5811, 5.4121017e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_48 = _this;
-_this setPos [6663.0371, 3827.5811, 5.4121017e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_50 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6658.1445, 3823.2585, 6.0796738e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_50 = _this;
-_this setPos [6658.1445, 3823.2585, 6.0796738e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_52 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6659.5005, 3816.7205, -4.3392181e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_52 = _this;
-_this setPos [6659.5005, 3816.7205, -4.3392181e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_54 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6654.2847, 3814.6514, 2.0265579e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_54 = _this;
-_this setPos [6654.2847, 3814.6514, 2.0265579e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_56 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6652.0361, 3820.5439, -4.1246414e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_56 = _this;
-_this setPos [6652.0361, 3820.5439, -4.1246414e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_58 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6645.4775, 3819.1172, -4.8995018e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_58 = _this;
-_this setPos [6645.4775, 3819.1172, -4.8995018e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_60 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6645.3242, 3811.3916, -3.3378601e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_60 = _this;
-_this setPos [6645.3242, 3811.3916, -3.3378601e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_62 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6639.814, 3808.7256, 2.8848648e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_62 = _this;
-_this setPos [6639.814, 3808.7256, 2.8848648e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_64 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6638.4839, 3815.6826, -3.349781e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_64 = _this;
-_this setPos [6638.4839, 3815.6826, -3.349781e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_66 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6635.1489, 3804.9404, -7.390976e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_66 = _this;
-_this setPos [6635.1489, 3804.9404, -7.390976e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_68 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6632.5259, 3811.0627, -9.059906e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_68 = _this;
-_this setPos [6632.5259, 3811.0627, -9.059906e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_70 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6631.5244, 3816.9329, -7.5101852e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_70 = _this;
-_this setPos [6631.5244, 3816.9329, -7.5101852e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_72 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6624.3032, 3818.6602, 4.696846e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_72 = _this;
-_this setPos [6624.3032, 3818.6602, 4.696846e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_74 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6624.6943, 3811.1992, -6.4373016e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_74 = _this;
-_this setPos [6624.6943, 3811.1992, -6.4373016e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_76 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6626.4292, 3805.1753, 1.8835068e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_76 = _this;
-_this setPos [6626.4292, 3805.1753, 1.8835068e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_78 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6619.0273, 3807.1375, 1.0967255e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_78 = _this;
-_this setPos [6619.0273, 3807.1375, 1.0967255e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_80 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6618.5972, 3814.0134, 1.5974045e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_80 = _this;
-_this setPos [6618.5972, 3814.0134, 1.5974045e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_82 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6616.3384, 3819.1963, -1.2874603e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_82 = _this;
-_this setPos [6616.3384, 3819.1963, -1.2874603e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_84 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6609.9556, 3819.5857, -4.7683716e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_84 = _this;
-_this setPos [6609.9556, 3819.5857, -4.7683716e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_86 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6609.8184, 3812.8184, -1.2874603e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_86 = _this;
-_this setPos [6609.8184, 3812.8184, -1.2874603e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_88 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6611.4702, 3807.4651, -1.8835068e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_88 = _this;
-_this setPos [6611.4702, 3807.4651, -1.8835068e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_90 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6604.6797, 3819.9722, -1.4305115e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_90 = _this;
-_this setPos [6604.6797, 3819.9722, -1.4305115e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_92 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6603.1294, 3813.8127, -2.0980835e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_92 = _this;
-_this setPos [6603.1294, 3813.8127, -2.0980835e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_94 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6598.9541, 3819.6467, -9.5367432e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_94 = _this;
-_this setPos [6598.9541, 3819.6467, -9.5367432e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_96 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6590.2476, 3822.5, -5.0365925e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_96 = _this;
-_this setPos [6590.2476, 3822.5, -5.0365925e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_98 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6585.2949, 3826.8672, -0.00029706955], [], 0, "CAN_COLLIDE"];
-_vehicle_98 = _this;
-_this setPos [6585.2949, 3826.8672, -0.00029706955];
-_this enableSimulationGlobal false;
-
-
-_vehicle_100 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6581.7329, 3829.2607, -0.00030231476], [], 0, "CAN_COLLIDE"];
-_vehicle_100 = _this;
-_this setPos [6581.7329, 3829.2607, -0.00030231476];
-_this enableSimulationGlobal false;
-
-
-_vehicle_102 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6466.3413, 3792.0088, 7.1167946e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_102 = _this;
-_this setPos [6466.3413, 3792.0088, 7.1167946e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_104 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6459.8247, 3790.8159, 0.00012731552], [], 0, "CAN_COLLIDE"];
-_vehicle_104 = _this;
-_this setPos [6459.8247, 3790.8159, 0.00012731552];
-_this enableSimulationGlobal false;
-
-
-_vehicle_106 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6454.1914, 3787.9453, -1.8358231e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_106 = _this;
-_this setPos [6454.1914, 3787.9453, -1.8358231e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_108 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6451.9224, 3793.1184, 1.9311905e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_108 = _this;
-_this setPos [6451.9224, 3793.1184, 1.9311905e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_110 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6447.5396, 3784.3623, 1.9788742e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_110 = _this;
-_this setPos [6447.5396, 3784.3623, 1.9788742e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_112 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6445.019, 3789.1133, 4.3869019e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_112 = _this;
-_this setPos [6445.019, 3789.1133, 4.3869019e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_114 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6445.2036, 3795.0176, 0.00013661385], [], 0, "CAN_COLLIDE"];
-_vehicle_114 = _this;
-_this setPos [6445.2036, 3795.0176, 0.00013661385];
-_this enableSimulationGlobal false;
-
-
-_vehicle_116 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6438.9531, 3794.2334, 2.0384789e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_116 = _this;
-_this setPos [6438.9531, 3794.2334, 2.0384789e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_118 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6437.166, 3786.2441, -6.6757202e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_118 = _this;
-_this setPos [6437.166, 3786.2441, -6.6757202e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_120 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6439.2944, 3780.9905, -1.2397766e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_120 = _this;
-_this setPos [6439.2944, 3780.9905, -1.2397766e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_122 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6430.2651, 3793.1772, 4.4465065e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_122 = _this;
-_this setPos [6430.2651, 3793.1772, 4.4465065e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_124 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6428.2861, 3785.0442, -2.9325485e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_124 = _this;
-_this setPos [6428.2861, 3785.0442, -2.9325485e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_126 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6421.6328, 3790.4619, 8.9287758e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_126 = _this;
-_this setPos [6421.6328, 3790.4619, 8.9287758e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_128 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6415.2759, 3787.0996, -4.6133995e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_128 = _this;
-_this setPos [6415.2759, 3787.0996, -4.6133995e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_130 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6421.9375, 3798.7632, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_130 = _this;
-_this setPos [6421.9375, 3798.7632, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_132 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6429.8408, 3800.4436, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_132 = _this;
-_this setPos [6429.8408, 3800.4436, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_134 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6438.7427, 3801.4521, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_134 = _this;
-_this setPos [6438.7427, 3801.4521, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_136 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6445.0737, 3801.1331, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_136 = _this;
-_this setPos [6445.0737, 3801.1331, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_138 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6451.7002, 3800.946, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_138 = _this;
-_this setPos [6451.7002, 3800.946, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_140 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6459.2764, 3799.9585, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_140 = _this;
-_this setPos [6459.2764, 3799.9585, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_142 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6487.269, 3794.4819, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_142 = _this;
-_this setPos [6487.269, 3794.4819, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_144 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6586.6768, 3830.4746, 0.00033278571], [], 0, "CAN_COLLIDE"];
-_vehicle_144 = _this;
-_this setPos [6586.6768, 3830.4746, 0.00033278571];
-_this enableSimulationGlobal false;
-
-
-_vehicle_146 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6592.2764, 3827.8379, 0.00031367585], [], 0, "CAN_COLLIDE"];
-_vehicle_146 = _this;
-_this setPos [6592.2764, 3827.8379, 0.00031367585];
-_this enableSimulationGlobal false;
-
-
-_vehicle_148 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6601.2549, 3825.7373, 2.2716215e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_148 = _this;
-_this setPos [6601.2549, 3825.7373, 2.2716215e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_150 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6610.4639, 3825.6279, -0.00012682282], [], 0, "CAN_COLLIDE"];
-_vehicle_150 = _this;
-_this setPos [6610.4639, 3825.6279, -0.00012682282];
-_this enableSimulationGlobal false;
-
-
-_vehicle_152 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6619.5986, 3825.7959, -1.9748772e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_152 = _this;
-_this setPos [6619.5986, 3825.7959, -1.9748772e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_154 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6628.5981, 3825.3962, 1.1219812e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_154 = _this;
-_this setPos [6628.5981, 3825.3962, 1.1219812e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_156 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6639.373, 3825.2336, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_156 = _this;
-_this setPos [6639.373, 3825.2336, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_158 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6634.7261, 3826.0378, 2.5429e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_158 = _this;
-_this setPos [6634.7261, 3826.0378, 2.5429e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_160 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6646.7192, 3827.907, -9.5367432e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_160 = _this;
-_this setPos [6646.7192, 3827.907, -9.5367432e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_162 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6651.5132, 3830.5054, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_162 = _this;
-_this setPos [6651.5132, 3830.5054, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_164 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6655.5732, 3832.2017, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_164 = _this;
-_this setPos [6655.5732, 3832.2017, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_166 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6656.8657, 3836.6282, 0], [], 0, "CAN_COLLIDE"];
-_vehicle_166 = _this;
-_this setPos [6656.8657, 3836.6282, 0];
-_this enableSimulationGlobal false;
-
-
-_vehicle_168 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6654.9438, 3842.5129, 9.5367432e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_168 = _this;
-_this setPos [6654.9438, 3842.5129, 9.5367432e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_170 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6655.0659, 3849.8027, -5.8699779e-006], [], 0, "CAN_COLLIDE"];
-_vehicle_170 = _this;
-_this setPos [6655.0659, 3849.8027, -5.8699779e-006];
-_this enableSimulationGlobal false;
-
-
-_vehicle_172 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6650.4053, 3855.6724, 4.3887567e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_172 = _this;
-_this setPos [6650.4053, 3855.6724, 4.3887567e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_174 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6646.5396, 3859.0623, 3.8385391e-005], [], 0, "CAN_COLLIDE"];
-_vehicle_174 = _this;
-_this setPos [6646.5396, 3859.0623, 3.8385391e-005];
-_this enableSimulationGlobal false;
-
-
-_vehicle_176 = objNull;
-
-_this = createVehicle ["Land_ClutterCutter_large_F", [6642.6333, 3860.969, 5.829562e-007], [], 0, "CAN_COLLIDE"];
-_vehicle_176 = _this;
-_this setPos [6642.6333, 3860.969, 5.829562e-007];
-_this enableSimulationGlobal false;
-
-
-_vehicle_178 = objNull;
-
-nightclub = createVehicle ["Land_A3L_Nightclub", [8738.5215, 6757.9897, 8.8691168], [], 0, "CAN_COLLIDE"];
-nightclub setDir -170.42734;
-nightclub setPos [8738.5215, 6757.9897, 8.8691168];
-nightclub allowdamage false;
-publicvariable "nightclub";
+private ["_obj","_dat","_cString","_adString"];
+
+_obj = objNull;
+_dat = [];
+_adString = "CAN_COLLIDE";
+_cString = 
+{
+	_obj = createVehicle [(_dat select 0), [0,0,0], [], 0, _adString];
+	if((_dat select 4) == 0) then {_obj enableSimulation false};
+	if((_dat select 8) == 0) then {_obj allowDamage false};
+	_obj setdir (_dat select 2);
+	if((_dat select 3) == -100) then
+	{
+		_obj setposATL (call compile (_dat select 1));
+		if((_dat select 5) == 0) then {_obj setVectorUp [0,0,1]} else {_obj setVectorUp (surfacenormal (getPosATL _obj))};
+	}
+	else
+	{
+		_obj setposworld [((call compile (_dat select 1)) select 0),((call compile (_dat select 1)) select 1),(_dat select 3)];
+		[_obj,((_dat select 7) select 0),((_dat select 7) select 1)] call BIS_fnc_setPitchBank;
+	};
+	if(count (_dat select 6) > 0) then {{call _x} foreach (_dat select 6)};
 };
+
+_dat = ["xcam_b_NeriumO2s_white_F","[3532.404297,3136.878174,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3534.480713,3137.131348,-0.313998]",188.84,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3531.275146,3136.752686,-0.314001]",190.908,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3536.867676,3138.948486,-0.313998]",103.356,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3531.436035,3136.363037,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3532.884766,3136.195801,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3532.0812988,3135.971436,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3538.437988,3141.790283,-0.314]",190.525,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3534.396729,3136.0419922,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3536.135742,3136.964844,3.62396e-005]",279.654,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.289307,3139.875732,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3537.476563,3138.239258,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.0339355,3139.143066,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.713379,3141.0327148,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3532.892334,3135.372803,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3531.594238,3135.343994,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3534.808594,3135.687256,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3539.0927734,3141.187256,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3534.979492,3135.655029,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3537.384766,3137.217041,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3536.469238,3136.355713,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3539.534424,3140.22998,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3530.934082,3134.737549,-0.314]",98.5111,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3532.550293,3134.336914,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.0476074,3136.892334,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3533.0969238,3134.321045,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.0239258,3140.947266,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3538.966064,3137.846436,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3533.907471,3134.24707,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3539.924805,3139.671631,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3536.940918,3135.368164,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3540.47876,3141.37915,-0.314]",283.651,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3539.704346,3138.521729,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3525.30835,3137.866211,-0.314]",279.356,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.175781,3135.911133,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3535.387451,3134.0612793,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3525.175537,3136.980469,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3533.756592,3133.408691,-0.313998]",188.222,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3539.256836,3136.542969,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3538.335205,3135.471924,-0.000340462]",357.936,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3524.527588,3137.651611,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3536.744629,3133.97583,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3540.749023,3138.195801,-0.314]",101.249,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.994385,3135.566895,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3524.124268,3137.55127,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3524.222412,3137.304199,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3523.613037,3138.036377,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3539.0256348,3135.020752,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3535.914307,3133.0871582,-0.313998]",188.222,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3537.838623,3133.960693,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3539.938965,3148.290283,-0.314]",101.313,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3524.932129,3135.824463,-0.314]",12.4801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3524.236084,3136.411621,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3540.380127,3136.295898,-0.313998]",100.319,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3522.435059,3139.384033,-0.313998]",192.186,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.902344,3133.99585,4.76837e-006]",76.0682,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.465088,3138.37915,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3523.923584,3135.893799,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.553955,3148.366699,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.0673828,3149.420898,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3539.0671387,3133.601563,-0.314001]",5.62723,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.943848,3136.54834,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.771729,3138.639404,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3522.12207,3137.588379,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.368164,3148.471436,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3541.945557,3147.928467,-0.314]",8.9174,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.208496,3149.163086,-0.000340462]",356.168,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3520.650635,3141.671875,-0.313998]",275.553,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3520.62915,3140.311035,3.62396e-005]",276.813,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.174316,3150.522705,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3529.656982,3130.458008,-0.314]",189.773,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.221191,3143.287109,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3539.563721,3151.516846,-0.313998]",99.279,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3532.374023,3129.926758,3.62396e-005]",277.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3532.131592,3130.0322266,-0.314001]",190.401,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.642822,3138.812988,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.547119,3136.682617,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.0300293,3141.962158,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.786377,3149.317139,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.120117,3144.381592,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.994385,3149.301514,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3520.674316,3138.0551758,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3520.121338,3144.929688,-0.314001]",279.738,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.839844,3141.337402,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.92334,3144.820313,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3533.976074,3129.609131,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.731689,3140.54248,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3521.754883,3135.489014,-0.313998]",190.08,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3525.735352,3131.14502,-0.314]",189.773,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.343506,3151.681641,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3544.633545,3139.286865,3.62396e-005]",277.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.858887,3138.944092,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3544.733154,3139.312988,-0.314001]",282.402,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.564453,3150.669189,-0.000340462]",356.168,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3542.112793,3150.0717773,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3544.441406,3137.857178,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.602295,3139.249512,5.72205e-006]",4.89461,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.498291,3136.773193,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3545.211182,3141.741211,-0.313998]",100.517,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3535.323242,3129.392334,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3537.786865,3153.9021,-0.314]",13.7617,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.134521,3144.421143,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3544.13916,3136.356445,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.123779,3144.947266,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.827148,3141.940674,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3518.907471,3144.0744629,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.828125,3144.125,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3518.715576,3142.790771,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.804688,3140.772705,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3518.866699,3140.052002,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.757813,3137.0427246,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3519.147217,3138.597168,-0.000340462]",355.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3536.654053,3129.143799,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.405518,3151.969238,-0.000340462]",356.168,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3543.878418,3134.951172,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3534.949463,3155.477539,-0.314]",100.931,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.747803,3152.63623,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3539.821289,3153.33252,3.62396e-005]",277.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3537.258789,3154.748535,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3543.444336,3133.916016,3.62396e-005]",277.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.303711,3143.806152,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3537.936035,3129.231934,3.62396e-005]",277.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.391113,3144.8479,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.791016,3154.235352,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3521.721191,3151.393555,-0.314]",10.0004,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3543.390381,3133.519043,-0.314001]",280.815,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3543.296875,3150.744873,-0.313998]",98.6281,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.097168,3143.210449,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3519.851074,3135.812988,-0.314]",189.15,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3545.918457,3145.626953,-0.313998]",100.517,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.974365,3152.19751,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.944092,3142.316162,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.307617,3139.130859,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3538.239014,3129.124268,-0.314001]",190.401,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.831787,3137.236816,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3518.0949707,3145.227783,-0.314]",187.342,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3535.584229,3155.888916,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3536.788086,3155.539063,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3536.428223,3155.762451,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.71167,3141.468506,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.496826,3153.0100098,-0.000340462]",356.168,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.304688,3155.0859375,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3543.200195,3132.545898,-0.314001]",280.815,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3521.805176,3131.829346,-0.314]",189.773,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.181885,3154.1521,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3535.520996,3156.210693,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3542.67041,3152.315186,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.544434,3152.264893,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.982178,3138.258789,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.496826,3140.530273,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3528.839844,3156.501953,-0.313999]",10.3824,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.533691,3139.515625,4.76837e-006]",73.2273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.96582,3152.927734,5.72205e-006]",5.96784,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3523.269531,3154.246094,-0.313998]",282.831,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.793945,3137.604248,4.76837e-006]",73.3536,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.313965,3151.49292,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3542.283691,3153.295166,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.498047,3138.378174,4.76837e-006]",73.3536,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.0327148,3152.368408,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.657715,3153.900146,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.126465,3153.526123,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.83667,3142.409912,-0.313998]",277.179,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.188965,3154.416748,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3527.73584,3156.706299,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.661133,3137.181152,4.76837e-006]",73.3536,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3537.36084,3156.490967,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3538.688965,3155.961182,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3525.664551,3156.11792,-0.313999]",8.29098,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3539.720215,3155.486084,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3540.376465,3155.101807,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3535.876465,3157.0275879,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3536.376465,3156.937256,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3521.26709,3153.173096,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3541.563965,3154.463623,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3528.182129,3157.126221,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3543.664551,3152.873779,-0.313998]",98.7544,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3535.428223,3157.516846,-0.314]",194.182,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3519.719238,3151.820557,-0.314001]",103.252,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.29834,3154.33374,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3540.662598,3128.657471,-0.314]",190.826,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.532715,3154.702393,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.55957,3140.251465,-0.313998]",277.179,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3536.359863,3157.255127,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3537.438965,3156.955811,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3542.750488,3130.0737305,-0.313998]",100.643,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.17334,3152.511475,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3528.637207,3157.576904,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.36084,3155.705322,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3538.633301,3156.613037,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3517.131348,3137.105957,-0.314001]",94.5837,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3526.813965,3157.145752,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3546.648926,3149.389893,-0.313998]",98.7544,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.70459,3155.693604,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3540.858887,3155.636963,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3542.575684,3154.485596,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3528.720215,3157.920166,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.20459,3153.355225,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3523.883301,3156.412842,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3527.876465,3158.0744629,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3521.282715,3154.624268,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3529.211426,3158.529053,-0.314]",278.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.813965,3155.833252,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3542.293457,3128.558838,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3525.17334,3157.172119,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3538.578613,3157.741943,-0.314]",11.334,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3522.89209,3156.274658,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.64209,3155.411377,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3542.578613,3155.55835,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3517.837402,3132.545654,-0.314]",189.899,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3526.813965,3158.303955,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3528.23584,3158.74292,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3524.39209,3157.381104,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3527.470215,3158.591064,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3541.965332,3156.241455,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3540.513184,3157.375244,-0.313999]",10.8513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.438965,3154.882568,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3521.251465,3155.799561,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3543.185059,3156.0324707,-0.314]",276.16,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3525.126465,3158.387939,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3523.126465,3157.440186,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3526.11084,3158.843506,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.532715,3155.644287,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3519.42627,3155.00268555,-0.313998]",280.851,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3514.638184,3146.888916,-0.314001]",280.658,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3521.29834,3156.599854,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3513.896973,3142.966553,-0.314002]",280.658,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3525.188965,3159.105713,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3526.376465,3159.8396,-0.313998]",7.82361,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3547.248535,3153.251221,-0.313998]",98.7544,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3521.795654,3156.928711,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3515.321777,3150.766846,-0.313999]",279.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3520.532715,3157.0534668,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3523.501465,3158.936768,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3513.179199,3139.143799,-0.314001]",280.658,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3522.92334,3158.925537,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3519.777832,3156.900146,-0.313998]",279.921,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3534.528809,3161.372803,-0.313999]",10.2734,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3524.14209,3159.654053,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3538.450684,3160.674072,-0.313999]",9.91845,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3522.17334,3158.826904,-0.000340462]",356.294,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3524.222168,3160.136475,-0.313998]",7.82361,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.11084,3158.580322,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3521.303711,3159.391602,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3523.0795898,3159.778076,5.72205e-006]",6.0941,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3530.669434,3162.0754395,-0.313999]",10.2734,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3547.532715,3155.150635,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3513.939941,3133.198975,-0.314001]",9.33136,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3515.998535,3154.731689,-0.313999]",279.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3542.293945,3160.0078125,-0.313999]",9.91845,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3521.015625,3159.578613,-0.313999]",185.229,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3512.476074,3135.232666,-0.314]",279.636,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3527.30542,3162.68042,-0.313999]",10.2734,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3543.94873,3159.81958,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3512.262207,3133.633545,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.649902,3158.586182,-0.313999]",279.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3516.809082,3160.364502,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3525.593506,3163.201904,3.62396e-005]",278.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3547.886475,3157.252441,-0.313998]",100.643,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3546.245361,3159.316895,-0.313999]",9.91845,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3524.889893,3172.774414,-0.313999]",98.6572,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3524.060791,3167.37207,-0.313999]",98.6572,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3524.666504,3171.349121,-0.313999]",98.6572,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3536.216797,3175.679932,-0.313999]",188.657,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3540.128174,3175.0842285,-0.313999]",188.657,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3543.301514,3175.521484,-0.313999]",8.14567,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3544.6604,3178.476563,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3545.227783,3182.440674,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3545.782959,3186.31958,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3545.337158,3189.465332,-0.313999]",278.146,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3542.334229,3190.813477,-0.313999]",368.146,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3538.358154,3191.382568,-0.313999]",368.146,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3534.581299,3191.923096,-0.313999]",8.14567,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3531.125244,3196.467773,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3531.603271,3193.288574,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3526.352539,3176.284424,-0.313999]",188.405,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3531.682617,3200.364014,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3532.2146,3203.924561,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3516.42749,3207.261475,-0.314001]",105.807,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.398682,3208.396973,4.76837e-006]",-9.03273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.829346,3207.388428,4.76837e-006]",-9.03273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.201904,3210.519043,-0.313998]",101.088,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3515.514404,3201.260498,-0.314]",187.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.181641,3208.0935059,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3516.930176,3208.888916,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3514.0456543,3212.7771,-0.313998]",11.4368,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.824951,3207.627441,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.755127,3200.487549,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.404297,3201.157715,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.032959,3210.404785,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3511.153076,3214.251465,-0.314]",98.6059,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.752686,3208.923828,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3516.0527344,3212.112305,3.62396e-005]",187.735,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3518.453125,3206.988037,-0.314]",6.59195,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.868896,3200.0876465,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3513.0712891,3214.166992,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.401367,3199.560547,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3516.112305,3200.194336,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.900635,3214.552002,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.734131,3213.40918,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3513.812012,3213.936768,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3517.373779,3210.828613,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.400879,3211.000244141,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3514.0932617,3198.338379,-0.313998]",100.267,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.733887,3214.92627,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.799561,3208.616943,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.650391,3212.466309,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.758789,3213.351807,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.00390625,3200.238037,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3517.567383,3200.953125,-0.314]",-79.439,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.796875,3209.163818,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.0969238,3198.4021,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.84375,3209.97583,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3512.675537,3215.399414,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.531982,3199.942627,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.860107,3197.700195,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.942139,3215.864746,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.0610352,3214.0253906,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3511.867188,3196.478027,-0.313998]",183.634,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.910889,3198.941895,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3515.898682,3198.0854492,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3515.0766602,3214.911621,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3513.220703,3215.808594,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3517.621338,3212.970459,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3513.227783,3196.502441,3.62396e-005]",184.894,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3511.495361,3216.305176,-0.314]",191.732,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3510.26709,3195.995117,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3519.686523,3209.853516,-0.313998]",96.3029,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.979736,3211.46167,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.377441,3215.626709,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3509.17627,3195.857422,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.597168,3195.8479,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3508.628662,3195.839844,-0.314001]",187.819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.0375977,3214.186279,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3508.744629,3195.645752,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.724609,3196.565918,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3512.228516,3195.678955,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3504.606445,3215.53418,-0.314]",9.39385,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.823242,3197.541016,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3515.481201,3196.622803,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3517.471191,3214.36084,-0.000340462]",266.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3513.0263672,3195.597412,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.369873,3215.24585,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3519.0195313,3212.821045,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.620117,3195.77832,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3509.169922,3194.871094,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3504.509033,3216.146484,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.354004,3215.0158691,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3514.667725,3216.681641,-0.314]",9.32985,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3519.935791,3212.0205078,-0.313998]",96.3029,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3508.644775,3194.842285,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.322998,3195.511475,5.72205e-006]",-87.0245,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3503.47168,3215.624512,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3518.00927734,3197.788574,-0.313998]",98.1609,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3509.52417,3194.655273,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3509.47583,3194.574463,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.659424,3194.646729,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3510.813477,3194.506836,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.998047,3213.915039,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.767822,3196.489746,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3517.898926,3215.0656738,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3512.827637,3194.663574,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3513.54541,3194.749268,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3502.114746,3197.222168,-0.314]",-81.9187,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.579102,3216.376709,-0.313998]",8.39985,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3509.8125,3194.0610352,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3514.990234,3195.0783691,-0.000340462]",263.176,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3508.768066,3194.113525,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3504.377197,3216.956299,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3502.367188,3215.694336,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.523438,3195.740967,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3510.415039,3193.874512,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3503.691406,3216.773438,-0.000340462]",264.249,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3501.394043,3215.0510254,-0.313998]",7.35985,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3518.927002,3214.977051,4.76837e-006]",-15.8509,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3504.900879,3217.551758,-0.314]",-83.0017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3511.313721,3193.751465,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3508.398438,3193.804688,-0.314]",95.4229,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3522.772949,3205.85498,-0.314]",97.8539,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3501.249756,3197.0170898,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.484619,3194.221436,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3512.168213,3193.547607,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3519.315918,3215.154541,-0.314001]",-86.2919,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3517.749512,3195.875244,-0.314]",97.2309,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3522.217529,3201.912598,-0.314]",97.8539,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3503.518066,3217.345703,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3500.573242,3197.415527,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.360352,3194.808838,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3499.0695801,3213.195313,-0.314]",-78.1574,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3501.203125,3215.824951,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3503.526611,3217.554688,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3502.0622559,3195.8125,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3497.589844,3210.306885,-0.314]",9.01185,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3501.163818,3196.501709,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3513.113525,3193.364258,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3523.115479,3208.342285,-0.314001]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3499.211914,3198.674316,-0.313998]",190.912,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3499.969971,3197.555908,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3523.213135,3208.588379,3.62396e-005]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.367432,3193.925781,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3514.126221,3193.435059,4.76837e-006]",-18.6918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3502.174561,3217.0786133,-0.000340462]",264.249,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3496.770996,3204.16626,-0.313999]",-81.5367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.241455,3212.639404,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3502.75293,3217.646973,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3500.351318,3196.708984,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3511.25708,3192.641602,-0.313998]",185.26,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.157715,3210.927246,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3515.264404,3193.437744,4.76837e-006]",-18.5655,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.0280762,3193.759277,4.76837e-006]",-18.5655,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3501.755127,3195.207275,-0.314001]",11.3328,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3497.260986,3201.00537109,-0.313999]",-83.6282,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.603516,3203.0556641,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3499.156982,3197.700928,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3499.571045,3215.247559,3.62396e-005]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3501.0493164,3195.637939,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.702881,3214.187744,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.467041,3212.142334,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3523.476563,3210.199951,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.255859,3211.775146,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3500.235596,3216.197021,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.837891,3210.853027,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3516.455322,3193.640869,4.76837e-006]",-18.5655,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3500.879883,3216.876465,-0.000340462]",264.249,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3513.42334,3192.437256,-0.313998]",185.26,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.168945,3203.488281,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3521.665283,3197.96167,-0.314]",97.8539,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.869141,3213.67334,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3500.204834,3195.641113,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.195313,3202.119873,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3495.703125,3203.927734,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3523.648193,3211.553711,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3516.54834,3193.114014,-0.314001]",2.66455,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3500.633301,3217.437744,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3498.900635,3196.67627,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3513.447266,3220.527588,3.62396e-005]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.739502,3215.580566,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3513.417969,3220.626465,-0.314001]",190.483,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3497.026123,3199.215088,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.641113,3198.166016,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3499.837158,3216.932861,-0.000340462]",264.249,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3510.975098,3221.0224609,-0.313998]",8.59785,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3495.357178,3203.999268,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.0100098,3211.180908,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3502.0407715,3218.807617,-0.313998]",6.70895,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3514.882568,3220.383301,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.223877,3200.479004,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3496.083252,3211.683838,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3496.496582,3212.682617,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.101807,3197.0090332,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.196777,3198.229248,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3495.231689,3203.150635,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3495.536133,3210.717041,-0.314]",102.263,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3496.981689,3214.0275879,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3516.392334,3220.131348,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3523.852051,3212.892334,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3500.492188,3218.128906,5.72205e-006]",-85.9513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3495.766357,3211.656494,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.670898,3195.824219,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3494.732178,3204.469238,-0.314]",186.194,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3497.421875,3215.0744629,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.0412598,3199.691162,5.72205e-006]",274.175,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.0292969,3212.744873,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3498.941895,3217.0639648,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3497.783936,3215.743164,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.441162,3216.578125,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3495.0378418,3202.0810547,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3499.525879,3217.709717,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3497.727295,3196.605713,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3507.0678711,3221.599365,-0.313998]",8.59785,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3517.805664,3219.917969,1.90735e-006]",258.676,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.72876,3202.727539,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.550781,3203.487061,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3523.720703,3214.17041,3.62396e-005]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.332031,3213.950439,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3498.381836,3216.95166,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3518.855225,3219.518799,3.62396e-005]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.90625,3195.89209,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3523.818115,3214.477295,-0.314001]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.181152,3215.707031,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.144287,3216.912109,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.0246582,3198.424561,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3519.253418,3219.478271,-0.314001]",188.896,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3495.0102539,3200.391602,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3498.584717,3194.807861,-0.313998]",188.932,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3506.854004,3190.294434,-0.314001]",188.739,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.181396,3216.0515137,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3496.925537,3196.625732,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.232666,3216.20752,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.521973,3201.359863,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3499.900635,3219.104004,-0.313998]",6.83525,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3521.0822754,3193.972168,-0.314]",97.9799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3510.799072,3189.685059,-0.314002]",188.739,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3520.232666,3219.320557,-0.314001]",188.896,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3498.325928,3217.961914,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3495.205566,3213.85791,-0.314]",-80.5851,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.290527,3200.430176,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3495.969482,3196.968994,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3502.955322,3190.847412,-0.313999]",187.689,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.497803,3195.845215,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3493.517578,3201.592041,-0.313998]",-84.0955,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3494.516113,3198.749023,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3497.253906,3217.928955,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3503.274902,3222.143311,-0.313998]",7.71911,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3496.67627,3195.0957031,-0.313998]",188.002,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3495.50708,3215.803711,-0.313999]",-81.0678,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3496.591553,3217.292725,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3494.546875,3198.171631,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3493.777832,3199.365479,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3514.644043,3189.095459,-0.314001]",188.739,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_F","[3494.670654,3197.425537,-0.000340462]",264.375,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.952393,3196.371826,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3493.293213,3199.429443,-0.313998]",-84.0955,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3494.228516,3197.394775,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3496.759521,3218.518799,-0.314]",184.241,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_b_NeriumO2s_white_F","[3493.689453,3198.299072,5.72205e-006]",-85.825,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3498.969727,3191.391357,-0.313999]",187.689,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3491.675537,3209.705078,-0.313999]",-81.6457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3523.758301,3218.0822754,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3491.102539,3205.824707,-0.313999]",-81.6457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3493.958008,3196.243164,-0.313999]",93.3099,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3520.802246,3191.917725,-0.314001]",277.412,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3492.24292,3213.648193,-0.313999]",-82.0007,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3516.430908,3188.814697,-0.314]",187.717,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3499.403076,3222.67334,-0.313998]",7.71911,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3490.540039,3201.959717,-0.313999]",-81.6457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3519.686279,3188.958984,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3492.779785,3217.511719,-0.313999]",-82.0007,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3495.0507813,3191.918701,-0.313999]",187.689,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3497.498779,3222.922852,3.62396e-005]",186.977,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3492.912354,3219.171631,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3489.987549,3198.00341797,-0.313999]",278.354,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3493.313477,3192.0124512,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3485.0942383,3180.453613,1.90735e-006]",171.617,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3493.0693359,3219.57666,-0.313999]",277.999,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3489.644775,3196.408936,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3484.845947,3179.0776367,1.90735e-006]",171.617,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3494.430176,3222.486572,-0.314]",190.055,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3497.626953,3222.914307,-0.313998]",7.71911,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3490.242676,3193.502197,-0.314]",98.3543,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3493.072998,3192.185547,-0.313999]",187.689,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3489.780273,3196.59082,-0.313999]",278.354,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3519.55835,3189.294922,-0.314]",7.717,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3532.776855,3207.853271,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3533.345215,3211.825195,-0.313999]",98.1457,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3523.43457,3217.91333,-0.314]",278.907,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3521.222168,3219.165527,-0.314001]",188.896,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3522.0136719,3219.0554199,-0.303872]",188.896,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3523.962158,3215.443848,-0.314001]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3524.0849609,3216.266602,-0.314001]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3532.893066,3215.0222168,-0.314]",278.146,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3529.951172,3216.39624,-0.313999]",8.58802,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3526.256836,3216.954102,-0.319891]",8.58761,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3533.228027,3215.221191,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3532.36792,3206.076416,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3531.245605,3192.689209,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3545.472412,3189.886963,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3543.981689,3176.14209,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3545.057373,3182.578857,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3525.971191,3176.685547,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3523.983643,3169.208496,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3536.743164,3175.632324,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3539.172607,3191.207764,3.52859e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3504.813232,3190.71875,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3521.640381,3198.686768,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3491.242188,3207.804199,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3524.433594,3164.122314,-0.313999]",100.273,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3525.202393,3174.865479,-0.314001]",98.6572,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3533.723633,3176.060791,-0.314001]",188.657,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3533.017334,3176.169922,-0.314001]",189.036,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3516.255371,3161.691895,-0.313999]",279.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3513.506104,3163.0725098,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3510.526855,3163.576904,-0.313999]",369.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3506.537109,3164.252197,-0.313999]",369.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3502.584229,3164.921387,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3498.669189,3165.584229,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3494.740723,3166.249268,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3490.772461,3166.921143,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3487.0888672,3167.544678,-0.313999]",9.60801,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3484.213867,3168.903076,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3483.779541,3172.088623,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3484.358887,3175.86377,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3485.594727,3183.918213,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3486.209961,3187.927979,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3488.026123,3193.623779,-0.313999]",188.724,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3486.633301,3190.687988,-0.313999]",98.7242,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3485.159668,3182.478271,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3484.431885,3177.262939,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3483.656738,3168.740234,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3494.558594,3166.209473,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3505.459961,3164.333496,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3515.173828,3162.776611,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_mis_brunnen02","[3529.656006,3146.44043,0]",11.3005,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_mis_brunnen02","[3506.269531,3206.533203,0]",252.235,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3530.569336,3176.539795,-0.313999]",188.657,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3528.12793,3176.90918,-0.314001]",189.036,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_LampDecor_F","[3486.738281,3192.325928,3.62396e-005]",186.093,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_Bench_01_F","[3501.549072,3177,0]",185.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_Bench_01_F","[3504.332764,3179.161133,0]",95.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_Bench_01_F","[3502.159424,3181.962402,0]",5.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_Bench_01_F","[3499.628418,3179.651123,0]",275.967,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3487.731201,3156.000976563,0]",96.0092,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3504.0170898,3143.00219727,9.53674e-007]",242.49,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3498.625977,3132.758301,9.53674e-007]",300.391,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3478.488525,3136.511475,9.53674e-007]",32.3693,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3452.772949,3148.818359,9.53674e-007]",156.535,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3498.26416,3153.56543,0]",151.248,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3501.204346,3154.821289,0]",92.3829,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3493.602295,3159.105225,0]",228.553,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3498.774658,3163.193115,0]",68.9152,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3482.836426,3159.328125,0]",278.821,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3535.3396,3166.376221,9.53674e-007]",208.184,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3553.996826,3170.151123,0]",27.8027,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3554.819336,3190.930908,0]",38.6235,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3549.436279,3189.484619,0]",198.241,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3553.730225,3174.273682,0]",73.3709,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3558.717041,3156.993652,9.53674e-007]",267.369,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3554.885986,3156.789063,0]",204.241,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3555.230713,3129.154785,0]",196.621,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3550.466064,3151.220703,9.53674e-007]",296.957,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3548.560791,3158.339355,9.53674e-007]",312.494,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3544.512207,3166.762695,9.53674e-007]",208.949,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3555.567383,3178.345703,0]",49.8279,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3555.395752,3187.760254,0]",43.3002,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3538.300781,3173.541748,0]",203.057,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3543.854492,3184.908447,9.53674e-007]",301.529,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3555.674072,3196.196533,0]",128.251,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3528.167969,3127.731201,0]",171.549,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3518.408203,3127.212891,9.53674e-007]",21.1667,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3526.19043,3123.413086,0]",345.792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3440.228516,3139.804199,9.53674e-007]",42.0964,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3431.345703,3146.433838,0]",150.819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3402.293945,3147.312744,0]",142.396,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3398.674561,3153.057373,9.53674e-007]",208.119,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3374.557373,3160.0258789,0]",80.7641,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3376.189697,3154.0932617,0]",226.011,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3373.258545,3153.141357,9.53674e-007]",331.336,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3380.493652,3155.825439,9.53674e-007]",120.101,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3389.2854,3147.0893555,0]",188.365,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3448.253418,3154.779297,0]",357.225,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3416.260498,3177.460693,0]",339.053,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3411.435547,3168.202148,9.53674e-007]",286.508,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3405.340088,3175.850098,9.53674e-007]",1.11803,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3375.842529,3172.693848,9.53674e-007]",192.761,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3373.712891,3163.119629,9.53674e-007]",224.51,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3411.229492,3172.661621,9.53674e-007]",270.698,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3390.383301,3185.664063,0]",265.329,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3383.685547,3185.477783,0]",80.0641,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3383.677979,3182.363281,9.53674e-007]",133.329,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3379.614014,3183.365967,9.53674e-007]",342.168,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3378.909912,3172.369873,9.53674e-007]",150.656,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3362.674316,3158.130615,9.53674e-007]",116.633,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3365.591309,3153.770996,9.53674e-007]",140.572,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3356.850342,3143.655273,0]",228.462,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3351.291992,3136.415527,9.53674e-007]",149.256,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3345.681641,3131.894287,0]",357.052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3339.722412,3128.395752,9.53674e-007]",245.133,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3353.158203,3145.713867,0]",178.196,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3349.997559,3158.293701,0]",33.9838,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3345.574707,3164.817627,0]",123.326,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3367.092041,3174.638916,0]",265.727,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3364.21167,3172.218506,0]",315.084,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3363.792725,3188.562988,0]",94.8193,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3362.58252,3176.638428,9.53674e-007]",250.492,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3348.768799,3171.462646,0]",86.6073,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3343.30127,3157.0673828,9.53674e-007]",78.1467,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3339.0959473,3152.909668,9.53674e-007]",203.001,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3305.679688,3140.38916,0]",309.202,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3309.591797,3133.162109,0]",217.781,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3327.695557,3149.989746,9.53674e-007]",111.527,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3340.449219,3148.947754,0]",97.8438,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3343.509033,3137.881592,9.53674e-007]",321.685,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3336.0351563,3134.333496,9.53674e-007]",48.928,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3333.628418,3148.411377,9.53674e-007]",198.668,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3367.611328,3204.317871,9.53674e-007]",55.4098,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3343.80957,3213.855957,0]",59.228,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3350.864746,3231.76709,0]",342.847,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3349.0949707,3228.318604,9.53674e-007]",203.536,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3348.73291,3223.521973,9.53674e-007]",44.2291,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3326.24292,3218.911377,9.53674e-007]",109.146,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3326.869629,3215.134033,9.53674e-007]",260.503,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3323.23877,3219.564209,0]",355.725,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3330.616455,3208.827881,0]",26.0626,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3339.264893,3207.189941,0]",67.5051,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3354.561768,3207.479248,0]",64.666,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3368.329102,3212.0510254,9.53674e-007]",252.855,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3373.577881,3226.34082,0]",206.282,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3365.537842,3222.790527,0]",93.9424,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3374.468994,3222.434814,9.53674e-007]",258.508,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3358.63501,3229.0258789,9.53674e-007]",5.9277,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3332.658936,3243.268799,0]",240.087,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3320.602783,3236.819336,0]",165.836,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3315.313721,3234.916504,0]",117.73,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3353.952637,3245.926514,9.53674e-007]",23.3018,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3328.18042,3244.17334,9.53674e-007]",186.39,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3315.917725,3213.627686,9.53674e-007]",28.107,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3335.777832,3228.78418,9.53674e-007]",245.531,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3331.101074,3252.508545,9.53674e-007]",153.194,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3336.240967,3281.620117,0]",202.445,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3328.0351563,3287.627441,9.53674e-007]",190.064,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3320.7146,3275.895996,0]",321.881,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3324.78833,3267.213135,0]",356.786,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3343.478271,3277.922607,0]",288.012,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3346.458984,3284.433105,0]",179.42,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3327.734863,3271.597656,0]",348.664,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3366.178467,3281.862305,9.53674e-007]",313.71,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3354.882813,3240.927246,9.53674e-007]",114.611,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3372.336914,3278.956055,0]",265.905,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3350.535889,3248.112305,0]",103.208,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3356.860107,3264.403076,9.53674e-007]",298.973,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3343.624756,3264.732422,0]",264.041,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3351.466309,3269.295654,0]",130.916,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3341.874268,3267.518066,0]",258.647,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3336.154053,3237.855957,0]",262.237,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3339.16626,3247.19751,0]",146.41,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3353.203369,3255.782715,0]",347.657,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3344.65918,3250.0810547,0]",210.819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3344.897705,3257.196045,9.53674e-007]",4.12723,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3354.434082,3250.655273,9.53674e-007]",104.442,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3356.48584,3260.265869,9.53674e-007]",99.1815,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3367.518555,3248.661621,0]",47.5823,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3355.124756,3232.543945,0]",340.491,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3349.429443,3236.0561523,9.53674e-007]",321.549,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3358.719238,3238.641846,0]",24.5134,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3339.770264,3196.26001,0]",170.321,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3348.322998,3197.208496,9.53674e-007]",319.381,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3364.708252,3199.318115,9.53674e-007]",211.191,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3356.677246,3195.19458,0]",138.302,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3358.167969,3202.857178,9.53674e-007]",328.724,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3353.896729,3210.883301,0]",79.0424,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3352.457275,3214.429688,0]",253.842,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3369.966797,3235.152588,0]",32.2186,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3364.885254,3232.701416,9.53674e-007]",357.075,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3373.113525,3240.654541,0]",237.563,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3380.296875,3252.968506,0]",263.645,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3366.787842,3266.23877,0]",257.902,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3374.384277,3270.139893,9.53674e-007]",338.231,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3369.881592,3281.558838,9.53674e-007]",130.017,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3378.390381,3286.494385,9.53674e-007]",328.722,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3381.525635,3287.327393,0]",280.942,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3379.72168,3291.472412,0]",317.197,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3364.446777,3299.13208,0]",225.039,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3359.48584,3302.150146,0]",110.213,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3350.668457,3298.737305,9.53674e-007]",268.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3356.470947,3293.0288086,9.53674e-007]",89.3116,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3346.722412,3290.21875,9.53674e-007]",320.482,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3357.785645,3280.487061,0]",92.937,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3361.58252,3277.368896,0]",203.567,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3391.885254,3199.486816,9.53674e-007]",260.775,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3382.500488,3198.148682,0]",140.393,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3374.168457,3185.079834,9.53674e-007]",2.90147,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3382.90918,3191.901123,0]",176.359,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3436.69043,3178.88208,0]",194.399,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3430.232178,3181.598877,9.53674e-007]",68.7041,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3393.218262,3313.102539,9.53674e-007]",149.921,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3373.93457,3348.148682,0]",65.0577,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3384.115967,3368.271729,9.53674e-007]",336.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3386.270996,3365.674805,0]",319.275,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3370.873291,3325.356934,0]",81.7579,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3407.774414,3295.845459,0]",326.027,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3455.0141602,3292.219727,0]",141.919,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3400.463135,3303.123047,9.53674e-007]",358.842,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3387.596191,3269.393066,9.53674e-007]",9.96701,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3382.752686,3260.423828,0]",119.291,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3380.226074,3258.400146,9.53674e-007]",305.074,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3381.146484,3234.998047,0]",227.622,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3401.0246582,3229.12085,0]",315.636,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3394.152344,3229.376465,0]",218.694,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3378.706055,3222.387695,0]",8.18932,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3383.758301,3222.970947,0]",67.9183,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3371.316406,3205.147949,0]",334.96,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3327.402344,3210.605957,9.53674e-007]",38.7037,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3336.746338,3219.704346,0]",182.369,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3329.674561,3239.18335,0]",308.032,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3349.552734,3272.126709,0]",117.557,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3388.440674,3319.577637,9.53674e-007]",34.9826,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3404.361084,3346.913574,9.53674e-007]",137.792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3397.713623,3350.404297,9.53674e-007]",247.284,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3388.244873,3345.783447,9.53674e-007]",107.218,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3378.720459,3343.948975,9.53674e-007]",344.656,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3385.537109,3347.218994,0]",3.5213,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3370.715332,3365.443359,9.53674e-007]",125.754,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3378.138428,3362.917236,9.53674e-007]",218.303,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3381.470459,3417.266113,0]",173.177,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3420.994629,3429.969971,0]",24.6352,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3428.178711,3399.796143,9.53674e-007]",316.751,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3394.162109,3363.3396,9.53674e-007]",228.197,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3398.301514,3367.68335,9.53674e-007]",113.445,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3380.599609,3354.233398,9.53674e-007]",146.542,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3388.45874,3337.398682,9.53674e-007]",95.4814,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3438.667236,3391.384521,0]",92.5666,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3545.758789,3342.439941,0]",75.5613,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3555.0314941,3353.148682,0]",216.732,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3573.463867,3362.432129,9.53674e-007]",248.971,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3551.310303,3377.493408,0]",73.352,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3470.151123,3375.833984,0]",258.444,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3544.328857,3345.250488,9.53674e-007]",132.37,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3454.0554199,3296.9375,0]",246.197,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3436.907471,3302.634033,9.53674e-007]",190.064,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3379.0212402,3307.459717,0]",193.776,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3395.265869,3190.057373,0]",179.062,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3376.893066,3187.881836,9.53674e-007]",302.29,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3356.0600586,3183.114014,9.53674e-007]",287.138,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3352.110596,3173.160889,0]",105.134,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3355.969238,3160.260986,0]",215.085,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3354.922119,3170.730225,0]",140.179,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3438.273926,3166.874268,9.53674e-007]",93.3574,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3453.947754,3169.889893,9.53674e-007]",171.265,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3441.708984,3115.44043,9.53674e-007]",4.98261,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3440.456055,3111.520264,0]",209.485,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3459.0651855,3102.105225,0]",271.835,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3432.279297,3115.613281,9.53674e-007]",309.373,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3413.370361,3113.364014,9.53674e-007]",89.4301,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3415.719971,3108.564697,0]",58.6289,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3420.277588,3100.0314941,0]",350.599,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3393.67627,3083.720459,9.53674e-007]",89.2453,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3372.11792,3074.244873,0]",328.157,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3339.835693,3075.411377,9.53674e-007]",289.361,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3331.92749,3101.90332,0]",78.7442,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3362.353516,3093.81958,9.53674e-007]",59.8756,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3373.819336,3086.922852,0]",96.7142,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3344.529541,3090.344971,0]",24.8459,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3335.997559,3120.258789,0]",70.2684,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3354.518311,3099.27832,9.53674e-007]",106.654,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3341.494629,3108.09375,0]",220.759,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3350.717529,3113.507324,0]",36.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3320.682373,3123.425293,0]",328.991,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3359.00268555,3075.502197,9.53674e-007]",156.823,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3379.0559082,3070.618408,0]",232.918,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3529.693848,3174.34375,0]",229.311,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3555.165283,3147.639648,9.53674e-007]",44.7617,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3490.803955,3170.516602,0.43799]",186.714,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3490.847412,3170.133057,0.43799]",11.6449,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3490.433838,3169.758545,0.581291]",183.539,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3490.899414,3169.948975,0.43799]",320.382,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3491.222168,3170.588135,0.73811]",249.494,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3490.953125,3171.0803223,0.43799]",23.5568,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3491.411133,3169.862061,0.43799]",67.1454,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3491.589111,3170.610596,0.581291]",94.3821,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3490.186279,3171.610596,0.000290394]",279.626,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3491.59668,3169.780518,0.73811]",190.538,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3491.195313,3171.544678,0.73811]",75.6333,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3491.899658,3170.316895,0.43799]",283.853,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3491.177979,3171.835938,0.43799]",70.1325,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3491.601074,3169.132324,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3492.00610352,3171.146729,0.43799]",214.957,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3492.225586,3169.68042,0.43799]",334.194,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3492.541748,3170.457764,0.43799]",209.225,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3492.032959,3171.740723,0.43799]",30.4017,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3491.205566,3172.428223,0.43799]",316.747,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3490.841309,3172.739502,0.73811]",253.755,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3492.967285,3170.273438,0.581291]",263.022,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3492.801758,3171.318848,0.43799]",62.9617,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3492.274414,3172.149902,0.43799]",216.334,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3492.00952148,3172.397949,0.581291]",124.309,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3493.0776367,3169.882813,0.43799]",148.898,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3493.120605,3170.191162,0.73811]",273.629,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3493.12793,3169.590332,0.43799]",7.07868,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3493.403076,3170.741699,0.43799]",202.398,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3492.958008,3172.144287,0.43799]",223.306,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3493.432129,3169.260254,0.73811]",171.219,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3493.624512,3170.246094,0.73811]",100.871,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3493.472168,3171.761963,0.43799]",72.5199,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3493.766602,3171.295166,0.73811]",161.91,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3492.703369,3172.987549,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3493.535156,3171.999023,0.43799]",311.232,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3494.090332,3170.493652,0.000290394]",99.6261,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3493.905762,3172.180908,0.581291]",62.9653,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3506.15332,3168.714111,0.43799]",186.714,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3506.196777,3168.330566,0.43799]",11.6449,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3505.783203,3167.956055,0.581291]",183.539,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3506.248779,3168.146484,0.43799]",320.382,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3506.571533,3168.785645,0.73811]",249.494,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3506.30249,3169.277832,0.43799]",23.5568,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3506.760498,3168.0595703,0.43799]",67.1454,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3506.938477,3168.808105,0.581291]",94.3821,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3505.535645,3169.808105,0.000290394]",279.626,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3506.946045,3167.978027,0.73811]",190.538,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3506.544678,3169.742188,0.73811]",75.6333,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3507.249023,3168.514404,0.43799]",283.853,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3506.527344,3170.0334473,0.43799]",70.1325,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3506.950439,3167.329834,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3507.355469,3169.344238,0.43799]",214.957,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3507.574951,3167.87793,0.43799]",334.194,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3507.891113,3168.655273,0.43799]",209.225,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3507.382324,3169.938232,0.43799]",30.4017,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3506.554932,3170.625732,0.43799]",316.747,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3506.190674,3170.937012,0.73811]",253.755,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3508.31665,3168.470947,0.581291]",263.022,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.151123,3169.516357,0.43799]",62.9617,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3507.623779,3170.347412,0.43799]",216.334,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3507.358887,3170.595459,0.581291]",124.309,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.427002,3168.0803223,0.43799]",148.898,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3508.469971,3168.388672,0.73811]",273.629,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.477295,3167.787842,0.43799]",7.07868,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.752441,3168.939209,0.43799]",202.398,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3508.307373,3170.341797,0.43799]",223.306,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3508.781494,3167.457764,0.73811]",171.219,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3508.973877,3168.443604,0.73811]",100.871,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.821533,3169.959473,0.43799]",72.5199,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3509.115967,3169.492676,0.73811]",161.91,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3508.0527344,3171.185059,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3508.884521,3170.196533,0.43799]",311.232,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3509.439697,3168.691162,0.000290394]",99.6261,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3509.255127,3170.378418,0.581291]",62.9653,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3508.964111,3184.133789,0.43799]",186.714,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3509.00756836,3183.750244,0.43799]",11.6449,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3508.593994,3183.375732,0.581291]",183.539,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3509.0595703,3183.566162,0.43799]",320.382,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3509.382324,3184.205322,0.73811]",249.494,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3509.113281,3184.69751,0.43799]",23.5568,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3509.571289,3183.479248,0.43799]",67.1454,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3509.749268,3184.227783,0.581291]",94.3821,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3508.346436,3185.227783,0.000290394]",279.626,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3509.756836,3183.397705,0.73811]",190.538,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3509.355469,3185.161865,0.73811]",75.6333,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3510.0598145,3183.934082,0.43799]",283.853,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3509.338135,3185.453125,0.43799]",70.1325,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3509.76123,3182.749512,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3510.16626,3184.763916,0.43799]",214.957,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3510.385742,3183.297607,0.43799]",334.194,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3510.701904,3184.0749512,0.43799]",209.225,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3510.193115,3185.35791,0.43799]",30.4017,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3509.365723,3186.0454102,0.43799]",316.747,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3509.00146484,3186.356689,0.73811]",253.755,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3511.127441,3183.890625,0.581291]",263.022,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3510.961914,3184.936035,0.43799]",62.9617,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3510.43457,3185.76709,0.43799]",216.334,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3510.169678,3186.0151367,0.581291]",124.309,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3511.237793,3183.5,0.43799]",148.898,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3511.280762,3183.80835,0.73811]",273.629,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3511.288086,3183.20752,0.43799]",7.07868,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3511.563232,3184.358887,0.43799]",202.398,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3511.118164,3185.761475,0.43799]",223.306,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3511.592285,3182.877441,0.73811]",171.219,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3511.784668,3183.863281,0.73811]",100.871,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3511.632324,3185.37915,0.43799]",72.5199,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3511.926758,3184.912354,0.73811]",161.91,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3510.863525,3186.604736,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3511.695313,3185.616211,0.43799]",311.232,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3512.250488,3184.11084,0.000290394]",99.6261,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3512.065918,3185.798096,0.581291]",62.9653,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3493.659668,3186.224854,0.43799]",186.714,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3493.703125,3185.841309,0.43799]",11.6449,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3493.289551,3185.466797,0.581291]",183.539,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3493.755127,3185.657227,0.43799]",320.382,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3494.0778809,3186.296387,0.73811]",249.494,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3493.808838,3186.788574,0.43799]",23.5568,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3494.266846,3185.570313,0.43799]",67.1454,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3494.444824,3186.318848,0.581291]",94.3821,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3493.0419922,3187.318848,0.000290394]",279.626,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3494.452393,3185.48877,0.73811]",190.538,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3494.0510254,3187.25293,0.73811]",75.6333,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3494.755371,3186.0251465,0.43799]",283.853,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3494.0336914,3187.544189,0.43799]",70.1325,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3494.456787,3184.840576,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3494.861816,3186.85498,0.43799]",214.957,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3495.0812988,3185.388672,0.43799]",334.194,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3495.397461,3186.166016,0.43799]",209.225,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3494.888672,3187.448975,0.43799]",30.4017,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3494.0612793,3188.136475,0.43799]",316.747,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3493.697021,3188.447754,0.73811]",253.755,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3495.822998,3185.981689,0.581291]",263.022,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3495.657471,3187.0270996,0.43799]",62.9617,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3495.130127,3187.858154,0.43799]",216.334,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3494.865234,3188.106201,0.581291]",124.309,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3495.93335,3185.591064,0.43799]",148.898,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3495.976318,3185.899414,0.73811]",273.629,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3495.983643,3185.298584,0.43799]",7.07868,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3496.258789,3186.449951,0.43799]",202.398,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3495.813721,3187.852539,0.43799]",223.306,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3496.287842,3184.968506,0.73811]",171.219,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3496.480225,3185.954346,0.73811]",100.871,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3496.327881,3187.470215,0.43799]",72.5199,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3496.622314,3187.00341797,0.73811]",161.91,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3495.559082,3188.695801,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3496.390869,3187.707275,0.43799]",311.232,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3496.946045,3186.201904,0.000290394]",99.6261,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3496.761475,3187.88916,0.581291]",62.9653,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3535.314697,3182.946533,0.43799]",186.714,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3535.358154,3182.562988,0.43799]",11.6449,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3534.94458,3182.188477,0.581291]",183.539,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3535.410156,3182.378906,0.43799]",320.382,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3535.73291,3183.0180664,0.73811]",249.494,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3535.463867,3183.510254,0.43799]",23.5568,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3535.921875,3182.291992,0.43799]",67.1454,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3536.0998535,3183.0405273,0.581291]",94.3821,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3534.697021,3184.0405273,0.000290394]",279.626,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3536.107422,3182.210449,0.73811]",190.538,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3535.706055,3183.974609,0.73811]",75.6333,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3536.4104,3182.746826,0.43799]",283.853,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3535.688721,3184.265869,0.43799]",70.1325,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3536.111816,3181.562256,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3536.516846,3183.57666,0.43799]",214.957,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3536.736328,3182.110352,0.43799]",334.194,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3537.0524902,3182.887695,0.43799]",209.225,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3536.543701,3184.170654,0.43799]",30.4017,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3535.716309,3184.858154,0.43799]",316.747,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3535.352051,3185.169434,0.73811]",253.755,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3537.478027,3182.703369,0.581291]",263.022,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3537.3125,3183.748779,0.43799]",62.9617,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3536.785156,3184.579834,0.43799]",216.334,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3536.520264,3184.827881,0.581291]",124.309,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3537.588379,3182.312744,0.43799]",148.898,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_GrassGreen_GroupHard","[3537.631348,3182.621094,0.73811]",273.629,16.2628,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3537.638672,3182.0202637,0.43799]",7.07868,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3537.913818,3183.171631,0.43799]",202.398,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3537.46875,3184.574219,0.43799]",223.306,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3537.942871,3181.690186,0.73811]",171.219,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3538.135254,3182.676025,0.73811]",100.871,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornKhaki","[3537.98291,3184.191895,0.43799]",72.5199,15.6652,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_Bunch_Small","[3538.277344,3183.725098,0.73811]",161.91,15.7973,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3537.214111,3185.41748,0.000290394]",9.62618,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_StrThornGreen","[3538.0458984,3184.428955,0.43799]",311.232,15.678,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_Concrete_SmallWall_4m_F","[3538.601074,3182.923584,0.000290394]",99.6261,14.6624,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_c_Grass_BrushHigh_Green","[3538.416504,3184.61084,0.581291]",62.9653,15.9985,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_jbad_t_acer2s","[3506.919922,3169.236816,0]",278.257,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_jbad_t_acer2s","[3510.557129,3184.784424,0]",278.257,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_jbad_t_acer2s","[3491.43335,3171.179932,0]",224.532,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_jbad_t_acer2s","[3494.421631,3187.196045,0]",224.532,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_jbad_t_AmygdalusC2s","[3536.321777,3182.911865,0]",224.532,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3584.854736,3212.448975,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3588.815186,3211.85083,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3523.801514,3129.571777,0]",171.549,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3560.927002,3181.0556641,9.53674e-007]",320.179,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3559.247559,3173.897705,0]",73.3709,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3564.444824,3188.733643,0]",73.3709,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3549.671387,3180.40918,0]",73.3709,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3590.79541,3211.551758,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3592.775635,3211.252686,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3594.755859,3210.953613,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3596.736084,3210.654541,-0.0134934]",9.02991,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3598.713867,3210.340332,-0.0134934]",9.02991,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3600.69165,3210.026123,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3602.671875,3209.727051,-0.0134934]",8.58799,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3604.6521,3209.427979,-0.0134934]",8.77739,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3606.631348,3209.122314,-0.0134934]",8.77739,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3608.610596,3208.81665,-0.0134934]",9.09304,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3610.588135,3208.500244,-0.0134934]",9.09304,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3612.565674,3208.183838,-0.0134934]",8.71425,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3614.545166,3207.880371,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3616.52417,3207.57251,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3618.503174,3207.264648,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3620.482178,3206.956787,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3622.461182,3206.648926,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3624.440186,3206.341064,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3626.419189,3206.0332031,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3628.398193,3205.725342,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3630.377197,3205.41748,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3632.356201,3205.109619,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3634.335205,3204.801758,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3636.314209,3204.493896,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3638.293213,3204.186035,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3640.188965,3203.891113,-0.0134934]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGreyPole","[3641.181396,3203.748047,0]",8.84052,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3640.765869,3200.851563,-0.0134934]",-80.9322,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3640.537109,3199.417969,-0.0134934]",279.068,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3640.896973,3201.888916,0]",280.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3641.156006,3203.655273,0]",280.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3585.884766,3212.309326,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3641.0427246,3202.750732,0]",280.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3586.868408,3212.16333,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3587.770752,3212.029541,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3583.772949,3211.607666,-0.0134934]",-81.4372,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3583.474854,3209.627197,-0.0134934]",-81.4372,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3583.176758,3207.646729,-0.0134934]",-81.4372,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3582.885498,3205.666016,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3582.600342,3203.683838,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3582.314697,3201.703857,-0.0134934]",-81.5004,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3582.0187988,3199.723145,-0.0134934]",-81.5004,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3581.7229,3197.742432,-0.0134934]",-81.3741,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3581.422607,3195.762451,-0.0134934]",-81.3741,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3581.122314,3193.782471,-0.0134934]",-81.7529,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3580.834961,3191.800537,-0.0134934]",-81.7529,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3580.547607,3189.818604,-0.0134934]",278.373,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3580.255859,3187.837158,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3579.964111,3185.855713,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3579.672363,3183.874268,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3579.380615,3181.892822,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3579.0888672,3179.911377,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3578.797119,3177.929932,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3578.505371,3175.948486,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3578.213623,3173.967041,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3577.921875,3171.985596,-0.0134934]",-81.6266,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3577.630127,3170.00415039,-0.0134934]",-81.8792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3577.347168,3168.0214844,-0.0134934]",-81.8792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3577.064209,3166.0388184,-0.0134934]",-81.8792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3576.78125,3164.0561523,-0.0134934]",-81.8792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3576.498291,3162.0734863,-0.0134934]",-81.8792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3576.215332,3160.0908203,-0.0134934]",-81.7529,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3575.927979,3158.108887,-0.0134934]",-81.7529,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3575.640625,3156.126953,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3575.355469,3154.144775,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3575.0703125,3152.162598,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3574.785156,3150.18042,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3574.5,3148.198242,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3574.214844,3146.216064,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3573.929688,3144.233887,-0.0134934]",-81.816,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3573.644531,3142.251709,-0.0134934]",278.184,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3574.327393,3140.119141,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3576.320313,3139.922607,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3578.313232,3139.726074,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3580.306152,3139.529541,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3582.299072,3139.333008,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3584.291992,3139.136475,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3586.284912,3138.939941,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3588.277832,3138.743408,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3590.270752,3138.546875,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3592.263672,3138.350342,-0.0134934]",-174.367,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3594.205322,3138.158691,-0.0134934]",185.633,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3573.484619,3141.139893,-0.0134934]",278.184,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3596.198242,3137.962158,-0.0134934]",185.633,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3597.946777,3137.196289,-0.0134934]",220.608,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3601.163818,3134.977295,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3603.0878906,3134.421387,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3605.0119629,3133.865479,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3606.936035,3133.30957,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3608.860107,3132.753662,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3609.426758,3132.589844,-0.0134934]",196.113,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3600.220215,3135.226563,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3598.721191,3136.48999,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronAGreenLightOn","[3599.462646,3135.871826,0]",278.437,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3567.617676,3199.781982,-0.0134934]",188.79,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3569.175781,3199.54126,-0.0134934]",188.79,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3570.0209961,3198.388672,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3569.739014,3196.406006,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3569.457031,3194.42334,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3569.175049,3192.440674,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3568.900391,3190.452637,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3568.605225,3188.471924,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3568.310059,3186.491211,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3568.0148926,3184.510498,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3567.719727,3182.529785,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3567.424561,3180.549072,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3567.129395,3178.568359,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3566.834229,3176.587646,-0.0134934]",278.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3566.544922,3174.606934,-0.0134934]",277.969,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3566.267334,3172.623535,-0.0134934]",277.969,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3565.989746,3170.640137,-0.0134934]",277.969,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3565.709229,3168.657471,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3565.411865,3166.677002,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3565.114502,3164.696533,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3564.817139,3162.716064,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3564.519775,3160.735596,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3564.222412,3158.755127,-0.0134934]",278.537,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3563.927979,3156.773926,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3563.63501,3154.792725,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3563.342041,3152.811523,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3563.0549316,3150.828857,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3562.779541,3148.845215,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3562.50415,3146.861572,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3562.22876,3144.87793,-0.0134934]",278.663,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3561.927002,3142.898193,-0.0134934]",278.663,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3561.625244,3140.918457,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3561.349854,3138.934814,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3561.0744629,3136.951172,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3560.799072,3134.967529,-0.0134934]",277.906,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3560.523682,3132.983887,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3560.241699,3131.0012207,-0.0134934]",278.095,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3559.959717,3129.0185547,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3559.666748,3127.0373535,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3559.373779,3125.0561523,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3559.0808105,3123.0749512,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3558.787842,3121.09375,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3558.494873,3119.112549,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3558.349121,3118.127686,-0.0134934]",278.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3557.225342,3117.270264,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3555.244141,3117.563232,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3553.262939,3117.856201,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3551.281738,3118.14917,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3549.300537,3118.442139,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3547.319336,3118.735107,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3545.338135,3119.0280762,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3543.356934,3119.321045,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3541.375732,3119.614014,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3539.394531,3119.906982,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3537.41333,3120.199951,-0.0134934]",8.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3533.450928,3120.785889,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3531.469727,3121.0788574,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3529.488525,3121.371826,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3527.507324,3121.664795,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3525.526123,3121.957764,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3523.544922,3122.250732,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3521.563721,3122.543701,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3519.58252,3122.83667,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3517.601318,3123.129639,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3515.620117,3123.422607,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3513.638916,3123.715576,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3511.657715,3124.00854492,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3509.676514,3124.301514,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3507.695313,3124.594482,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3505.714111,3124.887451,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3503.73291,3125.18042,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3501.751709,3125.473389,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3499.770508,3125.766357,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3497.789307,3126.0593262,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3495.808105,3126.352295,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3493.826904,3126.645264,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3491.845703,3126.938232,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3489.864502,3127.231201,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3487.883301,3127.52417,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3485.9021,3127.817139,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3483.920898,3128.110107,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3481.939697,3128.403076,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3479.958496,3128.696045,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3477.977295,3128.989014,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3475.996094,3129.281982,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3474.0148926,3129.574951,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3472.0336914,3129.86792,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3471.000732422,3130.020752,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3457.132324,3132.0715332,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3455.151123,3132.364502,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3453.169922,3132.657471,-0.0134934]",368.032,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3451.186768,3132.937256,-0.0134934]",368.032,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3449.203613,3133.217041,-0.0134934]",368.032,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3447.220459,3133.496826,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3445.239258,3133.789795,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3443.258057,3134.0827637,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3441.276855,3134.375732,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3439.295654,3134.668701,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3437.314453,3134.96167,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3435.333252,3135.254639,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3433.352051,3135.547607,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3431.37085,3135.840576,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3429.389648,3136.133545,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3427.408447,3136.426514,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3425.427246,3136.719482,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3423.446045,3137.0124512,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3421.464844,3137.30542,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3419.483643,3137.598389,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3417.502441,3137.891357,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3415.52124,3138.184326,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3413.540039,3138.477295,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3411.558838,3138.770264,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3409.577637,3139.0632324,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3407.596436,3139.356201,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3405.615234,3139.64917,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3403.634033,3139.942139,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3401.652832,3140.235107,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3399.671631,3140.528076,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3397.69043,3140.821045,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3395.709229,3141.114014,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3393.728027,3141.406982,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3391.746826,3141.699951,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3389.765625,3141.99292,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3387.784424,3142.285889,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3385.803223,3142.578857,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3383.822021,3142.871826,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3381.84082,3143.164795,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3379.859619,3143.457764,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3377.878418,3143.750732,-0.0134934]",368.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3375.897217,3144.0437012,-0.0134934]",8.411,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3458.0986328,3131.975586,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3459.0827637,3131.841064,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3460.334229,3131.663818,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3461.257813,3131.506592,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3462.247314,3131.34375,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3469.936523,3130.20874,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3468.807861,3130.368164,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3467.728516,3130.518555,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3466.712158,3130.672363,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3465.735352,3130.802734,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3464.858398,3130.920898,1.90735e-006]",168.397,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3534.467285,3120.697266,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3535.421387,3120.535156,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_BollardIronABlackLightOn","[3536.351074,3120.380371,1.90735e-006]",350.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3609.500244,3126.247314,0]",459.307,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3609.338135,3125.258057,0]",99.3072,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3623.135254,3124.839111,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3621.156006,3125.14502,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3619.176758,3125.450928,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3617.19751,3125.756836,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3615.218262,3126.0627441,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3613.239014,3126.368652,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3611.259766,3126.674561,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGrey","[3610.383789,3126.809814,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_MunFenceLowGreyPole","[3609.406006,3126.941895,0]",188.789,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3609.0217285,3123.302979,0]",99.3072,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3609.183838,3124.292236,0]",459.307,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3611.717041,3123.806396,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3611.857422,3124.774414,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3611.569092,3122.814941,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3612.00537109,3125.765869,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3614.656982,3123.459717,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3614.797363,3124.427734,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3614.509033,3122.468262,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3614.945313,3125.419189,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3617.564453,3122.966553,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3617.704834,3123.93457,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3617.416504,3121.975098,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3617.852783,3124.926025,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3620.383789,3122.580078,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3620.52417,3123.548096,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3620.23584,3121.588623,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3620.672119,3124.539551,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3622.903809,3122.147461,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3623.0441895,3123.115479,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3622.755859,3121.156006,0]",98.4865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_LawnEdgingConcGreyPoles","[3623.192139,3124.106934,0]",458.486,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3681.849121,3193.0734863,-0.171744]",97.2226,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3681.380127,3196.343262,-0.183529]",278.907,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3681.350586,3189.139893,-0.171744]",97.2226,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3680.846436,3185.282227,-0.171744]",97.8539,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3680.294922,3181.480713,-0.171744]",98.9272,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3679.686768,3177.610107,-0.171744]",98.9272,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3679.312988,3175.231201,-0.171744]",98.9272,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3677.942871,3172.394775,-0.183529]",8.92718,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3674.711914,3171.963379,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3670.763672,3172.530273,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3666.805908,3173.0983887,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3662.765381,3173.678467,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3658.800537,3174.247559,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3654.815918,3174.81958,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3650.835693,3175.390869,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3646.880371,3175.95874,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3643.111084,3176.499756,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3639.241699,3177.0551758,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3635.616455,3177.575684,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3631.806396,3178.122559,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3627.962891,3178.674316,-0.171744]",8.1696,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3623.450684,3175.2771,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3624.800781,3178.216064,-0.183529]",188.17,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3622.886719,3171.286621,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3622.317383,3167.259277,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3621.753906,3163.272461,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3621.203125,3159.375732,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3620.655518,3155.501953,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3620.0998535,3151.571289,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3619.548828,3147.671875,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3619,3143.78833,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3618.450195,3139.898682,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3617.918457,3136.136719,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3620.958008,3129.926025,-0.171744]",187.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3618.11377,3131.228271,-0.183529]",98.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3617.674316,3134.409668,-0.171744]",278.043,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3624.779297,3129.42041,-0.171744]",187.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3627.574219,3129.0505371,-0.171744]",187.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3630.531738,3127.739502,-0.178478]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3631.00976563,3124.541504,-0.171744]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3630.488037,3120.598145,-0.171744]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3629.971924,3116.69751,-0.171744]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3629.462402,3112.845947,-0.171744]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3629.625244,3107.180664,-0.178478]",97.5379,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3629.13623,3110.380615,-0.175953]",277.538,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3632.521973,3105.839111,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3636.480469,3105.212891,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3644.244141,3103.984863,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3653.687256,3102.490967,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3655.854248,3102.148193,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3659.737793,3101.533691,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3663.641602,3100.916016,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3670.0678711,3099.899414,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3679.584961,3098.393555,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3683.245361,3097.814453,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3687.256104,3097.179932,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3691.17749,3096.55957,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3693.654053,3096.167725,-0.173428]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3700.0905762,3095.149658,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3709.966553,3093.587158,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3714.585205,3092.856689,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3718.416992,3092.250488,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3722.21167,3091.650146,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3724.0905762,3091.352783,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3730.699951,3090.307373,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3740.409912,3088.77124,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3743.934814,3088.213867,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmed90","[3747.0505371,3088.647461,-0.178478]",8.99001,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3748.193848,3090.0454102,-0.170903]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3748.318359,3090.879639,-0.170903]",98.4819,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_House_Big_01_V3_F","[3639.919922,3117.555176,9.53674e-007]",278.803,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_Garage_V2_F","[3650.249023,3115.627197,0.2449]",277.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_House_Big_01_V3_F","[3666.0280762,3112.661377,9.53674e-007]",278.803,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_Garage_V2_F","[3676.357178,3110.733398,0.2449]",277.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_House_Big_01_V3_F","[3696.490479,3107.223389,9.53674e-007]",278.803,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_Garage_V2_F","[3706.81958,3105.29541,0.2449]",277.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_House_Big_01_V3_F","[3726.908936,3102.0720215,9.53674e-007]",278.803,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_i_Garage_V2_F","[3737.238037,3100.144043,0.2449]",277.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedShort","[3712.0256348,3093.253418,-0.170903]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3713.259277,3097.0678711,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3713.873291,3100.947754,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3714.484863,3104.814209,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3715.102295,3108.717041,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3715.706787,3112.538818,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3712.943848,3095.0742188,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3682.079834,3100.284424,-0.175953]",458.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3682.68457,3104.106445,-0.175953]",458.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3683.309326,3108.0561523,-0.175953]",458.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3683.932861,3111.998047,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3684.548096,3115.887695,-0.175953]",98.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3653.929199,3104.710449,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3654.543945,3108.585693,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3655.153564,3112.427979,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3655.754639,3116.216064,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3656.378906,3120.150635,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3717.750977,3114.0991211,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3721.679199,3113.477783,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3725.584961,3112.859863,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3729.42749,3112.251953,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3733.427002,3111.619141,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3737.237793,3111.0163574,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3741.186279,3110.391602,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3745.0717773,3109.776855,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3748.630859,3109.213867,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3713.869385,3114.713135,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3709.971436,3115.329834,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3706.110596,3115.940674,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3702.151367,3116.567139,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3698.521973,3117.141357,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3694.839111,3117.724121,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3691.0327148,3118.326172,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3687.0446777,3118.957031,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3684.80249,3117.505127,-0.175953]",278.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3683.14502,3119.573975,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3679.195801,3120.19873,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3675.246582,3120.823486,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3671.296387,3121.448486,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3667.600342,3122.0332031,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3663.759521,3122.640869,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3659.96875,3123.240479,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3656.293213,3123.822021,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3656.611328,3121.615479,-0.175953]",279.015,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3652.520508,3124.418945,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3648.557373,3125.0458984,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3644.605957,3125.671143,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3640.689453,3126.290771,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3636.710938,3126.920166,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["plp_up_HedgeLowTrimmedLong","[3633.17041,3127.480225,-0.175953]",188.99,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_MBG_GER_ESTATE_2","[3578.463623,3315.777344,0]",278.119,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_MBG_GER_HUS_1","[3575.20459,3286.127686,0]",188.119,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_MBG_GER_HUS_3","[3559.408203,3320.465088,0]",458.561,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_MBG_GER_HUS_3","[3538.0432129,3323.681152,0]",458.561,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["Land_MBG_GER_HUS_3","[3519.123779,3326.529053,0]",98.5606,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[246.286392,334.567566,9.53674e-007]",173.599,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3529.251221,3292.527832,0.450337]",96.0092,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3525.634033,3300.0349121,0]",96.0092,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3529.413818,3290.683594,0]",175.01,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3543.885254,3306.243652,9.53674e-007]",216.233,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3551.869385,3289.289551,0]",261.58,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3555.0515137,3287.92041,9.53674e-007]",42.41,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3550.218506,3294.109375,9.53674e-007]",193.756,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3544.341553,3298.0100098,9.53674e-007]",174.615,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3524.537354,3293.224854,0]",81.6617,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3514.580811,3288.763672,0]",333.683,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3515.526855,3268.214355,0]",286.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3503.501709,3257.376465,0]",90.8364,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3508.246338,3253.139893,0]",250.658,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3500.376465,3247.259766,9.53674e-007]",62.2483,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3506.00732422,3240.354248,9.53674e-007]",261.913,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3492.742188,3245.985107,0]",127.465,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3496.221436,3264.184326,9.53674e-007]",312.453,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3502.141602,3281.24292,9.53674e-007]",207.034,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3535.559326,3288.738281,9.53674e-007]",70.217,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3541.315186,3290.169189,0]",73.5792,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3540.559326,3277.561279,9.53674e-007]",293.072,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3527.891113,3271.468506,9.53674e-007]",152.93,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3520.862549,3270.90918,0]",263.917,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3549.339111,3287.579346,9.53674e-007]",81.9347,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3526.489746,3299.479736,9.53674e-007]",84.1901,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3513.815674,3302.958008,0]",198.399,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3503.0996094,3289.55127,9.53674e-007]",122.624,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3511.594482,3285.828857,9.53674e-007]",114.152,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3515.557617,3283.230713,0]",59.8675,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3518.602295,3281.673096,0]",116.112,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3519.162109,3265.390869,9.53674e-007]",129.02,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3504.999023,3272.54541,0]",261.033,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3508.772461,3268.254883,0]",295.001,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3501.573975,3274.695068,9.53674e-007]",154.689,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3504.700928,3253.829346,9.53674e-007]",223.946,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3507.998535,3236.851318,0]",288.733,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3516.984863,3245.828125,9.53674e-007]",225.513,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3524.124756,3258.478271,0]",281.272,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3526.231201,3263.748779,0]",317.331,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3523.42749,3255.109863,0]",358.385,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3502.979004,3261.658936,9.53674e-007]",327.318,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3497.984375,3267.422852,9.53674e-007]",171.474,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3490.723633,3265.952148,9.53674e-007]",266.876,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3490.986816,3261.216797,9.53674e-007]",51.8519,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3513.458252,3292.188721,9.53674e-007]",256.835,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3491.942139,3302.597656,0]",167.886,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3474.619385,3302.795898,0]",295.16,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3477.790039,3305.587158,0]",157.207,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3466.638672,3297.201416,9.53674e-007]",282.18,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3465.512207,3300.677246,9.53674e-007]",289.675,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3495.866211,3302.582275,0]",96.4946,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3518.604492,3308.283203,0]",199.524,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3522.227539,3307.239502,0]",269.92,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3540.841797,3309.841309,0]",157.048,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3526.775146,3305.516602,0]",48.8591,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3546.753906,3303.54541,0]",253.551,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3549.150391,3311.844727,9.53674e-007]",0.853683,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3562.111328,3307.14917,0]",351.849,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3560.216797,3304.771484,9.53674e-007]",197.865,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3529.872559,3278.52124,9.53674e-007]",293.499,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3521.230957,3276.0822754,0]",112.892,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3510.518799,3280.172363,0]",312.736,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_FicusB2s_F","[3509.51709,3256.199707,9.53674e-007]",260.595,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3512.950195,3248.711426,0]",259.436,-100,1,0,[],[0,0],0];call _cString;
+_dat = ["xcam_t_BroussonetiaP1s_F","[3517.434326,3261.354492,0]",181.804,-100,1,0,[],[0,0],0];call _cString;
