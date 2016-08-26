@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	class ItemIDProvider
 	{
-		nextID=4693;
+		nextID=4695;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3809.4233,22.037571,3124.6663};
-		dir[]={-0.83995456,-0.38301918,-0.38473791};
-		up[]={-0.34836003,0.92366934,-0.15956722};
-		aside[]={-0.41649055,2.5512418e-006,0.90926552};
+		pos[]={3897.6631,28.618479,3267.1567};
+		dir[]={-0.30486009,-0.62814772,-0.71590906};
+		up[]={-0.24611032,0.77808028,-0.57794821};
+		aside[]={-0.92007184,6.2957406e-007,0.39179981};
 	};
 };
 binarizationWanted=0;
@@ -410,7 +410,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1290;
+		items=1292;
 		class Item0
 		{
 			dataType="Marker";
@@ -943,7 +943,7 @@ class Mission
 		class Item42
 		{
 			dataType="Marker";
-			position[]={3606.1389,5.6861555e+023,3222.01};
+			position[]={3606.4604,5.6861555e+023,3218.2922};
 			name="atm_marker_3";
 			type="plp_mark_civ_dollar";
 			colorName="ColorGreen";
@@ -1098,7 +1098,7 @@ class Mission
 			position[]={3788.4487,8.0529842e+015,3115.0525};
 			name="med_car_1";
 			type="Empty";
-			angle=278.44922;
+			angle=278.44919;
 			id=147;
 			atlOffset=8.0529842e+015;
 		};
@@ -11514,8 +11514,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -11524,10 +11524,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -11571,8 +11571,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -11581,10 +11581,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -11793,6 +11793,7 @@ class Mission
 					};
 					id=2217;
 					type="C_man_polo_3_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20119,8 +20120,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3605.7043,15.722594,3221.9143};
-				angles[]={0,0.11363385,0};
+				position[]={3606.5334,15.724699,3218.2668};
+				angles[]={0,0.13685353,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20130,7 +20131,6 @@ class Mission
 			};
 			id=3641;
 			type="bv_atm";
-			atlOffset=-0.0021047592;
 		};
 		class Item751
 		{
@@ -33406,7 +33406,7 @@ class Mission
 			position[]={3830.0071,1.2111953e+021,3087.3896};
 			name="med_air_1";
 			type="Empty";
-			angle=8.9679976;
+			angle=8.9679966;
 			id=4691;
 			atlOffset=1.2111953e+021;
 		};
@@ -33425,6 +33425,36 @@ class Mission
 			id=4692;
 			type="SLB2k11_firestation";
 			atlOffset=0.54739571;
+		};
+		class Item1290
+		{
+			dataType="Marker";
+			position[]={3892.0999,5.6861555e+023,3252.6978};
+			name="atm_marker_8";
+			type="plp_mark_civ_dollar";
+			colorName="ColorGreen";
+			a=0.5;
+			b=0.5;
+			angle=0.033999994;
+			id=4693;
+			atlOffset=5.6861555e+023;
+		};
+		class Item1291
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3892.0718,15.724686,3252.7407};
+				angles[]={0,3.2571003,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
+			};
+			id=4694;
+			type="bv_atm";
 		};
 	};
 };
