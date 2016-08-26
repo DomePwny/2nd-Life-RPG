@@ -14,7 +14,7 @@ _val = 1;
 _exit = false;
 _toasters = false;
 {
-	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
+	if(player distance (getMarkerPos _x) < 15) exitWith {_zone = _x;};
 } foreach _resourceZones;
 /*if(_zone == "HH_1") exitWith {[] spawn life_fnc_hh};*/
 if(life_spam_my_dick == 1) exitWith {};
