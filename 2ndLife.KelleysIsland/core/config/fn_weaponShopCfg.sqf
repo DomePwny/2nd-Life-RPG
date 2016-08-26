@@ -106,7 +106,9 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
 					["RH_m9",nil,240],
-					["RH_15Rnd_9x19_M9",nil,5]
+					["RH_15Rnd_9x19_M9",nil,5],
+					["Taser_26",nil,125],
+					["26_cartridge",nil,2]
 				];
 			};
 			if(__GETC__(life_coplevel) > 1) then {

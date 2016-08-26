@@ -117,25 +117,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["2ndLife_Rebel_Vest1",nil,5000],
-			["2ndLife_Rebel_Vest2",nil,5000],
-			["2ndLife_Rebel_Vest3",nil,5000],
-			["2ndLife_Rebel_Vest4",nil,5000],
-			["2ndLife_Rebel_Vest5",nil,5000],
-			["2ndLife_Rebel_Vest6",nil,5000],
-			["2ndLife_Rebel_Vest7",nil,5000],
-			
-			["2ndLife_Civ_Vest1",nil,3000],
-			["2ndLife_Civ_Vest2",nil,3000],
-			["2ndLife_Civ_Vest3",nil,3000],
-			["2ndLife_Civ_Vest4",nil,3000],
-			["2ndLife_Civ_Vest5",nil,3000],
-			["2ndLife_Civ_Vest6",nil,3000],
-			["2ndLife_Civ_Vest7",nil,3000],
-			["2ndLife_Civ_Vest8",nil,3000],
-			["2ndLife_Civ_Vest9",nil,3000],
-			["2ndLife_Civ_Vest10",nil,3000]
-			
+			["2ndLife_Mafia_Vest",nil,5000]
 		];
 	};
 	
@@ -143,29 +125,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			// Farblich
-			["Pwnyblau",nil,500],
-			["Pwnybraun",nil,500],
-			["Pwnygelb",nil,500],
-			["Pwnylila",nil,500],
-			["Pwnyorange",nil,500],
-			["Pwnypink",nil,500],
-			["Pwnyschwarz",nil,500],
-			["Pwnyweis",nil,500],
-			// Muster
-			["Pwnypokemon",nil,550],
-			["Pwnygraffiti",nil,550],
-			["Pwnypony",nil,550],
-			["Pwnyadler",nil,550],
-			["Pwnybatman",nil,550],
-			["Pwnybb",nil,550],
-			["Pwnyclint",nil,550],
-			["Pwnyfuture",nil,550],
-			["Pwnygucci",nil,550],
-			["Pwnykuerbis",nil,550],
-			["Pwnytwitch",nil,550],
-			["Pwnyvader",nil,550],
-			["Pwnyweed",nil,550]
+			["PwnyMafia",nil,500]
 		];
 	};
 };

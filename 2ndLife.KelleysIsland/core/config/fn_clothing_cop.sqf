@@ -33,6 +33,7 @@ switch (_filter) do
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50],
 			_ret pushBack ["SecondLife_Officer3_uni",nil,50];
 			_ret pushBack ["SecondLife_Sheriff3_uni",nil,50];
+			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
 			_ret pushBack ["2ndLife_ASU_2",nil,50];
 			_ret pushBack ["2ndLife_WING_3",nil,50];
 		};
@@ -40,6 +41,7 @@ switch (_filter) do
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
 			_ret pushBack ["SecondLife_Officer4_uni",nil,50];
 			_ret pushBack ["SecondLife_Sheriff4_uni",nil,50];
+			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
 			_ret pushBack ["2ndLife_ASU_2",nil,50];
 			_ret pushBack ["2ndLife_WING_3",nil,50];
 		};
@@ -47,6 +49,7 @@ switch (_filter) do
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
 			_ret pushBack ["SecondLife_Officer5_uni",nil,50];
 			_ret pushBack ["SecondLife_Sheriff5_uni",nil,50];
+			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
 			_ret pushBack ["2ndLife_ASU_2",nil,50];
 			_ret pushBack ["2ndLife_WING_3",nil,50];
 		};
@@ -117,6 +120,8 @@ switch (_filter) do
 			_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Washedout","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Tan","Sheriff Hut",50];
+			_ret pushBack ["TRYK_H_woolhat","Marshal Cap",50];
+			_ret pushBack ["TRYK_H_woolhat_WH","Marshal Cap",50];
 		};
 		if(__GETC__(life_coplevel) == 4) then {
 			_ret pushBack ["wing_helmet",nil,15];
@@ -125,6 +130,8 @@ switch (_filter) do
 			_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Washedout","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Tan","Sheriff Hut",50];
+			_ret pushBack ["TRYK_H_woolhat","Marshal Cap",50];
+			_ret pushBack ["TRYK_H_woolhat_WH","Marshal Cap",50];
 		};
 		if(__GETC__(life_coplevel) == 5) then {
 			_ret pushBack ["wing_helmet",nil,15];
@@ -133,6 +140,8 @@ switch (_filter) do
 			_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Washedout","Sheriff Hut",50];
 			_ret pushBack ["Campaign_Hat_Tan","Sheriff Hut",50];
+			_ret pushBack ["TRYK_H_woolhat","Marshal Cap",50];
+			_ret pushBack ["TRYK_H_woolhat_WH","Marshal Cap",50];
 		};
 		if(__GETC__(life_coplevel) == 6) then {
 			_ret pushBack ["wing_helmet",nil,15];
@@ -227,6 +236,7 @@ switch (_filter) do
 			//_ret pushBack ["2ndLife_PoliceLow_Vest10",nil,15];
 			_ret pushBack ["2ndLife_PoliceLow_Vest1",nil,15];
 			_ret pushBack ["2ndLife_PoliceLow_Vest6",nil,15];
+			_ret pushBack ["2ndLife_Marshal_Vest",nil,20];
 		};
 		if(__GETC__(life_coplevel) == 4) then {
 			_ret pushBack ["V_RebreatherB","Rebreather",20];
@@ -234,11 +244,13 @@ switch (_filter) do
 			//_ret pushBack ["2ndLife_PoliceLow_Vest7",nil,15];
 			_ret pushBack ["2ndLife_PoliceLow_Vest1",nil,15];
 			_ret pushBack ["2ndLife_PoliceLow_Vest6",nil,15];
+			_ret pushBack ["2ndLife_Marshal_Vest",nil,20];
 		};
 		if(__GETC__(life_coplevel) == 5) then {
 			_ret pushBack ["V_RebreatherB","Rebreather",20];
 			_ret pushBack ["2ndLife_PoliceLow_Vest1",nil,15];
 			_ret pushBack ["2ndLife_PoliceLow_Vest6",nil,15];
+			_ret pushBack ["2ndLife_Marshal_Vest",nil,20];
 		};
 		if(__GETC__(life_coplevel) > 5) then {
 			_ret pushBack ["V_RebreatherB","Rebreather",20];
@@ -252,7 +264,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["AM_PoliceBelt","Police Rucksack",80]
+			["PwnyPolice",nil,80]
 		];
 	};
 };
