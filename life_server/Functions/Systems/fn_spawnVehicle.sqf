@@ -73,7 +73,25 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 [_query,1] spawn DB_fnc_asyncCall;
 _color = _vInfo select 8;
 
-if !(typeName _sp isEqualTo "STRING") then {
+if(typeName _sp isEqualTo "STRING") then {
+	if (_sp isEqualTo "cop_air_1") then {
+		_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
+		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
+		_vehicle allowDamage false;
+		_obj = nearestObject [getMarkerPos _sp, "Land_HeliPad"];
+		_vehicle setDir markerDir _sp;
+		_vehicle setPosATL (_obj modelToWorld [-0.4,-4,4.65]);
+		sleep 0.6;
+	} else {
+		_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
+		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
+		_vehicle allowDamage false;
+		_obj = nearestObject [getMarkerPos _sp, "Land_Hospital_side2_F"];
+		_vehicle setDir markerDir _sp;
+		_vehicle setPosATL (_obj modelToWorld [-0.4,-4,12.65]);
+		sleep 0.6;
+	}; 
+} else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};	
 	if(_color isEqualType []) then {
@@ -89,26 +107,6 @@ if !(typeName _sp isEqualTo "STRING") then {
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
-} else {
-	if (_sp isEqualTo "cop_air_1") then {
-		_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
-		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
-		_vehicle allowDamage false;
-		_obj = nearestObject [getMarkerPos _sp, "Land_Helipad"];
-		_vehicle setDir markerDir _sp;
-		_vehicle setPosATL (_obj modelToWorld [-0.4,-4,4.65]);
-		_vehicle setFuel _fuel;
-		sleep 0.6;
-	} else {
-		_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
-		waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
-		_vehicle allowDamage false;
-		_obj = nearestObject [getMarkerPos _sp, "Land_Hospital_side2_F"];
-		_vehicle setDir markerDir _sp;
-		_vehicle setPosATL (_obj modelToWorld [-0.4,-4,12.65]);
-		_vehicle setFuel _fuel;
-		sleep 0.6;
-	};
 };
 _vehicle allowDamage true;
 

@@ -24,7 +24,7 @@ if(cash_in_bank < _price) exitWith {[format[(localize "STR_Garage_CashError"),[_
 if(typeName life_garage_sp isEqualTo "ARRAY") then {
 	[_vid,_pid,life_garage_sp select 0,_unit,_price,life_garage_sp select 1] remoteExec ["TON_fnc_spawnVehicle",(call life_fnc_HCC)];
 } else {
-	if(life_garage_sp in ["medic_spawn_1","med_air_2_1"]) then {
+	if(life_garage_sp in ["medic_spawn_1","cop_air_1"]) then {
 		[_vid,_pid,life_garage_sp,_unit,_price] remoteExec ["TON_fnc_spawnVehicle",(call life_fnc_HCC)];
 	} else {
 		[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,markerDir life_garage_sp] remoteExec ["TON_fnc_spawnVehicle",(call life_fnc_HCC)];
