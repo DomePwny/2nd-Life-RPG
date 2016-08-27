@@ -13,4 +13,4 @@ carSalesmanList = [];
 publicVariable "carSalesmanList";
 onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 
-[8,true,true,12] execFSM "core\fsm\timeModule.fsm";
+[8,true,true,16] execFSM "core\fsm\timeModule.fsm";
