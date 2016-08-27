@@ -44,7 +44,7 @@ if(_ammo isKindOf "Melee") exitwith {
 	 };
 };
 
-if(currentWeapon _unit == "A3L_Extinguisher") exitwith {
+if(currentWeapon _unit == "2ndLife_Extinguisher") exitwith {
 	if(player distance fire_loc1 < 20 && !isNull theFire1) then { 
 		_chance = round (random 1001);
   		 if(_chance > 999) then {

@@ -429,9 +429,7 @@ switch(_shop) do
 				default
 				{
 					["Hideout Armament",
-						[
-							["A3L_Glock17",nil,1260],
-							["A3L_Glock17mag",nil,50]                                          
+						[                                        
 						]
 					];
 				};

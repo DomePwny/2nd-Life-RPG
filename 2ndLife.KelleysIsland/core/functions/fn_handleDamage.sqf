@@ -47,6 +47,9 @@ if(!isNull _source) then {
 			};
 			_damage = 0;	
 		};
+		if(_curWep in ["Trixie_CZ550"]) exitwith {
+			_damage = 0;	
+		};
 	} else {
 		_damage = _damage / 8; 
 		_isWater = surfaceIsWater (getPosASL player);
