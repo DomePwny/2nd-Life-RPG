@@ -1099,8 +1099,8 @@ fnc_startfire = {
 };
 
 fnc_police_fire = {
-	["NEWS: Lakeside PD is on fire!", false] spawn domsg; 
-	fire_loc1 = [8731,7232,0.1];
+	["NEWS: Weed Feld steht unter feuer!", false] spawn domsg; 
+	fire_loc1 = [2695.1,3648,0.1];
 	[] spawn fnc_startfire;
 };
 
