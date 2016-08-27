@@ -63,10 +63,6 @@ while {true} do {
 		default {diag_log format["FUEL CONSUMPTION SCRIPT: MISSING VEHICLE %1",_vehicle]; _rate = 0;};
 	};
 
-
-
-
-
 	while{true} do {
 		_fuel = fuel _vehicle;
 		_difFuel = _oldFuel - _fuel;
