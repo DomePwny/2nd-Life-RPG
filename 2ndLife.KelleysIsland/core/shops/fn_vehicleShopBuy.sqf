@@ -110,7 +110,7 @@ switch(playerSide) do {
 		};
 		if(_classname isEqualTo "Jonzie_Log_Truck") then
 		{
-			[_vehicle,true] spawn life_fnc_myTruck;
+			vehspawned = _vehicle;
 		};
 	};
 
@@ -121,7 +121,7 @@ switch(playerSide) do {
 		};
 		if(_classname isEqualTo "Jonzie_Log_Truck") then
 		{
-			[_vehicle,true] spawn life_fnc_myTruck;
+			vehspawned = _vehicle;
 		};
 	};
 	

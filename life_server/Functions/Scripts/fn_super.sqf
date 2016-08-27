@@ -6,10 +6,10 @@
 */
 private["_vehicle", "_controll", "_liter", "_completeliter", "_costs", "_vehicleFuelold", "_vehicleArray", "_ui", "_progress", "_pgText", "_cP", "_vehicleName"];
 
-_vehicleArray = nearestObjects[getPos player, ["Landvehicle"],5];
+_vehicleArray = nearestObjects[getPos player, ["Landvehicle"],3];
 
 if(count _vehicleArray == 0) exitwith {["Kein Fahrzeug gefunden", false] spawn domsg;};
-if(count _vehicleArray > 1 ) exitwith {["Es wurde mehr als ein Fahrzeug im Umkreis von 5 Metern gefunden! Bitte entferne alle weiteren Fahrzeuge...", false] spawn domsg;};
+if(count _vehicleArray > 1 ) exitwith {["Es wurde mehr als ein Fahrzeug im Umkreis von 3 Metern gefunden! Bitte entferne alle weiteren Fahrzeuge...", false] spawn domsg;};
 
 _vehicle = (_vehicleArray select 0);
 
@@ -88,7 +88,7 @@ if(_action) then {
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Betanke %2 (%3%1)...","%",_vehicleName,round((fuel _vehicle) * 100 ) ];
 		if(_cP >= 1) exitWith {};
-		if(player distance _vehicle > 5) exitWith {hint "Du musst zum Tanken im Umkreis von 5 Metern bleiben."; 5 cutText ["","PLAIN"];};
+		if(player distance _vehicle > 3) exitWith {hint "Du musst zum Tanken im Umkreis von 5 Metern bleiben."; 5 cutText ["","PLAIN"];};
 		//hint formatText["DEBUG akt TANK: %1, CP %2, Liter %3", fuel _vehicle, _cp, _liter]; 5 cutText ["","PLAIN"];
 		_vehicle setFuel ((fuel _vehicle + _liter) min 1);
 		
