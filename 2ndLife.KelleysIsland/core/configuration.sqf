@@ -150,7 +150,7 @@ maintenance_on = false;
 totallogs = 0;
 life_taxiMarker = [];
 prisonbreak = false;
-SecondLife_version = "SecondLifeModVersion1012";
+SecondLife_version = "SecondLifeModVersion1012a";
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for civs and cops? (Medics excluded for now)
