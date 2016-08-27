@@ -110,7 +110,7 @@ switch(playerSide) do {
 		};
 		if(_classname isEqualTo "Jonzie_Log_Truck") then
 		{
-			vehspawned = _vehicle;
+			[_vehicle, true] remoteExecCall ["life_fnc_myTruck",player];
 		};
 	};
 
@@ -121,7 +121,7 @@ switch(playerSide) do {
 		};
 		if(_classname isEqualTo "Jonzie_Log_Truck") then
 		{
-			vehspawned = _vehicle;
+			[_vehicle, true] remoteExecCall ["life_fnc_myTruck",player];
 		};
 	};
 	
