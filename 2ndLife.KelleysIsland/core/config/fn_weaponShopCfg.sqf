@@ -32,6 +32,8 @@ switch(_shop) do
 						[
 							["cg_torch",nil,550], 
 							["cg_torchbattery",nil,50],
+							["2ndLife_Extinguisher",nil,825],
+							["30Rnd_test_mag",nil,25],
 							["ToolKit",nil,2500],
 							["ItemCompass",nil,50],
 							["tf_anprc152",nil,10],
@@ -78,6 +80,8 @@ switch(_shop) do
 					["Police Utility Shop",								
 						[
 							["Second_Life_Binder_i",nil,10],
+							["2ndLife_Extinguisher",nil,825],
+							["30Rnd_test_mag",nil,25],
 							["cg_torch",nil,550], 
 							["cg_torchbattery",nil,50],
 							["CG_Spikes_Collapsed",nil,250], 
@@ -105,10 +109,10 @@ switch(_shop) do
 			_ret = [];
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
-					["RH_m9",nil,240],
-					["RH_15Rnd_9x19_M9",nil,5],
 					["Taser_26",nil,125],
-					["26_cartridge",nil,2]
+					["26_cartridge",nil,2],
+					["RH_m9",nil,240],
+					["RH_15Rnd_9x19_M9",nil,5]
 				];
 			};
 			if(__GETC__(life_coplevel) > 1) then {
