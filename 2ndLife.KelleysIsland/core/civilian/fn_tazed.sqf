@@ -20,7 +20,7 @@ if(life_rebelbadguyman) then {
 
 if(_shooter isKindOf "Man" && !deadPlayer) then
 {
-	if(!life_istazed && !life_isdowned) then
+	if(!life_istazed) then
 	{
 		life_istazed = true;
 		[_unit] spawn life_fnc_forceRagdoll;
@@ -40,10 +40,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 		{
 			{player addMagazine _x;} foreach _curMags;
 		};
-		playSound3D ["cg_sndimg\sounds\tazer.ogg", _shooter, false, getPosASL player, 1, 1, 125];
 		disableUserInput true;
-
-		player playmovenow "DeadState";
 		_sleeptime spawn {
 			_sleeptime = _this;
 			uisleep _sleeptime;

@@ -42,7 +42,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["Taser_26"]) exitwith {
-			if(!life_is_tazed && vehicle player == player) then {
+			if(!life_istazed && vehicle player == player) then {
 				[_unit,_source] call life_fnc_tazed;
 			};
 			_damage = 0;	
