@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4357.3174,63.34927,2310.4478};
-		dir[]={-0.76369989,-0.57999545,0.28350058};
-		up[]={-0.54374093,0.81461793,0.20184761};
-		aside[]={0.34801501,-3.7092832e-008,0.93748927};
+		pos[]={3344.8494,74.102867,2621.5542};
+		dir[]={-0.37784383,-0.77981162,0.49914402};
+		up[]={-0.47066286,0.6260125,0.62176138};
+		aside[]={0.79732603,-7.4505806e-009,0.60356349};
 	};
 };
 binarizationWanted=0;
@@ -10269,7 +10269,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3329.0757,8.8445177,2671.7751};
+						position[]={3329.0759,8.8444557,2671.7751};
 						angles[]={0,0.070616022,0};
 					};
 					side="Civilian";
@@ -10277,11 +10277,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this enableSimulation false;  this allowDamage false;  this addAction[""Boat Shop"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_3"",""civ"",""Billy's Boat Rentals & Ownership""]];";
+						init=" this enableSimulation false;  this allowDamage false;  this addAction[""Boat Shop"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Billy's Boat Rentals & Ownership""]];";
 					};
 					id=1123;
 					type="C_man_shorts_3_F_euro";
-					atlOffset=0.066053391;
+					atlOffset=0.065991402;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10468,11 +10468,10 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4130.3276,1.390542,5057.4468};
+						position[]={4130.3281,1.3901155,5057.4468};
 						angles[]={0,4.6982865,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -10480,6 +10479,7 @@ class Mission
 					};
 					id=1132;
 					type="C_man_shorts_3_F_euro";
+					atlOffset=9.0450001;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11494,8 +11494,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -11504,10 +11504,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -11551,8 +11551,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -11561,10 +11561,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
