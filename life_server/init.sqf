@@ -14,26 +14,25 @@ publicVariable "life_server_isReady";
  		if(_cops > 9 || _meds > 3) then { 
  			_chance = round (random 85);
 			if(_chance == 1) then {
-				remoteExec ["fnc_police_fire", -2];
+				remoteExec ["fnc_weed_fire", -2];
 			};
 			if(_chance == 2) then {
-				if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-					remoteExec ["fnc_bank_fire", -2];	
-				} else {
-					remoteExec ["fnc_donuts_fire", -2];
-				};
+				remoteExec ["fnc_union_fire", -2];
 			};
 			if(_chance == 3) then {
-				remoteExec ["fnc_wheat_fire", -2];
+				remoteExec ["fnc_prison_fire", -2];
 			};
 			if(_chance == 4) then {
-				remoteExec ["fnc_tiki_fire", -2];
+				remoteExec ["fnc_darthmouth_fire", -2];
 			};
 			if(_chance == 5) then {
-				remoteExec ["fnc_morrison_fire", -2];
+				remoteExec ["fnc_saegewerk_fire", -2];
 			};
 			if(_chance == 6) then {
-				remoteExec ["fnc_prison_fire", -2];
+				remoteExec ["fnc_korn_fire", -2];
+			};
+			if(_chance == 7) then {
+				remoteExec ["fnc_wolle_fire", -2];
 			};
 		};
 		uisleep 300;

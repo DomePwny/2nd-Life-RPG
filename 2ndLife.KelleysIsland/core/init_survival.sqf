@@ -1098,39 +1098,45 @@ fnc_startfire = {
 	thefire1 = "test_EmptyObjectForFireBig" createVehicleLocal fire_loc1;  
 };
 
-fnc_police_fire = {
-	["NEWS: Weed Feld steht unter feuer!", false] spawn domsg; 
+fnc_weed_fire = {
+["NEWS: Das Weed Feld brennt!", false] spawn domsg; 
 	fire_loc1 = [2695.1,3648,0.1];
 	[] spawn fnc_startfire;
 };
 
-fnc_bank_fire = {
-["NEWS: Lakeside Bank is on fire!", false] spawn domsg; 
-	fire_loc1 = [8531,6621,0.1];
+fnc_union_fire = {
+["NEWS: Der Union City Park brennt!", false] spawn domsg; 
+	fire_loc1 = [3520.18,3187.51,0.1];
 	[] spawn fnc_startfire;
 };
 
-fnc_wheat_fire = {
-["NEWS: Lakeside Wheat Field is on fire!", false] spawn domsg; 
-	fire_loc1 = [8712,6595,0.1];
-	[] spawn fnc_startfire;	
-};
-
-fnc_tiki_fire = {
-["NEWS: Lakeside Tiki Bar is on fire!", false] spawn domsg; 
-	fire_loc1 = [7121,5400,0.1];
-	[] spawn fnc_startfire;	
-};
-
-fnc_morrison_fire = {
-["NEWS: Morrison General and Fishing is on fire!", false] spawn domsg; 
-	fire_loc1 = [5221,2854,0.1];
-	[] spawn fnc_startfire;	
-};
-
 fnc_prison_fire = {
-["NEWS: Lakeside Prison is on fire!", false] spawn domsg; 
-	fire_loc1 = [9646,10041,0.1];
+["NEWS: Der Gefängnishof brennt!", false] spawn domsg; 
+	fire_loc1 = [2805.73,4560.84,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_darthmouth_fire = {
+["NEWS: Die Darthmouth City Tankstelle brennt!", false] spawn domsg; 
+	fire_loc1 = [5451,4405.6,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_saegewerk_fire = {
+["NEWS: Das Sägewerk brennt!", false] spawn domsg; 
+	fire_loc1 = [4657.98,2436.4,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_korn_fire = {
+["NEWS: Das Kornfeld brennt!", false] spawn domsg; 
+	fire_loc1 = [1724.74,3799.65,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_wolle_fire = {
+["NEWS: Das Baummwollefeld brennt!", false] spawn domsg; 
+	fire_loc1 = [2834.28,2932.03,0.1];
 	[] spawn fnc_startfire;	
 };
 
