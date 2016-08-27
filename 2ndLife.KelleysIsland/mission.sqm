@@ -10906,7 +10906,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" this allowDamage false; this enableSimulation false; this addAction[""Rifle Store"",life_fnc_weaponShopMenu,""rifle"",0,false,false,"""",' license_civ_rifle && playerSide in [civilian,east]']; this addAction[format[""%1 ($%2)"",[""license_civ_rifle""] call life_fnc_varToStr,[([""rifle""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rifle"",0,false,false,"""",' !license_civ_rifle && playerSide == civilian '];";
+						init=" this allowDamage false; this enableSimulation false; this addAction[""Rifle Store"",life_fnc_weaponShopMenu,""rifle"",0,false,false,"""",' (license_civ_rifle OR license_maf_rifle) && playerSide in [civilian,east]']; this addAction[format[""%1 ($%2)"",[""license_civ_rifle""] call life_fnc_varToStr,[([""rifle""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rifle"",0,false,false,"""",' !license_civ_rifle && playerSide == civilian '];";
 					};
 					id=1157;
 					type="C_man_polo_2_F";
