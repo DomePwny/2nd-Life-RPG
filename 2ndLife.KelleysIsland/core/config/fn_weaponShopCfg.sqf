@@ -80,6 +80,8 @@ switch(_shop) do
 					["Police Utility Shop",								
 						[
 							["Second_Life_Binder_i",nil,10],
+							["CG_ATF_Pizza_Box_i","Pizza",500],
+							["CG_ATF_Donut_Box_i","Donuts",750],
 							["2ndLife_Extinguisher",nil,825],
 							["30Rnd_test_mag",nil,25],
 							["cg_torch",nil,550], 

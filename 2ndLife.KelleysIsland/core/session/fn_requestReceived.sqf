@@ -98,6 +98,8 @@ switch(playerSide) do {
 	};
 };
 
+[] call life_fnc_initPayChecks;
+
 _completeCheck = {
     _handle = (_this select 0) select 0;
 	if(scriptDone _handle) exitWith {

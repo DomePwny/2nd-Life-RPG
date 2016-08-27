@@ -7,7 +7,6 @@ _item = param [0,false,[false]];
 _complete = false;
 _price = 750;
 
-
 if(_item) then {
 
 
