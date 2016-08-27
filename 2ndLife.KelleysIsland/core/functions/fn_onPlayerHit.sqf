@@ -42,7 +42,9 @@ if(!isNull _source) then {
 
 		if(_curWep in ["Taser_26"]) exitwith {
 			["Remove",0.1,_source] call fnc_doHealth;
+			if(!life_is_tazed && vehicle player == player) then {
 			[_unit,_source] spawn life_fnc_tazed;
+			};
 			_penis = true;
 		};
 
