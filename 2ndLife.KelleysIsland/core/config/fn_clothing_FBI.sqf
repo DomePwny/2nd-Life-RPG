@@ -21,9 +21,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["A3LShirt","2ndLife Shirt",25],
+			["2ndLife_sndlife",nil,25],
 			["KAEL_SUITS_BR_F12",nil,1750],
-
 			["KAEL_SUITS_BLK_F",nil,1350],
 			["KAEL_SUITS_BR_F",nil,1350],
 			["KAEL_SUITS_BR_F3",nil,1350],
@@ -37,7 +36,6 @@ switch (_filter) do
 			["KAEL_SUITS_BR_F11",nil,1350],
 			["KAEL_SUITS_BR_F13",nil,1350],
 			["KAEL_SUITS_BR_F14",nil,1350],
-
 			["KAEL_SUITS_BR_F24",nil,1350],
 			["KAEL_SUITS_BR_F25",nil,1350],
 			["KAEL_SUITS_BR_F16",nil,1350],
@@ -59,16 +57,8 @@ switch (_filter) do
 			["KAEL_SUITS_BR_F33",nil,1350],
 			["KAEL_SUITS_BR_F34",nil,1350],
 			["KAEL_SUITS_BR_F35",nil,1350],
-
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
-
-			["A3L_Suit_Uniform","Suit",1350],
-
-			["OrangePlaid_uni","A3L Plaid (Orange)",35],
-			["OrGnGy_uni","A3L Polo (OR-GN-GY)",35],
-			["OrGyBr_uni","A3L Polo (OR-GY-BR)",35],
-			//koil added
 			["2ndLife_DerBeste1",nil,50],
 			["2ndLife_EA1",nil,50],
 			["2ndLife_Herz1",nil,50],
@@ -76,14 +66,7 @@ switch (_filter) do
 			["2ndLife_Mario1",nil,50],
 			["2ndLife_Pika1",nil,50],
 			["2ndLife_Condom1",nil,50],
-			["2ndLife_Fuckyou1",nil,50],
-
-			["A3L_Priest_Uniform","Priest Uniform",100],
-			["A3L_Character_Uniform","Life Uniform",150],
-			["A3L_Dude_Outfit","Dude outfit",200],
-			["A3L_Farmer_Outfit","Farmer Outfit",200],
-			["A3L_Worker_Outfit","Worker Outfit",200],
-			["A3L_Bikini_Girl","Bikini",4000]	
+			["2ndLife_Fuckyou1",nil,50]
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];
@@ -162,7 +145,6 @@ switch (_filter) do
 			["Gorb_HolidayBaseballHat6",nil,112],
 			["Gorb_HolidayBaseballHat7",nil,112],
 			["Gorb_HolidayBaseballHat8",nil,112],
-
 			["H_ShrekMask",nil,112],
 			["H_MickeyMask",nil,112],
 			["H_UltronMask",nil,112],
@@ -192,7 +174,6 @@ switch (_filter) do
 			["H_BushMask",nil,112],
 			["H_ObamaMask",nil,112],
 			["H_FranklinMask",nil,112],
-
 			["H_StrawHat",nil,112],
 			["H_StrawHat_dark",nil,112],
 			["Masque_Alien1",nil,1110],
@@ -231,16 +212,6 @@ switch (_filter) do
 			["Masque_Hoxton",nil,1112],
 			["Masque_Incendiaire",nil,1112],
 			["Masque_Dallas",nil,1110],
-
-			["cg_dinomask",nil,1120],
-			["cg_dinomask_p",nil,1110],
-			["cg_dinomask_r",nil,1110],
-
-			["cg_horsehead",nil,1112],
-			["cg_horsehead_2",nil,1110],
-			["cg_horsehead_blk",nil,1110],
-			["cg_horsehead_pnk",nil,1120],
-
 			["ALE_H_NewEra_Monster",nil,110],
 			["ALE_H_NewEra_Rouge",nil,110],
 			["ALE_H_NewEra_Superman",nil,112],
@@ -248,15 +219,12 @@ switch (_filter) do
 			["ALE_H_NewEra_Black",nil,110],
 			["ALE_H_NewEra_Lakers",nil,120],
 			["ALE_H_NewEra_Redsox",nil,120],
-			
 			["ALE_H_Calot",nil,12],
 			["ALE_H_Cowboy_White",nil,12],
 			["ALE_H_Cowboy_Black",nil,12],
 			["ALE_H_Cowboy_Brown",nil,12],
-
 			["kio_vfv_mask","Anon", 100],
 			["Kio_Capital_Hat","Top Hat w/Monacle", 100],
-			["a3l_hardhat","Hard Hat", 20],
 			["Kio_Afro_Hat","Brown Afro", 20],
 			["H_Beret_blk","Black Beret", 20],
 			["H_Booniehat_khk",nil, 40],
@@ -267,7 +235,6 @@ switch (_filter) do
 			["Kio_Santa_Hat","Santa Hat", 20],
 			["Kio_Spinning_Hat","Spinning Hat", 20],
 			["Kio_Hat","Cute Warm Hat", 20],
-
 			["TRYK_H_woolhat_WH",nil,150],
 			["TRYK_H_woolhat_tan",nil,150],
 			["TRYK_H_woolhat_CW",nil,150],
@@ -291,23 +258,10 @@ switch (_filter) do
 			["TRYK_H_Bandana_wig",nil,150],
 			["TRYK_H_Bandana_H",nil,150],
 			["TRYK_Kio_Balaclava",nil,150],
-
 			["TRYK_H_wig",nil,150],
-
-			["A3L_Legoman","Lego Helmet",500],
-			["A3L_soa_helmet","Biker Helmet",40],	
-			["A3L_gangster_hat","Gangster Mask",10],
-			["A3L_Mask","Mask",10],				
-			["A3L_longhairblack","Long Hair Black",12],
-			["A3L_longhairblond","Long Hair Blond",12],
-			["A3L_longhairbrown","Long Hair Brown",12],
-			["A3L_Crown","Crown",12],
 			["cowboyhat","Cowboyhat",12],
-			["A3L_mexicanhat","Mexican Hat",12],
 			["santahat","Santa hat",12],
-			["A3L_Sombrero","Sombrero",12],
 			["turban","Turban",12],
-			["A3L_russianhat","Russianhat",12],
 			["H_Cap_tan",nil,12],
 			["H_Cap_blk",nil,12],
 			["H_Cap_blk_CMMG",nil,12],
@@ -347,8 +301,6 @@ switch (_filter) do
 			["SFG_Tac_ChopsG",nil,2],
 			["SFG_Tac_ChopsO",nil,2],
 			//bears end
-
-			["A3L_FatHead",nil,2],
 			["G_Lady_Blue","Damenbrille",10],
 			["Payday_Cagoule",nil,2],
 			["Masque_Solitaire",nil,2],
