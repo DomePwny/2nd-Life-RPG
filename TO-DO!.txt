@@ -1,11 +1,7 @@
-JETZT:
-
-CatalinaObjects entfernen
-TESTEN!!!
-
-Irgendwann:
 Tow-Truck überarbeiten
 ADAC einbauen
+
+
 
 ------ SYNC DATEN FÜR DAS UPDATE ------
 Repository name

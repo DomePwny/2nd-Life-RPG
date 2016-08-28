@@ -37,8 +37,8 @@ sleep 1.818;
 player playactionnow "Cl3_anim_Gathering1";
 sleep 4.761;
 
-_chance = (floor random 4);
-if(_chance > 2) exitwith { ["Der versuch ist fehlgeschlagen!", false] spawn doquickmsg; harvesting = false;harvesting = false; };
+_chance = (floor random 10);
+if(_chance > 7) exitwith { ["Der versuch ist fehlgeschlagen!", false] spawn doquickmsg; harvesting = false;harvesting = false; };
 
 
 if(vehicle player != player) exitWith {[localize "STR_ISTR_Pick_MineVeh", false] spawn doquickmsg; harvesting = false;};
