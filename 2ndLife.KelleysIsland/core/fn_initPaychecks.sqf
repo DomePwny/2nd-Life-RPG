@@ -19,7 +19,7 @@ switch (playerSide) do
 {
 	case west:
 	{
-		switch(__CONST__(life_coplevel)) do
+		switch(__GETC__(life_coplevel)) do
 		{
 			case 0: {life_paycheck = life_paycheck + 0;};
 			case 1: {life_paycheck = life_paycheck + 0;}; 
@@ -37,7 +37,7 @@ switch (playerSide) do
 
 	case independent:
 	{
-		switch(__CONST__(life_mediclevel)) do
+		switch(__GETC__(life_mediclevel)) do
 		{
 			case 0: {life_paycheck = life_paycheck + 0;}; 
 			case 1: {life_paycheck = life_paycheck + 0;}; 

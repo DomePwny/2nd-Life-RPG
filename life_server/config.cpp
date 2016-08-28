@@ -109,6 +109,8 @@ class CfgFunctions
 			class trafficLights {};
 			class loops {};
 			class simDisableGlobal {};
+			class saveBounties {};
+			class loadBounties {};
 		};
 		class Paintball
 		{

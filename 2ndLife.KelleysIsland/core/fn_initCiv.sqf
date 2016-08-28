@@ -41,3 +41,5 @@ if(side player == civilian) then {
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;
+
+[getPlayerUID player, profileName] remoteExec ["TON_fnc_loadBounties",(call life_fnc_HCC)];

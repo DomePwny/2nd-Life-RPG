@@ -25,9 +25,9 @@ if(life_interrupted) exitWith {life_interrupted = false;};
 
 _isWater = surfaceIsWater (getPosASL player);
 if(_isWater) then {
-	private["_fish","_turtle","_handle"];
+	private["_fish","_handle"];
 	_fish = (nearestObjects[getPos player,["Turtle_F"],5]) select 0;
-	if(_fish isEqualTo []) exitWith {};
+	if(isNil _fish) exitWith {};
 	if(!alive _fish) then {
 		_handle = [_fish] spawn life_fnc_catchTurtle;
 		waitUntil {scriptDone _handle};

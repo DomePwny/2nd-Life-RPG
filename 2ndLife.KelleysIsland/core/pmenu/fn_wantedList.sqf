@@ -25,5 +25,5 @@ ctrlSetText[2404,"Connection Established"];
 
 if(((lbSize _list)-1) isEqualTo -1) then
 {
-	_list lbAdd "No criminals";
+	_list lbAdd "Keine Verbrechen";
 };

@@ -83,3 +83,5 @@ if(_unit getVariable ["loaded", true] && {!isNil "_cash"} && {!isNil "_bank"} &&
 deleteVehicle _unit;
 
 _uid spawn TON_fnc_houseCleanup;
+
+if(side _unit == civilian) then {[_uid,1] spawn life_fnc_wantedRemove;};

@@ -47,7 +47,7 @@ if(!isNull _source) then {
 			};
 			_damage = 0;	
 		};
-		if(_curWep in ["Trixie_CZ550"]) exitwith {
+		if(_curWep in ["Trixie_CZ550","arifle_SDAR_F"]) exitwith {
 			_damage = 0;	
 		};
 	} else {

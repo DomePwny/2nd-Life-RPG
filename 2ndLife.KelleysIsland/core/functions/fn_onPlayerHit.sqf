@@ -48,7 +48,7 @@ if(!isNull _source) then {
 			_penis = true;
 		};
 		
-		if(_curWep in ["Trixie_CZ550"]) exitwith {
+		if(_curWep in ["Trixie_CZ550","arifle_SDAR_F"]) exitwith {
 			["Remove",0,_source] call fnc_doHealth;
 		};
 
