@@ -42,28 +42,21 @@ if (count _spikeStrips > 0) then {
 };
 
 if(isNull _curTarget) exitWith {
-	if(_isWater) then {
-		private["_fish","_turtle"];
-		_fish = (nearestObjects[getPos player,["Fish_Base_F"],5]) select 0;
-
-		if(!isNil "_fish") then {
-			[_fish] call life_fnc_catchFish;
+	if(playerSide in [civilian,east]) then {
+		if ( life_inv_pickaxe > 0 ) then {
+			[] spawn life_fnc_pickaxeUse;
 		};
-	} else {
-		if(playerSide == civilian || playerSide == east) then {
-			if ( life_inv_pickaxe > 0 ) then {
-				[] spawn life_fnc_pickaxeUse;
-			};
-			
-			if ( life_inv_pickaxe > 0) then {
-			[] spawn life_fnc_gather;
-			};
-			if(playerSide == civilian || playerSide == east) then {
-			[] spawn life_fnc_friedhof;
-			};
+		
+		if ( life_inv_pickaxe > 0) then {
+		[] spawn life_fnc_gather;
+		};
+		
+		if(playerSide in [civilian,east]) then {
+		[] spawn life_fnc_friedhof;
 		};
 	};
 };
+
 
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12}) exitWith {
 	[_curTarget] call life_fnc_houseMenu;

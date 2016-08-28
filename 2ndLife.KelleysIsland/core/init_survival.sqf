@@ -77,9 +77,9 @@
 		_vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) == player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
 
-			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_5")) < 20 ) then {
+			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_5")) < 20 || (player distance (getMarkerPos "speed_cam_6")) < 20) then {
 				_vel = speed player; 
-				if(_vel > 50 && _vel < 60) then {
+				if(_vel > 55 && _vel < 65) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -98,13 +98,11 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;	
 
-					["Du wurdest geblitzt! 100$ wurden dir als Strafe abgebucht!", false] spawn domsg;
-					if(cash_in_bank > 100) then {
-						["bank","take",100] call life_fnc_handleCash; 
-					};
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"501"] remoteExec ["life_fnc_wantedAdd",2];
 				};
 				
-				if(_vel > 59 && _vel < 75) then {
+				if(_vel > 64 && _vel < 80) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -123,18 +121,10 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;		
 
-					["Du wurdest geblitzt! 210$ wurden dir als Strafe abgebucht!", false] spawn domsg;
-					if(cash_in_bank > 210) then {
-						["bank","take",210] call life_fnc_handleCash;
-					};
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"502"] remoteExec ["life_fnc_wantedAdd",2];
 				};	
-				if(_vel > 74) then {
-					["Du wurdest geblitzt! 2000$ Strafe und dein Führerschein wurde dir entzogen!", false] spawn domsg;
-					if(cash_in_bank > 2000) then {
-						["bank","take", 2000] call life_fnc_handleCash
-					};
-					player setVariable["defect_vehicle",true,true];
-
+				if(_vel > 79) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -151,26 +141,16 @@
 					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
 					"colorCorrections" ppEffectCommit 0.05;   
 					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;	
-
-					if(license_civ_driver OR license_civ_truck OR license_maf_driver OR license_maf_truck) then {
-						license_civ_driver = false;
-						license_civ_truck = false;
-						license_maf_driver = false;
-						license_maf_truck = false;
-						[2] call SOCK_fnc_updatePartial;
-					};
+					"colorCorrections" ppEffectEnable false;
+					
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"503"] remoteExec ["life_fnc_wantedAdd",2];
 				};		
 				uiSleep 30;
 			};
-			if((player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
+			if((player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30 || (player distance (getMarkerPos "speed_cam_18")) < 30) then {
 				_vel = speed player; 
-				if(_vel > 130 && _vel < 150) then {
-					["Du wurdest geblitzt! 100$ wurden dir als Strafe abgebucht!", false] spawn domsg;
-					if(cash_in_bank > 200) then {
-						["bank","take",100] call life_fnc_handleCash; 
-					};
-
+				if(_vel > 135 && _vel < 150) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -189,13 +169,11 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;	
 
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"504"] remoteExec ["life_fnc_wantedAdd",2];
 				};
-				if(_vel > 149 && _vel < 185) then {
-					["Du wurdest geblitzt! 350$ wurden dir als Strafe abgebucht!", false] spawn domsg;
-					if(cash_in_bank > 350) then {
-						["bank","take",350] call life_fnc_handleCash;
-					};
-
+				
+				if(_vel > 149 && _vel < 190) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -214,14 +192,10 @@
 					uiSleep 0.05;   
 					"colorCorrections" ppEffectEnable false;	
 
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"505"] remoteExec ["life_fnc_wantedAdd",2];
 				};	
-				if(_vel > 184) then {
-					["Du wurdest geblitzt! 1000$ Strafe und dein Führerschein wurde dir entzogen!", false] spawn domsg;
-					if(cash_in_bank > 1000) then {
-						["bank","take", 1000] call life_fnc_handleCash
-					};
-					player setVariable["defect_vehicle",true,true];
-
+				if(_vel > 189) then {
 					"colorCorrections" ppEffectEnable true;   
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];    
 					"colorCorrections" ppEffectCommit 0;  
@@ -238,15 +212,10 @@
 					"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.6],  [1, 1, 1, 0.6]];    
 					"colorCorrections" ppEffectCommit 0.05;   
 					uiSleep 0.05;   
-					"colorCorrections" ppEffectEnable false;						
+					"colorCorrections" ppEffectEnable false;
 
-					if(license_civ_driver OR license_civ_truck OR license_maf_driver OR license_maf_truck) then {
-						license_civ_driver = false;
-						license_civ_truck = false;
-						license_maf_driver = false;
-						license_maf_truck = false;
-						[2] call SOCK_fnc_updatePartial;
-					};
+					["Du wurdest geblitzt!", false] spawn domsg;
+					[getPlayerUID player,player getVariable["realname",name player],"506"] remoteExec ["life_fnc_wantedAdd",2];
 				};
 				uiSleep 30;	
 			};
@@ -1600,91 +1569,93 @@ fnc_dynamiteScript = {
 };
 
 fnc_castScript = {
-	player playmove "AwopPercMstpSgthWrflDnon_start1";
-	sleep 1;
-	_dirAdd = (-30) + random(60);
-	_speed = 20; 
-	_Dir = (getdir player) + _dirAdd; 
-	_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
-	_vel = velocity _vehicle;
-	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
-	playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 2.5, 1, 35]; 
-
-
-	sleep 2.5;
-
-	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		["Du hast deinen Köder verloren!", false] spawn doquickmsg; 
-		deletevehicle _vehicle;
-	};
-
-	["Erfolgreicher Wurf.", false] spawn doquickmsg; 
-	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
-
-	_timeOut = 0;
-	_total = random(6);
-	_myStartSpot = getpos player;
-	_fail = false;
-
-	while{true} do {
-		sleep 3;
-		_timeOut = _timeOut + 3;
-		if(_timeOut > _total) exitwith {};
-		if(_myStartSpot distance player > 25) exitwith { _fail = true; };
-	};
-
-	if(_fail) exitwith {
-		["Du hast du dich zuweit von deinem Köder entfernt.", false] spawn doquickmsg; 
-		deletevehicle _vehicle;
-	};
-
-	_Dir = _Dir - 180; 
-	_vel = velocity _vehicle;
-	_speed = 22;
-
-	_timeOut = 0;
-	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
-	sleep 0.5;
-	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 5, 1, 35]; 
-
-	player playmove "AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon_gear";
-
-	while{_timeOut < 12 && _vehicle distance player > 5} do {
-		_vehicle setpos [getpos _vehicle select 0, getpos _vehicle select 1, (getpos _vehicle select 2) + 0.2];
-		_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + random(2)];
+	if(!life_action_inUse) then {
+		life_action_inUse = true;
+		player playmove "AwopPercMstpSgthWrflDnon_start1";
 		sleep 1;
-		_timeOut = _timeOut + 1;
-		player playaction "CRPTHSForwardStandLowered";
-	};
+		_dirAdd = (-30) + random(60);
+		_speed = 20; 
+		_Dir = (getdir player) + _dirAdd; 
+		_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
+		_vel = velocity _vehicle;
+		_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
+		playSound3D ["vvv_fishingrod\sounds\cast2.ogg", player, false, getPosASL player, 2.5, 1, 35]; 
 
-	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 5, 1, 45];
-	player addmagazine "cebos";
-	deletevehicle _vehicle;
+		sleep 2.5;
 
-	_type = floor (random(3));
+		if!(surfaceIsWater (getpos _vehicle)) exitwith {
+			["Du hast deinen Köder verloren!", false] spawn doquickmsg; 
+			deletevehicle _vehicle;
+		};
+	
+		["Erfolgreicher Wurf.", false] spawn doquickmsg; 
+		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 
-	switch (_type) do
-	{
-		case 2 :
+		_timeOut = 0;
+		_total = random(6);
+		_myStartSpot = getpos player;
+		_fail = false;
+
+		while{true} do {
+			sleep 3;
+			_timeOut = _timeOut + 3;
+			if(_timeOut > _total) exitwith {};
+			if(_myStartSpot distance player > 25) exitwith { _fail = true; };
+		};
+
+		if(_fail) exitwith {
+			["Du hast du dich zuweit von deinem Köder entfernt.", false] spawn doquickmsg; 
+			deletevehicle _vehicle;
+		};
+
+		_Dir = _Dir - 180; 
+		_vel = velocity _vehicle;
+		_speed = 22;
+	
+		_timeOut = 0;
+		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
+		sleep 0.5;
+		playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 5, 1, 35]; 
+
+		player playmove "AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon_gear";
+	
+		while{_timeOut < 12 && _vehicle distance player > 5} do {
+			_vehicle setpos [getpos _vehicle select 0, getpos _vehicle select 1, (getpos _vehicle select 2) + 0.2];
+			_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + random(2)];
+			sleep 1;
+			_timeOut = _timeOut + 1;
+			player playaction "CRPTHSForwardStandLowered";
+		};
+
+		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 5, 1, 45];
+		player addmagazine "cebos";
+		deletevehicle _vehicle;
+	
+		_type = floor (random(3));
+	
+		switch (_type) do
 		{
-			_gather = "fish"; _val = 1;
-			_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-			if(_diff == 0) exitWith {["Dein Inventar ist voll!", false] spawn domsg;};
-			if(([true,_gather,_diff] call life_fnc_handleInv)) then
+			case 2 :
 			{
-				_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-				["Du hast ein Fisch gefangen!", false] spawn domsg;
+				_gather = "fish"; _val = 1;
+				_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+				if(_diff == 0) exitWith {["Dein Inventar ist voll!", false] spawn domsg;};
+				if(([true,_gather,_diff] call life_fnc_handleInv)) then
+				{
+					_itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
+					["Du hast ein Fisch gefangen!", false] spawn domsg;
+				};
 			};
-		};
-
-		default
-		{
-			["Da war wohl kein Fisch am Köder.", false] spawn domsg; 
-		};
-
-	};										
+			default
+			{
+				["Da war wohl kein Fisch am Köder.", false] spawn domsg; 
+			};
+		life_action_inUse = false;
+		};										
+	} else {
+		["Du hast schon einen Köder draussen!", false] spawn domsg;
+	};
 };
-
 
 fnc_cutWood = {
 	 trees = [];      

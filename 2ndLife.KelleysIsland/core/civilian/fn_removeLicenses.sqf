@@ -13,7 +13,6 @@ switch (_state) do
 	//Death while being wanted
 	case 0:
 	{
-		license_civ_rebel = false;
 		license_civ_driver = false;
 		license_civ_heroin = false;
 		license_civ_marijuana = false;
@@ -25,6 +24,7 @@ switch (_state) do
 	case 1:
 	{
 		license_civ_gun = false;
+		license_maf_gun = false;
 	};
 	
 	//Remove motor vehicle licenses
@@ -60,30 +60,35 @@ switch (_state) do
 	case 10:
 	{
 		license_civ_driver = false;
+		license_maf_driver = false;
 		[localize "STR_Civ_RevokeLicense_Driver", false] spawn domsg;
 	};
 	// Truck License
 	case 11:
 	{
 		license_civ_truck = false;
+		license_maf_truck = false;
 		[localize "STR_Civ_RevokeLicense_Truck", false] spawn domsg;
 	};
 	// Pilot License
 	case 12:
 	{
 		license_civ_air = false;
+		license_maf_air = false;
 		[localize "STR_Civ_RevokeLicense_Pilot", false] spawn domsg;
 	};
 	// Boating License
 	case 13:
 	{
 		license_civ_boat = false;
+		license_maf_boat = false;
 		[localize "STR_Civ_RevokeLicense_Boating", false] spawn domsg;
 	};
 	// Diving License
 	case 14:
 	{
 		license_civ_dive = false;
+		license_maf_dive = false;
 		[localize "STR_Civ_RevokeLicense_Diving", false] spawn domsg;
 	};
 	// Taxi License
@@ -99,15 +104,17 @@ switch (_state) do
 		license_civ_truck = false;
 		license_civ_air = false;
 		license_civ_boat = false;
-		license_civ_air = false;
-		license_civ_dive = false;
-		license_civ_taxi = false;
+		license_maf_driver = false;
+		license_maf_truck = false;
+		license_maf_air = false;
+		license_maf_boat = false;
 		[localize "STR_Civ_RevokeLicense_AllMotor", false] spawn domsg;
 	};
 	// Firearms License
 	case 17:
 	{
 		license_civ_gun = false;
+		license_maf_gun = false;
 		[localize "STR_Civ_RevokeLicense_Firearm", false] spawn domsg;
 	};
 };
