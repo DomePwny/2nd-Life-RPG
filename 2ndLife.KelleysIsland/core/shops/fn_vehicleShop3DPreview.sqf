@@ -36,7 +36,7 @@ if (_classView != "" && {isClass (configFile >> "CfgVehicles" >> _classView) && 
         if (!isNull life_preview_3D_vehicle_object) then {detach life_preview_3D_vehicle_object; deleteVehicle life_preview_3D_vehicle_object;};
         // Create and place the object in the sky
         if (!life_pos_exist) then {
-            life_pos_attach = [[2500, 2500, 500]] call life_fnc_searchPosEmpty;
+            life_pos_attach = [[2500, 2500, 500]];
             life_pos_exist = true;
             life_preview_light = "#lightpoint" createVehicle life_pos_attach;
             life_preview_light setLightBrightness 0.5;
@@ -54,6 +54,7 @@ if (_classView != "" && {isClass (configFile >> "CfgVehicles" >> _classView) && 
 		life_preview_light hideObject false;
 		
 		_object allowDamage false;
+		_object enableSimulation false;
 
         life_preview_3D_vehicle_object = _object;
     };

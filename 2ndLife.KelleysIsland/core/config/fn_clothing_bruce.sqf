@@ -20,7 +20,6 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["2ndLife_sndlife",nil,25],
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
 			["2ndLife_DerBeste1",nil,50],

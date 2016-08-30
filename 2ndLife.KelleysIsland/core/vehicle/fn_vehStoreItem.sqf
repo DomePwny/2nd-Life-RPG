@@ -49,7 +49,7 @@ if(_ctrl == "money") then
 }
 	else
 {
-	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {["The vehicle is either full or cannot hold that much.", false] spawn domsg;};
+	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {["So viel Platz ist nicht mehr vorhanden.", false] spawn domsg;};
 
 	if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {["Couldn't remove the items from your inventory to put in the vehicle.", false] spawn domsg;};
 	_index = [_ctrl,_inv] call fnc_index;

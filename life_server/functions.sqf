@@ -17,23 +17,6 @@ compileFinal "
 ";
 publicVariable "fnc_index";
 
-fnc_index =
-compileFinal "
-	private[""_item"",""_stack""];
-	_item = _this select 0;
-	_stack = _this select 1;
-	_return = -1;
-
-	{
-		if(_item in _x) exitWith {
-			_return = _forEachIndex;
-		};
-	} foreach _stack;
-
-	_return;
-";
-publicVariable "fnc_index";
-
 fnc_player_query =
 compileFinal "
 	params [""_ret""];
@@ -124,7 +107,7 @@ private[""_msg"",""_to""];
 	ctrlShow[3022,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
-	if(_msg == """") exitWith { [""You must enter a message to send!"", false] spawn domsg; ctrlShow[3022,true];};
+	if(_msg == """") exitWith { [""Du solltest schon eine Nachricht eingeben."", false] spawn domsg; ctrlShow[3022,true];};
 		
 	[_msg,name player,5] remoteExecCall [""clientMessage"",independent];
 	[] call life_fnc_cellphone;
