@@ -1351,7 +1351,7 @@ fnc_resetCall = {
 	callInProgress = false;
 	myCallOwner = player;
 	_mynumber = getPlayerUID player;
-	if(side player == civilian) then {
+	if(side player in [civilian,east]) then {
 		player setVariable ["tf_unable_to_use_radio", true];
 	};
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -1630,6 +1630,7 @@ fnc_castScript = {
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 5, 1, 45];
 		player addmagazine "cebos";
 		deletevehicle _vehicle;
+		life_action_inUse = false;
 	
 		_type = floor (random(3));
 	
@@ -1650,7 +1651,6 @@ fnc_castScript = {
 			{
 				["Da war wohl kein Fisch am Köder.", false] spawn domsg; 
 			};
-		life_action_inUse = false;
 		};										
 	} else {
 		["Du hast schon einen Köder draussen!", false] spawn domsg;

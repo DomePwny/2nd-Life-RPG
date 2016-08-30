@@ -149,6 +149,11 @@ life_testDriveRequests = [];
 maintenance_on = false;
 totallogs = 0;
 life_taxiMarker = [];
+life_preview_3D_vehicle_cam = objNull;
+life_preview_3D_vehicle_object = objNull;
+life_preview_light = objNull;
+life_pos_exist = false;
+life_pos_attach = [];
 prisonbreak = false;
 SecondLife_version = "SecondLifeModVersion1012b";
 //Persistent Saving

@@ -40,6 +40,8 @@ _cpRate = 0.08;
 
 playSound3D ["cg_sndimg\sounds\caralarm.ogg", player, false, getPosASL player, 1, 2, 455];
 
+_cp = 0;
+
 while {true} do
 {
 	if(animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon") then {

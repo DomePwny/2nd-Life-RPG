@@ -41,3 +41,4 @@
 #include "truckColorSelectorUI.hpp"
 #include "blackjack.hpp"
 #include "slot_machine.hpp"
+#include "vehicleShop3D.hpp"

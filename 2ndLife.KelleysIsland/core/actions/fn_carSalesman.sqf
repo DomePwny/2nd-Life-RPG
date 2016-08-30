@@ -9,7 +9,7 @@ if(side player != civilian) exitwith {
 if(life_carSalesman) exitWith {
 	["Du bist bereits Autoverkäufer!", false] spawn domsg; 
 };
-if(uniform player find "KAEL_SUITS" isEqualTo -1) exitwith {
+if(uniform player find "TRYK_SUITS" isEqualTo -1) exitwith {
 	["Du brauchst einen Anzug um als Autoverkäufer zu arbeiten.", false] spawn domsg; 
 };
 
@@ -25,7 +25,7 @@ while{_fkit > 0 && life_carSalesman && !deadPlayer} do {
 	uiSleep 60;
 
 	if(player distance showRoom < 35 || (!isNull objectParent player && life_onTestDrive)) then {
-		if(uniform player find "KAEL_SUITS" != -1) then {
+		if(uniform player find "TRYK_SUITS" != -1) then {
 			["bank","add", 120] call life_fnc_handleCash;
 			["Du wurdest für 120$ bezahlt.", false] spawn domsg; 
 		};

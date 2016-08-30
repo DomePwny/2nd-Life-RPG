@@ -27,11 +27,6 @@ _degrees = getDir player;
 _degreesu = getDir _unit;
 _totald = _degrees - _degreesu;
 
-
-if( animationState _unit != "deadstate" && animationState _unit != "Incapacitated" && animationState _unit != "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && (animationState _unit) != "AinjPfalMstpSnonWnonDf_carried_fallwc" ) exitwith { ["Target must put hands on head or be downed to restrain.", false] spawn domsg; };
-
-
-
 if(_totald >= -120 && _totald < 1 || _totald <= 120 && _totald > -1 || _totald >= 250 || _totald <= -250 ) then {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};

@@ -365,6 +365,8 @@ class Life_Client_Core
 		class hospitalSpawn {};
 		class myTruck {};
 		class forceRagdoll {};
+		class hideObj {};
+		class searchPosEmpty {};
 	};
 	
 	class Network
@@ -424,6 +426,7 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class addVehicle2Chain {};
 		class animateJonzies {};
+		class vehicleColor3DRefresh {};
 	};
 	
 	class Cop
@@ -517,6 +520,9 @@ class Life_Client_Core
 		class BJstay {};
 		class blackjack {};
 		class slotSpin {};
+		class vehicleShop3DPreview {};
+		class vehicleShopEnd3DPreview {};
+		class vehicleShopInit3DPreview {};
 	};
 	
 	class Items

@@ -42,6 +42,8 @@ if(count _towtrucks == 0) then {
 	};
 };
 
+_cp = 0;
+
 while {true} do
 {
 	if(animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon") then {

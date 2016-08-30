@@ -7,11 +7,8 @@
 */
 private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle"];
 _mode = _this select 0;
-if((lbCurSel 2302) isEqualTo -1) exitWith {[localize "STR_Shop_Veh_DidntPick", false] spawn domsg;};
+if((lbCurSel 2302) isEqualTo -1) exitWith {[localize "STR_Shop_Veh_DidntPick", false] spawn domsg; closeDialog 0;};
 _className = lbData[2302,(lbCurSel 2302)];
-if(_className in ["Jonzie_Transit","Jonzie_Tow_Truck", "Jonzie_Flat_Bed", "Jonzie_Log_Truck", "Jonzie_Tanker_Truck", "Jonzie_Box_Truck"]) exitWith {
-	[_className,_mode] call life_fnc_createTruckColorUI;
-};
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; 
 _basePrice = (_vehicleList select _vIndex) select 1;
@@ -19,11 +16,11 @@ _baseprice = _baseprice / 10;
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
-if(_basePrice < 0) exitWith {}; //Bad price entry
-if(cash_in_bank < _basePrice) exitWith {[format["Dir Fehlen %1$ auf der Bank!",[_basePrice - cash_in_bank] call life_fnc_numberText], false] spawn domsg;};
+if(_basePrice < 0) exitWith {closeDialog 0;}; //Bad price entry
+if(cash_in_bank < _basePrice) exitWith {[format["Dir Fehlen %1$ auf der Bank!",[_basePrice - cash_in_bank] call life_fnc_numberText], false] spawn domsg;closeDialog 0;};
 
 if(side player != west) then {
-	if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {[localize "STR_Shop_Veh_NoLicense", false] spawn domsg;};
+	if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {[localize "STR_Shop_Veh_NoLicense", false] spawn domsg;closeDialog 0;};
 };
 
 _spawnPoints = life_veh_shop select 1;
@@ -42,7 +39,7 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 };
 
 
-if(_spawnPoint isEqualTo "") exitWith {["Ein Fahrzeug blockiert den Spawn!", false] spawn domsg;};
+if(_spawnPoint isEqualTo "") exitWith {["Ein Fahrzeug blockiert den Spawn!", false] spawn domsg;closeDialog 0;};
 ["bank","take",_basePrice] call life_fnc_handleCash; 
 [format["Du kaufst eine(n) %1 für $%2",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], false] spawn domsg;
 [player,"buycarniggah"] spawn life_fnc_nearestSound;

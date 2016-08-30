@@ -36,7 +36,8 @@ if(_isWater) then {
 
 _spikeStrips = [position player, ["CG_Spikes_Extended"], 3.5] call life_fnc_nearestObjects;
 if (count _spikeStrips > 0) then {
-	deletevehicle _spikeStrips;
+	_spikeStrip = (nearestObjects[getPos player,["CG_Spikes_Extended"],5]) select 0;
+	deletevehicle _spikeStrip;
 	["You picked up some spike strips!", false] spawn domsg; 
 	player additem "CG_Spikes_Collapsed";
 };

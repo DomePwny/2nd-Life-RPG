@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	class ItemIDProvider
 	{
 		nextID=4834;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3517.7139,45.935638,3200.0181};
-		dir[]={0.42153376,-0.67059958,0.61041915};
-		up[]={0.38106257,0.74181736,0.55181348};
-		aside[]={0.82286423,-4.2025931e-008,-0.56824106};
+		pos[]={5688.6592,422.68701,3345.0388};
+		dir[]={-0.50529796,-0.85920167,0.080426946};
+		up[]={-0.84852499,0.51163608,0.13505749};
+		aside[]={0.15719135,-3.9383667e-007,0.98758495};
 	};
 };
 binarizationWanted=0;
@@ -1078,7 +1078,7 @@ class Mission
 			type="Empty";
 			a=0.5;
 			b=0.5;
-			angle=188.80133;
+			angle=188.80132;
 			id=150;
 			atlOffset=2.2230709e+019;
 		};
@@ -1441,7 +1441,7 @@ class Mission
 			position[]={4037.1091,15,4286.4673};
 			name="speed_cam_2";
 			type="Empty";
-			angle=351.82108;
+			angle=351.82104;
 			id=254;
 		};
 		class Item84
@@ -11552,7 +11552,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[""Drogenverkauf"",life_fnc_virt_menu,""heroin"",0,false,false,"""",'!isNil {hideout getVariable ""captured""}']; this addAction [""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Drogenverkauf"",life_fnc_virt_menu,""heroin"",0,false,false,"""",'playerSide == east && player distance _target < 5 && !isNil {hideout getVariable ""captured""}']; this addAction [""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
 					};
 					id=2322;
 					type="C_man_polo_1_F";
@@ -16681,12 +16681,12 @@ class Mission
 		class Item628
 		{
 			dataType="Marker";
-			position[]={5461.2871,14.997433,3414.9966};
-			name="air_g_2";
+			position[]={5461.2871,2.0957077e+027,3414.9971};
+			name="air_g_1";
 			type="Empty";
-			angle=359.90588;
+			angle=359.90594;
 			id=2497;
-			atlOffset=-0.0025672913;
+			atlOffset=2.0957077e+027;
 		};
 		class Item629
 		{
@@ -19784,7 +19784,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5471.5972,15.849002,3415.262};
+				position[]={5471.5972,15.848569,3415.262};
 				angles[]={0,1.5739379,0};
 			};
 			side="Empty";
@@ -19795,7 +19795,7 @@ class Mission
 			};
 			id=3637;
 			type="bv_terminal_air";
-			atlOffset=-0.0025672913;
+			atlOffset=-0.0030002594;
 		};
 		class Item736
 		{

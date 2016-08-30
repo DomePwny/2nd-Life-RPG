@@ -19,7 +19,7 @@ if(_shop == "") exitWith {};
 
 	if(_sideCheck != sideUnknown && {playerSide != _sideCheck}) exitWith {[localize "STR_Shop_Veh_NotAllowed", false] spawn domsg;};
 
-if(!createDialog "Life_Vehicle_Shop_v2") exitWith {};
+if(!createDialog "Life_Vehicle_Shop_v2_3D") exitWith {};
 
 life_veh_shop = [_shop,_spawnpoints,_shopFlag,_disableBuy]; //Store it so so other parts of the system can access it.
 
@@ -50,3 +50,6 @@ ctrlShow [2304,false];
 	_control lbSetData [(lbSize _control)-1,_className];
 	_control lbSetValue [(lbSize _control)-1,_ForEachIndex];
 } foreach _vehicleList;
+
+[] call life_fnc_vehicleShopInit3DPreview;
+((findDisplay 2300) displayCtrl 2302) lbSetCurSel 0;
