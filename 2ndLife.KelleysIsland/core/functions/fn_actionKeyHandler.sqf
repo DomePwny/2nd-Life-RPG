@@ -25,15 +25,17 @@ if(life_interrupted) exitWith {life_interrupted = false;};
 
 _isWater = surfaceIsWater (getPosASL player);
 if(_isWater) then {
-	private["_fish","_handle"];
-	_fish = (nearestObjects[getPos player,["Turtle_F"],5]) select 0;
-	if(isNil _fish) exitWith {};
-	if(!alive _fish) then {
-		_handle = [_fish] spawn life_fnc_catchTurtle;
-		waitUntil {scriptDone _handle};
+	private["_fish","_turtle","_handle","_turtles"];
+	_turtles = [position player, ["Turtle_F"], 3.5] call life_fnc_nearestObjects;
+	if (count _turtles > 0) then {
+		_turtle = (nearestObjects[getPos player,["Turtle_F"],3.5]) select 0;
+		if(!alive _turtle) then {
+			_handle = [_turtle] spawn life_fnc_catchTurtle;
+			waitUntil {scriptDone _handle};
+		};
 	};
 };
-
+	
 _spikeStrips = [position player, ["CG_Spikes_Extended"], 3.5] call life_fnc_nearestObjects;
 if (count _spikeStrips > 0) then {
 	_spikeStrip = (nearestObjects[getPos player,["CG_Spikes_Extended"],5]) select 0;

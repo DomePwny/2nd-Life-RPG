@@ -30,7 +30,7 @@ if!(isNil "_salesman") then {
 };
 if(cash_in_hand < _price) exitWith {[format[localize "STR_Shop_Veh_NotEnough",[_price - cash_in_hand] call life_fnc_numberText], false] spawn domsg;};
 
-_spawnPoints = [["showroom_spawn_1",8.2],["showroom_spawn_2",4],["showroom_spawn_3",5.4]];
+_spawnPoints = [["showroom_spawn_2",4],["showroom_spawn_3",5.4]];
 _spawnPoint = "";
 
 //Check if there is multiple spawn points and find a suitable spawnpoint.
