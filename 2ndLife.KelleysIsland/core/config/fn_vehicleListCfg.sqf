@@ -1,3 +1,7 @@
+
+
+
+
 #include <macro.h>
 /*
 	File:
@@ -513,7 +517,7 @@ switch (_shop) do
 			["Urbanized_LaFerrari_Blue_S",13250000],
 			["Urbanized_LaFerrari_Lime_S",13250000],
 			["Jonzie_Log_Truck",200000],
-			["Jonzie_Transit",250000],
+			["ADM_Ford_F100",250000],
 			["Jonzie_Flat_Bed",2590000],
 			["Jonzie_Box_Truck",3750000],
 			["Jonzie_Tanker_Truck",3750000],

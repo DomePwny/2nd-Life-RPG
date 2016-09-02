@@ -23,11 +23,6 @@ _cost = 0;
 _vehicleFuelold = 0;
 _vehicle engineOn false;
 
-{
-	_x action ["Eject", vehicle _x];
-} 
-forEach crew _vehicle;
-
 
 //1.00 = voll = 100% annahme 65 Liter fasst Tank von Offroad währen: 1.00 / 65L = 0.0154L 
 
@@ -41,6 +36,7 @@ switch(true)do
 	
 	//Transit
 	case (_vehicle iskindof "Jonzie_Transit"): {_liter = 0.00900; _completeliter = 200;};
+	case (_vehicle iskindof "ADM_Ford_F100"): {_liter = 0.00900; _completeliter = 125;};
 
 	//Bus
 	case (_vehicle iskindof "A3L_Bus"): {_liter = 0.00900; _completeliter = 300;};

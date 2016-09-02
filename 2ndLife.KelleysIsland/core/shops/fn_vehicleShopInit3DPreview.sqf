@@ -16,7 +16,7 @@
     Called when a player open the vehicle shop and setup cam and the while for rotate around the vehicle
 */
 // Creating a camera.
-life_preview_3D_vehicle_cam = "camera" camCreate [4494, 3982, 200];
+life_preview_3D_vehicle_cam = "camera" camCreate [4494, 3982, 0];
 life_preview_3D_vehicle_cam cameraEffect ["Internal", "BACK"];
 life_preview_3D_vehicle_cam camSetFocus [-1, -1];
 showCinemaBorder false;

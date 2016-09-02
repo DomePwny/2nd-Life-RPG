@@ -14,6 +14,7 @@ if ((_vehicle select 0) iskindof "Air") exitwith { hint "Ein Hubschrauber kann n
 switch(true)do
 {
 	case ((_vehicle select 0) iskindof "Jonzie_Transit"): {call life_fnc_diesel};
+	case ((_vehicle select 0) iskindof "ADM_Ford_F100"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "Jonzie_Flat_Bed"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "Jonzie_Log_Truck"): {call life_fnc_diesel};
 	case ((_vehicle select 0) iskindof "Jonzie_Box_Truck"): {call life_fnc_diesel};

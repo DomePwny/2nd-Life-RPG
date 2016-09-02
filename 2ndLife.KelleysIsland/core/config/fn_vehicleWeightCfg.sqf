@@ -14,6 +14,7 @@ switch (_className) do
 	case "2ndLife_EMS_Boat": {50};
 	
 	case "Jonzie_Transit": {150};
+	case "ADM_Ford_F100": {150};
 	case "Jonzie_Flat_Bed": {200};
 	case "Jonzie_Log_Truck": {0};
 	case "Jonzie_Box_Truck": {300};

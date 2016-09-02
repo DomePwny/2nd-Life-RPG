@@ -119,36 +119,41 @@ fnc_sms_textmsg = {
 		_mins = (date select 4)
 	};
 	_to = lbCurSel 1501;
-	if(_msg == "") exitWith {hint "You must enter a message to send!";};
-	if(_to == -1) exitWith {hint "You must select a player you are sending the text to!";};
+	if(_msg == "") exitWith {["Du solltest schon eine Nachricht eingeben.", false] spawn doquickmsg;};
+	if(_to == -1) exitWith {["Kein Empfänger ausgewählt", false] spawn doquickmsg;};
 	if(_to == 0) then {
 		_datecomp = format ["911 - (%6) %1-%2-%3 | %4:%5 %7",(date select 2),(date select 1),(date select 0),_hours,_mins,name player,_ampm];
 		_compiled = [name player,_msg,date,5,_datecomp];
 		[_compiled,name player,5] remoteExecCall ["clientsmssys",independent];
+		["Deine SMS wurde verschickt.", false] spawn doquickmsg;
 		[] call life_fnc_cellphone;
 	} else { 
 		if (_to == 1) then {
 			_datecomp = format ["911 - (%6) %1-%2-%3 | %4:%5 %7",(date select 2),(date select 1),(date select 0),_hours,_mins,name player,_ampm];
 			_compiled = [name player,_msg,date,1,_datecomp];
 			[_compiled,name player,1] remoteExecCall ["clientsmssys",-2];
+			["Deine SMS wurde verschickt.", false] spawn doquickmsg;
 			[] call life_fnc_cellphone;
 		} else { 
 			if (_to == 2) then {
 				_datecomp = format ["((%1 send the admins a message))",name player];
 				_compiled = [name player,_msg,date,2,_datecomp];
 				[_compiled,name player,2] remoteExecCall ["clientsmssys",-2];
+				["Deine SMS wurde verschickt.", false] spawn doquickmsg;
 				[] call life_fnc_cellphone;
 			} else { 
 				if (_to == 3 && ((call life_adminlevel) > 1)) then {
 					_datecomp = format ["((GLOBAL admin message from; %1))",name player];
 					_compiled = [name player,_msg,date,2,_datecomp];
 					[_compiled,name player,4] remoteExecCall ["clientsmssys",-2];
+					["Deine SMS wurde verschickt.", false] spawn doquickmsg;
 					[] call life_fnc_cellphone;
 				} else {
 					_datecomp = format ["(%6) %1-%2-%3 | %4:%5 %7",(date select 2),(date select 1),(date select 0),_hours,_mins,name player,_ampm];
 					_compiled = [name player,_msg,date,0,_datecomp];
 					_to = call compile format["%1",(lbData[1501,(lbCurSel 1501)])];
 					[_compiled,name player,0] remoteExecCall ["clientsmssys",_to];
+					["Deine SMS wurde verschickt.", false] spawn doquickmsg;
 					[] call life_fnc_cellphone;
 				};
 			};

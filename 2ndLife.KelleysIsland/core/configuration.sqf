@@ -740,6 +740,7 @@ life_garage_prices =
 			//Civ Truck
 			["Jonzie_Transit",0],
 			["Jonzie_Flat_Bed",0],
+			["ADM_Ford_F100",0],
 			["Jonzie_Log_Truck",0],
 			["Jonzie_Box_Truck",0],
 			["Jonzie_Tanker_Truck",0],
@@ -1051,6 +1052,7 @@ life_garage_sell =
 			
 			//Civ Truck
 			["Jonzie_Transit",1000],
+			["ADM_Ford_F100",1000],
 			["Jonzie_Flat_Bed",1000],
 			["Jonzie_Box_Truck",1000],
 			["Jonzie_Tanker_Truck",1000],
