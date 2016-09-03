@@ -55,7 +55,7 @@ if (!(_TFenabled)) then {
 };
 
 A3L_TFEnabled = true;
-A3L_onTsServer = "2nd Life RPG Arma 3 Life" == (call TFAR_fnc_getTeamSpeakServerName);
+A3L_onTsServer = "2ndLife RPG Community" == (call TFAR_fnc_getTeamSpeakServerName);
 A3L_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 
@@ -79,7 +79,7 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 				A3L_TFEnabled = false;
 			};
 			
-			_onTsServer = "2nd Life RPG Arma 3 Life" == (call TFAR_fnc_getTeamSpeakServerName);
+			_onTsServer = "2ndLife RPG Community" == (call TFAR_fnc_getTeamSpeakServerName);
 			if (!(_onTsServer)) then {
 				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 89.163.173.50:9987", "BLACK"];
 				A3L_onTsServer = false;

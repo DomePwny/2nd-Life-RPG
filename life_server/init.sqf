@@ -45,14 +45,11 @@ publicVariable "life_server_isReady";
 
 if(isNil {uiNamespace getVariable "life_sql_id"}) then
 {
-	"extDB2" callExtension "9:ADD_DATABASE:Database2";
+	"extDB2" callExtension "9:ADD_DATABASE:LIFE";
 
 	_life_sql_id = str(round(random(999999)));
 	life_sql_id = compileFinal _life_sql_id;
-	"extDB2" callExtension format["9:ADD_DATABASE_PROTOCOL:Database2:SQL_RAW:%1:ADD_QUOTES",_life_sql_id];
-	"extDB2" callExtension "9:START_RCON:RCON";
-	"extDB2" callExtension "9:ADD_PROTOCOL:RCON:rcon";
-		
+	"extDB2" callExtension format["9:ADD_DATABASE_PROTOCOL:LIFE:SQL_RAW_v2:%1:ADD_QUOTES",_life_sql_id];
 	"extDB2" callExtension "9:LOCK";
 
 	uiNamespace setVariable ["life_sql_id", _life_sql_id];
