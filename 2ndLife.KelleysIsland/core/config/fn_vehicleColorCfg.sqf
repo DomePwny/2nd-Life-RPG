@@ -169,23 +169,17 @@ switch (_vehicle) do
 	};		
 	case "ivory_wrx_slicktop": {
 		_path = "\ivory_wrx\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "wrx_police.paa","cop"],
-			[_path + "wrx_sheriff.paa","cop"],
-			[_path2 + "wrx_Polizei.paa","cop"]
+			[_path + "wrx_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_wrx_marked": {
 		_path = "\ivory_wrx\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "wrx_police.paa","cop"],
-			[_path + "wrx_sheriff.paa","cop"],
-			[_path + "wrx_ems.paa","med"],
-			[_path2 + "wrx_Polizei.paa","cop"]
+			[_path + "wrx_Medic.paa","med"],
+			[_path+ "wrx_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_wrx_unmarked": {
@@ -216,23 +210,17 @@ switch (_vehicle) do
 	};
 	case "ivory_evox_slicktop": {
 		_path = "\ivory_evox\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "evox_police.paa","cop"],
-			[_path + "evox_sheriff.paa","cop"],
-			[_path2 + "evox_Polizei.paa","cop"]
+			[_path + "evox_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_evox_marked": {
 		_path = "\ivory_evox\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "evox_police.paa","cop"],
-			[_path + "evox_sheriff.paa","cop"],
-			[_path + "evox_ems.paa","med"],
-			[_path2 + "evox_Polizei.paa","cop"]
+			[_path + "evox_Medic.paa","med"],
+			[_path + "evox_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_isf_unmarked": {
@@ -250,23 +238,18 @@ switch (_vehicle) do
 	};
 	case "ivory_isf_slicktop": {
 		_path = "\ivory_isf\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "isf_police.paa","cop"],
-			[_path + "isf_sheriff.paa","cop"],
-			[_path2 + "isf_Polizei.paa","cop"]
+			[_path + "isf_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_isf_marked": {
 		_path = "\ivory_isf\data\";
-		_path2 = "textures\";
+
 		_ret =
 		[
-			[_path + "isf_police.paa","cop"],
-			[_path + "isf_sheriff.paa","cop"],
-			[_path + "isf_ems.paa","med"],
-			[_path2 + "isf_Polizei.paa","cop"]
+			[_path + "isf_Medic.paa","med"],
+			[_path + "isf_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_m3_unmarked": {
@@ -284,23 +267,18 @@ switch (_vehicle) do
 	};
 	case "ivory_m3_slicktop": {
 		_path = "\ivory_m3\data\";
-		_path2 = "textures\";
+
 		_ret =
 		[
-			[_path + "m3_police.paa","cop"],
-			[_path + "m3_sheriff.paa","cop"],
-			[_path2 + "m3_Polizei.paa","cop"]
+			[_path + "m3_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_m3_marked": {
 		_path = "\ivory_m3\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "m3_police.paa","cop"],
-			[_path + "m3_sheriff.paa","cop"],
-			[_path + "m3_ems.paa","med"],
-			[_path2 + "m3_Polizei.paa","cop"]
+			[_path + "m3_Medic.paa","med"],
+			[_path + "m3_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_rs4_unmarked": {
@@ -318,23 +296,17 @@ switch (_vehicle) do
 	};
 	case "ivory_rs4_slicktop": {
 		_path = "\ivory_rs4\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "rs4_police.paa","cop"],
-			[_path + "rs4_sheriff.paa","cop"],
-			[_path2 + "rs4_Polizei.paa","cop"]
+			[_path + "rs4_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_rs4_marked": {
 		_path = "\ivory_rs4\data\";
-		_path2 = "textures\";
 		_ret =
 		[
-			[_path + "rs4_police.paa","cop"],
-			[_path + "rs4_sheriff.paa","cop"],
-			[_path + "rs4_ems.paa","med"],
-			[_path2 + "rs4_Polizei.paa","cop"]
+			[_path + "rs4_Medic.paa","med"],
+			[_path + "rs4_Polizei.paa","cop"]
 		];
 	};
 	case "ivory_gt500": {

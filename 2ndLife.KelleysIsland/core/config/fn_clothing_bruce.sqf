@@ -29,7 +29,8 @@ switch (_filter) do
 			["2ndLife_Mario1",nil,50],
 			["2ndLife_Pika1",nil,50],
 			["2ndLife_Condom1",nil,50],
-			["2ndLife_Fuckyou1",nil,50]
+			["2ndLife_Fuckyou1",nil,50],
+			["A3L_Bikini_Girl",nil,50]		
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];

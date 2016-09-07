@@ -21,49 +21,57 @@ switch (_filter) do
 	{
 		if(__GETC__(life_coplevel) == 1) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
 		};
 		if(__GETC__(life_coplevel) == 2) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
 		};
 		if(__GETC__(life_coplevel) == 3) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50],
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
 		};
 		if(__GETC__(life_coplevel) == 4) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
 		};
 		if(__GETC__(life_coplevel) == 5) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
 		};
 		if(__GETC__(life_coplevel) == 6) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
 		};
 		if(__GETC__(life_coplevel) == 7) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
 		};
 		if(__GETC__(life_coplevel) == 8) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
 		};
 		if(__GETC__(life_coplevel) == 9) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
+			_ret pushBack ["RPL_gsg9_U_01","GSG9",50];
 		};
 		if(__GETC__(life_coplevel) == 10) then {
 			_ret pushBack ["U_B_Wetsuit","Wet Suit",50];
-			_ret pushBack ["SecondLife_Officer1_uni","Streifenuniform",50];
-			_ret pushBack ["SecondLife_Marshal_uni",nil,50];
+			_ret pushBack ["RPL_anwarter_U_01","Streifenuniform",50];
+			_ret pushBack ["SecondLife_Marshal_uni","Marshal",50];
+			_ret pushBack ["RPL_kripo_U_01","Kripo",50];
+			_ret pushBack ["RPL_gsg9_U_01","GSG9",50];
 		};
 	};
 

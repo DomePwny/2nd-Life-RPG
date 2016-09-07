@@ -173,19 +173,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "Polizei";};
+			case 0:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_wrx_marked" :
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "EMS";};
-			case 3:  {_color = "Polizei";};
+			case 0:  {_color = "EMS";};
+			case 1:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_wrx_unmarked" :
@@ -220,19 +216,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "Polizei";};
+			case 0:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_evox_marked" :
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "EMS";};
-			case 3:  {_color = "Polizei";};
+			case 0:  {_color = "EMS";};
+			case 1:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_isf_unmarked" :
@@ -253,19 +245,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "Polizei";};
+			case 0:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_isf_marked" :
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "EMS";};
-			case 3:  {_color = "Polizei";};
+			case 0:  {_color = "EMS";};
+			case 1:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_m3_unmarked" :
@@ -286,19 +274,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "Polizei";};
+			case 0:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_m3_marked" :
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "EMS";};
-			case 3:  {_color = "Polizei";};
+			case 0:  {_color = "EMS";};
+			case 1:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_rs4_unmarked" :
@@ -319,19 +303,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "Polizei";};
+			case 0:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_rs4_marked" :
 	{
 		switch (_index) do
 		{
-			case 0:  {_color = "Police";};
-			case 1:  {_color = "Sheriff";};
-			case 2:  {_color = "EMS";};
-			case 3:  {_color = "Polizei";};
+			case 0:  {_color = "EMS";};
+			case 1:  {_color = "Polizei";};
 		};
 	};
 	case "ivory_gt500" :

@@ -207,7 +207,13 @@ switch(_shop) do
 					["RH_fn57",nil,1120],
 					["RH_sfn57",nil,20],
 					["RH_M6X",nil,20],
-					["RH_20Rnd_57x28_FN",nil,20]
+					["RH_20Rnd_57x28_FN",nil,20],
+					
+					["arifle_MXM_Black_F",nil,8575],
+					["30Rnd_65x39_caseless_mag",nil,65],
+					["optic_Arco",nil,20],
+					["optic_SOS",nil,20],
+					["muzzle_snds_H",nil,20]
 
 
 				];
