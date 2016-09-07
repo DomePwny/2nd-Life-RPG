@@ -11,7 +11,7 @@ publicVariable "life_server_isReady";
 	while {true} do {
 		_cops = (west countSide playableUnits);
 		_meds = (independent countSide playableUnits);
- 		if(_cops > 9 || _meds > 3) then { 
+ 		if(_cops > 5 || _meds > 1) then { 
  			_chance = round (random 85);
 			if(_chance == 1) then {
 				remoteExec ["fnc_weed_fire", -2];

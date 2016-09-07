@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4884;
+		nextID=4902;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3636.7002,128.01167,3699.9089};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3792.7974,143.53163,3284.8833};
+		dir[]={0.19693284,-0.7214461,-0.66404301};
+		up[]={0.20513144,0.69242078,-0.69169831};
+		aside[]={-0.95883143,-3.3993274e-007,-0.28435215};
 	};
 };
 binarizationWanted=0;
@@ -415,7 +415,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1443;
+		items=1445;
 		class Item0
 		{
 			dataType="Marker";
@@ -730,7 +730,7 @@ class Mission
 			colorName="ColorGreen";
 			a=0.5;
 			b=0.5;
-			angle=359.45563;
+			angle=359.4556;
 			id=70;
 			atlOffset=2.1882189e+027;
 		};
@@ -11048,7 +11048,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3794.4487,15.281478,3114.3337};
+						position[]={3794.4487,15.045594,3114.3337};
 						angles[]={0,4.8609209,0};
 					};
 					side="Civilian";
@@ -11210,8 +11210,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -11220,10 +11220,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="GreekHead_A3_09";
+									value=0;
 								};
 							};
 						};
@@ -11267,8 +11267,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -11277,10 +11277,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="GreekHead_A3_09";
 								};
 							};
 						};
@@ -11477,7 +11477,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3800.6252,21.255615,3121.4099};
+						position[]={3800.6252,21.01973,3121.4099};
 						angles[]={0,3.1847453,0};
 					};
 					side="Civilian";
@@ -11489,7 +11489,6 @@ class Mission
 					};
 					id=2217;
 					type="C_man_polo_3_F";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11817,6 +11816,7 @@ class Mission
 					};
 					id=3667;
 					type="C_man_p_fugitive_F";
+					atlOffset=0.23588371;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18892,19 +18892,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3859.1194,19.213902,3243.4202};
-						angles[]={0,6.209579,0};
+						position[]={3859.1189,19.21344,3243.4202};
+						angles[]={0,6.2095847,0};
 					};
 					side="Civilian";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false;   this allowDamage false;   this addAction [""Item Shop"",life_fnc_virt_menu,""cop"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction [""Speis und Trank"",life_fnc_virt_menu,""donuts"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction [""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction [format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide isEqualTo west ']; this addAction [format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction [""Trade Bag"",{ {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"" || typeOf _x == ""Land_Screwdriver_V1_F"" ) then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player);}, nil, 1.5, true, true, """",' playerSide isEqualTo west '];";
+						init="this enableSimulation false;   this allowDamage false;   this addAction [""Item Shop"",life_fnc_virt_menu,""cop"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction [""Police Utility Shop"",life_fnc_weaponShopMenu,""cop_basic"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction [format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide isEqualTo west ']; this addAction [format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this addAction [""Trade Bag"",{ {if (typeOf _x == ""Land_Sleeping_bag_blue_folded_F"" || typeOf _x == ""Land_Screwdriver_V1_F"" ) then {[] call life_fnc_sellBag; };  } foreach (attachedObjects player);}, nil, 1.5, true, true, """",' playerSide isEqualTo west '];";
 						name="DOCShop";
 					};
 					id=1121;
 					type="B_RangeMaster_F";
+					atlOffset=3.896925;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18934,6 +18935,7 @@ class Mission
 			{
 			};
 			id=3481;
+			atlOffset=3.896925;
 		};
 		class Item689
 		{
@@ -20003,7 +20005,7 @@ class Mission
 			};
 			id=3663;
 			type="bv_atm";
-			atlOffset=0.22000599;
+			atlOffset=0.17585087;
 		};
 		class Item748
 		{
@@ -25008,7 +25010,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3879.3496,15,3261.813};
+				position[]={3879.1892,15,3262.075};
 				angles[]={0,3.2493606,0};
 			};
 			side="Empty";
@@ -27425,7 +27427,7 @@ class Mission
 			type="Empty";
 			a=0.5;
 			b=0.5;
-			angle=105.58178;
+			angle=105.58177;
 			id=329;
 		};
 		class Item985
@@ -32972,7 +32974,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3799.8835,18.880291,3111.3335};
+				position[]={3799.8835,18.644407,3111.3335};
 				angles[]={0,4.8692355,0};
 			};
 			side="Empty";
@@ -36611,6 +36613,41 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item1443
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3871.8711,20.251308,3242.0791};
+				angles[]={0,3.2321754,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this allowDamage false; this addAction [""Speis und Trank"",life_fnc_virt_menu,""donuts"", 1.5, true, true, """",' playerSide isEqualTo west ']; ";
+			};
+			id=4886;
+			type="plp_cts_VMachineCoffeeBlackOn";
+			atlOffset=3.896925;
+		};
+		class Item1444
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3876.9829,14.974858,3238.571};
+				angles[]={0,3.2380569,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false; this addAction [""Speis und Trank"",life_fnc_virt_menu,""donuts"", 1.5, true, true, """",' playerSide isEqualTo west ']; ";
+			};
+			id=4901;
+			type="Land_Planter_DED_Planter_01_F";
 		};
 	};
 };

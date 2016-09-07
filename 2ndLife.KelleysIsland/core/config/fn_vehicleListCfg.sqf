@@ -1,7 +1,3 @@
-
-
-
-
 #include <macro.h>
 /*
 	File:
@@ -330,7 +326,9 @@ switch (_shop) do
 		};
 		if(__GETC__(life_coplevel) == 2) then
 		{
+			_return pushBack ["ivory_isf_slicktop",25000];
 			_return pushBack ["ivory_isf_marked",25000];
+			_return pushBack ["ivory_m3_slicktop",47000];
 			_return pushBack ["ivory_m3_marked",47000];
 		};
 		if(__GETC__(life_coplevel) == 3) then
@@ -339,8 +337,6 @@ switch (_shop) do
 			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
 			_return pushBack ["ivory_m3_marked",47000];
-			_return pushBack ["ivory_rs4_slicktop",63000];
-			_return pushBack ["ivory_rs4_marked",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
 			_return pushBack ["ivory_wrx_marked",67000];
 		};
@@ -350,27 +346,12 @@ switch (_shop) do
 			_return pushBack ["ivory_isf_marked",25000];
 			_return pushBack ["ivory_m3_slicktop",47000];
 			_return pushBack ["ivory_m3_marked",47000];
-			_return pushBack ["ivory_rs4_slicktop",63000];
-			_return pushBack ["ivory_rs4_marked",63000];
 			_return pushBack ["ivory_wrx_slicktop",67000];
 			_return pushBack ["ivory_wrx_marked",67000];
-			_return pushBack ["ivory_evox_slicktop",76500];
-			_return pushBack ["ivory_evox_marked",76500];
-		};
-		if(__GETC__(life_coplevel) == 5) then
-		{
-			_return pushBack ["ivory_isf_slicktop",25000];
-			_return pushBack ["ivory_isf_marked",25000];
-			_return pushBack ["ivory_m3_slicktop",47000];
-			_return pushBack ["ivory_m3_marked",47000];
 			_return pushBack ["ivory_rs4_slicktop",63000];
 			_return pushBack ["ivory_rs4_marked",63000];
-			_return pushBack ["ivory_wrx_slicktop",67000];
-			_return pushBack ["ivory_wrx_marked",67000];
-			_return pushBack ["ivory_evox_slicktop",76500];
-			_return pushBack ["ivory_evox_marked",76500];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_return pushBack ["ivory_isf_slicktop",25000];
 			_return pushBack ["ivory_isf_marked",25000];
@@ -385,6 +366,7 @@ switch (_shop) do
 			_return pushBack ["ivory_rev_police",95000];
 			_return pushBack ["ivory_rev_sheriff",95000];
 			_return pushBack ["Urbanized_LP700_P",225000];
+
 		};
 	};
 	case "fbi_car":

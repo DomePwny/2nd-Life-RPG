@@ -1177,7 +1177,7 @@ fnc_CallMenu = {
 		};
 	} foreach playableUnits;
 
-	if(side player != civilian) then {
+	if((side player != civilian) || (side player != east)) then {
 			player setvariable["PhoneCallNumber",0,true];
 			player setvariable["PhoneID",0,true];
 			callInProgress = false;
